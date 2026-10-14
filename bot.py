@@ -32,6 +32,7 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.prompt import Prompt
 from rich.table import Table
+from rich import box # Ditambahkan untuk merubah gaya border tabel
 
 from core import regis
 from core.regis import RegisError
@@ -296,7 +297,7 @@ def inject_termux_account(state_path: str):
 # MENU 1 & 2: PENDAFTARAN & AUTO BULK 
 # ==========================================
 def menu_daftar_manual():
-    console.print(Panel("[bold]Daftar Akun Manual[/]\nOTP masuk ke SMS HP lo sendiri.", style="cyan"))
+    console.print(Panel("[bold]Daftar Akun Manual[/]\nOTP masuk ke SMS HP lo sendiri.", style="bright_yellow"))
     try:
         msisdn = regis.normalize_msisdn(Prompt.ask("[bold]Nomor HP[/] (mis. 08123456789)"))
     except RegisError as e:
@@ -465,7 +466,7 @@ def worker_register_scheduled(worker_id, target_mulai, target_kirim_data, piliha
                 return
 
 def menu_daftar_auto_bulk():
-    console.print(Panel("[bold cyan]Daftar Akun Massal Berjadwal (Scheduled Bulk)[/]", style="cyan"))
+    console.print(Panel("[bold bright_yellow]Daftar Akun Massal Berjadwal (Scheduled Bulk)[/]", style="bright_yellow"))
     pilihan_server = Prompt.ask("[bold]Pilih Server API OTPInstan[/] (1 atau 2)", choices=["1", "2"], default="1")
     jumlah_akun = int(Prompt.ask("[bold]Masukkan jumlah akun (1 - 20)[/]", default="1"))
     target_mulai = Prompt.ask("[bold]Jam mulai pendaftaran[/] (HH:MM:SS, kosongkan jika instan)", default="")
@@ -537,7 +538,7 @@ def menu_daftar_auto_bulk():
 # MENU 3: ADB PUSH (INJECT)
 # ==========================================
 def menu_inject():
-    console.print(Panel("[bold]ADB Push Akun (Inject)[/]", style="cyan"))
+    console.print(Panel("[bold bright_yellow]ADB Push Akun (Inject)[/]", style="bright_yellow"))
     states = list_states()
     if not states:
         console.print("[yellow]⚠ Tidak ada akun baru di folder data/states.[/]")
@@ -604,13 +605,13 @@ def proses_cek_satu_akun(akun):
         raw_pt = data_pt.get("data", {}).get("total", "0") if isinstance(data_pt.get("data"), dict) else "0"
         bonus_poin = "".join(filter(str.isdigit, str(raw_pt))) or "0"
 
-        status_msg = "[bold green]Masuk![/]" if int(bonus_poin) >= 5000 else "[yellow]Zonk[/]"
+        status_msg = "[bold bright_green]Masuk![/]" if int(bonus_poin) >= 5000 else "[bright_yellow]Zonk[/]"
         return saldo_utama, bonus_poin, status_msg
 
     except: return "-", "-", "[red]Error[/]"
 
 def menu_cek_saldo():
-    console.print(Panel("[bold cyan]Cek Bonus Massal[/]", style="cyan"))
+    console.print(Panel("[bold bright_yellow]Cek Bonus Massal[/]", style="bright_yellow"))
     if not CRYPTO_AVAILABLE:
         console.print("[red]❌ Library pycryptodome belum diinstall.[/red]"); return
 
@@ -618,9 +619,16 @@ def menu_cek_saldo():
     if not states:
         console.print("[yellow]⚠ Folder states kosong.[/]"); return
         
-    table = Table()
-    table.add_column("No", style="cyan"); table.add_column("Nomor", style="green")
-    table.add_column("Saldo", justify="right", style="yellow"); table.add_column("Bonus", justify="right", style="green")
+    # --- PERUBAHAN GAYA TABEL ---
+    table = Table(
+        box=box.SIMPLE, 
+        header_style="bold bright_white on blue",
+        border_style="bright_cyan"
+    )
+    table.add_column("No", style="bright_cyan", justify="center")
+    table.add_column("Nomor", style="bright_green")
+    table.add_column("Saldo", justify="right", style="bright_yellow")
+    table.add_column("Bonus", justify="right", style="bright_magenta")
     table.add_column("Status", justify="center")
 
     console.print(f"[dim]🔄 Cek {len(states)} akun...[/]")
@@ -665,7 +673,7 @@ def menu_injeck_termux():
 # MENU 6: SORTIR
 # ==========================================
 def menu_sortir():
-    console.print(Panel("[bold cyan]Sortir Akun Berdasarkan Bonus[/]\nMembuang otomatis file akun zonk (0) dan mempertahankan akun bonus 5000.", style="cyan"))
+    console.print(Panel("[bold bright_yellow]Sortir Akun Berdasarkan Bonus[/]\nMembuang otomatis file akun zonk (0) dan mempertahankan akun bonus 5000.", style="bright_yellow"))
     
     if not CRYPTO_AVAILABLE:
         console.print("[red]❌ Library pycryptodome belum diinstall.[/red]")
@@ -697,76 +705,4 @@ def menu_sortir():
         msisdn = akun.get("msisdn", "?")
         
         # Cek saldo & bonus
-        saldo_utama, bonus_poin, status_msg = proses_cek_satu_akun(akun)
-        
-        if bonus_poin == "-" or "Error" in status_msg or "Sesi Mati" in status_msg:
-            console.print(f"[red]❌ {msisdn} - Error/Sesi Mati saat cek saldo. Dilewati.[/]")
-            count_error += 1
-            continue
-            
-        poin_int = int(bonus_poin) if str(bonus_poin).isdigit() else 0
-        
-        try:
-            if poin_int >= 5000:
-                # DIBIARKAN DI FOLDER ASLI
-                console.print(f"[green]✅ {msisdn} -> AMAN ({poin_int} pts, dipertahankan di data/states/)[/]")
-                count_bonus += 1
-            else:
-                # DIPINDAHKAN (DIBUANG) KE FOLDER ZONK
-                shutil.move(str(file_path), str(dir_zonk / file_path.name))
-                console.print(f"[yellow]⚠ {msisdn} -> DIBUANG ke folder ZONK ({poin_int} pts)[/]")
-                count_zonk += 1
-        except Exception as e:
-            console.print(f"[red]❌ Gagal memindahkan file {msisdn}: {e}[/]")
-            
-        time.sleep(0.3) 
-
-    # Rekapitulasi Akhir
-    console.print(f"\n[bold green]✨ Sortir Selesai![/]")
-    console.print(f"📁 Bonus (>= 5000) : {count_bonus} akun (Siap di-inject via Menu 3 di [cyan]data/states/[/])")
-    console.print(f"🗑️ Zonk (< 5000)   : {count_zonk} akun dipindah ke [yellow]data/states_zonk/[/]")
-    
-    if count_error > 0:
-        console.print(f"📁 Error Check     : {count_error} akun (tetap berada di folder data/states/)")
-
-
-# ==========================================
-# MASTER UI
-# ==========================================
-def main():
-    clear_once()
-    while True:
-        console.print("\n")
-        menu_ui = (
-            "[bold green]1.[/] [cyan]DAFTAR Manual[/]\n"
-            "[bold green]2.[/] [cyan]DAFTAR OTOMATIS[/]\n"
-            "[bold green]3.[/] [cyan]ADB PUSH KHUSUS PC [/]\n"
-            "[bold green]4.[/] [cyan]CEK BONUS[/]\n"
-            "[bold green]5.[/] [cyan]RESTORE TERMUX[/]\n"
-            "[bold green]6.[/] [cyan]SORTIR[/]\n"
-            "[bold green]7.[/] [red]Keluar[/]"
-        )
-        
-        console.print(Panel(menu_ui, title="[bold yellow]⚡ COMMAND CENTER[/]", border_style="cyan", expand=False))
-        
-        c = Prompt.ask("\n[bold]Pilih[/]", choices=["1", "2", "3", "4", "5", "6", "7"], default="7")
-        
-        if c == "7":
-            console.print("[dim]Keluar.[/]")
-            break
-        try:
-            if c == "1": menu_daftar_manual()
-            elif c == "2": console.print("\n"); menu_daftar_auto_bulk()
-            elif c == "3": console.print("\n"); menu_inject()
-            elif c == "4": console.print("\n"); menu_cek_saldo()
-            elif c == "5": console.print("\n"); menu_injeck_termux()
-            elif c == "6": console.print("\n"); menu_sortir()
-        except KeyboardInterrupt:
-            console.print("\n[dim]Batal.[/]")
-
-if __name__ == "__main__":
-    try:
-        auto_update()  # <-- Panggil fungsi pembaruan sebelum UI utama diluncurkan
-        main()
-    except KeyboardInterrupt:
-        console.print("\n[dim]Stop (Ctrl+C).[/]")
+        saldo_utama, bonus_poin, status_
