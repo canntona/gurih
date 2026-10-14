@@ -14,6 +14,7 @@ import threading
 import shutil
 import re
 import subprocess
+import urllib.request # Ditambahkan untuk fitur auto-update
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -37,6 +38,43 @@ from core.regis import RegisError
 from core.session import list_states, state_path, api_get, api_post, decrypt_resp
 
 console = Console()
+
+# ==========================================
+# KONFIGURASI AUTO-UPDATE GITHUB
+# ==========================================
+# Ganti URL ini dengan link RAW file Python kamu di GitHub
+GITHUB_RAW_URL = "https://raw.githubusercontent.com/username/repo/main/nama_script.py"
+
+def auto_update():
+    console.print("[dim][*] Mengecek pembaruan dari GitHub...[/dim]")
+    try:
+        # Mengunduh script versi terbaru dari GitHub
+        req = urllib.request.Request(GITHUB_RAW_URL, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req, timeout=5) as response:
+            remote_code = response.read().decode('utf-8')
+
+        # Membaca script lokal yang sedang berjalan
+        with open(__file__, "r", encoding="utf-8") as f:
+            local_code = f.read()
+
+        # Membandingkan isi script
+        if remote_code.strip() != local_code.strip():
+            console.print("[bold yellow][!] Pembaruan ditemukan! Memperbarui script...[/bold yellow]")
+            
+            # Menimpa file lokal dengan kode dari GitHub
+            with open(__file__, "w", encoding="utf-8") as f:
+                f.write(remote_code)
+            
+            console.print("[bold green][+] Berhasil diperbarui. Memulai ulang script...[/bold green]\n" + "-"*40)
+            
+            # Memulai ulang (restart) script secara otomatis
+            os.execv(sys.executable, ['python'] + sys.argv)
+        else:
+            console.print("[dim green][+] Script sudah versi terbaru.[/dim green]\n")
+            
+    except Exception as e:
+        console.print(f"[dim red][-] Gagal mengecek pembaruan (Bisa diabaikan jika offline): {e}[/dim red]\n")
+
 
 # ==========================================
 # FUNGSI LOAD API KEY
@@ -728,6 +766,7 @@ def main():
 
 if __name__ == "__main__":
     try:
+        auto_update()  # <-- Panggil fungsi pembaruan sebelum UI utama diluncurkan
         main()
     except KeyboardInterrupt:
         console.print("\n[dim]Stop (Ctrl+C).[/]")
