@@ -705,4 +705,95 @@ def menu_sortir():
         msisdn = akun.get("msisdn", "?")
         
         # Cek saldo & bonus
-        saldo_utama, bonus_poin, status_
+        saldo_utama, bonus_poin, status_msg = proses_cek_satu_akun(akun)
+        
+        if bonus_poin == "-" or "Error" in status_msg or "Sesi Mati" in status_msg:
+            console.print(f"[red]❌ {msisdn} - Error/Sesi Mati saat cek saldo. Dilewati.[/]")
+            count_error += 1
+            continue
+            
+        poin_int = int(bonus_poin) if str(bonus_poin).isdigit() else 0
+        
+        try:
+            if poin_int >= 5000:
+                # DIBIARKAN DI FOLDER ASLI
+                console.print(f"[green]✅ {msisdn} -> AMAN ({poin_int} pts, dipertahankan di data/states/)[/]")
+                count_bonus += 1
+            else:
+                # DIPINDAHKAN (DIBUANG) KE FOLDER ZONK
+                shutil.move(str(file_path), str(dir_zonk / file_path.name))
+                console.print(f"[yellow]⚠ {msisdn} -> DIBUANG ke folder ZONK ({poin_int} pts)[/]")
+                count_zonk += 1
+        except Exception as e:
+            console.print(f"[red]❌ Gagal memindahkan file {msisdn}: {e}[/]")
+            
+        time.sleep(0.3) 
+
+    # Rekapitulasi Akhir
+    console.print(f"\n[bold green]✨ Sortir Selesai![/]")
+    console.print(f"📁 Bonus (>= 5000) : {count_bonus} akun (Siap di-inject via Menu 3 di [cyan]data/states/[/])")
+    console.print(f"🗑️ Zonk (< 5000)   : {count_zonk} akun dipindah ke [yellow]data/states_zonk/[/]")
+    
+    if count_error > 0:
+        console.print(f"📁 Error Check     : {count_error} akun (tetap berada di folder data/states/)")
+
+
+# ==========================================
+# MASTER UI
+# ==========================================
+def main():
+    clear_once()
+    
+    # --- ASCII ART VOID ---
+    void_art = """[bold bright_yellow]
+██    ██  ██████  ██  ██████  
+██    ██ ██    ██ ██ ██    ██ 
+██    ██ ██    ██ ██ ██    ██ 
+ ██  ██  ██    ██ ██ ██    ██ 
+  ████    ██████  ██  ██████  
+    [/bold bright_yellow]"""
+    
+    while True:
+        console.print(void_art)
+        console.print("[bold yellow]⚡ COMMAND CENTER[/bold yellow]\n")
+        
+        # --- MENU TANPA BORDER & FULL KUNING ---
+        menu_ui = (
+            "[bold bright_yellow]1.[/] [bright_yellow]DAFTAR Manual[/]\n"
+            "[bold bright_yellow]2.[/] [bright_yellow]DAFTAR OTOMATIS[/]\n"
+            "[bold bright_yellow]3.[/] [bright_yellow]ADB PUSH KHUSUS PC [/]\n"
+            "[bold bright_yellow]4.[/] [bright_yellow]CEK BONUS[/]\n"
+            "[bold bright_yellow]5.[/] [bright_yellow]RESTORE TERMUX[/]\n"
+            "[bold bright_yellow]6.[/] [bright_yellow]SORTIR[/]\n"
+            "[bold bright_yellow]7.[/] [dim yellow]Keluar[/]"
+        )
+        
+        console.print(menu_ui)
+        
+        c = Prompt.ask("\n[bold yellow]Pilih[/]", choices=["1", "2", "3", "4", "5", "6", "7"], default="7")
+        
+        if c == "7":
+            console.print("[dim]Keluar.[/]")
+            break
+        try:
+            if c == "1": menu_daftar_manual()
+            elif c == "2": console.print("\n"); menu_daftar_auto_bulk()
+            elif c == "3": console.print("\n"); menu_inject()
+            elif c == "4": console.print("\n"); menu_cek_saldo()
+            elif c == "5": console.print("\n"); menu_injeck_termux()
+            elif c == "6": console.print("\n"); menu_sortir()
+            
+            # Tambahan jeda agar layar tidak langsung dibersihkan
+            Prompt.ask("\n[dim]Tekan Enter untuk kembali ke menu...[/]")
+            clear_once()
+            
+        except KeyboardInterrupt:
+            console.print("\n[dim]Batal.[/]")
+            clear_once()
+
+if __name__ == "__main__":
+    try:
+        auto_update()  # <-- Panggil fungsi pembaruan sebelum UI utama diluncurkan
+        main()
+    except KeyboardInterrupt:
+        console.print("\n[dim]Stop (Ctrl+C).[/]")
