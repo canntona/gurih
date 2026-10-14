@@ -43,7 +43,7 @@ console = Console()
 # KONFIGURASI AUTO-UPDATE GITHUB
 # ==========================================
 # Ganti URL ini dengan link RAW file Python kamu di GitHub
-GITHUB_RAW_URL = "https://raw.githubusercontent.com/username/repo/main/nama_script.py"
+GITHUB_RAW_URL = "https://raw.githubusercontent.com/canntona/gurih/refs/heads/main/bot.py"
 
 def auto_update():
     console.print("[dim][*] Mengecek pembaruan dari GitHub...[/dim]")
