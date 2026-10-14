@@ -18,35 +18,7 @@ import urllib.request
 from datetime import datetime, timedelta
 from pathlib import Path
 
-# ==========================================
-# 1. AUTO-CREATE FIS.JSON (HARUS PALING ATAS)
-# ==========================================
-def setup_fis_json():
-    # Menentukan path folder data dan file fis.json
-    data_dir = Path(__file__).resolve().parent / "data"
-    data_dir.mkdir(parents=True, exist_ok=True)
-    fis_path = data_dir / "fis.json"
-    
-    # Membuat file beserta isinya jika belum ada
-    if not fis_path.exists():
-        fis_content = {
-            "name": "projects/891651208293/installations/cP3nmU9n-zSU-5PAJtD5AH", 
-            "fid": "cP3nmU9n-zSU-5PAJtD5AH", 
-            "refreshToken": "3_AS3qfwL3HVGML5Hb2ae-XWv31gcYcBjXjO1qTE9fqvrGdRShdVQkkAy3nImbRMckB0r-kOaOfgUYjhBbD-hAb2bEs5IugkAQhqdtBXIBRwdoUb4", 
-            "authToken": {
-                "token": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6ODkxNjUxMjA4MjkzOmFuZHJvaWQ6ZDYyZjgyY2Y3NTllYjRmNCIsImV4cCI6MTc5MTgyOTk0MywiZmlkIjoiY1Azbm1VOW4telNVLTVQQUp0RDVBSCIsInByb2plY3ROdW1iZXIiOjg5MTY1MTIwODI5M30.AB2LPV8wRQIhAK3dEEtmGuRW5il_751LCfalD4--CbsamMIedF2dfUX1AiALJ-uPLjTox79Kzkh0L4s1c8Peh666YixMPWBB7FYrkA", 
-                "expiresIn": "604800s"
-            }
-        }
-        with open(fis_path, "w", encoding="utf-8") as f:
-            json.dump(fis_content, f, indent=4)
-
-# Eksekusi pembuatan fis.json SEBELUM import modul core
-setup_fis_json()
-
-# ==========================================
-# 2. IMPORT CORE & RICH 
-# ==========================================
+# Coba import library kriptografi
 try:
     from Crypto.Cipher import AES
     from Crypto.Util.Padding import unpad
@@ -69,7 +41,7 @@ from core.session import list_states, state_path, api_get, api_post, decrypt_res
 console = Console()
 
 # ==========================================
-# 3. KONFIGURASI AUTO-UPDATE SENYAP
+# KONFIGURASI AUTO-UPDATE SENYAP
 # ==========================================
 GITHUB_RAW_URL = "https://raw.githubusercontent.com/canntona/gurih/refs/heads/main/bot.py"
 
@@ -92,9 +64,8 @@ def auto_update():
         # Senyap jika gagal atau offline
         pass
 
-
 # ==========================================
-# 4. FUNGSI LOAD API KEY
+# FUNGSI LOAD API KEY
 # ==========================================
 def load_api_key():
     api_file = "api.txt"
@@ -467,7 +438,7 @@ def worker_register_scheduled(worker_id, target_mulai, target_kirim_data, piliha
             # POST Register meluncur...
             regis.step_register(msisdn, pin, fullname, email)
             
-            # Menangkap waktu presisi (Jam:Menit:Detik.Milidetik) tepat setelah server membalas SUKSES
+            # Menangkap waktu presisi
             waktu_sukses = datetime.now().strftime('%H:%M:%S.%f')[:-3]
             
             console.print(f"[bold green]🎉 {w_log} SUKSES [{waktu_sukses}] | {msisdn} | {fullname}[/]")
@@ -759,17 +730,8 @@ def menu_sortir():
 def main():
     clear_once()
     
-    # --- ASCII ART RAVE of VOID ---
+    # --- ASCII ART VOID (Standard Font) ---
     void_art = """[bold bright_yellow]
-8888888b.         d8888 888     888 8888888888         d8b 
-888   Y88b       d88888 888     888 888                Y8P 
-888    888      d88P888 888     888 888                    
-888   d88P     d88P 888 Y88b   d88P 8888888    .d88b.  8888888 
-8888888P"     d88P  888  Y88b d88P  888       d88""88b 888 
-888 T88b     d88P   888   Y88o88P   888       888  888 8888888 
-888  T88b   d8888888888    Y888P    888       Y88..88P 888 
-888   T88b d88P     888     Y8P     8888888888 "Y88P"  888 
-
 888     888  .d88888b.  8888888 8888888b.  
 888     888 d88P" "Y88b   888   888  "Y88b 
 888     888 888     888   888   888    888 
