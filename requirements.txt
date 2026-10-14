@@ -1,0 +1,4 @@
+rich
+pycryptodome
+curl_cffi
+httpx
