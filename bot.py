@@ -47,36 +47,26 @@ console = Console()
 GITHUB_RAW_URL = "https://raw.githubusercontent.com/canntona/gurih/refs/heads/main/bot.py"
 
 def auto_update():
-    console.print("[dim][*] Mengecek pembaruan dari GitHub...[/dim]")
     try:
-        # Mengunduh script versi terbaru dari GitHub
+        # Unduh secara senyap di latar belakang
         req = urllib.request.Request(GITHUB_RAW_URL, headers={'User-Agent': 'Mozilla/5.0'})
-        with urllib.request.urlopen(req, timeout=5) as response:
+        with urllib.request.urlopen(req, timeout=3) as response:
             remote_code = response.read().decode('utf-8')
 
-        # Membaca script lokal yang sedang berjalan
         with open(__file__, "r", encoding="utf-8") as f:
             local_code = f.read()
 
-        # Membandingkan isi script
+        # HANYA munculkan notifikasi jika benar-benar ada pembaruan
         if remote_code.strip() != local_code.strip():
-            console.print("[bold yellow][!] Pembaruan ditemukan! Memperbarui script...[/bold yellow]")
-            
-            # Menimpa file lokal dengan kode dari GitHub
+            console.print("\n[bold bright_yellow]⚡ Memperbarui sistem ke versi terbaru...[/bold bright_yellow]")
             with open(__file__, "w", encoding="utf-8") as f:
                 f.write(remote_code)
-            
-            console.print("[bold green][+] Berhasil diperbarui. Memulai ulang script...[/bold green]\n" + "-"*40)
-            
-            # Memulai ulang (restart) script secara otomatis
             os.execv(sys.executable, ['python'] + sys.argv)
-        else:
-            console.print("[dim green][+] Script sudah versi terbaru.[/dim green]\n")
             
-    except Exception as e:
-        console.print(f"[dim red][-] Gagal mengecek pembaruan (Bisa diabaikan jika offline): {e}[/dim red]\n")
-
-
+    except Exception:
+        # Jika offline atau gagal, diam saja (senyap) dan lanjut ke menu utama
+        pass
+        
 # ==========================================
 # FUNGSI LOAD API KEY
 # ==========================================
@@ -744,14 +734,18 @@ def menu_sortir():
 def main():
     clear_once()
     
-    # --- ASCII ART VOID ---
+# --- ASCII ART RAVE of VOID ---
     void_art = """[bold bright_yellow]
-██    ██  ██████  ██  ██████  
-██    ██ ██    ██ ██ ██    ██ 
-██    ██ ██    ██ ██ ██    ██ 
- ██  ██  ██    ██ ██ ██    ██ 
-  ████    ██████  ██  ██████  
-    [/bold bright_yellow]"""
+
+888     888  .d88888b.  8888888 8888888b.  
+888     888 d88P" "Y88b   888   888  "Y88b 
+888     888 888     888   888   888    888 
+Y88b   d88P 888     888   888   888    888 
+ Y88b d88P  888     888   888   888    888 
+  Y88o88P   888     888   888   888    888 
+   Y888P    Y88b. .d88P   888   888  .d88P 
+    Y8P      "Y88888P"  8888888 8888888P"  
+[/bold bright_yellow]"""
     
     while True:
         console.print(void_art)
