@@ -41,12 +41,22 @@ from core import regis
 from core.regis import RegisError
 from core.session import list_states, state_path, api_get, api_post, decrypt_resp
 
+try:
+    import qris
+except ImportError:
+    try:
+        from core import qris
+    except ImportError:
+        qris = None
+
 console = Console()
 
 # ==========================================
 # KONFIGURASI AUTO-UPDATE SENYAP
 # ==========================================
-# Dikosongkan agar tidak melakukan auto-update
+# Dikosongkan sementara agar tidak tertimpa versi lama dari GitHub saat testing.
+# Setelah di-upload ke GitHub, kamu bisa isi kembali URL di bawah ini:
+# GITHUB_RAW_URL = "https://raw.githubusercontent.com/canntona/gurih/refs/heads/main/bot.py"
 GITHUB_RAW_URL = "https://raw.githubusercontent.com/canntona/gurih/refs/heads/main/bot.py"
 
 def auto_update():
@@ -852,11 +862,7 @@ def proses_cek_satu_akun(akun):
         return "-", "-", "[red]Error[/]"
 
 def menu_cek_saldo():
-    print_section_header(
-        "[*] Cek Bonus Massal",
-        "Memeriksa saldo utama dan bonus poin seluruh akun di dalam folder data/states.",
-        style="bright_green"
-    )
+    print_section_header("[*] Cek Bonus", style="bright_green")
     if not CRYPTO_AVAILABLE:
         console.print("[bold red][X] Library pycryptodome belum diinstall.[/red]")
         return
@@ -864,6 +870,7 @@ def menu_cek_saldo():
     states = list_states()
     if not states:
         console.print("[yellow][!] Folder states kosong.[/]")
+        Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
         return
 
     table = Table(
@@ -872,11 +879,11 @@ def menu_cek_saldo():
         border_style="bright_cyan",
         expand=False,
     )
-    table.add_column("No", style="bright_cyan", justify="center", width=5)
-    table.add_column("Nomor", style="bright_green", width=16)
-    table.add_column("Saldo", justify="right", style="bright_yellow", width=14)
-    table.add_column("Bonus", justify="right", style="bright_magenta", width=14)
-    table.add_column("Status", justify="center", width=14)
+    table.add_column("No", style="bright_cyan", justify="center", width=4)
+    table.add_column("Nomor", style="bright_green", width=15)
+    table.add_column("Saldo", justify="right", style="bright_yellow", width=12)
+    table.add_column("Bonus", justify="right", style="bright_magenta", width=12)
+    table.add_column("Status", justify="center", width=12)
 
     jml_masuk = 0
     jml_zonk = 0
@@ -896,38 +903,36 @@ def menu_cek_saldo():
             fmt_poin = f"{int(bonus_poin):,} pts".replace(",", ".") if bonus_poin.isdigit() else f"{bonus_poin} pts"
 
             table.add_row(str(idx), akun.get("msisdn", "?"), fmt_saldo, fmt_poin, status_msg)
-            time.sleep(0.3)
+            time.sleep(0.2)
 
     console.print(
         Panel(
-            f"[bold white]Total Diperiksa:[/] {len(states)}   |   "
-            f"[bold bright_green][+] Bonus Masuk:[/] {jml_masuk}   |   "
-            f"[bold yellow]Zonk:[/] {jml_zonk}   |   "
+            f"[bold white]Total:[/] {len(states)}  |  "
+            f"[bold bright_green]Masuk:[/] {jml_masuk}  |  "
+            f"[bold yellow]Zonk:[/] {jml_zonk}  |  "
             f"[bold red]Error:[/] {jml_err}",
             border_style="bright_cyan",
             box=box.ROUNDED,
             expand=False,
         )
     )
+    Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
 
 
 # ==========================================
 # MENU 5: RESTORE / INJECT TERMUX
 # ==========================================
 def menu_injeck_termux():
-    print_section_header(
-        "[*] Restore Termux (Root)",
-        "Inject akun pertama dari data/states langsung ke HP ini via Superuser.",
-        style="bright_magenta"
-    )
+    print_section_header("[*] Restore Termux", style="bright_magenta")
 
     if not CRYPTO_AVAILABLE:
-        console.print("[bold red][X] Library pycryptodome belum diinstall di Termux.[/red]")
+        console.print("[bold red][X] pycryptodome belum diinstall.[/red]")
         return
 
     states = list_states()
     if not states:
-        console.print("[yellow][!] Folder data/states kosong. Tidak ada akun matang untuk di-inject.[/]")
+        console.print("[yellow][!] data/states kosong.[/]")
+        Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
         return
 
     akun_target = states[0]["file"]
@@ -935,45 +940,40 @@ def menu_injeck_termux():
 
     console.print(
         Panel(
-            f"[bold white]Nomor Target :[/] [bold bright_green]{nomor}[/]\n"
-            f"[bold white]Lokasi File  :[/] [dim]{akun_target}[/]\n"
-            f"[bold white]Sisa Antrean :[/] [cyan]{len(states)} akun di data/states[/]",
-            title="[bold magenta]Target Restore[/]",
+            f"[bold white]Target:[/] [bold bright_green]{nomor}[/]  |  [bold white]Sisa:[/] [cyan]{len(states)} akun[/]",
             border_style="magenta",
             box=box.ROUNDED,
             expand=False,
         )
     )
 
-    if not Confirm.ask("[bold magenta]>> Inject akun ini ke perangkat sekarang?[/]", default=True):
+    if not Confirm.ask("[bold magenta]>> Inject sekarang?[/]", default=True):
         return
 
     console.print()
     try:
         inject_termux_account(akun_target)
     except InjectError as e:
-        console.print(f"\n[bold red][X] Gagal Inject: {e}[/]")
+        console.print(f"\n[bold red][X] Gagal: {e}[/]")
     except Exception as e:
-        console.print(f"\n[bold red][X] Error Sistem: {e}[/]")
+        console.print(f"\n[bold red][X] Error: {e}[/]")
+    Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
 
 
 # ==========================================
 # MENU 6: SORTIR AKUN
 # ==========================================
 def menu_sortir():
-    print_section_header(
-        "[*] Sortir Akun Berdasarkan Bonus",
-        "Membuang otomatis file akun zonk (0) dan mempertahankan akun bonus 5000.",
-        style="bright_yellow"
-    )
+    print_section_header("[*] Sortir Akun", style="bright_yellow")
 
     if not CRYPTO_AVAILABLE:
-        console.print("[bold red][X] Library pycryptodome belum diinstall.[/red]")
+        console.print("[bold red][X] pycryptodome belum diinstall.[/red]")
         return
 
     states = list_states()
     if not states:
-        console.print("[yellow][!] Tidak ada akun di folder data/states untuk disortir.[/]")
+        console.print("[yellow][!] data/states kosong.[/]")
+        Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
         return
 
     dir_base = Path(__file__).resolve().parent / "data"
@@ -989,10 +989,9 @@ def menu_sortir():
         TextColumn("[progress.description]{task.description}"),
         BarColumn(),
         TextColumn("[bold cyan]{task.completed}/{task.total}[/]"),
-        TimeElapsedColumn(),
         console=console
     ) as progress:
-        task = progress.add_task("[cyan]Memulai cek dan sortir akun...", total=len(states))
+        task = progress.add_task("[cyan]Sortir akun...", total=len(states))
 
         for akun in states:
             file_path = Path(akun["file"])
@@ -1001,12 +1000,12 @@ def menu_sortir():
                 continue
 
             msisdn = akun.get("msisdn", "?")
-            progress.update(task, description=f"[cyan]Memeriksa {msisdn}...[/]")
+            progress.update(task, description=f"[cyan]Cek {msisdn}...[/]")
 
             saldo_utama, bonus_poin, status_msg = proses_cek_satu_akun(akun)
 
             if bonus_poin == "-" or "Error" in status_msg or "Sesi Mati" in status_msg:
-                progress.console.print(f"  [red][X] {msisdn}[/] - Error/Sesi Mati saat cek saldo. Dilewati.")
+                progress.console.print(f"  [red][X] {msisdn}[/] -> Error")
                 count_error += 1
                 progress.advance(task)
                 continue
@@ -1015,52 +1014,279 @@ def menu_sortir():
 
             try:
                 if poin_int >= 5000:
-                    progress.console.print(f"  [green][OK] {msisdn}[/] -> [bold green]AMAN ({poin_int} pts, dipertahankan di data/states/)[/]")
+                    progress.console.print(f"  [green][OK] {msisdn}[/] -> Bonus {poin_int:,}")
                     count_bonus += 1
                 else:
                     shutil.move(str(file_path), str(dir_zonk / file_path.name))
-                    progress.console.print(f"  [yellow][!] {msisdn}[/] -> [dim yellow]DIBUANG ke folder ZONK ({poin_int} pts)[/]")
+                    progress.console.print(f"  [yellow][!] {msisdn}[/] -> Zonk ({poin_int:,})")
                     count_zonk += 1
             except Exception as e:
-                progress.console.print(f"  [red][X] Gagal memindahkan file {msisdn}: {e}[/]")
+                progress.console.print(f"  [red][X] {msisdn}: {e}[/]")
 
             progress.advance(task)
-            time.sleep(0.3)
+            time.sleep(0.2)
 
-    rekap = Table(box=box.SIMPLE, show_header=False, padding=(0, 2))
-    rekap.add_column("Kategori", style="bold")
-    rekap.add_column("Jumlah", justify="right")
-    rekap.add_column("Keterangan", style="dim")
-    rekap.add_row("[bright_green][+] Bonus (>= 5000)[/]", f"[bold green]{count_bonus} akun[/]", "Siap di-inject via Menu 3 di data/states/")
-    rekap.add_row("[bright_yellow][-] Zonk (< 5000)[/]", f"[bold yellow]{count_zonk} akun[/]", "Dipindah ke data/states_zonk/")
-    if count_error > 0:
-        rekap.add_row("[bright_red][!] Error Check[/]", f"[bold red]{count_error} akun[/]", "Tetap berada di folder data/states/")
-
-    console.print()
-    console.print(Panel(rekap, title="[bold bright_green][OK] Sortir Selesai![/]", border_style="bright_green", expand=False))
-
-
-# ==========================================
-# MENU 7 & 8: FITUR DALAM PENGEMBANGAN
-# ==========================================
-def menu_fitur_segera(nama_fitur: str):
-    print_section_header(
-        f"[*] {nama_fitur}",
-        "Modul tambahan untuk Command Center.",
-        style="bright_yellow"
-    )
     console.print(
         Panel(
-            f"[bold yellow][!] Mohon maaf, fitur [cyan]{nama_fitur}[/] saat ini sedang dalam tahap pengembangan.[/]\n"
-            "[dim]Fitur ini akan segera hadir pada pembaruan versi berikutnya.[/]",
-            title="[bold bright_yellow]Informasi Pengembangan[/]",
-            border_style="bright_yellow",
-            box=box.ROUNDED,
-            expand=False,
+            f"[bold green]Bonus (>= 5k):[/] {count_bonus}  |  "
+            f"[bold yellow]Zonk (< 5k):[/] {count_zonk}  |  "
+            f"[bold red]Error:[/] {count_error}",
+            title="[bold green]Selesai[/]",
+            border_style="bright_green",
+            expand=False
         )
     )
+    Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
+
+
+# ==========================================
+# MENU 7: FITUR DALAM PENGEMBANGAN
+# ==========================================
+def menu_fitur_segera(nama_fitur: str):
+    print_section_header(f"[*] {nama_fitur}", style="bright_yellow")
+    console.print(f"[dim yellow]Fitur {nama_fitur} segera hadir.[/]")
+    Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
+
+
+# ==========================================
+# MENU 8: SCAN BONUS & CASHOUT QRIS
+# ==========================================
+def menu_scan_bonus():
+    print_section_header("[*] Scan QRIS", style="bright_yellow")
+    console.print(
+        Panel(
+            "[bold bright_green][*] Fitur Scan QRIS sekarang sudah hadir untuk Anda![/]\n"
+            "[dim]Pencairan saldo bonus & utama via QRIS Dinamis dan Statis.[/]",
+            border_style="bright_green",
+            box=box.ROUNDED,
+            expand=False
+        )
+    )
+
+    if qris is None:
+        console.print("[bold red][X] Modul qris.py / core/qris.py tidak ditemukan.[/]")
+        Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
+        return
+
+    states = list_states()
+    if not states:
+        console.print("[yellow][!] data/states kosong.[/]")
+        Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
+        return
+
+    akun_siap = []
+    with Progress(
+        SpinnerColumn(spinner_name="line"),
+        TextColumn("[progress.description]{task.description}"),
+        BarColumn(),
+        TextColumn("[bold cyan]{task.completed}/{task.total}[/]"),
+        console=console
+    ) as progress:
+        task = progress.add_task("[cyan]Cek saldo...", total=len(states))
+        for akun in states:
+            msisdn = akun.get("msisdn", "?")
+            progress.update(task, description=f"[cyan]Cek {msisdn}...[/]")
+            saldo_str, poin_str, st_msg = proses_cek_satu_akun(akun)
+            s_val = int(saldo_str) if str(saldo_str).isdigit() else 0
+            p_val = int(poin_str) if str(poin_str).isdigit() else 0
+            total_val = s_val + p_val
+
+            if total_val > 0:
+                akun_data = dict(akun)
+                akun_data["saldo"] = s_val
+                akun_data["bonus"] = p_val
+                akun_data["total"] = total_val
+                akun_siap.append(akun_data)
+
+            progress.advance(task)
+
+    if not akun_siap:
+        console.print("\n[bold red][X] Tidak ada akun dengan saldo (semua 0 / zonk).[/]")
+        Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
+        return
+
+    akun_siap.sort(key=lambda a: -a["total"])
+
+    table_siap = Table(show_header=True, header_style="bold bright_cyan", box=box.SIMPLE_HEAD, padding=(0, 2))
+    table_siap.add_column("No", justify="center", style="bold yellow", width=4)
+    table_siap.add_column("Nomor HP", style="bright_white", width=15)
+    table_siap.add_column("Nama", style="dim", width=18)
+    table_siap.add_column("Bonus", justify="right", style="bold green", width=11)
+    table_siap.add_column("Utama", justify="right", style="bold yellow", width=11)
+    table_siap.add_column("Total", justify="right", style="bold bright_green", width=13)
+
+    total_pool = 0
+    for idx, ak in enumerate(akun_siap, 1):
+        total_pool += ak["total"]
+        table_siap.add_row(
+            str(idx),
+            ak["msisdn"],
+            ak.get("fullname", "User")[:16],
+            f"Rp {ak['bonus']:,}",
+            f"Rp {ak['saldo']:,}",
+            f"Rp {ak['total']:,}"
+        )
+
     console.print()
-    Prompt.ask("[dim cyan]Tekan [bold white]Enter[/bold white] untuk kembali ke menu utama...[/]")
+    console.print(
+        Panel(
+            table_siap,
+            title=f"[bold bright_yellow][*] Akun Siap Cair ({len(akun_siap)} Akun | Total Rp {total_pool:,})[/]",
+            border_style="bright_cyan",
+            box=box.ROUNDED,
+            expand=False
+        )
+    )
+
+    if not Confirm.ask("\n[bold cyan]>> Mulai eksekusi QRIS?[/]", default=True):
+        return
+
+    total_sukses = 0
+    total_gagal = 0
+    total_uang_cair = 0
+    cached_static_qr = ""
+
+    try:
+        for idx, akun in enumerate(akun_siap, 1):
+            clear_once()
+            print_section_header(f"[*] QRIS — Akun [{idx}/{len(akun_siap)}]", style="bright_yellow")
+
+            info_box = (
+                f"[bold white]{akun['msisdn']}[/] ({akun.get('fullname', 'User')}) | "
+                f"[bold green]Bonus:[/] Rp {akun['bonus']:,} | "
+                f"[bold yellow]Utama:[/] Rp {akun['saldo']:,} | "
+                f"[bold bright_green]Total:[/] Rp {akun['total']:,}"
+            )
+            console.print(Panel(info_box, border_style="bright_cyan", box=box.ROUNDED, padding=(0, 2)))
+            console.print("[dim]Ketik 's' lewati | Ctrl+C selesai[/]\n")
+
+            while True:
+                prompt_text = "[bold bright_yellow]>> Paste QR[/]"
+                if cached_static_qr:
+                    prompt_text = "[bold bright_yellow]>> Paste QR (Enter = pakai QR Statis sebelumnya)[/]"
+
+                try:
+                    raw_input = Prompt.ask(prompt_text, default="USE_CACHED" if cached_static_qr else "").strip()
+                except (KeyboardInterrupt, EOFError):
+                    raise KeyboardInterrupt
+
+                if raw_input == "USE_CACHED":
+                    raw_input = cached_static_qr
+
+                if not raw_input:
+                    continue
+                if raw_input.lower() == "s":
+                    console.print("[yellow][*] Dilewati.[/]")
+                    time.sleep(1)
+                    break
+                if raw_input.lower() in ("q", "quit", "exit"):
+                    raise KeyboardInterrupt
+
+                info_qr = qris.inspect_qr(raw_input)
+                if not info_qr["ok"]:
+                    console.print(f"[red][X] QR Tidak Valid:[/] {info_qr.get('err', 'CRC Error')}")
+                    continue
+
+                merchant_qr = info_qr.get("merchant", "Merchant")
+                is_dyn = info_qr.get("dynamic", False)
+                nominal_bayar = 0
+
+                if is_dyn:
+                    # QRIS Dinamis (Nominal sudah ada di QR)
+                    nominal_bayar = float(info_qr.get("amount_tag54") or 0)
+                    console.print(f"  [dim]Dinamis:[/] [cyan]{merchant_qr}[/] [dim]| Tagihan:[/] [bold green]Rp {int(nominal_bayar):,}[/]")
+                    if nominal_bayar > akun["total"]:
+                        console.print(f"[red][X] Tagihan Rp {int(nominal_bayar):,} melebihi saldo Rp {akun['total']:,}![/]")
+                        continue
+                else:
+                    # QRIS Statis (Nominal bebas / kita tentukan sendiri)
+                    console.print(f"  [dim]Statis:[/] [cyan]{merchant_qr}[/] [dim]| Bebas Nominal[/]")
+                    cached_static_qr = raw_input  # Simpan agar bisa langsung dipakai untuk akun berikutnya
+                    
+                    default_nom = akun["total"]
+                    nom_in = Prompt.ask(
+                        f"  [bold yellow]>> Nominal bayar[/]",
+                        default=str(default_nom)
+                    ).strip()
+                    try:
+                        nominal_bayar = float(int("".join(filter(str.isdigit, nom_in))))
+                    except ValueError:
+                        nominal_bayar = float(default_nom)
+
+                    if nominal_bayar <= 0:
+                        console.print("[red][X] Nominal harus > 0.[/]")
+                        continue
+                    if nominal_bayar > akun["total"]:
+                        console.print(f"[red][X] Nominal Rp {int(nominal_bayar):,} melebihi saldo Rp {akun['total']:,}![/]")
+                        continue
+
+                # Eksekusi pembayaran ke LinkAja
+                with console.status("[bold cyan]Memproses pembayaran...[/]", spinner="line"):
+                    ok, msg, detail = qris.pay_account_qris(
+                        akun["file"],
+                        raw_input,
+                        pin_fallback=PIN_KUNCI,
+                        custom_amount=nominal_bayar
+                    )
+
+                if ok:
+                    total_sukses += 1
+                    nom_dibayar = detail.get("nominal", nominal_bayar)
+                    total_uang_cair += nom_dibayar
+                    m_res = detail.get("merchant", merchant_qr)
+                    trx_id = detail.get("transactionId", "-")
+                    b_bonus = detail.get("bonbal_used", 0)
+                    b_utama = detail.get("balance_used", 0)
+
+                    sukses_msg = (
+                        f"[bold green]BERHASIL DIBAYAR![/]\n"
+                        f"[bold white]{m_res}[/] | [bold bright_green]Rp {int(nom_dibayar):,}[/] "
+                        f"[dim](Bonus: Rp {int(b_bonus):,} | Utama: Rp {int(b_utama):,})[/]"
+                    )
+                    console.print()
+                    console.print(Panel(sukses_msg, border_style="bright_green", box=box.ROUNDED))
+                    time.sleep(1.5)
+                    break
+                else:
+                    total_gagal += 1
+                    console.print()
+                    if detail.get("gantung"):
+                        sisa_u = int(detail.get("saldo_utama_sisa", 0))
+                        gantung_msg = (
+                            f"[bold yellow][!] TRANSAKSI GANTUNG (60010011)[/]\n"
+                            f"{msg}\n"
+                            f"[bold white]Saldo Utama Masih Utuh:[/] [bold bright_green]Rp {sisa_u:,}[/]\n"
+                            f"[dim]Tarik sisa saldo dengan QR nominal pas Rp {sisa_u:,}[/]"
+                        )
+                        console.print(Panel(gantung_msg, border_style="bright_yellow", box=box.ROUNDED))
+                    else:
+                        console.print(Panel(f"[bold red][X] Gagal:[/] {msg}", border_style="bright_red", box=box.ROUNDED))
+
+                    if not Confirm.ask(">> Coba lagi untuk akun ini?", default=False):
+                        break
+
+    except KeyboardInterrupt:
+        console.print("\n\n[bold yellow][!] Dihentikan (Ctrl+C).[/]")
+
+    # Ringkasan Akhir
+    console.print()
+    ringkasan = Table(box=box.SIMPLE, show_header=False, padding=(0, 2))
+    ringkasan.add_column("Keterangan", style="bold")
+    ringkasan.add_column("Nilai", justify="right")
+    ringkasan.add_row("[bold green]Sukses[/]", f"{total_sukses} akun")
+    ringkasan.add_row("[bold red]Gagal / Lewat[/]", f"{total_gagal} akun")
+    ringkasan.add_row("[bold bright_green]Total Cair[/]", f"Rp {int(total_uang_cair):,}")
+
+    console.print(
+        Panel(
+            ringkasan,
+            title="[bold bright_yellow][*] RINGKASAN[/]",
+            border_style="bright_green",
+            box=box.ROUNDED,
+            expand=False
+        )
+    )
+    Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali ke menu...[/]")
 
 
 # ==========================================
@@ -1079,22 +1305,16 @@ def render_dashboard_header():
         "    Y8P      \"Y88888P\"  8888888 8888888P\""
         "[/bold bright_yellow]"
     )
-
-    try:
-        jml_state = len(list_states())
-    except Exception:
-        jml_state = 0
-
-    crypto_badge = "[bold green]Aktif[/]" if CRYPTO_AVAILABLE else "[bold red]Nonaktif[/]"
-    status_line = (
-        f"[bold white]Akun Ready:[/] [bright_cyan]{jml_state} file[/]   |   "
-        f"[bold white]Crypto AES:[/] {crypto_badge}   |   "
-        f"[bold white]PIN Default:[/] [bright_yellow]{PIN_KUNCI}[/]   |   "
-        f"[bold white]Versi App:[/] [dim]v{APP_VERSION}[/]"
-    )
-
     console.print(void_art)
-    console.print(Panel(status_line, border_style="bright_black", box=box.ROUNDED, expand=False, padding=(0, 2)))
+    console.print(
+        Panel(
+            "[bold bright_green][*] UPDATE:[/] [bold white]Fitur Scan QRIS sekarang sudah hadir untuk Anda![/]",
+            border_style="bright_green",
+            box=box.ROUNDED,
+            expand=False,
+            padding=(0, 2)
+        )
+    )
 
 def main():
     while True:
@@ -1103,24 +1323,22 @@ def main():
 
         menu_table = Table(show_header=True, header_style="bold bright_cyan", box=box.SIMPLE_HEAD, padding=(0, 2))
         menu_table.add_column("Kode", style="bold bright_yellow", justify="center", width=6)
-        menu_table.add_column("Menu Fitur", style="bold bright_white", width=24)
-        menu_table.add_column("Deskripsi Singkat", style="dim white")
+        menu_table.add_column("Menu Fitur", style="bold bright_white", width=28)
 
-        menu_table.add_row("[1]", "Daftar Manual", "Registrasi akun tunggal dengan OTP SMS manual")
-        menu_table.add_row("[2]", "Daftar Otomatis (Bulk)", "Registrasi massal terjadwal dengan Live Monitor")
-        menu_table.add_row("[3]", "ADB Push (Khusus PC)", "Inject sesi akun ke banyak HP sekaligus via ADB")
-        menu_table.add_row("[4]", "Cek Bonus", "Tampilkan tabel saldo & poin secara real-time")
-        menu_table.add_row("[5]", "Restore Termux (Root)", "Pasang sesi akun langsung ke HP ini via Superuser")
-        menu_table.add_row("[6]", "Sortir Akun", "Pisahkan otomatis akun bonus >= 5.000 & akun zonk")
-        menu_table.add_row("[7]", "Verifikasi Email", "[dim yellow]Verifikasi email akun (Segera Hadir)[/]")
-        menu_table.add_row("[8]", "Scan BONUS", "[dim yellow]Pindai bonus otomatis (Segera Hadir)[/]")
-        menu_table.add_row("[9]", "[bright_red]Keluar[/]", "[dim red]Tutup sesi Command Center[/]")
+        menu_table.add_row("[1]", "Daftar Manual")
+        menu_table.add_row("[2]", "Daftar Otomatis (Bulk)")
+        menu_table.add_row("[3]", "ADB Push (Khusus PC)")
+        menu_table.add_row("[4]", "Cek Bonus")
+        menu_table.add_row("[5]", "Restore Termux (Root)")
+        menu_table.add_row("[6]", "Sortir Akun")
+        menu_table.add_row("[7]", "Verifikasi Email")
+        menu_table.add_row("[8]", "Scan QRIS (Bonus & Utama) [bold bright_green][NEW][/]")
+        menu_table.add_row("[9]", "[bright_red]Keluar[/]")
 
         console.print(
             Panel(
                 menu_table,
                 title="[bold bright_yellow][*] VOID COMMAND CENTER[/]",
-                subtitle="[dim]Gunakan angka 1-9 untuk memilih menu[/]",
                 border_style="bright_cyan",
                 box=box.ROUNDED,
                 expand=False,
@@ -1153,9 +1371,9 @@ def main():
             elif c == "7":
                 menu_fitur_segera("Verifikasi Email")
             elif c == "8":
-                menu_fitur_segera("Scan BONUS")
+                menu_scan_bonus()
 
-            if c in ["1", "2", "3", "4", "5", "6"]:
+            if c in ["1", "2", "3"]:
                 console.print()
                 console.print(Rule(style="bright_black"))
                 Prompt.ask("[dim cyan]Tekan [bold white]Enter[/bold white] untuk kembali ke menu...[/]")
