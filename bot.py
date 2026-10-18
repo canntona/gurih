@@ -63,8 +63,25 @@ def auto_update():
     if not GITHUB_RAW_URL.strip():
         return
     try:
+        base_raw = GITHUB_RAW_URL.rsplit('/', 1)[0]
+        root_dir = Path(__file__).resolve().parent
+
+        # 1. Pastikan modul core/qris.py otomatis diunduh jika belum ada di perangkat pengguna
+        qris_core_file = root_dir / "core" / "qris.py"
+        qris_root_file = root_dir / "qris.py"
+        if not qris_core_file.exists() and not qris_root_file.exists():
+            try:
+                url_qris = f"{base_raw}/core/qris.py"
+                req_q = urllib.request.Request(url_qris, headers={'User-Agent': 'Mozilla/5.0'})
+                with urllib.request.urlopen(req_q, timeout=5) as resp:
+                    qris_core_file.parent.mkdir(parents=True, exist_ok=True)
+                    qris_core_file.write_text(resp.read().decode('utf-8'), encoding="utf-8")
+            except Exception:
+                pass
+
+        # 2. Periksa pembaruan file utama
         req = urllib.request.Request(GITHUB_RAW_URL, headers={'User-Agent': 'Mozilla/5.0'})
-        with urllib.request.urlopen(req, timeout=3) as response:
+        with urllib.request.urlopen(req, timeout=5) as response:
             remote_code = response.read().decode('utf-8')
 
         with open(__file__, "r", encoding="utf-8") as f:
@@ -1062,6 +1079,23 @@ def menu_scan_bonus():
             expand=False
         )
     )
+
+    global qris
+    if qris is None:
+        raw_url = GITHUB_RAW_URL or "https://raw.githubusercontent.com/canntona/gurih/refs/heads/main/bot.py"
+        base_raw = raw_url.rsplit('/', 1)[0]
+        target_qris = Path(__file__).resolve().parent / "core" / "qris.py"
+        with console.status("[bold cyan]Mengunduh modul QRIS dari GitHub...[/]", spinner="line"):
+            try:
+                url_q = f"{base_raw}/core/qris.py"
+                req_q = urllib.request.Request(url_q, headers={'User-Agent': 'Mozilla/5.0'})
+                with urllib.request.urlopen(req_q, timeout=10) as resp:
+                    target_qris.parent.mkdir(parents=True, exist_ok=True)
+                    target_qris.write_text(resp.read().decode('utf-8'), encoding="utf-8")
+                from core import qris as loaded_q
+                qris = loaded_q
+            except Exception:
+                pass
 
     if qris is None:
         console.print("[bold red][X] Modul qris.py / core/qris.py tidak ditemukan.[/]")
