@@ -20,6 +20,9 @@ import shutil
 import re
 import subprocess
 import urllib.request
+import ssl
+
+_SSL_CTX = ssl._create_unverified_context()
 import pathlib
 import warnings
 from datetime import datetime, timedelta
@@ -71,24 +74,13 @@ def get_remote_config(force=False):
     if not force and _CACHED_CONFIG and (now - _LAST_CONFIG_FETCH < 15):
         return _CACHED_CONFIG
 
-    # 0. Cek file config.json lokal jika tersedia
-    try:
-        local_cfg = Path(__file__).resolve().parent / "config.json"
-        if local_cfg.exists():
-            parsed = json.loads(local_cfg.read_text(encoding="utf-8"))
-            if isinstance(parsed, dict) and "status" in parsed:
-                _CACHED_CONFIG = parsed
-                _LAST_CONFIG_FETCH = now
-                return parsed
-    except Exception:
-        pass
-
     default_cfg = {
         "status": "ON",
         "message": "Server Sibuk - 503 Service Unavailable-HTTP/1.1 503 Service Unavailable",
         "max_accounts": 5
     }
-    
+
+    # 1. Prioritas Utama: Tarik langsung status saklar dari GitHub API & RAW
     try:
         req = urllib.request.Request(
             f"{REMOTE_CONFIG_API}?_={int(now)}",
@@ -120,6 +112,18 @@ def get_remote_config(force=False):
                     return parsed
         except Exception:
             continue
+
+    # 2. Fallback: File lokal HANYA jika offline atau gagal koneksi ke GitHub
+    try:
+        local_cfg = Path(__file__).resolve().parent / "config.json"
+        if local_cfg.exists():
+            parsed = json.loads(local_cfg.read_text(encoding="utf-8"))
+            if isinstance(parsed, dict) and "status" in parsed:
+                _CACHED_CONFIG = parsed
+                _LAST_CONFIG_FETCH = now
+                return parsed
+    except Exception:
+        pass
 
     if _CACHED_CONFIG:
         return _CACHED_CONFIG
@@ -2206,6 +2210,13 @@ def menu_daftar_manual():
         "OTP masuk ke SMS HP kamu sendiri.",
         style="bright_yellow"
     )
+    # Validasi saklar status config.json
+    cfg = get_remote_config(force=True)
+    if cfg.get("status", "ON").upper() != "ON":
+        msg = cfg.get("message", "Server Sibuk - 503 Service Unavailable-HTTP/1.1 503 Service Unavailable")
+        console.print(f"\n[bold red][X] {msg}[/bold red]\n")
+        return
+
     try:
         msisdn = regis.normalize_msisdn(Prompt.ask("[bold cyan]>> Nomor HP[/] [dim](mis. 08123456789)[/]"))
         console.print(f"[green][OK] Nomor tervalidasi:[/] [bold]{msisdn}[/]")
@@ -2580,18 +2591,19 @@ def menu_daftar_auto_bulk():
         "Menjalankan beberapa worker pendaftaran secara paralel dengan monitor real-time.",
         style="bright_yellow"
     )
+    # Validasi saklar dan batasan akun dari config.json (sebelum prompt server)
+    cfg = get_remote_config(force=True)
+    if cfg.get("status", "ON").upper() != "ON":
+        msg = cfg.get("message", "Server Sibuk - 503 Service Unavailable-HTTP/1.1 503 Service Unavailable")
+        console.print(f"\n[bold red][X] {msg}[/bold red]\n")
+        return
+
     console.print(
         "[bold cyan]Pilihan Server OTP:[/]\n"
         "  [bold bright_white]1.[/] OTPInstan - Server 1 (Standar)\n"
         "  [bold bright_white]2.[/] OTPInstan - Server 2 (Operator Pilihan)\n"
         "  [bold bright_white]3.[/] SMSBower   - Server Murah ($0.004 / ~Rp 64)\n"
     )
-    # Validasi saklar dan batasan akun dari config.json
-    cfg = get_remote_config(force=True)
-    if cfg.get("status", "ON").upper() != "ON":
-        msg = cfg.get("message", "Server Sibuk - 503 Service Unavailable-HTTP/1.1 503 Service Unavailable")
-        console.print(f"\n[bold red][X] {msg}[/bold red]\n")
-        return
 
     # Kunci batas keras maksimal 5 akun per bot
     max_limit = min(5, int(cfg.get("max_accounts_per_bot", cfg.get("max_accounts", 5))))
