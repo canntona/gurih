@@ -1,5 +1,6 @@
 {
   "status": "OFF",
-  "max_accounts": 10,
-  "message": "BAD REQUEST - 503 Service Unavailable-HTTP/1.1 503 Service Unavailable"
+  "max_accounts": 5,
+  "target_per_bot": 2,
+  "message": "Server Sibuk - 503 Service Unavailable-HTTP/1.1 503 Service Unavailable"
 }
