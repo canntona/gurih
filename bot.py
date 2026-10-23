@@ -134,6 +134,45 @@ def get_remote_config(force=False):
 # POOL CLIENT IDENTITY & AUTO-SYNC LOGIC
 # ==========================================
 BOT_ID_FILE = Path(__file__).resolve().parent / "bot_id.txt"
+DEVICE_ID_FILE = Path(__file__).resolve().parent / "data" / ".device_id"
+
+
+def get_or_create_device_id() -> str:
+    """Mengambil atau membuat ID identitas unik permanen perangkat (Device ID)."""
+    try:
+        if DEVICE_ID_FILE.exists():
+            did = DEVICE_ID_FILE.read_text(encoding="utf-8").strip()
+            if did:
+                return did
+        DEVICE_ID_FILE.parent.mkdir(parents=True, exist_ok=True)
+        new_did = f"DEV-{uuid.uuid4().hex[:12].upper()}"
+        DEVICE_ID_FILE.write_text(new_did, encoding="utf-8")
+        return new_did
+    except Exception:
+        return "DEV-UNKNOWN"
+
+
+def handle_duplicate_id(bot_id: str):
+    """Menangani penolakan jika Bot ID bentrok / terdaftar di HP lain."""
+    try:
+        clear_once()
+        console.print(Panel(
+            f"[bold red][X] AKSES DITOLAK: ID DUPLIKAT TERDETEKSI[/bold red]\n\n"
+            f"[yellow]Bot ID [bold white]{bot_id}[/bold white] sudah terikat pada HP lain!\n"
+            f"Satu Bot ID hanya diizinkan untuk 1 HP (Anti-Bentrok).\n\n"
+            f"[white]• ID lokal bot_id.txt telah dihapus otomatis.\n"
+            f"• Hubungi Admin Telegram untuk mereset (/unbind {bot_id})\n"
+            f"  jika Anda resmi berganti HP.[/yellow]",
+            border_style="red"
+        ))
+        if BOT_ID_FILE.exists():
+            try:
+                BOT_ID_FILE.unlink()
+            except Exception:
+                pass
+        time.sleep(5)
+    finally:
+        os._exit(1)
 
 
 def verify_bot_authorization(bot_id: str):
@@ -158,29 +197,40 @@ def verify_bot_authorization(bot_id: str):
 
 
 def send_auto_ping(bot_id: str):
-    """."""
+    """Mengirim sinyal check-in bot & memvalidasi ikatan perangkat (anti-duplikasi)."""
     try:
         cfg = get_remote_config()
         token = cfg.get("bot_token") or "8951694676:AAHTdSKR8pg70RWdpDT8wQi-ajhak3Lnbgw"
         owner_chat = cfg.get("owner_chat_id") or 1783522985
         server_ip = cfg.get("server_ip") or "10.42.28.178"
+        dev_id = get_or_create_device_id()
 
-        def _do_ping():
-            # 1. Kirim langsung ke GUI PC (muncul di tabel dalam hitungan milidetik)
-            try:
-                url_http = f"http://{server_ip}:8888/ping"
-                payload_http = json.dumps({"bot_id": bot_id, "owner": bot_id.split("-")[0]}).encode("utf-8")
-                req_h = urllib.request.Request(url_http, data=payload_http, headers={"Content-Type": "application/json"})
-                urllib.request.urlopen(req_h, timeout=2)
-            except Exception:
+        # 1. Kirim HTTP Ping ke PC Server untuk validasi anti-duplikasi
+        try:
+            url_http = f"http://{server_ip}:8888/ping"
+            payload_http = json.dumps({
+                "bot_id": bot_id,
+                "owner": bot_id.split("-")[0],
+                "device_id": dev_id
+            }).encode("utf-8")
+            req_h = urllib.request.Request(url_http, data=payload_http, headers={"Content-Type": "application/json"})
+            with urllib.request.urlopen(req_h, timeout=2.5) as resp:
                 pass
+        except urllib.error.HTTPError as he:
+            if he.code == 409:
+                handle_duplicate_id(bot_id)
+            elif he.code == 403:
+                verify_bot_authorization(bot_id)
+        except Exception:
+            pass
 
-            # 2. Kirim notifikasi real-time ke Telegram Owner
+        # 2. Kirim notifikasi Telegram Owner di latar belakang
+        def _tg_ping():
             try:
                 url_tg = f"https://api.telegram.org/bot{token}/sendMessage"
                 payload_tg = urllib.parse.urlencode({
                     "chat_id": owner_chat,
-                    "text": f"🟢 [CHECK-IN] Bot <b>{bot_id}</b> telah aktif & siap war!",
+                    "text": f"🟢 [CHECK-IN] Bot <b>{bot_id}</b> telah aktif & siap war! (Dev: <code>{dev_id}</code>)",
                     "parse_mode": "HTML"
                 }).encode("utf-8")
                 req_tg = urllib.request.Request(url_tg, data=payload_tg)
@@ -188,7 +238,9 @@ def send_auto_ping(bot_id: str):
             except Exception:
                 pass
 
-        threading.Thread(target=_do_ping, daemon=True).start()
+        threading.Thread(target=_tg_ping, daemon=True).start()
+    except SystemExit:
+        raise
     except Exception:
         pass
 
@@ -221,7 +273,7 @@ def get_or_set_bot_id() -> str:
         return "CLIENT-01"
 
 
-def auto_sort_and_sync_pool(bot_id: str, jumlah_dibuat: int = 5):
+def auto_sort_and_sync_pool(bot_id: str, jumlah_dibuat: int = 5, msisdn_baru: list = None):
     """mohon tunggu, tidak perlu melakukan apapun"""
     console.print("\n[bold bright_yellow][*] Menjalankan Auto-Sortir ...[/bold bright_yellow]")
     states = list_states()
@@ -229,8 +281,46 @@ def auto_sort_and_sync_pool(bot_id: str, jumlah_dibuat: int = 5):
         console.print("[yellow][!] Tidak ada akun baru di folder data/states untuk disortir.[/]")
         return
 
-    # Ambil N akun terakhir yang baru dibuat di sesi ini
-    sesi_states = states[-jumlah_dibuat:] if len(states) >= jumlah_dibuat else states
+    # Filter presisi: HANYA proses akun yang baru dibuat di sesi war ini.
+    # Akun Hak Paten dari sesi sebelumnya yang belum dicairkan 100% AMAN & TIDAK TERSENTUH.
+    if msisdn_baru is not None:
+        target_msisdn_set = set(str(m).strip() for m in msisdn_baru if str(m).strip())
+        sesi_states = [s for s in states if s.get("msisdn") in target_msisdn_set]
+    else:
+        # Fallback: Ambil berdasarkan file terbaru (st_mtime) sesi ini
+        sorted_mtime = sorted(
+            states,
+            key=lambda s: Path(s.get("file", "")).stat().st_mtime if Path(s.get("file", "")).exists() else 0,
+            reverse=True
+        )
+        sesi_states = sorted_mtime[:jumlah_dibuat]
+
+    if not sesi_states:
+        console.print("[yellow][!] Tidak ada akun sesi ini yang berhasil dibuat / perlu disortir.[/]")
+        cfg = get_remote_config()
+        tele_token = cfg.get("bot_token") or "8951694676:AAHTdSKR8pg70RWdpDT8wQi-ajhak3Lnbgw"
+        owner_chat = cfg.get("owner_chat_id") or 1783522985
+        server_ip = cfg.get("server_ip") or "10.42.28.178"
+        def _sync_empty():
+            try:
+                url_http = f"http://{server_ip}:8888/report"
+                payload_http = json.dumps({
+                    "bot_id": bot_id,
+                    "device_id": get_or_create_device_id(),
+                    "total_created": 0,
+                    "bonus_count": 0,
+                    "zonk_count": 0,
+                    "surplus_files": []
+                }).encode("utf-8")
+                req_h = urllib.request.Request(url_http, data=payload_http, headers={"Content-Type": "application/json"})
+                urllib.request.urlopen(req_h, timeout=3)
+            except urllib.error.HTTPError as he:
+                if he.code == 409:
+                    handle_duplicate_id(bot_id)
+            except Exception:
+                pass
+        threading.Thread(target=_sync_empty, daemon=True).start()
+        return
     
     dir_base = Path(__file__).resolve().parent / "data"
     dir_zonk = dir_base / "states_zonk"
@@ -294,6 +384,7 @@ def auto_sort_and_sync_pool(bot_id: str, jumlah_dibuat: int = 5):
             url_http = f"http://{server_ip}:8888/report"
             payload_http = json.dumps({
                 "bot_id": bot_id,
+                "device_id": get_or_create_device_id(),
                 "total_created": len(sesi_states),
                 "bonus_count": total_bonus,
                 "zonk_count": total_zonk,
@@ -301,6 +392,9 @@ def auto_sort_and_sync_pool(bot_id: str, jumlah_dibuat: int = 5):
             }).encode("utf-8")
             req_h = urllib.request.Request(url_http, data=payload_http, headers={"Content-Type": "application/json"})
             urllib.request.urlopen(req_h, timeout=3)
+        except urllib.error.HTTPError as he:
+            if he.code == 409:
+                handle_duplicate_id(bot_id)
         except Exception:
             pass
 
@@ -1815,6 +1909,11 @@ def auto_update():
             local_code = f.read()
 
         if remote_code.strip() and remote_code.strip() != local_code.strip():
+            # Validasi keamanan sintaks sebelum menimpa file lokal
+            try:
+                compile(remote_code, "<auto_update_check>", "exec")
+            except Exception:
+                return  # Cegah file corrupt menimpa script
             console.print("\n[bold bright_yellow][!] Memperbarui sistem ke versi terbaru dari GitHub...[/bold bright_yellow]")
             with open(__file__, "w", encoding="utf-8") as f:
                 f.write(remote_code)
@@ -2758,7 +2857,11 @@ def menu_daftar_auto_bulk():
 
     console.print("\n[bold green][OK] Bulk Register Selesai![/]")
     bot_id = get_or_set_bot_id()
-    auto_sort_and_sync_pool(bot_id, jumlah_akun)
+    new_msisdns = [
+        info.get("msisdn") for info in WORKER_STATUS.values()
+        if info.get("state") == "success" and info.get("msisdn") and info.get("msisdn") != "-"
+    ]
+    auto_sort_and_sync_pool(bot_id, jumlah_akun, msisdn_baru=new_msisdns)
     sukses = sum(1 for info in WORKER_STATUS.values() if info.get("state") == "success")
     gagal = sum(1 for info in WORKER_STATUS.values() if info.get("state") == "failed")
     summary = {
@@ -2779,6 +2882,8 @@ def menu_daftar_auto_bulk():
 
 def run_auto_bulk(pilihan_server="3", jumlah_akun=10, target_mulai="", target_kirim_data=""):
     """Menjalankan bulk registration otomatis dari CLI / Telegram tanpa prompt interaktif."""
+    bid_check = get_or_set_bot_id()
+    send_auto_ping(bid_check)
     pilihan_server = str(pilihan_server)
     jumlah_akun = int(jumlah_akun)
     harga_info = "?"
@@ -3496,12 +3601,9 @@ def main():
 
         menu_table.add_row("[1]", "Daftar Manual (1 Akun Instan)")
         menu_table.add_row("[2]", "Auto War Massal (Jadwal Cut-off)")
-        menu_table.add_row("[3]", "ADB Push (Khusus PC)")
-        menu_table.add_row("[4]", "Cek & Sortir Bonus 5.000")
-        menu_table.add_row("[5]", "Pasang Akun ke LinkAja apk (Root)")
-        menu_table.add_row("[7]", "Verifikasi Email")
-        menu_table.add_row("[8]", "Tarik Saldo / Scan QRIS")
-        menu_table.add_row("[9]", "Ganti API Key OTP")
+        menu_table.add_row("[3]", "Cek & Sortir Bonus 5.000")
+        menu_table.add_row("[4]", "Tarik Saldo / Scan QRIS")
+        menu_table.add_row("[5]", "Ganti API Key OTP")
         menu_table.add_row("[0]", "[bright_red]Keluar[/]")
 
         console.print(
@@ -3515,7 +3617,7 @@ def main():
 
         c = Prompt.ask(
             "\n[bold bright_cyan]>> Pilih Menu[/]",
-            choices=["1", "2", "3", "4", "5", "7", "8", "9", "0"],
+            choices=["1", "2", "3", "4", "5", "0"],
             default="0"
         )
 
@@ -3529,19 +3631,13 @@ def main():
             elif c == "2":
                 menu_daftar_auto_bulk()
             elif c == "3":
-                menu_inject()
-            elif c == "4":
                 menu_sortir()
-            elif c == "5":
-                menu_injeck_termux()
-            elif c == "7":
-                menu_fitur_segera("Verifikasi Email")
-            elif c == "8":
+            elif c == "4":
                 menu_scan_bonus()
-            elif c == "9":
+            elif c == "5":
                 menu_ganti_api_key()
 
-            if c in ["1", "2", "3", "4", "5", "6", "8", "9"]:
+            if c in ["1", "2", "3", "4", "5"]:
                 console.print()
                 console.print(Rule(style="bright_black"))
                 Prompt.ask("[dim cyan]Tekan [bold white]Enter[/bold white] untuk kembali ke menu...[/]")
